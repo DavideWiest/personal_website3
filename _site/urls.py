@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path("", views.main),
-    # path("", views.stdout_log),
+    path("projekte", views.projects),
     # path("", views.main_log),
 ]

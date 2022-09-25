@@ -1,6 +1,6 @@
 
 
-std_title_clause = " | Davide Wiest"
+std_title_clause = " - Davide Wiest"
 
 def build_params(title, params):
     bparams = {
