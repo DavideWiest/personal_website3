@@ -39,35 +39,26 @@
         }
     </style>
 
-    <nav class="p-5 bg-white-shadow md:flex md:item-center md:justify-between">
-        <div class="flex justify-between items-center z-[4]">
-            <span class="text-2xl">
-                Instadata
-            </span>
-            <span class="text-2xl cursor-pointer md:hidden block">
-                <img src="{% static 'menu.svg' %}" alt="Menu" class="w-8" onclick="showMobileMenu(this);">
-            </span>
-        </div>
-        <ul id="menulist" class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-600">
-            <li id="menuitem" class="mx-4 my-6 md:my-0">
-                <a class="text-xl hover:text-cyan-500 duration-500" href="/ui/dashboard">
-                    Dashboard
-                </a>
-            </li>
-            <li id="menuitem" class="mx-4 my-6 md:my-0">
-                <a class="text-xl hover:text-cyan-500 duration-500" href="/ui/main-log">
-                    Haupt Log
-                </a>
-            </li>
-            <li id="menuitem" class="mx-4 my-6 md:my-0">
-                <a class="text-xl hover:text-cyan-500 duration-500" href="/ui/stdout-log">
-                    Stdout Log
-                </a>
-            </li>
-        </ul>
-    </nav>
 
-    <div class="content bg-blue-100 min-h-screen px-3 py-5" style="max-width: 100vw;">
+<nav class="flex justify-between px-12 py-4 items-center bg-white">
+    <a class="flex" href="/">
+        <img src="{% static 'assets/Branding_Assets 12 Logo Black.svg' %}" alt="" class="w-12 px-2">
+        <h1 class="text-2xl text-black font-bold" style="font-weight: 800;">Davide Wiest</h1>
+    </a>
+    <div class="flex items-center">
+      <ul class="flex items-center space-x-4">
+        <li class="font-semibold text-gray-600">
+            <a href="/projekte" class="p-2 px-3 rounded-xl font-bold border border-gray-400">Projekte ansehen</a>
+        </li>
+        <li>
+          <a href="mailto:davide.wiest2@gmail.com" class="text-white bg-primary p-2 px-3 rounded-xl font-semibold">Mail an davide.wiest2@gmail.com</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+
+    <div class="content bg-primary min-h-screen px-3 py-5" style="max-width: 100vw;">
         {% block htmlcontents %}
         {% endblock %}
     </div>

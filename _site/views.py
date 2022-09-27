@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from .sitehelper import build_params
 
 
@@ -9,7 +8,7 @@ def main(request):
         "title": "Davide Wiest"
     }
 
-    return render(request, "main.html", build_params("", params))
+    return render(request, "main.html", build_params("", "", params))
 
 def projects(request):
     
@@ -17,4 +16,4 @@ def projects(request):
         "title": "Davide Wiest"
     }
 
-    return render(request, "projects.html", build_params("Projekte", params))
+    return render(request, "project.html", build_params("Projekte", "data.json/projects", params))
