@@ -31,22 +31,23 @@ def openfile(filename, subfield=None):
 
 std_title_clause = " - Davide Wiest"
 
-def build_params(title, storage_ptr, params):
-
-    if storage_ptr != "":
-        if "/" in storage_ptr:
-            filename, subfield = storage_ptr.split("/")
+def build_params(title, storage_ptrs, params):
+    c_files = {}
+    for storage_ptr in storage_ptrs:
+        if storage_ptr != "":
+            if "/" in storage_ptr:
+                filename, subfield = storage_ptr.split("/")
+            else:
+                filename, subfield = (storage_ptr, "")
+            
+            c_files[filename + "_" + subfield.capitalize() if subfield != "" else filename] = openfile(filename + ".json", subfield=subfield if subfield != "" else None)
         else:
-            filename, subfield = (storage_ptr, "")
-        
-        file = openfile(filename, subfield=subfield if subfield != "" else None)
-    else:
-        file = {}
+            c_files[filename] = {}
 
     bparams = {
         "title": title + std_title_clause,
         "base_url": "http://127.0.0.1:8000/", # "https://davidewiest.com"
-        "c": file
+        "c": c_files
     }
 
     return {**bparams, **params}
