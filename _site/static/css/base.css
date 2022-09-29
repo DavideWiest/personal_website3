@@ -1,0 +1,20 @@
+* {
+    font-family: 'Inter', 'Roboto', 'Helvetica', sans-serif;
+}
+.code {
+    font-family: 'Fira Code', monospace;
+}
+.intertight {
+    font-family: 'Inter Tight', 'Inter', 'Roboto', 'Helvetica', sans-serif;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.text-b800 {
+    font-weight: 800;
+}
+.text-b900 {
+    font-weight: 900;
+}

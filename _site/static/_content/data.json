@@ -1,11 +1,3 @@
 {
-    "": "",
-    "projects": {
-        "IDWW": {
-            "description": "",
-            "github": "",
-            "t": ["Python", "HTML", "CSS", "Javascript", "Django", "MongoDB"],
-            "c": ["Data-Science", "Data-Mining", "Webapp", "API", "Scraper"]
-        }
-    }
+    "": ""
 }

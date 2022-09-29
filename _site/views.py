@@ -8,7 +8,7 @@ def main(request):
         "title": "Davide Wiest"
     }
 
-    return render(request, "main.html", build_params("", "", params))
+    return render(request, "main.html", build_params("", "en_main.json", params))
 
 def projects(request):
     

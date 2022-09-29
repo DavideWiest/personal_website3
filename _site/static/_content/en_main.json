@@ -1,0 +1,12 @@
+{
+    "heroHeading": "Still <em>thinking</em> about building a digital presence?",
+    "heroText": "I help businesses build their digital presence with utmost care.",
+    "projects": {
+        "IDWW": {
+            "description": "",
+            "github": "",
+            "t": ["Python", "HTML", "CSS", "Javascript", "Django", "MongoDB"],
+            "c": ["Data-Science", "Data-Mining", "Webapp", "API", "Scraper"]
+        }
+    }
+}

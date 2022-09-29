@@ -20,7 +20,7 @@ class LangSetter(object):
         return response
 
 
-def openfile(filename, subfield = None):
+def openfile(filename, subfield=None):
     with open(f"_site/static/_content/{filename}", "r", encoding="utf-8") as f:
         file = json.load(f)
         if subfield:
