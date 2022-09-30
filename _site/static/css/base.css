@@ -18,3 +18,13 @@ a:hover {
 .text-b900 {
     font-weight: 900;
 }
+
+@media screen and (max-width: 768px) {
+    #hero-left {
+        max-height: 55vh;
+    }
+}
+
+#hero-right-inner {
+    height: 100vh;
+}

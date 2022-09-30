@@ -4,7 +4,6 @@ from django.http import HttpResponseNotFound
 from .sitehelper import openfile
 
 def linkview(request, linkto):
-    print(linkto)
     file = openfile("credentials.json", "links")
     if linkto not in file:
         return HttpResponseNotFound("Could not find this link")
@@ -14,5 +13,5 @@ def linkview(request, linkto):
 
 
 urlpatterns = [
-    path("/<str:linkto>", linkview)
+    path("<str:linkto>", linkview)
 ]

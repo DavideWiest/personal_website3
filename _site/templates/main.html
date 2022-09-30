@@ -5,33 +5,62 @@
 {% block header %}{{ title }}{% endblock %}
 
 {% block htmlcontents %}
-
-<div id="hero" class="flex flex-col md:flex-row md:flex-col-2 h-screen">
-    <div id="hero-left" class="md:w-3/5 lg:w-1/2 w-screen flex justify-center items-center p-4 md:p-6 bg-primary h-3/5 md:h-screen md:items-end md:pb-0">
+<div id="hero s1" class="flex flex-col md:flex-row md:flex-col-2 min-h-screen">
+    <div id="hero-left" class="md:w-1/2 w-screen flex justify-center items-center p-4 md:p-6 bg-primary h-1/2 md:h-screen md:items-end md:pb-0 md:sticky md:top-0 pb-0">
         <div id="heropic-c" class="">
-            <img src="{% static 'other/main/thethinker.png' %}" alt="" class="w-full max-w-lg">
+            <img src="{% static 'other/main/thethinker.png' %}" alt="" class="w-full max-w-xl">
         </div>
     </div>
-    <div id="hero-right" class="md:w-2/5 lg:w-1/2 flex justify-center items-center flex-col pt-6 md:pt-0 p-4 md:p-6 h-2/5 md:h-screen md:items-flex-end bg-blackbg" style="min-height: 10rem;">
-        <div id="hero-right-inner" class="inline-block max-w-lg">
-            <div id="hero-heading-c" class="inline-block">
-                <h3 id="hero-heading" class="intertight text-white text-2xl md:text-3xl text-bold">
-                    {{ c.heroHeading |safe }}
-                </h3>
+    <div id="hero-right" class="w-auto md:w-1/2" style="min-height: 10rem;">
+        <div id="hero-right-inner">
+            <div id="hero-right-inner2" class="flex justify-center items-center flex-col md:h-1/2 md:min-h-screen md:items-flex-end bg-blackbg">
+                <div id="hero-right-inner-inner" class="inline-block max-w-xl mx-6 my-6 md:mx-8" style="max-width: 34rem;">
+                    <div id="hero-heading-c" class="inline-block">
+                        <h3 id="hero-heading" class="intertight text-neutral-100 text-2xl md:text-3xl" style="font-weight: 600;">
+                            {{ c.main.heroHeadingPrim |safe }}
+                            <span class="hero-heading-secondary" style="color: rgb(146, 146, 146);">
+                                {{ c.main.heroHeadingSec |safe }}
+                            </span>
+                        </h3>
+                    </div>
+                    <div id="hero-text-c" class="mt-4">
+                        <p id="hero-text" class="textfont text-neutral-100 inline-block">
+                            {{ c.main.heroText }}
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ea aut cumque? Sequi molestias, iste dolorum at nostrum nihil ab quae a nam fuga illum, excepturi incidunt aspernatur quisquam? Deserunt ad ipsam cupiditate minima autem adipisci laborum aliquam voluptates maiores!
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div id="hero-text-c" class="mt-4">
-                <p id="hero-text" class="textfont text-white inline-block">
-                    {{ c.heroText }}
-                </p>
+            <div id="hero-cta-c" class="my-6">
+                <img src="{% static 'other/icons/down-arrow.png' %}" alt="" class="animate-bounce w-8 h-8 md:w-12 md:h-12 invert">
             </div>
-            <div id="hero-cta-c">
-                <a href="mailto:{{  }}">
-                    {{ c.heroCta }}
-                </a>
+        </div>
+        <div id="hero-right-inner" class="bg-white flex justify-center items-center flex-col">
+            <div id="hero-right-inner-inner" class="inline-block max-w-lg">
+                <div id="hero-heading-c" class="inline-block">
+                    <h3 id="hero-heading" class="intertight text-neutral-900 text-2xl md:text-3xl" style="font-weight: 600;">
+                        {{ c.main.heroHeadingPrim |safe }}
+                        <span class="hero-heading-secondary" style="color: rgb(136, 136, 136);">
+                            {{ c.main.heroHeadingSec |safe }}
+                        </span>
+                    </h3>
+                </div>
+                <div id="hero-text-c" class="mt-4">
+                    <p id="hero-text" class="textfont text-neutral-900 inline-block">
+                        {{ c.main.heroText }}
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ea aut cumque? Sequi molestias, iste dolorum at nostrum nihil ab quae a nam fuga illum, excepturi incidunt aspernatur quisquam? Deserunt ad ipsam cupiditate minima autem adipisci laborum aliquam voluptates maiores!
+                    </p>
+                </div>
+                <div id="hero-cta-c">
+                    <a href="mailto:">
+                        {{ c.main.heroCta }}
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <div id="process">
     <!-- process and story -->

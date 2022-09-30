@@ -1,6 +1,7 @@
 import json
 from django.utils import translation
 
+
 class LangSetter(object):
     """
     This is a very simple middleware that parses a request
@@ -30,8 +31,11 @@ def openfile(filename, subfield=None):
 
 
 std_title_clause = " - Davide Wiest"
+lang_independant_files = ("credentials", "data")
 
-def build_params(title, storage_ptrs, params):
+def build_params(title, storage_ptrs, params, language):
+    language = "en"
+    
     c_files = {}
     for storage_ptr in storage_ptrs:
         if storage_ptr != "":
@@ -40,14 +44,19 @@ def build_params(title, storage_ptrs, params):
             else:
                 filename, subfield = (storage_ptr, "")
             
-            c_files[filename + "_" + subfield.capitalize() if subfield != "" else filename] = openfile(filename + ".json", subfield=subfield if subfield != "" else None)
+            c_files[filename + "_" + subfield.capitalize() if subfield != "" else filename] = openfile(language + "_" + filename + ".json" if filename not in lang_independant_files else filename + ".json", subfield=subfield if subfield != "" else None)
         else:
             c_files[filename] = {}
 
     bparams = {
         "title": title + std_title_clause,
         "base_url": "http://127.0.0.1:8000/", # "https://davidewiest.com"
-        "c": c_files
+        "c": c_files,
+        "l": language
     }
 
     return {**bparams, **params}
+
+def choose_lang(request):
+    language = translation.get_language_from_request(request)
+    return language
