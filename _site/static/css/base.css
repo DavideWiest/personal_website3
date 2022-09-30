@@ -44,13 +44,13 @@ a:hover {
     #hero-right-inner {
         height: 100vh;
     }
-    .md-h-90p {
+    /* .md-h-90p {
         height: 90%;
     }
     
     .md-h-10p {
         height: 10%;
-    }
+    } */
 
     #stickycta-text {
         width: 47vw;

@@ -5,6 +5,7 @@
     "heroText": "No matter the industry, if you want to be successful on the internet you need your own website. Over the years many options have popped up for the sophisticated entrepreneur, and the ways to make a website are as diverse as ever. However, a website still must look appealing and be functional at all times. This is where I want to help.",
     "aboutHeading": "Who I am",
     "aboutContent": {
+        "Davide Wiest": "",
         "Developer": "With over 3 years of experience in Python, I am very  passionate about coding. Sometimes, when I'm in 'the Zone', I even forget to eat and drink.",
         "Designer": "",
         "Thinker": "",
@@ -18,8 +19,9 @@
         "04": ["Development", ""],
         "05": ["Deployment", ""]
     },
-    "testimonials": {
-        "James": "",
+    "testimonialHeading": "What my customers say",
+    "testimonialsContent": {
+        "James": "Das Logo war qualitativ hochwertig und trugt zur Marke meines Servers bei. Davide verstand alle notwendigen Designaspekte und ich w\u00fcrde ihn jedem Interessierten empfehlen.",
         "Instagram@young_ceo": ""
     }
 }
