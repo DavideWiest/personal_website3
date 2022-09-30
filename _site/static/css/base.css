@@ -7,11 +7,17 @@
 .intertight {
     font-family: 'Inter Tight', 'Inter', 'Roboto', 'Helvetica', sans-serif;
 }
+.roboto {
+    font-family: 'Roboto', 'Inter', 'Helvetica', sans-serif;
+}
 
 a:hover {
     cursor: pointer;
 }
 
+.text-b500 {
+    font-weight: 500;
+}
 .text-b600 {
     font-weight: 600;
 }
@@ -45,4 +51,18 @@ a:hover {
     .md-h-10p {
         height: 10%;
     }
+
+    #stickycta-text {
+        width: 47vw;
+    }
+}
+
+span#focal {
+    /* color: #FFD747;  */
+    color: #fff;
+}
+
+#hero-left {
+    -webkit-box-shadow: 0px 10px 0px 0px #000000; 
+    box-shadow: 0px 10px 0px 0px #000000;
 }

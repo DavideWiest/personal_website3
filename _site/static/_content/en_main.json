@@ -1,8 +1,8 @@
 {
-    "heroHeadingPrim": "Still trying to figure out how to build your digital spot online?",
-    "heroHeadingSec": "I will help you with the fundamental piece: A beautiful website.",
-    "heroTextSec": "I help businesses build their digital presence with utmost care.",
-    "heroCta": "Scroll down",
+    "cta": "Drop me an E-Mail",
+    "heroHeadingPrim": "Still trying to figure out how to build your place online?",
+    "heroHeadingSec": "I will help you with the most fundamental piece: <span id='focal'>A personalized website.</span>",
+    "heroText": "No matter the industry, if you want to be successful on the internet you need your own website. Over the years many options have popped up for the sophisticated entrepreneur, and the ways to make a website are as diverse as ever. However, a website still must look appealing and be functional at all times. This is where I want to help.",
     "aboutHeading": "Who I am",
     "aboutContent": {
         "Developer": "With over 3 years of experience in Python, I am very  passionate about coding. Sometimes, when I'm in 'the Zone', I even forget to eat and drink.",
@@ -10,12 +10,16 @@
         "Thinker": "",
         "Artist": ""
     },
-    "processHeading": "The working process",
+    "processHeading": "My process",
     "processContent": {
         "01": ["Contact", ""],
         "02": ["Consulting", ""],
         "03": ["Design", ""],
         "04": ["Development", ""],
-        "05": ["Review", ""]
+        "05": ["Deployment", ""]
+    },
+    "testimonials": {
+        "James": "",
+        "Instagram@young_ceo": ""
     }
 }
