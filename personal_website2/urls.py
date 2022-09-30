@@ -15,11 +15,34 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.decorators.http import require_GET
+from django.http import HttpResponse
+from django.contrib.sitemaps import Sitemap
+from django.shortcuts import reverse
+from django.contrib.sitemaps.views import sitemap
+
+
+class StaticViewSitemap(Sitemap):
+    def items(self):
+        return ["views.main"]
+    def location(self, item):
+        return reverse(item)
+
+@require_GET
+def robots_txt(request):
+    lines = [
+        "User-Agent: *",
+        "Allow: /",
+        "Sitemap: https://davidewiest.com/sitemap.xml"
+    ]
+    return HttpResponse("\n".join(lines), content_type="text/plain")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('_site.urls')),
     path('ressourcen', include('_site.urls_r')),
     path('resources', include('_site.urls_r')),
-    path('link', include('_site.urls_l'))
+    path('link', include('_site.urls_l')),
+    path('robots.txt', robots_txt),
+    # path('sitemap.xml', sitemap, {'sitemaps': {"static": StaticViewSitemap}}),
 ]

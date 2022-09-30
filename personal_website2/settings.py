@@ -71,6 +71,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'personal_website2.wsgi.application'
 
+SITE_ID = 1
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
