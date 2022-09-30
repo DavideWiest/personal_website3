@@ -12,6 +12,12 @@ a:hover {
     cursor: pointer;
 }
 
+.text-b600 {
+    font-weight: 600;
+}
+.text-b700 {
+    font-weight: 700;
+}
 .text-b800 {
     font-weight: 800;
 }
@@ -25,6 +31,18 @@ a:hover {
     }
 }
 
-#hero-right-inner {
-    height: 100vh;
+@media screen and (min-width: 768px) {
+    /* #hero-right-inner2 {
+        min-height: 90vh;
+    } */
+    #hero-right-inner {
+        height: 100vh;
+    }
+    .md-h-90p {
+        height: 90%;
+    }
+    
+    .md-h-10p {
+        height: 10%;
+    }
 }
