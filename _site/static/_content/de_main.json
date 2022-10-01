@@ -1,4 +1,32 @@
 {
-    "heroHeading": "Immernoch nur Pläne für den Einstieg ins Internet?",
-    "heroText": "I help businesses build their digital presence with utmost care."
+    "heroHeadingPrim": "Immernoch Probleme, eine Online-Präsenz aufzubauen?",
+    "heroHeadingSec": "Ich möchte Ihnen mit dem fundamentalen Puzzlestück helfen: <span id='focal'>Einer individuellen Webseite.</span>",
+    "heroText": "Egal in welcher Branche, wer im Internet erfolgreich sein will, braucht eine eigene Website. Im Laufe der Jahre sind für den engagierten Unternehmer viele Optionen aufgetaucht, und die Möglichkeiten, eine Website zu erstellen, sind heute so vielfältig wie nie. Allerdings hat kaum ein Unternehmer genug Zeit, neben seiner eigentlichen Arbeit sich Design- und Entwicklungsfähigkeiten anzueignen, mit der man erst eine überzeugende Webseite erstellen kann. Hier möchte ich helfen.",
+    "aboutHeading": "Wer ich bin",
+    "aboutContent": {
+        "Entwickler": "Mit über 3 Jahren Erfahrung mit Python habe ich eine große Passion zum Programmieren entwickelt. Manchmal, wenn ich in der „Zone“ bin, vergesse ich sogar zu essen und zu trinken. Ich programmiere hauptsächlich Webseiten und Webapps, bin aber auch für neues offen.",
+        "Designer": "",
+        "Strategist": "",
+        "Künstler": ""
+    },
+    "processHeading": "Mein Prozess",
+    "processContent": {
+        "01": ["Kontakt", ""],
+        "02": ["Beratung", ""],
+        "03": ["Design", ""],
+        "04": ["Entwicklung", ""],
+        "05": ["Einsatz", ""]
+    },
+    "testimonialHeading": "Das sagen meine Kunden",
+    "testimonialsContent": {
+        "James": "Mein neues Logo sieht einwandfrei aus und trägt zur Marke meines Servers bei. Davide verstand alle relevanten Designaspekte und ich w\u00fcrde ihn jedem Interessierten weiterempfehlen.",
+        "Jasna": "Davide Wiest "
+    },
+    "contactHeading": "Kontaktieren Sie mich",
+    "contactCta": "Eine Email schicken",
+    "contactCtaText": "Bitte beschreiben Sie, was Sie erreichen möchten und ich werde Ihnen gerne helfen.",
+    "contactLocation": "nahe Alzey, RLP, Deutschland",
+    "cvLink": "/resources/cv",
+    "contactCvText": "Lebenslauf ansehen",
+    "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
 }

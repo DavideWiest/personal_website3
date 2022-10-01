@@ -5,13 +5,6 @@
 {% block header %}{{ title }}{% endblock %}
 
 {% block outsidecontents %}
-<!-- <div id="stickycta" class="fixed bottom-0 w-screen" style="z-index: 5;">
-    <div id="stickycta-text" class="w-screen p-6 py-4 text-center text-b800 inline-block flex justify-center md:rounded-tr-xl" style="background-color: rgba(100,100,100,0.675); backdrop-filter: blur(1.4rem);">
-        <a id="stickycta-text-button" class="rounded-3xl border border-black bg-secondary py-2 px-5 inline-block" href="mailto:{{ c.credentials.email }}">
-            {{ c.main.cta }}
-        </a>
-    </div>
-</div> -->
 {% endblock %}
 
 {% block htmlcontents %}
@@ -62,7 +55,6 @@
                                 </h3>
                                 <p id="about-section-text" class="text-neutral-800">
                                     {{ value }}
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro suscipit perferendis ducimus recusandae voluptatem tenetur animi hic eos enim atque eum corrupti pariatur quaerat, expedita cumque repellat aut quisquam nam.
                                 </p>
                             </div>
                         {% endfor %}
@@ -97,7 +89,6 @@
                                     </h3>
                                     <p id="process-section-text" class="text-neutral-800 pl-0.5">
                                         {{ value.1 }}
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro suscipit perferendis ducimus recusandae voluptatem tenetur animi hic eos enim atque eum
                                     </p>
                                 </div>
                             </div>
@@ -116,35 +107,94 @@
 
 
 <div id="testimonials">
-    <div id="testimonials-wrapper" class="m-2 p-2 md:m-5 md:p-5 mt-5 md:mt-8 flex items-center flex-col">
-        <h3 id="testimonials-heading" class="intertight text-neutral-900 text-3xl md:text-5xl" style="font-weight: 700;">
+    <div id="testimonials-wrapper" class="m-2 my-3 p-2 md:m-5 md:mb-3 md:p-5 mt-7 md:mt-16 flex items-center flex-col">
+        <h3 id="testimonials-heading" class="intertight text-neutral-900 text-3xl md:text-5xl mb-5 md:mb-6" style="font-weight: 700;">
             {{ c.main.testimonialHeading |safe }}
         </h3>
-        <div id="testimonials-inner">
-            {% for key, value in c.main.testimonialsContent.items %}
+        <div id="testimonials-inner" class="md:flex w-full justify-evenly">
+            
     
-            <div id="testimonial">
-                <p id="testimonial-text" class="text-xl text-gray-900">
-                    {{ value }}
-                </p>
-                <p id="testimonial-author" class="text-gray-700">
-                    {{ key }}
-                </p>
+            <div id="testimonial" class="m-2 flex flex-col items-center p-2">
+                <img src="{% static 'other/icons/quote-primary.png' %}" alt="" class="w-6 h-6">
+                
+                <div id="testimonial-inner" class="max-w-md border-2 border-white border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
+                    <p id="testimonial-text" class="text-2xl text-gray-900 text-b500" style="font-style: italic;">
+                        {{ c.main.testimonialsContent.James }}
+                    </p>
+                    <p id="testimonial-author" class="text-gray-600 text-b600">
+                        — James
+                    </p>
+                </div>
             </div>
-    
-            {% endfor %}
+
+            <!-- <div id="testimonials-line-wrapper" class="hidden md:flex flex-col justify-center">
+                <div id="testimonials-line" class="h-1/2 w-0.5 rounded-3xl bg-primary"></div>
+            </div> -->
+
+            <div id="testimonial" class="m-2 flex flex-col items-center p-2">
+                <img src="{% static 'other/icons/quote-primary.png' %}" alt="" class="w-6 h-6">
+                <div id="testimonial-inner" class="max-w-md border-2 border-white border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
+                    <p id="testimonial-text" class="text-2xl text-gray-900 text-b500" style="font-style: italic;">
+                        {{ c.main.testimonialsContent.Jasna }}
+                    </p>
+                    <p id="testimonial-author" class="text-gray-600 text-b600">
+                        — Jasna
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<div id="contact">
-    <!-- github, twitter, canva etc -->
+<div id="contact" class="md:mt-4">
+    <div id="contact-inner" class="flex flex-col items-center">
+        <h3 id="projects-heading" class="intertight text-neutral-900 text-3xl md:text-5xl mb-4" style="font-weight: 700;">
+            {{ c.main.contactHeading |safe }}
+        </h3>
+        <div id="contact-wrapper" class="my-6 grid grid-col-1 md:grid-rows-2 md:grid-cols-3 md:grid-flow-col max-w-6xl mx-7">
+            {% for key, value in c.credentials.links.items %}
+                <a id="contact-social" href="{{ value.0 }}" target="_blank"  class="block p-3 px-5 m-3 border border-black rounded-2xl hover:-translate-y-0.5 hover:shadow-md">
+                    <img src="{{ value.1 }}" alt="" id="contact-social-icon" class="inline-block w-6 h-6">
+                    <p class="contact-social-text inline-block text-b500 align-middle">
+                        {{ key }} @ {{ value.2 }}
+                    </p>
+                </a>
+            {% endfor %}
+            
+            <div id="contact-main" class="row-span-2">
+                <a id="contact-social" href="mailto:{{ c.credentials.email }}" class="block p-3 m-3 border border-black rounded-2xl hover:-translate-y-0.5 hover:shadow-md bg-secondary">
+                    <p class="contact-social-text text-b700 text-lg align-middle text-center">
+                        {{ c.main.contactCta }}
+                    </p>
+                    <p class="text-center my-2 text-sm">
+                        {{ c.main.contactCtaText }}
+                    </p>
+                    <p id="contact-email" class="text-b700 text-lg text-center">
+                        {{ c.credentials.email }}
+                    </p>
+                </a>
+            </div>
+            
+            <a id="contact-social" href="{{ c.credentials.locationLink }}" target="_blank" class="block p-3 px-5 m-3 border border-black rounded-2xl hover:-translate-y-0.5 hover:shadow-md">
+                <p class="contact-social-text inline-block text-b500 align-middle">
+                    <img src="{% static 'other/icons/pin.png' %}" alt="" id="contact-social-icon" class="inline-block w-6 h-6">
+                    {{ c.main.contactLocation }}
+                </p>
+            </a>
+
+            <a id="contact-social" href="{{ c.main.cvLink }}" target="_blank" class="block p-3 px-5 m-3 border border-black rounded-2xl hover:-translate-y-0.5 hover:shadow-md">
+                <p class="contact-social-text inline-block text-b500 align-middle">
+                    <img src="{% static 'other/icons/user.png' %}" alt="" id="contact-social-icon" class="inline-block w-6 h-6">
+                    {{ c.main.contactCvText }}
+                </p>
+            </a>
+
+        </div>
+    </div>
 </div>
 
-
-
 <div id="projects">
-    <div id="projects-inner" class="m-2 p-2 md:m-5 md:p-5 mt-5 md:mt-8 flex items-center flex-col">
+    <div id="projects-inner" class="m-2 p-2 md:m-5 md:p-5 mt-3 md:mt-3 flex items-center flex-col">
         <h3 id="projects-heading" class="intertight text-neutral-900 text-3xl md:text-5xl" style="font-weight: 700;">
             {{ c.projects.projectsHeading |safe }}
         </h3>
@@ -154,12 +204,12 @@
         <div id="projects-wrapper" class="md:grid md:grid-cols-2 my-6" style="max-width: 1400px;">
             {% for key, value in c.projects.projects.items %}
 
-            <div id="project" class="m-4 md:my-6 md:mx-7">
-                <h3 id="project-title" class="text-xl text-semibold code text-b600 bg-secondary inline-block px-1.5 py-0.5 mb-1">
+            <div id="project" class="m-2.5 my-6 md:my-6 md:mx-7">
+                <h3 id="project-title" class="text-xl text-semibold code text-b600 bg-seclight inline-block px-1.5 py-0.5 mb-2" style="border-left: 3px solid rgb(31, 31, 31)">
                     <!-- <span class="inline-block w-2 h-4 bg-primary mr-2"></span> -->
                     {{ key }}
                 </h3>
-                <div id="project-categories" class="">
+                <div id="project-categories" class="ml-1">
                     <p id="project-category-desc" class="roboto text-sm inline-block text-neutral-500">
                         {{ c.projects.categoryDesc }}
                     </p>
@@ -169,7 +219,7 @@
                         </p>
                     {% endfor %}
                 </div>
-                <div id="project-tags" class="">
+                <div id="project-tags" class="ml-1">
                     <p id="project-tag-desc" class="roboto text-sm inline-block text-neutral-500">
                         {{ c.projects.tagDesc }}
                     </p>
@@ -179,19 +229,18 @@
                         </p>
                     {% endfor %}
                 </div>
-                <p id="project-description" class="text-gray-700 mt-2 mb-4 text-gray-600 text-sm">
+                <p id="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
                     {{ value.description }}
                 </p>
-                <a href="{{ value.link }}" target="_blank" id="project-link" class="mt-4 ml-4">
+                <a href="{{ value.link }}" target="_blank" id="project-link" class="mt-4 ml-6">
                     <span id="project-link-icon" class="m-r-4 align-middle">
                         <img src="{{ value.linkIcon }}" alt="" class="w-4 h-4 inline-block">
                     </span>
                     <span id="project-link-text" class="underline underline-offset-2 align-middle text-b500">
-                        {{ value.linkPlatform }}
+                        {{ value.linkDesc }}
                     </span>
                 </a>
             </div>
-
             {% endfor %}
         </div>
     </div>

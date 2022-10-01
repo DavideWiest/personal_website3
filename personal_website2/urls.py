@@ -41,9 +41,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('_site.urls')),
     path('', include('_site.urls_legal')),
-    path('ressourcen', include('_site.urls_r')),
-    path('resources', include('_site.urls_r')),
-    path('link', include('_site.urls_l')),
+    path('ressourcen/', include('_site.urls_r')),
+    path('resources/', include('_site.urls_r')),
+    path('link/', include('_site.urls_l')),
     path('robots.txt', robots_txt),
     # path('sitemap.xml', sitemap, {'sitemaps': {"static": StaticViewSitemap}}),
 ]

@@ -42,7 +42,8 @@ a:hover {
         min-height: 90vh;
     } */
     #hero-right-inner {
-        height: 100vh;
+        /* height: 100vh; */
+        height: fit-content;
     }
     /* .md-h-90p {
         height: 90%;
@@ -52,8 +53,17 @@ a:hover {
         height: 10%;
     } */
 
-    #stickycta-text {
+    /* #stickycta-text {
         width: 47vw;
+    } */
+}
+
+@media screen and (min-width: 768px) and (max-width: 875px) {
+    #contact-email {
+        font-size: 0.95rem;
+    }
+    #stickycta-text {
+        width: 40vw;
     }
 }
 

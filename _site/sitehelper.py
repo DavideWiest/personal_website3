@@ -34,10 +34,10 @@ std_title_clause = " - Davide Wiest"
 lang_independant_files = ("credentials", "data")
 
 def build_params(title, storage_ptrs, params, language):
-    language = "en"
+    print(language)
     
     c_files = {}
-    for storage_ptr in storage_ptrs:
+    for storage_ptr in storage_ptrs + ["base"]:
         if storage_ptr != "":
             if "/" in storage_ptr:
                 filename, subfield = storage_ptr.split("/")
@@ -58,5 +58,14 @@ def build_params(title, storage_ptrs, params, language):
     return {**bparams, **params}
 
 def choose_lang(request):
+    if request.GET.get("lang") in ("en", "de"):
+        return request.GET.get("lang")
+    
     language = translation.get_language_from_request(request)
+
+    if language in ("ch", "au"):
+        language = "de"
+    if language != "de":
+        language = "en"
+
     return language

@@ -1,8 +1,56 @@
 {
-    "IDWW": {
-        "description": "",
-        "github": "",
-        "t": ["Python", "HTML", "CSS", "Javascript", "Django", "MongoDB"],
-        "c": ["Data-Science", "Data-Mining", "Webapp", "API", "Scraper"]
+    "projectsHeading": "Meine letzten Projekte",
+    "projectsDescription": "Einige Teile sind in Fachsprache ausgedrückt. Kontaktieren Sie mich falls Sie mehr Informationen zu einem Projekt haben möchten.",
+    "tagDesc": "Technologien:",
+    "categoryDesc": "Kategorien:",
+    "projects": {
+        "Neue persönliche Webseite": {
+            "description": "Eine komplette Überarbeitung meiner persönlichen Website. Ich bin von Flask auf Django umgestiegen und verwende jetzt TailwindCSS. Zusätzlich ist die Website in deutsch und englisch verfügbar.",
+            "link": "https://github.com/DavideWiest/personal_website2",
+            "linkIcon": "/static/other/icons/github-dark.png",
+            "linkDesc": "Github Repository ansehen",
+            "t": ["Python", "HTML", "TailwindCSS", "Django"],
+            "c": ["Website", "Design"]
+        },
+        "Eigens Django Web Framework": {
+            "description": "Mein persönliches kleines Django-Framework, das ich verwenden werde, um neue Websites schneller und effektiver zu erstellen. Enthalten sind die Grundlagen zum Erstellen einer API und eine optimierte Ordnerstruktur.",
+            "link": "https://github.com/DavideWiest/simple_django_framework",
+            "linkIcon": "/static/other/icons/github-dark.png",
+            "linkDesc": "Github Repository ansehen",
+            "t": ["Python", "Django"],
+            "c": ["Framework", "Webapp"]
+        },
+        "IDWW (Webapp & Scraper)": {
+            "description": "Ein großer Instagram-Scraper, der mit Django erstellt wurde und eine API verwendet, um zwischen Benutzer und Programm zu kommunizieren. Der Scraper lässt sich nahtlos skalieren und kann Proxies benutzen. Ich habe ihn gebaut, um Daten für weitere Data-Science-Projekte zu sammeln, also habe ich den Nominatim Geolocator und Regex verwendet, um so viele Daten wie möglich zu extrahieren und zu ordnen. Ich empfehle Ihnen, sich das README anzusehen.",
+            "link": "https://github.com/DavideWiest/idww",
+            "linkIcon": "/static/other/icons/github-dark.png",
+            "linkDesc": "Github Repository ansehen",
+            "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
+            "c": ["Datascience", "Datamining", "Webapp", "API", "Scraper"]
+        },
+        "MainServerModule": {
+            "description": "Eine Sammlung von Modulen, die A) eine sichere Verbindung zu mehreren meiner Flask-Projekt-APIs herstellen und Daten austauschen sowie den API-Schlüssel mithilfe der Fernet-Verschlüsselung regelmäßig aktualisieren können B) Mein Flask-Webapp-Framework füllen C) Eine einfache PDF-Rechnung generieren Module, die A) eine sichere Verbindung zu mehreren meiner Flask-Projekt-APIs herstellen und Daten austauschen sowie den API-Schlüssel mithilfe der Fernet-Verschlüsselung regelmäßig aktualisieren können B) Mein Flask-Webapp-Framework mit Werten auffüllen C) Eine einfache PDF-Rechnung generieren. Derzeit außer Betrieb.",
+            "link": "https://github.com/DavideWiest/mainservermodule",
+            "linkIcon": "/static/other/icons/github-dark.png",
+            "linkDesc": "Github Repository ansehen",
+            "t": ["Python", "HTML", "Flask", "Jinja2"],
+            "c": ["Verschlüsselung", "API", "PDF-Erstellung"]
+        },
+        "TheTradersCircle (Branding & Strategie)": {
+            "description": "Mein Kunde wollte eine Online-Community aufbauen, um anderen das Trading beizubringen. Ich kreierte ein modernes, authentisches Logo und die Grundlagen der Marke.",
+            "link": "",
+            "linkIcon": "/static/other/icons/pdf.png",
+            "linkDesc": "PDF ansehen",
+            "t": ["Adobe Illustrator", "Canva"],
+            "c": ["Naming", "Logo", "Branding", "Brand Strategy"]
+        },
+        "Persönliche Brand": {
+            "description": "In diesem Projekt habe ich neu definiert, wie ich mich positioniere, um Kunden zu finden, zu denen ich passe, und welche für welche Werte ich wirklich stehe.",
+            "link": "https://davidewiest.com/",
+            "linkIcon": "/static/other/icons/pdf.png",
+            "linkDesc": "PDF ansehen",
+            "t": ["Adobe Illustrator", "Canva"],
+            "c": ["Logo", "Brand Values", "Brand Strategy"]
+        }
     }
 }

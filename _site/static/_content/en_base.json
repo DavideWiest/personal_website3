@@ -1,3 +1,7 @@
 {
-    "footerStartName": "Main Page"
+    "footerStartName": "Main Page",
+    "cta": "Contact - Email",
+    "primaryLangIcon": "/static/other/icons/uk-flag.png",
+    "secondaryLangIcon": "/static/other/icons/german-flag.png",
+    "secondaryLang": "de"
 }

@@ -1,9 +1,8 @@
 {
-    "cta": "Drop me an E-Mail",
     "heroHeadingPrim": "Still trying to figure out how to build your place online?",
     "heroHeadingSec": "I will help you with the most fundamental piece: <span id='focal'>A personalized website.</span>",
     "heroText": "No matter the industry, if you want to be successful on the internet you need your own website. Over the years many options have popped up for the sophisticated entrepreneur, and the ways to make a website are as diverse as ever. However, a website still must look appealing and be functional at all times. This is where I want to help.",
-    "aboutHeading": "Who I am",
+    "aboutHeading": "Who I strive to be",
     "aboutContent": {
         "Developer": "With over 3 years of experience in Python, I am very  passionate about coding. Sometimes, when I'm in 'the Zone', I even forget to eat and drink.",
         "Designer": "",
@@ -20,7 +19,14 @@
     },
     "testimonialHeading": "What my customers say",
     "testimonialsContent": {
-        "James": "Das Logo war qualitativ hochwertig und trugt zur Marke meines Servers bei. Davide verstand alle notwendigen Designaspekte und ich w\u00fcrde ihn jedem Interessierten empfehlen.",
-        "Jasna": ""
-    }
+        "James": "My new logo looks flawless and contributes to my server's branding. Davide understood all relevant design aspects and I would recommend him to anyone interested.",
+        "Jasna": "Davide Wiest "
+    },
+    "contactHeading": "Let's get in touch",
+    "contactCta": "Drop me an Email",
+    "contactCtaText": "Please tell me about what you want to achieve and I will help you happily.",
+    "contactLocation": "near Alzey, RLP, Germany",
+    "cvLink": "/resources/cv",
+    "contactCvText": "See my CV",
+    "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
 }

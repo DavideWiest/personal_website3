@@ -1,14 +1,14 @@
 {
-    "projectsHeading": "Some of my latest Projects",
-    "projectsDescription": "A few parts are highly technical. If you are interested in those, please check them out.",
+    "projectsHeading": "My latest Projects",
+    "projectsDescription": "A few parts are highly technical. Contact me if you want more info about a project.",
     "tagDesc": "Technologies:",
     "categoryDesc": "Categories:",
     "projects": {
         "New personal Website": {
-            "description": "A complete revision of my personal website. I switched from Flask to Django and now use TailwindCSS. ",
+            "description": "A complete revision of my personal website. I switched from Flask to Django and now use TailwindCSS. Additionally, the website is available in German and English.",
             "link": "https://github.com/DavideWiest/personal_website2",
             "linkIcon": "/static/other/icons/github-dark.png",
-            "linkPlatform": "View Github Repository",
+            "linkDesc": "View Github Repository",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"]
         },
@@ -16,7 +16,7 @@
             "description": "My personal Django Framework I will use to build new websites faster and more effectively. I include the fundamentals to build an Api and optimized the folder structure.",
             "link": "https://github.com/DavideWiest/simple_django_framework",
             "linkIcon": "/static/other/icons/github-dark.png",
-            "linkPlatform": "View Github Repository",
+            "linkDesc": "View Github Repository",
             "t": ["Python", "Django"],
             "c": ["Framework", "Webapp"]
         },
@@ -24,7 +24,7 @@
             "description": "A large instagram scraper built with Django that uses an API to communicate between user and program. The Scraper can be scaled seaminglessly and uses proxies. I built it to gather data for further Data-Science projects, so I used the Nominatim Geolocator and Regex to extract and order as much data as possible. I recommend you check out the README.",
             "link": "https://github.com/DavideWiest/idww",
             "linkIcon": "/static/other/icons/github-dark.png",
-            "linkPlatform": "View Github Repository",
+            "linkDesc": "View Github Repository",
             "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
             "c": ["Datascience", "Datamining", "Webapp", "API", "Scraper"]
         },
@@ -32,7 +32,7 @@
             "description": "A collection of modules that can A) securely connect to multiple of my Flask project APIs and exchange data aswell as periodically update the API-Key using Fernet-encryption B) Populate my Flask Webapp Framework C) Generate a basic PDF invoice.",
             "link": "https://github.com/DavideWiest/mainservermodule",
             "linkIcon": "/static/other/icons/github-dark.png",
-            "linkPlatform": "View Github Repository",
+            "linkDesc": "View Github Repository",
             "t": ["Python", "HTML", "Flask", "Jinja2"],
             "c": ["Encryption", "API", "PDF Maker"]
         },
@@ -40,7 +40,7 @@
             "description": "My client wanted to build an online community to teach others trading. I built a compelling logo and made a brand framework, and also helped a little with the overall business strategy.",
             "link": "",
             "linkIcon": "/static/other/icons/pdf.png",
-            "linkPlatform": "View PDF",
+            "linkDesc": "View PDF",
             "t": ["Adobe Illustrator", "Canva"],
             "c": ["Naming", "Logo", "Branding", "Brand Strategy"]
         },
@@ -48,7 +48,7 @@
             "description": "In this project I redefined how I position myself to find clients that fit to me and how to build the right kind of recognition around me. ",
             "link": "",
             "linkIcon": "/static/other/icons/pdf.png",
-            "linkPlatform": "View PDF",
+            "linkDesc": "View PDF",
             "t": ["Adobe Illustrator", "Canva"],
             "c": ["Logo", "Brand Values", "Brand Strategy"]
         }
