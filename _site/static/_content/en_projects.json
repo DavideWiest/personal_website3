@@ -4,7 +4,7 @@
     "tagDesc": "Technologies:",
     "categoryDesc": "Categories:",
     "projects": {
-        "This Website": {
+        "New personal Website": {
             "description": "A complete revision of my personal website. I switched from Flask to Django and now use TailwindCSS. ",
             "link": "https://github.com/DavideWiest/personal_website2",
             "linkIcon": "/static/other/icons/github-dark.png",
@@ -12,7 +12,7 @@
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"]
         },
-        "Public Django Website Framework": {
+        "Custom Web Framework (Django)": {
             "description": "My personal Django Framework I will use to build new websites faster and more effectively. I include the fundamentals to build an Api and optimized the folder structure.",
             "link": "https://github.com/DavideWiest/simple_django_framework",
             "linkIcon": "/static/other/icons/github-dark.png",
@@ -20,7 +20,7 @@
             "t": ["Python", "Django"],
             "c": ["Framework", "Webapp"]
         },
-        "IDWW - A Webapp and Instagram scraper": {
+        "IDWW (Webapp & Scraper)": {
             "description": "A large instagram scraper built with Django that uses an API to communicate between user and program. The Scraper can be scaled seaminglessly and uses proxies. I built it to gather data for further Data-Science projects, so I used the Nominatim Geolocator and Regex to extract and order as much data as possible. I recommend you check out the README.",
             "link": "https://github.com/DavideWiest/idww",
             "linkIcon": "/static/other/icons/github-dark.png",
@@ -28,7 +28,7 @@
             "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
             "c": ["Datascience", "Datamining", "Webapp", "API", "Scraper"]
         },
-        "MainServerModule - Communicating with Flask Webapps": {
+        "MainServerModule": {
             "description": "A collection of modules that can A) securely connect to multiple of my Flask project APIs and exchange data aswell as periodically update the API-Key using Fernet-encryption B) Populate my Flask Webapp Framework C) Generate a basic PDF invoice.",
             "link": "https://github.com/DavideWiest/mainservermodule",
             "linkIcon": "/static/other/icons/github-dark.png",

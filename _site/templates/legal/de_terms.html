@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ c.termsTitle }}{% endblock %}
+{% block header %}{{ c.termsTitle }}{% endblock %}
+
+{% block htmlcontents %}
+
+
+<div id="longdoc" class="mt-24 flex justify-center roboto">
+    <div id="longdoc-wrapper" style="max-width: 1000px; padding: 0 2rem;">
+        <h1 id="section-header" class="text-3xl text-b600 intertight">
+            Allgemeine Geschäftsbedingungen
+        </h1>
+        
+        <div class="credentials m-4">
+            <ul class="flex justify-center flex-col items-center">
+                <li id="credential-items" class="code">
+                    {{ c.credentials.name }}
+                </li>
+                <li id="credential-items" class="code">
+                    {{ c.credentials.email }}
+                </li>
+                <li id="credential-item" class="code">
+                    {{ c.credentials.phone }}
+                </li>
+            </ul>
+        </div>
+
+        <h3>Allgemein</h3>
+
+        <h4>Besitzrechte</h4>
+        <p>
+            Der Dienstleister hat vor Vertragsabschluss alle Rechte, wie das Urheberrecht des Dienstleistungsumfangs.
+            Nach Vertragsabschluss werden die alle Besitzrechte des Dienstleistungsumfangs von dem Dienstleister auf den Kunden übertragen, mit der Ausnahme, dass
+            der Dienstleister noch die nötigen Rechte besitzt, Ressourcen des Dienstleistungsumfangs öffentlich anzuzeigen, beispielsweise in seinem Portfolio auf seiner Webseite.
+        </p>
+
+        <h4>Schäden oder Verluste</h4>
+        <p>
+            Für materielle und immaterielle Schäden oder Verluste jeglicher Art, die in Verbindung zu einem erbrachten Dienst stehen kann der Dienstleister keine Verantwortung übernehmen.
+        </p>
+
+        <h3>Honorar und Zahlung</h3>
+        <p>
+            Der Kunde verpflichtet sich beim Eingehen von Geschäften mit dem Dienstleister, diesen in vollem Umfang zu honorieren. Das festgelegte Honorar wurde im Vertrag festgelegt. 
+            Soll das Honorar geändert werden, müssen sich beide Parteien dazu bereiterklären.
+            Eine Vorzahlung in Höhe von 30% des Honorars ist Pflicht, um unprofessionelle Interessenten auszufiltern und finanzielle Mittel während der Entwicklung nutzen zu können.
+            Der Dienstleister entscheidet, welche Zahlungsmethoden verwendet werden. 
+        </p>
+
+        <h3>Abbruch der Zusammenarbeit</h3>
+        <p>
+            Beide Parteien des Vertrags haben das Recht, die gegenseitige Zusammenarbeit zu jedem Punkt abzubrechen. Nachdem dies geschehen ist, wird folgendes erledigt:
+            <br>
+            - Der Dienstleister übergibt dem Kunden so früh wie möglich die vollbrachte Arbeit
+            <br>
+            - Der Kunde zahlt dem Dienstleister ein Honorar für die vollbrachte Arbeit. Die Höhe des Honorars wird vom Dienstleister nach dem Umfang der vollbrachten Arbeit bestimmt.
+        </p>
+
+        <h3>Vertrag und Vereinbarung</h3>
+        <p>
+            Die Dienstleisungszusammenfassung, die dem Kunden gesendet wurde, gilt ab dem Moment als rechtlicher Vertrag, in dem a) der Kunde sich diesem einverstanden erklärt b) der Kunde die ausgemachte Vorzahlung tätigt.
+            Pflichten und Informationen aus den Geschäftsbedingungen betreffen jeden Vertrag, es sei denn, bestimmte Bedingungen werden im jeweiligen Vertrag ausgeschlossen/abgeändert.
+        </p>
+
+        <h4>Vertragsabschluss</h4>
+        <p>
+            Der Vertrag zwischen dem Entwickler/Designer gilt dann für abgeschlossen, wenn alle folgenden Bedingungen erfüllt sind: a) die Arbeit abgeschlossen ist b) der Dienstleister in vollem Umfang vergütet wurde.
+            Wann die Arbeit für fertig gilt, entscheidet der Entwickler/Designer. Dieser muss sich aber an die Deadline oder an den Zeitplan halten, sofern es diese/dieser vereinbart wurde. In Problemfällen kann diese für einen verglichen kleinen Zeitraum überschritten werden.
+        </p>
+
+        <h4>Geheimhaltungserklärung</h4>
+        <p>
+            Sofern der Kunde möchte, dass eine Geheimhaltungserklärung zwischen diesem und dem Dienstleister ausgemacht wird, kann das mit in den Vertrag aufgenommen werden. Diese verfällt normalerweise nach Vertragsabschluss.
+            Der Dienstleister muss der Geheimhaltungserklärung ebenfalls zustimmen.
+            Eine Muster-Geheimhaltungsvereinbarung der IHk-München finden Sie <a href="https://www.ihk-muenchen.de/de/Service/Recht-und-Steuern/Vertragsrecht/mustervertraege/geheimhaltungsvereinbarung.html" target="_blank">hier</a>.
+        </p>
+
+        <h3>Benennungen</h3>
+        <p>
+            Dienstleister: Davide Wiest
+            Kunde: Die Partei, die mit dem Dienstleister auf Vertragsbasis einen Austausch von Gütern abschließt oder plant, dies zu tun.
+            Dienstleistungsumfang: Alle jeweiligen digitalen, analogen, Produkte und Dienstleistungen, die vom Dienstleister wie vereinbart auf kostenpflichtiger Basis einem Kunden erbracht werden sollen.
+        </p>
+
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}
+
+{% block scripts %}
+
+
+
+{% endblock %}

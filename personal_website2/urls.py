@@ -40,6 +40,7 @@ def robots_txt(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('_site.urls')),
+    path('', include('_site.urls_legal')),
     path('ressourcen', include('_site.urls_r')),
     path('resources', include('_site.urls_r')),
     path('link', include('_site.urls_l')),

@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ c.termsTitle }}{% endblock %}
+{% block header %}{{ c.termsTitle }}{% endblock %}
+
+{% block htmlcontents %}
+
+
+<div id="longdoc" class="mt-24 flex justify-center roboto">
+    <div id="longdoc-wrapper" style="max-width: 1000px; padding: 0 2rem;">
+        <h1 id="section-header" class="text-3xl text-b600 intertight">
+            Terms and Conditions
+        </h1>
+        
+        <div class="credentials m-4">
+            <ul class="flex justify-center flex-col items-center">
+                <li id="credential-items" class="code">
+                    {{ c.credentials.name }}
+                </li>
+                <li id="credential-items" class="code">
+                    {{ c.credentials.email }}
+                </li>
+                <li id="credential-item" class="code">
+                    {{ c.credentials.phone }}
+                </li>
+            </ul>
+        </div>
+        <h3>General</h3>
+
+        <h4>Properties</h4>
+        <p>
+            The service provider has all rights prior to the conclusion of the contract, such as the copyright of the scope of services.
+            After the conclusion of the contract, all rights of ownership of the scope of services are transferred from the service provider to the customer, with the exception that
+            the service provider still has the necessary rights to publicly display resources of the service scope, for example in its portfolio on its website.
+        </p>
+
+        <h4>Damage or loss</h4>
+        <p>
+            The service provider cannot be held responsible for material or immaterial damage or loss of any kind in connection with a service provided.
+        </p>
+
+        <h3>Fee and payment</h3>
+        <p>
+            When entering into transactions with the service provider, the customer undertakes to honor this in full. The fixed fee was specified in the contract.
+            If the fee is to be changed, both parties must agree to this.
+            An advance payment of 30% of the fee is mandatory in order to filter out unprofessional prospects and to be able to use financial resources during development.
+            The service provider decides which payment methods are used.
+        </p>
+        <h3>Termination of cooperation</h3>
+        <p>
+            Both parties to the contract have the right to cancel mutual cooperation at any point. After this is done, the following is done:
+            <br>
+            - The service provider hands over the completed work to the customer as soon as possible
+            <br>
+            - The customer pays the service provider a fee for the work done. The amount of the fee is determined by the service provider according to the scope of the work completed.
+        </p>
+
+        <h3>Contract and Agreement</h3>
+        <p>
+            The Service Summary sent to the Customer is considered a legal contract from the moment that a) the Customer agrees to it b) the Customer makes the stipulated prepayment.
+            Obligations and information from the terms and conditions apply to every contract, unless certain conditions are excluded/modified in the respective contract.
+        </p>
+
+        <h4>Conclusion of contract</h4>
+        <p>
+            The contract between the developer/designer is deemed to have been concluded when all of the following conditions are met: a) the work is completed b) the service provider has been paid in full.
+            The developer/designer decides when the work is considered finished. However, this must adhere to the deadline or the schedule, if this/this has been agreed. In problem cases, this can be exceeded for a relatively short period of time.
+        </p>
+
+        <h4>Non-disclosure agreement</h4>
+        <p>
+            If the customer wants a non-disclosure agreement to be drawn up between them and the service provider, this can be included in the contract. This usually expires after the conclusion of the contract.
+            The service provider must also agree to the confidentiality agreement.
+            You can find a sample non-disclosure agreement from the Munich Chamber of Industry and Commerce <a href="https://www.ihk-muenchen.de/de/Service/Recht-und-steuern/vertragsrecht/mustervertraege/heimheimhaltungsvertrag.html" target="_blank" >here</a>.
+        </p>
+
+        <h3>Terms</h3>
+        <p>
+            Service provider: Davide Wiest
+            Customer: The party that enters into or plans to exchange goods with the Service Provider on a contractual basis.
+            Scope of services: All respective digital, analog, products and services that are to be provided by the service provider to a customer on a fee-based basis as agreed.
+        </p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+
+
+
+{% endblock %}
