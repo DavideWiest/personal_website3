@@ -27,7 +27,7 @@
                         </h3>
                     </div>
                     <div id="hero-text-c" class="mt-4 md-h-10p md:flex md:item-end">
-                        <p id="hero-text" class="textfont text-neutral-100 inline-block">
+                        <p id="hero-text" class="textfont text-neutral-200 inline-block">
                             {{ c.main.heroText }}
                         </p>
                     </div>
@@ -130,7 +130,7 @@
             <!-- <div id="testimonials-line-wrapper" class="hidden md:flex flex-col justify-center">
                 <div id="testimonials-line" class="h-1/2 w-0.5 rounded-3xl bg-primary"></div>
             </div> -->
-
+            {% if c.main.testimonialsContent.Jasna != "" %}
             <div id="testimonial" class="m-2 flex flex-col items-center p-2">
                 <img src="{% static 'other/icons/quote-primary.png' %}" alt="" class="w-6 h-6">
                 <div id="testimonial-inner" class="max-w-md border-2 border-white border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
@@ -142,6 +142,7 @@
                     </p>
                 </div>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>

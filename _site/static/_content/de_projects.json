@@ -38,7 +38,7 @@
         },
         "TheTradersCircle (Branding & Strategie)": {
             "description": "Mein Kunde wollte eine Online-Community aufbauen, um anderen das Trading beizubringen. Ich kreierte ein modernes, authentisches Logo und die Grundlagen der Marke.",
-            "link": "",
+            "link": "/resources/TheTradersCircle_Brand_De.pdf",
             "linkIcon": "/static/other/icons/pdf.png",
             "linkDesc": "PDF ansehen",
             "t": ["Adobe Illustrator", "Canva"],
@@ -46,7 +46,7 @@
         },
         "Persönliche Brand": {
             "description": "In diesem Projekt habe ich neu definiert, wie ich mich positioniere, um Kunden zu finden, zu denen ich passe, und welche für welche Werte ich wirklich stehe.",
-            "link": "https://davidewiest.com/",
+            "link": "/resources/Persönliche_Brand.pdf",
             "linkIcon": "/static/other/icons/pdf.png",
             "linkDesc": "PDF ansehen",
             "t": ["Adobe Illustrator", "Canva"],

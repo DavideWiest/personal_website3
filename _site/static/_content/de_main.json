@@ -1,32 +1,30 @@
 {
     "heroHeadingPrim": "Immernoch Probleme, eine Online-Präsenz aufzubauen?",
-    "heroHeadingSec": "Ich möchte Ihnen mit dem fundamentalen Puzzlestück helfen: <span id='focal'>Einer individuellen Webseite.</span>",
-    "heroText": "Egal in welcher Branche, wer im Internet erfolgreich sein will, braucht eine eigene Website. Im Laufe der Jahre sind für den engagierten Unternehmer viele Optionen aufgetaucht, und die Möglichkeiten, eine Website zu erstellen, sind heute so vielfältig wie nie. Allerdings hat kaum ein Unternehmer genug Zeit, neben seiner eigentlichen Arbeit sich Design- und Entwicklungsfähigkeiten anzueignen, mit der man erst eine überzeugende Webseite erstellen kann. Hier möchte ich helfen.",
+    "heroHeadingSec": "Ich möchte Ihnen mit dem fundamentalen Puzzlestück helfen: <span id='focal'>Einer hochwertigen Webseite.</span>",
+    "heroText": "Egal in welcher Branche, wer im Internet erfolgreich sein will, braucht eine eigene Website. Im Laufe der Jahre sind für den engagierten Unternehmer viele Optionen aufgetaucht, und die Möglichkeiten, eine Website zu erstellen, sind heute so vielfältig wie nie. Allerdings hat kaum ein Unternehmer genug Zeit, neben seiner eigentlichen Arbeit sich Design- und Entwicklungsfähigkeiten anzueignen, mit der man erst eine überzeugende Webseite erstellen kann. Hier möchte ich, Davide Wiest helfen.",
     "aboutHeading": "Wer ich bin",
     "aboutContent": {
         "Entwickler": "Mit über 3 Jahren Erfahrung mit Python habe ich eine große Passion zum Programmieren entwickelt. Manchmal, wenn ich in der „Zone“ bin, vergesse ich sogar zu essen und zu trinken. Ich programmiere hauptsächlich Webseiten und Webapps, bin aber auch für neues offen.",
-        "Designer": "",
-        "Strategist": "",
-        "Künstler": ""
+        "Designer": "Das Designen von Dingen bereitet mir immer Freude: Designs, die eine klare Geschichte erzählen sprechen mich, wie, glaube ich, auch viele Andere auf elementarer Weise an. Umso erfüllender ist es dann zu sehen, dass das Design die gewünschte Ausstrahlung zeigt und so eine tiefere Beziehung zwischen Betrachter und dem designten Umfeld ermöglicht.",
+        "Strategist": "In diesen Arbeitsfeldern müssen wichtige Entscheidungen getroffen werden. Man muss durchgehend beachten, wie kleine Entscheidungen das große Ganze beeinflussen und zukünftigen Handlungsspielraum gestalten. Deshalb lasse ich mir beim Betrachten eines Problems die nötige Zeit, um eine gute Lösung zu finden."
     },
     "processHeading": "Mein Prozess",
     "processContent": {
-        "01": ["Kontakt", ""],
-        "02": ["Beratung", ""],
-        "03": ["Design", ""],
-        "04": ["Entwicklung", ""],
-        "05": ["Einsatz", ""]
+        "01": ["Kontakt", "Jede Freundschaft beginnt mit dem ersten Kontakt. Am besten Sie schreiben mir eine E-Mail, in der Sie erklären in welcher Situation Sie sich befinden und was Sie ändern möchten. Wir können das alternativ auch in einem Anruf besprechen."],
+        "02": ["Beratung", "Danach schaue ich mir das Problem genauer an und lege ein paar Vorschläge auf den Tisch. Falls Sie mit einer Option einverstanden sind geht es zum nächsten Schritt."],
+        "04": ["Verwirklichung", "Wir setzen/Ich setze das Projekt um. Das geht bei Design-Projekten relativ schnell. Bei Webseiten designe Ich zuerst die grobe Benutzeroberfläche. So können Sie direkt Einwände äußern und Ihre eigene Meinung einbringen können. Erst danach kommt der zeitlich aufwenigere Entwicklungsprozess."],
+        "05": ["Einsatz", "Zuletzt muss das Projekt eingesetzt werden. Sollte es um eine Webseite gehen können Sie sich selbst um das Hosting und die Instandhaltung kümmern, oder ich mache das für einen monatlichen Betrag. Die ersten 3 Monate Hosting/Instandhaltung sind bei mir kostenlos."]
     },
     "testimonialHeading": "Das sagen meine Kunden",
     "testimonialsContent": {
         "James": "Mein neues Logo sieht einwandfrei aus und trägt zur Marke meines Servers bei. Davide verstand alle relevanten Designaspekte und ich w\u00fcrde ihn jedem Interessierten weiterempfehlen.",
-        "Jasna": "Davide Wiest "
+        "Jasna": ""
     },
     "contactHeading": "Kontaktieren Sie mich",
     "contactCta": "Eine Email schicken",
     "contactCtaText": "Bitte beschreiben Sie, was Sie erreichen möchten und ich werde Ihnen gerne helfen.",
     "contactLocation": "nahe Alzey, RLP, Deutschland",
-    "cvLink": "/resources/cv",
+    "cvLink": "/ressourcen/lebenslauf",
     "contactCvText": "Lebenslauf ansehen",
     "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
 }

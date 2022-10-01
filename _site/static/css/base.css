@@ -63,7 +63,7 @@ a:hover {
         font-size: 0.95rem;
     }
     #stickycta-text {
-        width: 40vw;
+        min-width: 40vw;
     }
 }
 

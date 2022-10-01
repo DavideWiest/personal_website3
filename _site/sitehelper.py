@@ -34,7 +34,6 @@ std_title_clause = " - Davide Wiest"
 lang_independant_files = ("credentials", "data")
 
 def build_params(title, storage_ptrs, params, language):
-    print(language)
     
     c_files = {}
     for storage_ptr in storage_ptrs + ["base"]:
