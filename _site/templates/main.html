@@ -233,14 +233,18 @@
                 <p id="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
                     {{ value.description }}
                 </p>
+                {% if value.link != "" %}
                 <a href="{{ value.link }}" target="_blank" id="project-link" class="mt-4 ml-6">
                     <span id="project-link-icon" class="m-r-4 align-middle">
+                        {% if value.linkIcon != "" %}
                         <img src="{{ value.linkIcon }}" alt="" class="w-4 h-4 inline-block">
+                        {% endif %}
                     </span>
                     <span id="project-link-text" class="underline underline-offset-2 align-middle text-b500">
                         {{ value.linkDesc }}
                     </span>
                 </a>
+                {% endif %}
             </div>
             {% endfor %}
         </div>

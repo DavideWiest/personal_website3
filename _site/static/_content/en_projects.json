@@ -46,9 +46,9 @@
         },
         "Personal Brand": {
             "description": "In this project I redefined how I position myself to find clients that fit to me and how to build the right kind of recognition around me. ",
-            "link": "/resources/Personal_Brand.pdf",
-            "linkIcon": "/static/other/icons/pdf.png",
-            "linkDesc": "View PDF",
+            "link": "",
+            "linkIcon": "",
+            "linkDesc": "",
             "t": ["Adobe Illustrator", "Canva"],
             "c": ["Logo", "Brand Values", "Brand Strategy"]
         }
