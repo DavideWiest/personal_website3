@@ -1,9 +1,3 @@
-# personal_website2
+# My personal website you can access under [davidewiest.com](https://davidewiest.com)
 
-when deploying: remove lang = "en" from sitehelper.py
-
-## todo:
-- fix height in hero section
-- impressum, datenschutzerklärung, geschäftsbedingungen 
-- style testimonials section
-- add contact section
+In this project I switched from Vanilla CSS to Tailwind CSS, which gave me a very significant productivity boost
