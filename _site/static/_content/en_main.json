@@ -1,19 +1,20 @@
 {
     "heroHeadingPrim": "Still trying to figure out how to build your place online?",
     "heroHeadingSec": "I will help you with the most fundamental piece: <span id='focal'>A personalized website.</span>",
-    "heroText": "No matter the industry, if you want to be successful on the internet you need your own website. Over the years many options have popped up for the sophisticated entrepreneur, and the ways to make a website are as diverse as ever. However, a website still must look appealing and be functional at all times. This is where I want to help.",
+    "heroText": "Today, the opportunities for the dedicated entrepreneur to create a website are more diverse than ever. However, hardly any entrepreneur has enough time to learn design and development alongside their actual work, which is required to create a compelling website. This is where I, Davide Wiest, want to help.",
     "aboutHeading": "Who I strive to be",
     "aboutContent": {
-        "Developer": "With over 3 years of experience in Python, I have developed a great passion for programming. Sometimes, when I'm in 'the Zone', I even forget to eat and drink. I mainly program websites and webapps, but I'm also open to new things.",
+        "Developer": "With over 3 years of experience in Python, I have developed a great passion for programming. Sometimes, when I'm in 'the Zone', I even forget to eat and drink. I specialize in full-stack web development, but I'm also open to new things.",
         "Designer": "I always enjoy designing things: I find designs that tell a clear story to be compelling, as I think many others do, in an elementary way. It is all the more fulfilling to see that a design shows the desired impact and thus enables a deeper relationship between the viewer and the environment.",
-        "Strategist": "Important decisions have to be made in those fields of work. You have to keep in mind how small decisions affect the big picture and shape future room for maneuver. So when I look at a problem, I take the time I need to find a good solution."
+        "Strategist": "Important decisions have to be made in those fields of work. You have to keep in mind how small decisions affect the big picture and shape future room for maneuver. So when I look at a problem, I take the time I need to find a good solution.",
+        "Freelancer": ""
     },
     "processHeading": "My process",
     "processContent": {
         "01": ["Contact", "Every friendship begins with the first contact. The best thing to do is to send me an e-mail explaining the situation you are in and what you would like to change. Alternatively, we can also discuss this in a phone call."],
         "02": ["Consulting", "After that, I take a closer look at the problem and put some suggestions on the table. If you are happy with an option, we will move to the next phase."],
-        "04": ["Actualization", "We/I make the project reality. In design projects, this happens relatively quickly. For websites, I design the rough user interface first. This allows you to raise objections directly and contribute your own opinion. Only after that comes the more time-extensive development process."],
-        "05": ["Deployment", "Finally, the project must be deployed or integrated. If it's a website, you can host and maintain it yourself, or I'll do it for a monthly fee. The first 3 months of hosting/maintenance will be free for you."]
+        "03": ["Creation", "We/I make the project reality. In design projects, this happens relatively quickly. For websites, I design the rough user interface first. This allows you to raise objections directly and contribute your own opinion. Only after that comes the more time-extensive development process."],
+        "04": ["Deployment", "Finally, the project must be deployed or integrated. If it's a website, you can host and maintain it yourself, or I'll do it for a monthly fee. The first 3 months of hosting/maintenance will be free for you."]
     },
     "testimonialHeading": "What my customers say",
     "testimonialsContent": {
