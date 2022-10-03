@@ -29,7 +29,7 @@ class StaticViewSitemap(Sitemap):
         return reverse(item)
 
 @require_GET
-def robots_txt(request):
+def robots_txt(request, lang_choice=None):
     lines = [
         "User-Agent: *",
         "Allow: /",

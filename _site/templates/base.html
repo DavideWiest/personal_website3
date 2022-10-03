@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Webseiten-Entwicklung und Design" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://davidewiest.com"/>
+    <meta property="og:image" content="../static/images/logo/logosvg.svg" />
+    <meta property="og:description" content="Ich bin Davide Wiest, passionierter Entwickler und Designer. Falls Sie finden, dass Sie von einem Kennenlernen profitieren könnten, kontaktieren Sie mich unter {{ c.credentails.email }}" />
+    <meta name="theme-color" content="#FFD747">
+
+    <meta name="twitter:card" content= "summary_large_image">
+
+
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/typography.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -66,13 +78,13 @@
             </div>
             <div id="footer-section">
                 <a href="/" id="navbar-link" class="m-0 px-2 text-b700 text-secondary hover:cursor-pointer inline-block text-sm">
-                    Start
+                    {{ c.base.footerStart }}
                 </a>
                 <a href="/agb" class="inline-block text-sm mr-4" style="color: rgb(138 138 138);">
-                    AGB
+                    {{ c.base.footerTAC }}
                 </a>
                 <a href="/impressum" class="inline-block text-sm" style="color: rgb(138 138 138);">
-                    Impressum & Datenschutzerklärung
+                    {{ c.base.footerPS }}
                 </a>
             </div>
         </div>

@@ -3,5 +3,8 @@
     "cta": "Kontaktieren Sie mich",
     "primaryLangIcon": "/static/other/icons/german-flag.png",
     "secondaryLangIcon": "/static/other/icons/uk-flag.png",
-    "secondaryLang": "en"
+    "secondaryLang": "en",
+    "footerStart": "Startseite",
+    "footerTAC": "AGB",
+    "footerPS": "Impressum & Datenschutzerklärung"
 }

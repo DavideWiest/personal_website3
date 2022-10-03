@@ -125,3 +125,7 @@ span#focal {
         background-repeat:no-repeat; 
     }
 } */
+
+#hero-left {
+    background: -webkit-linear-gradient(#517ff5, #0939b5 80%)
+}
