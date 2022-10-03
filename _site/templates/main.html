@@ -34,12 +34,12 @@
                 </div>
             </div>
             <div id="arrow-down-wrapper" class="p-6 pt-0 md:mx-8 flex justify-center mt-12 md: mt-24">
-                <div id="arrow-down-inner" class="md:max-w-lg">
+                <button id="arrow-down-inner" class="md:max-w-lg" onclick="siv('.hero-about-section-1');">
                     <img src="{% static 'other/icons/arrow-down-white.png' %}" alt="" class="animate-bounce w-9 h-9 md:w-10 md:h-10 select-none">
-                </div>
+                </button>
             </div>
         </div>
-        <div id="hero-right-inner" class="md:h-1/2 md:min-h-screen bg-white">
+        <div id="hero-right-inner" class="hero-about-section-1 md:h-1/2 md:min-h-screen bg-white">
             <div id="hero-right-inner2" class="flex justify-center items-center flex-col md:items-flex-end md-h-90p">
                 <div id="hero-right-inner-inner" class="inline-block max-w-xl m-6 my-8 md:mx-8" style="max-width: 34rem;">
                     <div id="hero-heading-c" class="inline-block mt-6 mb-5">
@@ -62,12 +62,12 @@
                 </div>
             </div>
             <div id="arrow-down-wrapper" class="p-6 pt-0 md:mx-8 flex justify-center">
-                <div id="arrow-down-inner" class="md:max-w-lg">
+                <button id="arrow-down-inner" class="md:max-w-lg" onclick="siv('.hero-process-section-2')">
                     <img src="{% static 'other/icons/arrow-down-black.png' %}" alt="" class="animate-bounce w-9 h-9 md:w-10 md:h-10 select-none">
-                </div>
+                </button>
             </div>
         </div>
-        <div id="hero-right-inner" class="md:h-auto md:min-h-screen bg-white">
+        <div id="hero-right-inner" class="hero-process-section-2 md:h-auto md:min-h-screen bg-white">
             <div id="hero-right-inner2" class="flex justify-center items-center flex-col md:items-flex-end md-h-90p">
                 <div id="hero-right-inner-inner" class="inline-block max-w-xl m-6 my-8 md:mx-8" style="max-width: 34rem;">
                     <div id="hero-heading-c" class="inline-block mt-2 mb-6">
@@ -97,16 +97,16 @@
                 </div>
             </div>
             <div id="arrow-down-wrapper" class="p-6 pt-0 md:mx-8 flex justify-center">
-                <div id="arrow-down-inner" class="md:max-w-lg">
+                <button id="arrow-down-inner" class="md:max-w-lg" onclick="siv('.testimonials-section-3')">
                     <img src="{% static 'other/icons/arrow-down-black.png' %}" alt="" class="animate-bounce w-9 h-9 md:w-10 md:h-10 select-none">
-                </div>
+                </button>
             </div>
         </div>
     </div>
 </div>
 
 
-<div id="testimonials" class="mt-4 md:mt-6">
+<div id="testimonials" class="testimonials-section-3 mt-4 md:mt-6">
     <div id="testimonials-wrapper" class="m-2 my-3 p-2 md:m-5 md:mb-3 md:p-5 mt-7 md:mt-16 flex items-center flex-col">
         <h3 id="testimonials-heading" class="intertight text-neutral-900 text-3xl md:text-5xl mb-5 md:mb-6" style="font-weight: 700;">
             {{ c.main.testimonialHeading |safe }}
@@ -267,6 +267,11 @@
 
 {% block scripts %}
 
-
+<script>
+    function siv(queryselec) {
+        var elem = document.querySelector(queryselec);
+        elem.scrollIntoView({behavior: "smooth"});
+    }
+</script>
 
 {% endblock %}
