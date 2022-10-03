@@ -1,6 +1,6 @@
 {
     "projectsHeading": "Meine letzten Projekte",
-    "projectsDescription": "Einige Teile sind in Fachsprache ausgedrückt. Kontaktieren Sie mich falls Sie mehr Informationen zu einem Projekt haben möchten.",
+    "projectsDescription": "Kontaktieren Sie mich falls Sie mehr Informationen zu einem Projekt haben möchten.",
     "tagDesc": "Technologien:",
     "categoryDesc": "Kategorien:",
     "projects": {
@@ -12,7 +12,7 @@
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"]
         },
-        "Eigens Django Web Framework": {
+        "Individuelles Django Framework": {
             "description": "Mein persönliches kleines Django-Framework, das ich verwenden werde, um neue Websites schneller und effektiver zu erstellen. Enthalten sind die Grundlagen zum Erstellen einer API und eine optimierte Ordnerstruktur.",
             "link": "https://github.com/DavideWiest/simple_django_framework",
             "linkIcon": "/static/other/icons/github-dark.png",
@@ -43,14 +43,6 @@
             "linkDesc": "PDF ansehen",
             "t": ["Adobe Illustrator", "Canva"],
             "c": ["Naming", "Logo", "Branding", "Brand Strategy"]
-        },
-        "Persönliche Brand": {
-            "description": "In diesem Projekt habe ich neu definiert, wie ich mich positioniere, um Kunden zu finden, zu denen ich passe, und welche für welche Werte ich wirklich stehe.",
-            "link": "",
-            "linkIcon": "",
-            "linkDesc": "",
-            "t": ["Adobe Illustrator", "Canva"],
-            "c": ["Logo", "Brand Values", "Brand Strategy"]
         }
     }
 }

@@ -68,8 +68,8 @@ a:hover {
 }
 
 span#focal {
-    /* color: #FFD747;  */
-    color: #fff;
+    color: #FFD747; 
+    /* color: #fff; */
 }
 
 #hero-left {
@@ -105,3 +105,23 @@ span#focal {
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(117, 117, 117); 
   }
+
+::selection {
+    color: black;
+    background: #FFD747 !important;
+}
+
+::-moz-selection {
+    color: rgb(20, 20, 20);
+    background: #FFD747 !important;
+}
+
+/* @media screen and (min-width: 768px) {
+    #heropic-c {
+        width: 50vw;
+        height: 100vw;
+        background-size:cover; 
+        background-position:center center; 
+        background-repeat:no-repeat; 
+    }
+} */

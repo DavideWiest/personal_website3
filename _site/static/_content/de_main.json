@@ -1,20 +1,20 @@
 {
-    "heroHeadingPrim": "Benötigen Sie eine größere Präsenz im Internet?",
-    "heroHeadingSec": "Ich möchte Ihnen mit dem fundamentalen Puzzlestück helfen: <span id='focal'>Einer hochwertigen Webseite.</span>",
-    "heroText": "Heute sind die Möglichkeiten für engagierte Unternehmer, eine Website zu erstellen, so vielfältig wie noch nie. Allerdings hat kaum jemand genug Zeit, sich neben seiner eigentlichen Arbeit noch Design- und Entwicklungsfähigkeiten anzueignen, mit der man erst eine überzeugende Webseite erstellen kann. Hier möchte ich, Davide Wiest als Freiberufler helfen.",
+    "heroHeadingPrim": "Wollen Sie (online) mehr Kunden erreichen?",
+    "heroHeadingSec": "Steigern Sie die Qualität Ihrer digitalen Marke mit <span id='focal'>qualitativer Webentwicklung und authentischem Design.</span>",
+    "heroText": "Heute sind die Optionen für engagierte Unternehmer, wie sie Ihre Kunden erreichen so vielfältig wie noch nie. Allerdings hat kaum jemand genug Zeit, sich neben seiner eigentlichen Arbeit noch Design-, Marktetings- und Entwicklungsfähigkeiten anzueignen, mit sie erst den wahren Wert Ihrer Produkte übermitteln können. Hier möchte ich, Davide Wiest, helfen.",
     "aboutHeading": "Über mich",
     "aboutContent": {
         "Entwickler": "Mit über 3 Jahren Erfahrung mit Python habe ich eine große Passion zum Programmieren entwickelt. Manchmal, wenn ich in der „Zone“ bin, vergesse ich sogar zu essen und zu trinken. Ich beschäftige mich hauptsächlich mit Webentwicklung, dem Programmieren von Webseiten und Webapps, bin aber auch für neues offen.",
         "Designer": "Das Designen von Dingen bereitete mir schon immer Freude: Designs, die eine klare Geschichte erzählen sprechen mich, wie, glaube ich, auch viele Andere auf elementarer Weise an. Umso erfüllender ist es dann zu sehen, dass das Design die gewünschte Ausstrahlung zeigt und so eine tiefere Beziehung zwischen Betrachter und Design ermöglicht.",
-        "Strategist": "In diesen Branchen müssen wichtige Entscheidungen getroffen werden. Man muss durchgehend beachten, wie kleine Entscheidungen das große Ganze beeinflussen und zukünftigen Handlungsspielraum gestalten. Deshalb lasse ich mir beim Betrachten eines Problems die nötige Zeit, um eine gute Lösung zu finden.",
+        "Strategist": "In diesen Branchen müssen nicht selten wichtige Entscheidungen getroffen werden. Man muss durchgehend beachten, wie kleine Entscheidungen das große Ganze beeinflussen und zukünftigen Handlungsspielraum gestalten. Deshalb lasse ich mir beim Betrachten eines Problems die nötige Zeit, um eine gute Lösung zu finden.",
         "Freiberufler": "Seit Juni 2022 habe ich mich entschlossen, meine Fähigkeiten auf freiberuflicher Ebene einzusetzen. Falls Sie nach jemandem suchen, der sich mit Webentwicklung oder Grafikdesign auskennt freue ich mich auf Ihre Kontakt-E-Mail."
     },
     "processHeading": "Mein Prozess",
     "processContent": {
-        "01": ["Kontakt", "Jede Freundschaft beginnt mit dem ersten Kontakt. Am besten Sie schreiben mir eine E-Mail, in der Sie erklären in welcher Situation Sie sich befinden und was Sie ändern möchten. Wir können das alternativ auch in einem Anruf besprechen."],
+        "01": ["Kontakt", "Jede Bekanntschaft beginnt mit dem ersten Kontakt. Am besten Sie schreiben mir eine E-Mail, in der Sie erklären in welcher Situation Sie sich befinden und was Sie ändern möchten. Wir können das alternativ auch in einem Anruf besprechen."],
         "02": ["Beratung", "Danach schaue ich mir das Problem genauer an und lege ein paar Vorschläge auf den Tisch. Falls Sie mit einer Option einverstanden sind geht es zum nächsten Schritt."],
-        "03": ["Verwirklichung", "Wir setzen/Ich setze das Projekt um. Das geht bei Design-Projekten relativ schnell. Bei Webseiten designe Ich zuerst die grobe Benutzeroberfläche. So können Sie direkt Einwände äußern und Ihre eigene Meinung einbringen können. Erst danach kommt der zeitlich aufwenigere Entwicklungsprozess."],
-        "04": ["Einsatz", "Zuletzt muss das Projekt eingesetzt werden. Sollte es um eine Webseite gehen können Sie sich selbst um das Hosting und die Instandhaltung kümmern, oder ich mache das für einen monatlichen Betrag. Die ersten 3 Monate Hosting/Instandhaltung sind bei mir kostenlos."]
+        "03": ["Verwirklichung", "Hier geht es um die Umsetzung des Projekts. Das geht bei Design-Projekten relativ schnell. Bei Webseiten designe Ich zuerst die grobe Benutzeroberfläche. So können Sie direkt Einwände äußern und Ihre eigene Meinung einbringen. Erst danach kommt der zeitlich aufwendigere Entwicklungsprozess."],
+        "04": ["Einsatz", "Zuletzt muss das Projekt eingesetzt werden. Sollte es um eine Webseite gehen können Sie sich selbst um das Hosting und die Instandhaltung kümmern, oder ich mache das für einen festgelegten monatlichen Betrag."]
     },
     "testimonialHeading": "Das sagen meine Kunden",
     "testimonialsContent": {
