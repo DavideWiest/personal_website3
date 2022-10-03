@@ -1,7 +1,7 @@
 from django.urls import path
 from django.shortcuts import redirect
 from django.http import HttpResponseNotFound
-from .sitehelper import openfile
+from .base import openfile
 
 def linkview(request, linkto):
     file = openfile("credentials.json", "links")
