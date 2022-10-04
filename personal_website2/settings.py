@@ -11,11 +11,12 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-from django.core.management.utils import get_random_secret_key  
+# from django.core.management.utils import get_random_secret_key  
 import os
 import socket
 from pathlib import Path
 import json
+import uuid
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,8 +40,8 @@ else:
     dsettings = data["development_settings"]
 
 
-
-sk = get_random_secret_key()
+# sk = get_random_secret_key()
+sk = str(uuid.uuid4()) + str(uuid.uuid4())
 
 try:
     data["secret_key"] = sk
