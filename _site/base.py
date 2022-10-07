@@ -28,7 +28,7 @@ def build_params(title, storage_ptrs, params, language):
 
     bparams = {
         "title": title + std_title_clause,
-        "base_url": "http://127.0.0.1:8000/", # "https://davidewiest.com"
+        "base_url": "https://davidewiest.com",
         "c": c_files,
         "l": language
     }
