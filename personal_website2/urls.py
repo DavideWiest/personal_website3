@@ -33,9 +33,19 @@ def robots_txt(request, lang_choice=None):
     lines = [
         "User-Agent: *",
         "Allow: /",
-        "Sitemap: https://davidewiest.com/sitemap.xml"
+        "Sitemap: https://davidewiest.com/sitemap.txt"
     ]
     return HttpResponse("\n".join(lines), content_type="text/plain")
+
+@require_GET
+def sitemap_txt(request):
+    lines = [
+        "https://davidewiest.com/",
+        "https://davidewiest.com/robots.txt",
+        "https://davidewiest.com/sitemap.txt"
+    ]
+    return HttpResponse("\n".join(lines), content_type="text/plain")
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -45,5 +55,5 @@ urlpatterns = [
     path('resources/', include('_site.urls_r')),
     path('link/', include('_site.urls_l')),
     path('robots.txt', robots_txt),
-    # path('sitemap.xml', sitemap, {'sitemaps': {"static": StaticViewSitemap}}),
+    path("sitemap.txt", sitemap_txt)
 ]
