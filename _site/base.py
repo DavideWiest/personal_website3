@@ -1,6 +1,11 @@
 from django.utils import translation
 import json
 
+std_title_clause = " - Davide Wiest"
+lang_independant_files = ("credentials", "data")
+allowed_languages = ("en", "de")
+
+
 def openfile(filename, subfield=None):
     with open(f"_site/static/_content/{filename}", "r", encoding="utf-8") as f:
         file = json.load(f)
@@ -8,9 +13,6 @@ def openfile(filename, subfield=None):
             file = file.get(subfield, file)
 
     return file
-
-std_title_clause = " - Davide Wiest"
-lang_independant_files = ("credentials", "data")
 
 def build_params(title, storage_ptrs, params, language):
     
@@ -38,6 +40,10 @@ def build_params(title, storage_ptrs, params, language):
 def choose_lang(request):
     if request.GET.get("lang") in ("en", "de"):
         return request.GET.get("lang")
+
+    if request.session["lang"] in allowed_languages:
+        return request.session["lang"]
+    
     
     language = translation.get_language_from_request(request)
 
