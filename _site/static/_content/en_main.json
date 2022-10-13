@@ -12,7 +12,7 @@
     "processHeading": "My process",
     "processContent": {
         "01": ["Contact", "Every friendship begins with the first contact. The best thing to do is to send me an e-mail explaining the situation you are in and what you would like to change. Alternatively, we can also discuss this in a phone call."],
-        "02": ["Consulting", "After that, I take a closer look at the problem and put some suggestions on the table. If you are happy with an option, we will move to the next phase."],
+        "02": ["Free Consulting", "After that, I take a closer look at the problem and put some suggestions on the table. This step is free and non-binding, so you don't take any risks if you listen to my suggested solutions. If you are happy with an option, we will move to the next phase."],
         "03": ["Creation", "We/I make the project reality. In design projects, this happens relatively quickly. For websites, I design the rough user interface first. This allows you to raise objections directly and contribute your own opinion. Only after that comes the more time-extensive development process."],
         "04": ["Deployment", "Finally, the project must be deployed or integrated. If it's a website, you can host and maintain it yourself, or I'll handle everything for an individual monthly fee."]
     },
