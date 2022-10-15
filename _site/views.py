@@ -9,6 +9,5 @@ def main(request):
         "title": "Davide Wiest"
     }
     
-
     l = choose_lang(request)
     return render(request, "main.html", build_params("", ["main", "credentials", "projects"], params, l))
