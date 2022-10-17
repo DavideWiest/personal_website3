@@ -13,8 +13,9 @@
         "debug": false,
         "allowed hosts": [
             "raspi",
-            "davidewiest.com"
+            "davidewiest.com",
+            "ml.davidewiest.com"
         ]
     },
-    "secret_key": "$(ds4jk8!7i&ta9_e1ax+2aby9#86u7jtnka8pzek24@p6h-is"
+    "secret_key": "=yqc^jdkbunm2a5n5wq)3g__)e*605tzt=95u0_*-(mj$c3%et"
 }

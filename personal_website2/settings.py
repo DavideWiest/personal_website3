@@ -26,6 +26,8 @@ hostname = socket.gethostname()
 def handle_production():
     "Handle execution to make application production ready"
     os.chdir('/var/www/html/personal_website2/personal_website2-master')
+    WSGI_APPLICATION = 'personal_website2.wsgi.application'
+
 
 with open(data_path, "r", encoding="utf") as f:
     data = json.load(f)
@@ -58,6 +60,7 @@ DEBUG = dsettings["debug"]
 ALLOWED_HOSTS = dsettings["allowed hosts"]
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -68,10 +71,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django_hosts',
+
     '_site'
 ]
 
 MIDDLEWARE = [
+    'django_hosts.middleware.HostsRequestMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -79,9 +85,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_hosts.middleware.HostsResponseMiddleware'
 ]
 
 ROOT_URLCONF = 'personal_website2.urls'
+
+ROOT_HOSTCONF = 'personal_website2.hosts'
+DEFAULT_HOST= 'www'
+
 
 TEMPLATES = [
     {
@@ -98,8 +109,6 @@ TEMPLATES = [
         },
     },
 ]
-
-WSGI_APPLICATION = 'personal_website2.wsgi.application'
 
 SITE_ID = 1
 
