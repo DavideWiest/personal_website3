@@ -13,10 +13,12 @@
         "debug": false,
         "allowed hosts": [
             "raspi",
+            "www.davidewiest.com",
+            "www.davidewiest",
             "davidewiest.com",
             "ml.davidewiest",
             "ml.davidewiest.com"
         ]
     },
-    "secret_key": "s9&&%a5w-1&=oll!#o6ptq%h!d$x8%y%b@k!@!(@j=gyy4pvx^"
+    "secret_key": ")ti)&8b=woz1#-hnxx%n6cpa&tuw9#z#(cge=y=7z*l8wz&v)$"
 }
