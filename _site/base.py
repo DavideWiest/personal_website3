@@ -38,18 +38,40 @@ def build_params(title, storage_ptrs, params, language):
     return {**bparams, **params}
 
 def choose_lang(request):
-    if request.GET.get("lang") in ("en", "de"):
-        return request.GET.get("lang")
-
-    if request.session["lang"] in allowed_languages:
-        return request.session["lang"]
-    
-    
     language = translation.get_language_from_request(request)
 
+    # first priority
+    if request.method == "GET":
+        if request.GET.get("language") in allowed_languages:
+            # change request.session["language"]
+            # change db user settings.language
+            return request.GET.get("language")
+    
+    # second priority
+    if "user_id" in request.session:
+        # change request.session["language"] with db
+        pass
+    
+    # third priority
+    if request.session["language"] in allowed_languages:
+        return request.session["language"]
+    
+    # allow only de or en
     if language in ("ch", "au"):
         language = "de"
     if language != "de":
         language = "en"
 
+    # language = "en"
+
     return language
+
+def handle_requestdata(request, l):
+    if request.GET.get("language") in allowed_languages:
+        request.session["language"] = l
+        return request.GET.get("language")
+        
+    if request.session.get("language") not in allowed_languages:
+        request.session["language"] = l
+
+    
