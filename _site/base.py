@@ -6,15 +6,17 @@ lang_independant_files = ("credentials", "data")
 allowed_languages = ("en", "de")
 
 
-def openfile(filename, subfield=None):
-    with open(f"_site/static/_content/{filename}", "r", encoding="utf-8") as f:
+def openfile(filename, subfield=None, base_path=None):
+    if base_path == None:
+        base_path = "_site"
+    with open(f"{base_path}/static/_content/{filename}", "r", encoding="utf-8") as f:
         file = json.load(f)
         if subfield:
             file = file.get(subfield, file)
 
     return file
 
-def build_params(title, storage_ptrs, params, language):
+def build_params(title, storage_ptrs, params, language, base_path=None):
     
     c_files = {}
     for storage_ptr in storage_ptrs + ["base"]:
@@ -24,7 +26,7 @@ def build_params(title, storage_ptrs, params, language):
             else:
                 filename, subfield = (storage_ptr, "")
             
-            c_files[filename + "_" + subfield.capitalize() if subfield != "" else filename] = openfile(language + "_" + filename + ".json" if filename not in lang_independant_files else filename + ".json", subfield=subfield if subfield != "" else None)
+            c_files[filename + "_" + subfield.capitalize() if subfield != "" else filename] = openfile(language + "_" + filename + ".json" if filename not in lang_independant_files else filename + ".json", subfield=subfield if subfield != "" else None, base_path=base_path)
         else:
             c_files[filename] = {}
 
