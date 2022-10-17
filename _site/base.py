@@ -53,7 +53,7 @@ def choose_lang(request):
         pass
     
     # third priority
-    if request.session["language"] in allowed_languages:
+    if request.session.get("language") in allowed_languages:
         return request.session["language"]
     
     # allow only de or en
