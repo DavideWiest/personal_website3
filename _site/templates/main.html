@@ -107,41 +107,84 @@
 </div>
 
 
-<div id="testimonials" class="testimonials-section-3 mt-8 md:mt-12">
-    <div id="testimonials-wrapper" class="m-2 my-3 p-2 md:m-5 md:mb-3 md:p-5 mt-7 md:mt-16 flex items-center flex-col">
-        <h3 id="testimonials-heading" class="intertight text-neutral-900 text-4xl md:text-5xl mb-5 md:mb-6" style="font-weight: 700;">
-            {{ c.main.testimonialHeading |safe }}
+<div id="projects" class="mt-8 md:mt-12">
+    <div id="projects-inner" class="m-2 p-2 md:m-5 md:p-5 mt-3 md:mt-3 flex items-center flex-col">
+        <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl" style="font-weight: 700;">
+            {{ c.projects.projectsHeading|safe }}
         </h3>
-        <div id="testimonials-inner" class="md:flex w-full justify-evenly">
-            
+        <p id="projects-description" class="mb-4">
+            {{ c.projects.projectsDescription }}
+        </p>
+        <div id="projects-wrapper">
+            {% for key, value in c.projects.projects.items %}
+            <a id="project" href="{{ value.link }}" target="_blank" class="block max-w-lg rounded-3xl bg-orange-300 p-8 md:p-16 my-10 grid shadow-xl" style="min-width: min(80vw, 1000px)">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h3 id="project-title" class="text-3xl text-b600">
+                            {{ key }}
+                        </h3>
+                    </div>
     
-            <div id="testimonial" class="m-2 flex flex-col items-center p-2">
-                <img src="{% static 'other/icons/quote-primary.png' %}" alt="Quoting testimonial" class="w-6 h-6">
-                
-                <div id="testimonial-inner" class="max-w-md border-2 border-white border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
-                    <p id="testimonial-text" class="text-2xl text-gray-900 text-b500" style="font-style: italic;">
-                        {{ c.main.testimonialsContent.James }}
-                    </p>
-                    <p id="testimonial-author" class="text-gray-600 text-b600">
-                        — James
-                    </p>
+    
+                    <button id="project-link" class="mt-4 bg-indigo-700 inline-block w-fit rounded-full p-4 px-7 hover:shadow-lg hover:bg-indigo-900 transition duration-300 ease-in-out">
+                        <span id="project-link-icon" class="m-r-4 align-middle">
+                            {% if value.linkIcon != "" %}
+                            <img src="{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block">
+                            {% endif %}
+                        </span>
+                        <span id="project-link-text" class="align-middle text-b700 text-white text-lg">
+                            {{ value.linkDesc }}
+                        </span>
+                    </button>
                 </div>
-            </div>
+            </a>
+            {% endfor %}
+        </div>
+        <div id="projects-wrapper" class="md:grid md:grid-cols-2 my-6" style="max-width: 1400px;">
+            {% for key, value in c.projects.projects.items %}
 
-
-            {% if c.main.testimonialsContent.Jasna != "" %}
-            <div id="testimonial" class="m-2 flex flex-col items-center p-2">
-                <img src="{% static 'other/icons/quote-primary.png' %}" alt="Quoting testimonial" class="w-6 h-6">
-                <div id="testimonial-inner" class="max-w-md border-2 border-white border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
-                    <p id="testimonial-text" class="text-2xl text-gray-900 text-b500" style="font-style: italic;">
-                        {{ c.main.testimonialsContent.Jasna }}
+            <div id="project" class="m-2.5 my-6 md:my-6 md:mx-7">
+                <h3 id="project-title" class="text-xl text-semibold code text-b600 bg-seclight inline-block px-1.5 py-0.5 mb-2" style="border-left: 3px solid rgb(31, 31, 31)">
+                    <!-- <span class="inline-block w-2 h-4 bg-primary mr-2"></span> -->
+                    {{ key }}
+                </h3>
+                <div id="project-categories" class="ml-1">
+                    <p id="project-category-desc" class="roboto text-sm inline-block text-neutral-500">
+                        {{ c.projects.categoryDesc }}
                     </p>
-                    <p id="testimonial-author" class="text-gray-600 text-b600">
-                        — Jasna
-                    </p>
+                    {% for category in value.c %}
+                        <p id="project-categories" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
+                            {{ category }}
+                        </p>
+                    {% endfor %}
                 </div>
+                <div id="project-tags" class="ml-1">
+                    <p id="project-tag-desc" class="roboto text-sm inline-block text-neutral-500">
+                        {{ c.projects.tagDesc }}
+                    </p>
+                    {% for tag in value.t %}
+                        <p id="project-tag" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
+                            {{ tag }}
+                        </p>
+                    {% endfor %}
+                </div>
+                <p id="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
+                    {{ value.description }}
+                </p>
+                {% if value.link != "" %}
+                <a href="{{ value.link }}" target="_blank" id="project-link" class="mt-4 ml-6">
+                    <span id="project-link-icon" class="m-r-4 align-middle">
+                        {% if value.linkIcon != "" %}
+                        <img src="{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block">
+                        {% endif %}
+                    </span>
+                    <span id="project-link-text" class="underline underline-offset-2 align-middle text-b500">
+                        {{ value.linkDesc }}
+                    </span>
+                </a>
+                {% endif %}
             </div>
-            {% endif %}
+            {% endfor %}
         </div>
     </div>
 </div>
@@ -192,62 +235,47 @@
     </div>
 </div>
 
-<div id="projects" class="mt-8 md:mt-12">
-    <div id="projects-inner" class="m-2 p-2 md:m-5 md:p-5 mt-3 md:mt-3 flex items-center flex-col">
-        <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl" style="font-weight: 700;">
-            {{ c.projects.projectsHeading |safe }}
-        </h3>
-        <p id="projects-description" class="mb-4">
-            {{ c.projects.projectsDescription }}
-        </p>
-        <div id="projects-wrapper" class="md:grid md:grid-cols-2 my-6" style="max-width: 1400px;">
-            {% for key, value in c.projects.projects.items %}
 
-            <div id="project" class="m-2.5 my-6 md:my-6 md:mx-7">
-                <h3 id="project-title" class="text-xl text-semibold code text-b600 bg-seclight inline-block px-1.5 py-0.5 mb-2" style="border-left: 3px solid rgb(31, 31, 31)">
-                    <!-- <span class="inline-block w-2 h-4 bg-primary mr-2"></span> -->
-                    {{ key }}
-                </h3>
-                <div id="project-categories" class="ml-1">
-                    <p id="project-category-desc" class="roboto text-sm inline-block text-neutral-500">
-                        {{ c.projects.categoryDesc }}
+<div id="testimonials" class="testimonials-section-3 mt-8 md:mt-12">
+    <div id="testimonials-wrapper" class="m-2 my-3 p-2 md:m-5 md:mb-3 md:p-5 mt-7 md:mt-16 flex items-center flex-col">
+        <h3 id="testimonials-heading" class="intertight text-neutral-900 text-4xl md:text-5xl mb-5 md:mb-6" style="font-weight: 700;">
+            {{ c.main.testimonialHeading |safe }}
+        </h3>
+        <div id="testimonials-inner" class="md:flex w-full justify-evenly">
+            
+    
+            <div id="testimonial" class="m-2 flex flex-col items-center p-2">
+                <img src="{% static 'other/icons/quote-primary.png' %}" alt="Quoting testimonial" class="w-6 h-6">
+                
+                <div id="testimonial-inner" class="max-w-md border-2 border-white border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
+                    <p id="testimonial-text" class="text-2xl text-gray-900 text-b500" style="font-style: italic;">
+                        {{ c.main.testimonialsContent.James }}
                     </p>
-                    {% for category in value.c %}
-                        <p id="project-categories" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
-                            {{ category }}
-                        </p>
-                    {% endfor %}
-                </div>
-                <div id="project-tags" class="ml-1">
-                    <p id="project-tag-desc" class="roboto text-sm inline-block text-neutral-500">
-                        {{ c.projects.tagDesc }}
+                    <p id="testimonial-author" class="text-gray-600 text-b600">
+                        — James
                     </p>
-                    {% for tag in value.t %}
-                        <p id="project-tag" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
-                            {{ tag }}
-                        </p>
-                    {% endfor %}
                 </div>
-                <p id="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
-                    {{ value.description }}
-                </p>
-                {% if value.link != "" %}
-                <a href="{{ value.link }}" target="_blank" id="project-link" class="mt-4 ml-6">
-                    <span id="project-link-icon" class="m-r-4 align-middle">
-                        {% if value.linkIcon != "" %}
-                        <img src="{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block">
-                        {% endif %}
-                    </span>
-                    <span id="project-link-text" class="underline underline-offset-2 align-middle text-b500">
-                        {{ value.linkDesc }}
-                    </span>
-                </a>
-                {% endif %}
             </div>
-            {% endfor %}
+
+
+            {% if c.main.testimonialsContent.Jasna != "" %}
+            <div id="testimonial" class="m-2 flex flex-col items-center p-2">
+                <img src="{% static 'other/icons/quote-primary.png' %}" alt="Quoting testimonial" class="w-6 h-6">
+                <div id="testimonial-inner" class="max-w-md border-2 border-white border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
+                    <p id="testimonial-text" class="text-2xl text-gray-900 text-b500" style="font-style: italic;">
+                        {{ c.main.testimonialsContent.Jasna }}
+                    </p>
+                    <p id="testimonial-author" class="text-gray-600 text-b600">
+                        — Jasna
+                    </p>
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>
+
+
 
 {% endblock %}
 
