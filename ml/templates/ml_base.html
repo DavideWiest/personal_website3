@@ -15,14 +15,6 @@
     <meta name="theme-color" content="#FFD747">
 
     <meta name="twitter:card" content= "summary_large_image">
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PFBPDVQ');</script>
-    <!-- End Google Tag Manager -->
 
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/typography.css' %}">
@@ -47,7 +39,7 @@
     
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 </head>
-<body class="bg-gray-50">
+<body style="width: 100vw; overflow: hidden;">
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFBPDVQ"
@@ -57,32 +49,12 @@
     {% block outsidecontents %}
     {% endblock %}
 
-    <div id="stickycta-text" class="z-10 shadow-md fixed bottom-0 right-0 w-screen p-6 py-1.5 text-center text-b800 inline-block flex justify-between items-center md:grid mb-0 md:grid-cols-3 bg-white/75 backdrop-filter backdrop-blur">
-        <div></div>
-        <div class="flex justify-center">
-            <a id="stickycta-text-button" class="shadow-md rounded-3xl bg-accent hover:border-black py-2 px-5 h-min text-sm md:text-base border border-2 border-accent transition duration-300 ease-in-out" href="mailto:{{ c.credentials.email }}">
-                {{ c.base.cta }}
-            </a>
-        </div>
-        <div id="language-setter" class="flex justify-end">
-            <div id="language-option">
-                <img src="{{ c.base.primaryLangIcon }}" alt="Current Language" class="w-7 h-7 md:w-10 md:h-10 m-2 inline-block p-1 border border-gray-500 rounded-lg">
-            </div>
-
-            <div id="language-sep-bar"></div>
-
-            <a id="language-option" href="?language={{ c.base.secondaryLang }}" class="block">
-                <img src="{{ c.base.secondaryLangIcon }}" alt="Other Language: {{ c.base.secondaryLang }}" class="w-7 h-7 md:w-10 md:h-10 m-2 inline-block p-1 border border-transparent rounded-lg">
-            </a>
-        </div>
-    </div>
-
-    <div class="content min-h-screen" style="max-width: 100vw;">
+    <div class="content" style="max-width: 100vw;">
         {% block htmlcontents %}
         {% endblock %}
     </div>
 
-    <div id="footer" class="p-2.5 px-5 mt-8 bg-black pb-28">
+    <div id="footer" class="p-2.5 px-5 bg-black pb-28">
         <div id="footer-inner" class="md:flex md:justify-between">
             <div id="footer-section">
                 <p id="copyright" class="text-white mb-4 md:mb-0 text-sm intertight">

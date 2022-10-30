@@ -51,6 +51,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('_site.urls')),
     path('', include('_site.urls_legal')),
+    path('ml/', include('ml.urls')),
     path('ressourcen/', include('_site.urls_r')),
     path('resources/', include('_site.urls_r')),
     path('link/', include('_site.urls_l')),

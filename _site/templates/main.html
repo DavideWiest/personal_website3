@@ -22,7 +22,7 @@
                     <div id="hero-heading-c" class="inline-block mt-4">
                         <h3 id="hero-heading" class="intertight text-neutral-100 text-3xl md:text-4xl" style="font-weight: 600;">
                             {{ c.main.heroHeadingPrim |safe }}
-                            <span class="hero-heading-secondary" style="color: rgb(146, 146, 146);">
+                            <span class="hero-heading-accent" style="color: rgb(146, 146, 146);">
                                 {{ c.main.heroHeadingSec |safe }}
                             </span>
                         </h3>
@@ -33,11 +33,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div id="arrow-down-wrapper" class="p-6 pt-0 md:mx-8 flex justify-center mt-12 md: mt-24">
-                <button id="arrow-down-inner" class="md:max-w-lg" onclick="siv('.hero-about-section-1');">
-                    <img src="{% static 'other/icons/arrow-down-white.png' %}" alt="Scroll to next section" class="animate-bounce w-9 h-9 md:w-10 md:h-10 select-none">
-                </button>
             </div>
         </div>
         <div id="hero-right-inner" class="hero-about-section-1 md:h-1/2 md:min-h-screen bg-white">
@@ -61,11 +56,6 @@
                         {% endfor %}
                     </div>
                 </div>
-            </div>
-            <div id="arrow-down-wrapper" class="p-6 pt-0 md:mx-8 flex justify-center">
-                <button id="arrow-down-inner" class="md:max-w-lg" onclick="siv('.hero-process-section-2')">
-                    <img src="{% static 'other/icons/arrow-down-black.png' %}" alt="Scroll to next section" class="animate-bounce w-9 h-9 md:w-10 md:h-10 select-none">
-                </button>
             </div>
         </div>
         <div id="hero-right-inner" class="hero-process-section-2 md:h-auto md:min-h-screen bg-white">
@@ -97,11 +87,6 @@
                     </div>
                 </div>
             </div>
-            <div id="arrow-down-wrapper" class="p-6 pt-0 md:mx-8 flex justify-center">
-                <button id="arrow-down-inner" class="md:max-w-lg" onclick="siv('.testimonials-section-3')">
-                    <img src="{% static 'other/icons/arrow-down-black.png' %}" alt="Scroll to next section" class="animate-bounce w-9 h-9 md:w-10 md:h-10 select-none">
-                </button>
-            </div>
         </div>
     </div>
 </div>
@@ -112,77 +97,73 @@
         <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl" style="font-weight: 700;">
             {{ c.projects.projectsHeading|safe }}
         </h3>
-        <p id="projects-description" class="mb-4">
-            {{ c.projects.projectsDescription }}
-        </p>
         <div id="projects-wrapper">
             {% for key, value in c.projects.projects.items %}
-            <a id="project" href="{{ value.link }}" target="_blank" class="block max-w-lg rounded-3xl bg-orange-300 p-8 md:p-16 my-10 grid shadow-xl" style="min-width: min(80vw, 1000px)">
-                <div class="flex flex-col justify-between">
-                    <div>
-                        <h3 id="project-title" class="text-3xl text-b600">
-                            {{ key }}
-                        </h3>
-                    </div>
-    
-                    <button id="project-link" class="mt-4 bg-indigo-700 inline-block w-fit rounded-full p-4 px-7 hover:shadow-lg hover:bg-indigo-900 transition duration-300 ease-in-out">
-                        <span id="project-link-icon" class="m-r-4 align-middle">
-                            {% if value.linkIcon != "" %}
-                            <img src="{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block">
-                            {% endif %}
-                        </span>
-                        <span id="project-link-text" class="align-middle text-b700 text-white text-lg">
-                            {{ value.linkDesc }}
-                        </span>
-                    </button>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-        <div id="projects-wrapper" class="md:grid md:grid-cols-2 my-6" style="max-width: 1400px;">
-            {% for key, value in c.projects.projects.items %}
-
-            <div id="project" class="m-2.5 my-6 md:my-6 md:mx-7">
-                <h3 id="project-title" class="text-xl text-semibold code text-b600 bg-seclight inline-block px-1.5 py-0.5 mb-2" style="border-left: 3px solid rgb(31, 31, 31)">
-                    <!-- <span class="inline-block w-2 h-4 bg-primary mr-2"></span> -->
-                    {{ key }}
-                </h3>
-                <div id="project-categories" class="ml-1">
-                    <p id="project-category-desc" class="roboto text-sm inline-block text-neutral-500">
-                        {{ c.projects.categoryDesc }}
-                    </p>
-                    {% for category in value.c %}
-                        <p id="project-categories" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
-                            {{ category }}
-                        </p>
-                    {% endfor %}
-                </div>
-                <div id="project-tags" class="ml-1">
-                    <p id="project-tag-desc" class="roboto text-sm inline-block text-neutral-500">
-                        {{ c.projects.tagDesc }}
-                    </p>
-                    {% for tag in value.t %}
-                        <p id="project-tag" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
-                            {{ tag }}
-                        </p>
-                    {% endfor %}
-                </div>
-                <p id="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
-                    {{ value.description }}
-                </p>
-                {% if value.link != "" %}
-                <a href="{{ value.link }}" target="_blank" id="project-link" class="mt-4 ml-6">
-                    <span id="project-link-icon" class="m-r-4 align-middle">
-                        {% if value.linkIcon != "" %}
-                        <img src="{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block">
-                        {% endif %}
-                    </span>
-                    <span id="project-link-text" class="underline underline-offset-2 align-middle text-b500">
-                        {{ value.linkDesc }}
-                    </span>
-                </a>
-                {% endif %}
+            {% if value.inmain %}
+            <div class="grid gap-8 my-8 {% if value.image == '' %} {% if value.align == 1 %} justify-end {% else %} justify-start {% endif %} {% else %} md:grid-cols-2 {% endif %}">
+            {% if value.image != "" %}
+            {% if value.align == 1 %}
+            <div>
+                <img src="/static/resources/projects/{{ value.image }}" alt="{{ key }} Image">
             </div>
+            {% endif %}
+            {% endif %}
+            <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-sm {% else %} max-w-md {% endif %}">
+            <a id="project" href="{% if value.link != '' %}{{ value.link }}{% endif %}" target="_blank" class="block bg-white max-w-lg rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
+                    
+                        <div class="p-6 ">
+                            <h3 id="project-title" class="text-2xl text-b600 mb-2">
+                                {{ key }}
+                            </h3>
+                            <div id="project-categories" class="ml-1">
+                                <p id="project-category-desc" class="roboto text-xs inline-block text-neutral-500">
+                                    {{ c.projects.categoryDesc }}
+                                </p>
+                                {% for category in value.c %}
+                                    <p id="project-categories" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
+                                        {{ category }}
+                                    </p>
+                                {% endfor %}
+                            </div>
+                            <div id="project-tags" class="ml-1">
+                                <p id="project-tag-desc" class="roboto text-xs inline-block text-neutral-500">
+                                    {{ c.projects.tagDesc }}
+                                </p>
+                                {% for tag in value.t %}
+                                    <p id="project-tag" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
+                                        {{ tag }}
+                                    </p>
+                                {% endfor %}
+                            </div>
+                            <p id="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
+                                {{ value.description }}
+                            </p>
+                            <button id="project-link" class="mt-4 bg-neutral-800 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 hover:shadow-lg hover:bg-black transition duration-300 ease-in-out">
+                                <div class="inline-block mr-1">
+                                    <div id="project-link-icon" class="m-r-4 flex w-full items-center">
+                                        {% if value.linkIcon != "" %}
+                                        <img src="{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5">
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <span id="project-link-text" class="align-middle text-b400 text-white md:text-lg">
+                                    {{ value.linkDesc }}
+                                </span>
+                            </button>
+                            
+                        </div>
+                        
+                    </a>
+            </div>
+                    {% if value.image != "" %}
+            {% if value.align == 0 %}
+            <div>
+                <img src="/static/resources/projects/{{ value.image }}" alt="{{ key }} Image">
+            </div>
+            {% endif %}
+            {% endif %}
+        </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -193,9 +174,9 @@
         <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl mb-4" style="font-weight: 700;">
             {{ c.main.contactHeading |safe }}
         </h3>
-        <div id="contact-wrapper" class="my-6 grid grid-col-1 md:grid-rows-2 md:grid-cols-3 md:grid-flow-col max-w-6xl mx-7">
+        <div id="contact-wrapper" class="my-6 grid grid-col-1 md:grid-rows-2 md:grid-cols-3 md:grid-flow-col max-w-6xl mx-7 gap-4">
             {% for key, value in c.credentials.links.items %}
-                <a id="contact-social" href="{{ value.0 }}" target="_blank" class="block p-3 px-5 m-3 border border-gray-800 rounded-2xl hover:-translate-y-0.5 hover:shadow-md">
+                <a id="contact-social" href="{{ value.0 }}" target="_blank" class="block p-3 px-5 m-3 border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
                     <img src="{{ value.1 }}" alt="{{ key }} icon" id="contact-social-icon" class="inline-block w-6 h-6">
                     <p class="contact-social-text inline-block text-b500 align-middle text-gray-800">
                         {{ key }} @ {{ value.2 }}
@@ -203,13 +184,10 @@
                 </a>
             {% endfor %}
             
-            <div id="contact-main" class="row-span-2">
-                <a id="contact-social" href="mailto:{{ c.credentials.email }}" class="block p-3 m-3 border border-black rounded-2xl hover:-translate-y-0.5 hover:shadow-md bg-secondary">
+            <div id="contact-main" class="row-span-2 md:mt-4">
+                <a id="contact-social" href="mailto:{{ c.credentials.email }}" class="w-full block p-3 border border-accent rounded-3xl border-2 border-transparent bg-accent hover:border-black transition duration-300 ease-in-out">
                     <p class="contact-social-text text-b700 text-lg align-middle text-center">
                         {{ c.main.contactCta }}
-                    </p>
-                    <p class="text-center my-2 text-sm">
-                        {{ c.main.contactCtaText }}
                     </p>
                     <p id="contact-email" class="text-b700 text-lg text-center">
                         {{ c.credentials.email }}
@@ -217,14 +195,14 @@
                 </a>
             </div>
             
-            <a id="contact-social" href="{{ c.credentials.locationLink }}" target="_blank" class="block p-3 px-5 m-3 border border-gray-800 rounded-2xl hover:-translate-y-0.5 hover:shadow-md">
+            <a id="contact-social" href="{{ c.credentials.locationLink }}" target="_blank" class="block p-3 px-5 m-3 border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
                 <p class="contact-social-text inline-block text-b500 align-middle text-gray-800">
                     <img src="{% static 'other/icons/pin.png' %}" alt="Location" id="contact-social-icon" class="inline-block w-6 h-6">
                     {{ c.main.contactLocation }}
                 </p>
             </a>
 
-            <a id="contact-social" href="{{ c.main.cvLink }}" target="_blank" class="block p-3 px-5 m-3 border border-gray-800 rounded-2xl hover:-translate-y-0.5 hover:shadow-md">
+            <a id="contact-social" href="{{ c.main.cvLink }}" target="_blank" class="block p-3 px-5 m-3 border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
                 <p class="contact-social-text inline-block text-b500 align-middle text-gray-800">
                     <img src="{% static 'other/icons/user.png' %}" alt="User" id="contact-social-icon" class="inline-block w-6 h-6">
                     {{ c.main.contactCvText }}
@@ -237,16 +215,13 @@
 
 <div id="testimonials" class="testimonials-section-3 mt-8 md:mt-12">
     <div id="testimonials-wrapper" class="m-2 my-3 p-2 md:m-5 md:mb-3 md:p-5 mt-7 md:mt-16 flex items-center flex-col">
-        <h3 id="testimonials-heading" class="intertight text-neutral-900 text-4xl md:text-5xl mb-5 md:mb-6" style="font-weight: 700;">
-            {{ c.main.testimonialHeading |safe }}
-        </h3>
         <div id="testimonials-inner" class="md:flex w-full justify-evenly">
             
     
             <div id="testimonial" class="m-2 flex flex-col items-center p-2">
                 <img src="{% static 'other/icons/quote-primary.png' %}" alt="Quoting testimonial" class="w-6 h-6">
                 
-                <div id="testimonial-inner" class="max-w-md border-2 border-white border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
+                <div id="testimonial-inner" class="max-w-md border-2 border-transparent border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
                     <p id="testimonial-text" class="text-2xl text-gray-900 text-b500" style="font-style: italic;">
                         {{ c.main.testimonialsContent.James }}
                     </p>
@@ -260,7 +235,7 @@
             {% if c.main.testimonialsContent.Jasna != "" %}
             <div id="testimonial" class="m-2 flex flex-col items-center p-2">
                 <img src="{% static 'other/icons/quote-primary.png' %}" alt="Quoting testimonial" class="w-6 h-6">
-                <div id="testimonial-inner" class="max-w-md border-2 border-white border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
+                <div id="testimonial-inner" class="max-w-md border-2 border-transparent border-r-primary border-l-primary rounded-xl p-3 px-6 mt-3">
                     <p id="testimonial-text" class="text-2xl text-gray-900 text-b500" style="font-style: italic;">
                         {{ c.main.testimonialsContent.Jasna }}
                     </p>
