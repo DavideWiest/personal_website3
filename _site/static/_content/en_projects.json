@@ -4,6 +4,7 @@
     "tagDesc": "Technologies:",
     "categoryDesc": "Categories:",
     "seeallprojects": "See all projects",
+    "casestudy_cta": "See case study",
     "projects": {
         "finsights": {
             "name": "Finsights",
@@ -16,7 +17,7 @@
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"],
             "align": 0,
-            "inmain": true
+            "is_casestudy": false
         },
         "personal-website": {
             "name": "Personal Website",
@@ -29,7 +30,7 @@
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"],
             "align": 0,
-            "inmain": true
+            "is_casestudy": false
         },
         "django-framework": {
             "name": "Custom Framework for Django",
@@ -42,7 +43,7 @@
             "t": ["Python", "Django"],
             "c": ["Framework", "Webapp"],
             "align": 1,
-            "inmain": true
+            "is_casestudy": false
         },
         "instadata": {
             "name": "Instadata Webapp + Scraper",
@@ -55,7 +56,7 @@
             "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
             "c": ["Datascience", "Webapp", "API", "Scraper"],
             "align": 0,
-            "inmain": true
+            "is_casestudy": false
         },
         "mainservermodule": {
             "name": "MainServerModule",
@@ -68,7 +69,7 @@
             "t": ["Python", "HTML", "Flask", "Jinja2"],
             "c": ["Encryption", "API", "PDF Maker"],
             "align": 1,
-            "inmain": true
+            "is_casestudy": false
         },
         "thetraderscircle": {
             "name": "TheTradersCircle",
@@ -81,7 +82,7 @@
             "t": ["Adobe Illustrator", "Canva"],
             "c": ["Naming", "Logo", "Branding", "Brand Strategy"],
             "align": 0,
-            "inmain": true
+            "is_casestudy": false
         }
     }
 }

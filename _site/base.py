@@ -30,11 +30,14 @@ def build_params(title, storage_ptrs, params, language, base_path=None):
         else:
             c_files[filename] = {}
 
+    alternative_langs = list(allowed_languages)
+    alternative_langs.remove(language)
     bparams = {
         "title": title + std_title_clause,
         "base_url": "https://davidewiest.com",
         "c": c_files,
-        "l": language
+        "l": language,
+        "other_langs": alternative_langs
     }
 
     return {**bparams, **params}

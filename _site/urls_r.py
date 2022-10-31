@@ -34,7 +34,6 @@ def other(request, resource_title):
 
 urlpatterns = [
     path("cv", cv),
-    path("google-marketing-certificate", certificate),
+    path("google-certificate", certificate),
     path("<str:resource_title>", other)
-    # path("", views.main_log),
 ]

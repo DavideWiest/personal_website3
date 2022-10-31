@@ -14,7 +14,7 @@ def main(request):
     
     return render(request, "main.html", build_params("", ["main", "credentials", "projects"], params, l))
 
-def projets(request, project=None):
+def projects(request, project=None):
     l = choose_lang(request)
     request.session = handle_requestdata(request, l)
     
@@ -25,7 +25,12 @@ def projets(request, project=None):
     if project == None:
         return render(request, "projects.html", build_params("Projekte", ["credentials", "projects"], params, l))
     elif project in list(projects):
-        return render(request, "singleproject.html", build_params("Projekte", ["credentials", "projects"], params, l))
+        params["key"] = project
+        params["data"] = projects[project]
+        if not projects[project]["is_casestudy"]:
+            return render(request, "casestudy.html", build_params("Projekte", ["credentials", "projects"], params, l))
+        else:
+            return Http404
     else:
         return Http404
 

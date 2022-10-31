@@ -1,0 +1,46 @@
+{% load static %}
+<div id="flash-msgs" class="fixed z-10 bottom-0 mx-6 mb-4 md:mx-6 md:mb-6 right-0 w-64">
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == "info" or message.tags == "debug" %}
+                <div id="flash-msg" class="w-64 border-l-8 border-r-2 border-t-2 border-b-2 border-blue-500 px-4 py-3 backdrop-filter backdrop-blur-md relative" role="alert" style="background-color: rgba(255,255,255, 0.678)">
+                    <p id="flash-msg-text" class="text-sm md:text-base pr-4">
+                        {{ message }}
+                    </p>
+                    <button class="absolute top-0 bottom-0 right-0 px-4 py-3" onclick="this.parentElement.remove();">
+                        <img src="{% static 'icons/close.png' %}" alt="Close" class="w-2.5 h-2.5">
+                    </button>
+                </div>
+            {% elif message.tags == "success" %}
+                <div id="flash-msg" class="w-64 border-l-8 border-r-2 border-t-2 border-b-2 border-green-500 px-4 py-3 backdrop-filter backdrop-blur-md relative" role="alert" style="background-color: rgba(255,255,255, 0.678)">
+                    <p id="flash-msg-text" class="text-sm md:text-base pr-4">
+                        {{ message }}
+                    </p>
+                    <button class="absolute top-0 bottom-0 right-0 px-4 py-3" onclick="this.parentElement.remove();">
+                        <img src="{% static 'icons/close.png' %}" alt="Close" class="w-2.5 h-2.5">
+                    </button>
+                </div>
+            {% elif message.tags == "error" or message.tags == "warning" %}
+                <div id="flash-msg" class="w-64 border-l-8 border-r-2 border-t-2 border-b-2 border-red-500 px-4 py-3 backdrop-filter backdrop-blur-md relative" role="alert" style="background-color: rgba(255,255,255, 0.678)">
+                    <p id="flash-msg-text" class="text-sm md:text-base pr-4">
+                        {{ message }}
+                    </p>
+                    <button class="absolute top-0 bottom-0 right-0 px-4 py-3" onclick="this.parentElement.remove();">
+                        <img src="{% static 'icons/close.png' %}" alt="Close" class="w-2.5 h-2.5">
+                    </button>
+                </div>
+            {% endif %}
+            
+            {% if make_cookie_msg %}
+                <div id="flash-msg" class="w-64 border-l-8 border-r-2 border-t-2 border-b-2 border-blue-500 px-4 py-3 backdrop-filter backdrop-blur-md relative" role="alert" style="background-color: rgba(255,255,255, 0.678)">
+                    <p id="flash-msg-text" class="text-sm md:text-base pr-4">
+                        {{ c.base.cookie_info_message }}
+                    </p>
+                    <button class="absolute top-0 bottom-0 right-0 px-4 py-3" onclick="this.parentElement.remove();">
+                        <img src="{% static 'icons/close.png' %}" alt="Close" class="w-2.5 h-2.5">
+                    </button>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</div>
