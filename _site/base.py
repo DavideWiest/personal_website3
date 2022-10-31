@@ -32,6 +32,7 @@ def build_params(title, storage_ptrs, params, language, base_path=None):
 
     alternative_langs = list(allowed_languages)
     alternative_langs.remove(language)
+    
     bparams = {
         "title": title + std_title_clause,
         "base_url": "https://davidewiest.com",

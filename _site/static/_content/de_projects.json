@@ -12,12 +12,25 @@
             "image": "finsights.png",
             "image_unchanged": true,
             "link": "https://finsights.site",
-            "linkIcon": "/static/other/icons/github-white.png",
+            "linkIcon": "",
             "linkDesc": "Github Repository ansehen",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"],
+            "align": 1,
+            "is_casestudy": true
+        },
+        "decadruck": {
+            "name": "DecaDruck",
+            "description": "",
+            "image": "",
+            "image_unchanged": true,
+            "link": "https://davidewiest.com/decadruck",
+            "linkIcon": "",
+            "linkDesc": "Seite besuchen",
+            "t": ["Python", "HTML", "CSS", "Flask", "Branding"],
+            "c": ["Website", "Design", "Ecommerce"],
             "align": 0,
-            "is_casestudy": false
+            "is_casestudy": true
         },
         "personal-website": {
             "name": "Eigene Webseite",
@@ -25,7 +38,7 @@
             "image": "",
             "image_unchanged": true,
             "link": "https://github.com/DavideWiest/personal_website2",
-            "linkIcon": "/static/other/icons/github-white.png",
+            "linkIcon": "github-white.png",
             "linkDesc": "Github Repository ansehen",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"],
@@ -38,12 +51,25 @@
             "image": "",
             "image_unchanged": true,
             "link": "https://github.com/DavideWiest/simple_django_framework",
-            "linkIcon": "/static/other/icons/github-white.png",
+            "linkIcon": "github-white.png",
             "linkDesc": "Github Repository ansehen",
             "t": ["Python", "Django"],
             "c": ["Framework", "Webapp"],
             "align": 0,
             "is_casestudy": false
+        },
+        "thetraderscircle": {
+            "name": "TheTradersCircle",
+            "description": "Mein Kunde wollte eine Online-Community aufbauen, um anderen das Trading beizubringen. Ich kreierte ein modernes, authentisches Logo und die Grundlagen der Marke.",
+            "image": "",
+            "image_unchanged": true,
+            "link": "/resources/TheTradersCircle_Brand_De.pdf",
+            "linkIcon": "pdf.png",
+            "linkDesc": "PDF ansehen",
+            "t": ["Adobe Illustrator", "Canva"],
+            "c": ["Namensgebung", "Logo", "Branding", "Brand Strategy"],
+            "align": 1,
+            "is_casestudy": true
         },
         "instadata": {
             "name": "Instadata Webapp + Scraper",
@@ -51,7 +77,7 @@
             "image": "",
             "image_unchanged": true,
             "link": "https://github.com/DavideWiest/idww",
-            "linkIcon": "/static/other/icons/github-white.png",
+            "linkIcon": "github-white.png",
             "linkDesc": "Github Repository ansehen",
             "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
             "c": ["Datascience", "Webapp", "API", "Scraper"],
@@ -64,24 +90,11 @@
             "image": "",
             "image_unchanged": true,
             "link": "https://github.com/DavideWiest/mainservermodule",
-            "linkIcon": "/static/other/icons/github-white.png",
+            "linkIcon": "github-white.png",
             "linkDesc": "Github Repository ansehen",
             "t": ["Python", "HTML", "Flask", "Jinja2"],
             "c": ["Verschlüsselung", "API", "PDF-Erstellung"],
             "align": 0,
-            "is_casestudy": false
-        },
-        "thetraderscircle": {
-            "name": "TheTradersCircle",
-            "description": "Mein Kunde wollte eine Online-Community aufbauen, um anderen das Trading beizubringen. Ich kreierte ein modernes, authentisches Logo und die Grundlagen der Marke.",
-            "image": "",
-            "image_unchanged": true,
-            "link": "/resources/TheTradersCircle_Brand_De.pdf",
-            "linkIcon": "/static/other/icons/pdf.png",
-            "linkDesc": "PDF ansehen",
-            "t": ["Adobe Illustrator", "Canva"],
-            "c": ["Namensgebung", "Logo", "Branding", "Brand Strategy"],
-            "align": 1,
             "is_casestudy": false
         }
     }

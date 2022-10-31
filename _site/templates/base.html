@@ -59,38 +59,14 @@
     {% block outsidecontents %}
     {% endblock %}
 
-    <div id="stickycta-text" class="z-10 shadow-md fixed bottom-0 right-0 w-fit p-6 py-1.5 text-center text-b800 inline-block flex justify-between items-center bg-white/75 backdrop-filter backdrop-blur">
-        <div id="language-setter" class="flex justify-end">
-            <div id="language-option">
-                <img src="{{ c.base.primaryLangIcon }}" alt="Current Language" class="w-7 h-7 md:w-10 md:h-10 m-2 inline-block p-1 border border-gray-500 rounded-lg">
-            </div>
-
-            <div id="language-sep-bar"></div>
-
-            <a id="language-option" href="?language={{ c.base.secondaryLang }}" class="block">
-                <img src="{{ c.base.secondaryLangIcon }}" alt="Other Language: {{ c.base.secondaryLang }}" class="w-7 h-7 md:w-10 md:h-10 m-2 inline-block p-1 border border-transparent rounded-lg">
-            </a>
-        </div>
-    </div>
 
     <div class="content min-h-screen" style="max-width: 100vw;">
         {% block htmlcontents %}
         {% endblock %}
     </div>
 
-    <div class="flex justify-center">
-        <div class="max-w-lg">
-            <h3 class="text-3xl text-b700 text-center">
-                {{ c.base.cta.title }}
-            </h3>
-            <p class="text-gray-800 text-lg">
-                {{ c.base.cta.description }}
-            </p>
-            <a id="cta-button" class="shadow-md rounded-3xl bg-accent hover:border-black py-2 px-5 h-min text-sm md:text-base border border-2 border-accent transition duration-300 ease-in-out" href="mailto:{{ c.credentials.email }}">
-                {{ c.base.cta.button }}
-            </a>
-        </div>
-    </div>
+
+    {% include 'blocks/bottomcta.html' %}
 
     {% include 'blocks/footer.html' %}
 
@@ -100,9 +76,7 @@
                 img.onerror = function(){this.style.visibility='hidden';};
             })
         });
-    </script>
 
-    <script>
         document.addEventListener("DOMContentLoaded", function(event) {
             if (localStorage.getItem('fromPage') == window.location.href) {
                 var scrollpos = localStorage.getItem('scrollpos');
@@ -110,11 +84,87 @@
             }
         });
 
+        
+        function toggleNavMobile(elem) {
+            const div = document.querySelector('#navbar-links');
+            if (div != null) {
+                if (div.classList.contains("hidden")) {
+                    div.classList.remove("hidden");
+                } else {
+                    div.classList.add("hidden");
+                    if (document.activeElement == elem) {
+                        elem.blur();
+                    }
+                }
+            }
+        }
+
         window.onbeforeunload = function(e) {
             localStorage.setItem('scrollpos', window.scrollY);
             localStorage.setItem('fromPage', window.location.href);
         };
+
+        document.addEventListener('click', function handleClickOutsideBox(event) {
+            const div = document.getElementById('navbar-links');
+            const btn = document.getElementById('toggle-nav-mobile-btn');
+            
+            if (div != null) {
+                if (!div.contains(event.target) && !btn.contains(event.target)) {
+                    div.classList.add("hidden");
+                }
+            }
+        });
+
+        document.getElementById('toggle-nav-mobile-btn').addEventListener('focusout', (event) => {
+            const div = document.getElementById('navbar-links');
+            if (div != null) {
+                if (event.relatedTarget == div) {
+                    const btn = document.getElementById('toggle-nav-mobile-btn');
+                    btn.focus();
+                }
+            }
+        });
+
+        function revealLangOptions() {
+            const div = document.querySelector('#language-options-inner');
+            if (div != null) {
+                if (div.classList.contains("hidden")) {
+                    div.classList.remove("hidden");
+                } else {
+                    div.classList.add("hidden");
+                }
+            }
+        }
+
+        document.addEventListener('click', function handleClickOutsideBox(event) {
+            const div = document.getElementById('language-options-inner');
+            const btn = document.getElementById('show-languages');
+            
+            if (div != null) {
+                if (!div.contains(event.target) && !btn.contains(event.target)) {
+                    div.classList.add("hidden");
+                }
+            }
+        });
+
+        function sizeNav() {
+            if (document.getElementById("special-announcement") != null && screen.width < 767) {
+                var top1 = document.getElementById("special-announcement").offsetHeight;
+                document.getElementById("navbar-links").style.top = String(62 + top1) + "px";
+            } else if (screen.width >= 767) {
+                document.getElementById("navbar-links").style.top = String(0) + "px";
+            }
+        }
+ 
+        window.addEventListener("resize", function(event) {
+            sizeNav()
+        })
+
+        sizeNav();
+
+
     </script>
+
     {% block scripts %}
     {% endblock %}
 

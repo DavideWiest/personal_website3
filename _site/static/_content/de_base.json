@@ -1,14 +1,24 @@
 {
     "footerStartName": "Zur Startseite",
     "cta": {
-        "title": "",
+        "title": "Kontaktieren Sie mich",
         "description": "",
-        "button": "Kontaktieren Sie mich"
+        "button": "Eine Mail schicken"
     },
-    "primaryLangIcon": "/static/other/icons/german-flag.png",
-    "secondaryLangIcon": "/static/other/icons/uk-flag.png",
     "secondaryLang": "en",
     "footerStart": "Startseite",
     "footerTAC": "AGB",
-    "footerPS": "Impressum & Datenschutzerklärung"
+    "footerPS": "Impressum & Datenschutzerklärung",
+    "specialannouncement": "TEST: Check out this deal!",
+    "nav": {
+        "switch_lang_info": "Andere Sprache auswählen",
+        "switch_lang_infobtn": "Sprache auswählen"
+    },
+    "contactHeading": "Kontaktieren Sie mich",
+    "contactCta": "Eine Email schicken",
+    "contactCtaText": "Bitte beschreiben Sie, was Sie erreichen möchten und ich werde Ihnen gerne helfen. Ich bin erreichbar unter: ",
+    "contactLocation": "nahe Alzey, RLP, Deutschland",
+    "cvLink": "/ressourcen/lebenslauf",
+    "contactCvText": "Lebenslauf ansehen",
+    "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
 }

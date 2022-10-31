@@ -17,17 +17,10 @@
         "04": ["Deployment", "Finally, the project must be deployed or integrated. If it's a website, you can host and maintain it yourself, or I'll handle everything for an individual monthly fee."]
     },
     "testimonialHeading": "What my customers say",
-    "testimonialsContent": {
+    "testimonials": {
         "James": "My new logo looks flawless and contributes to my server's branding. Davide understood all relevant design aspects and I would recommend him to anyone interested.",
         "Jasna": ""
     },
-    "contactHeading": "Let's get in touch",
-    "contactCta": "Drop me an Email",
-    "contactCtaText": "Please tell me about what you want to achieve and I will help you happily.",
-    "contactLocation": "near Alzey, RLP, Germany",
-    "cvLink": "/resources/cv",
-    "contactCvText": "See my CV",
-    "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
     "quote": "It always seems impossible until its done.",
     "quote_author": "Nelson Mandela"
 }

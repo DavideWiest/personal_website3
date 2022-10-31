@@ -17,17 +17,10 @@
         "04": ["Einsatz", "Zuletzt muss das Projekt eingesetzt werden. Sollte es um eine Webseite gehen können Sie sich selbst um das Hosting und die Instandhaltung kümmern, oder ich mache das für einen festgelegten monatlichen Betrag."]
     },
     "testimonialHeading": "Das sagen meine Kunden",
-    "testimonialsContent": {
+    "testimonials": {
         "James": "Mein neues Logo sieht einwandfrei aus und trägt zur Marke meines Servers bei. Davide verstand alle relevanten Designaspekte und ich w\u00fcrde ihn jedem Interessierten weiterempfehlen.",
         "Jasna": ""
     },
-    "contactHeading": "Kontaktieren Sie mich",
-    "contactCta": "Eine Email schicken",
-    "contactCtaText": "Bitte beschreiben Sie, was Sie erreichen möchten und ich werde Ihnen gerne helfen.",
-    "contactLocation": "nahe Alzey, RLP, Deutschland",
-    "cvLink": "/ressourcen/lebenslauf",
-    "contactCvText": "Lebenslauf ansehen",
-    "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
     "quote": "It always seems impossible until its done.",
     "quote_author": "Nelson Mandela"
 }

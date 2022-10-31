@@ -12,12 +12,12 @@
             "image": "finsights.png",
             "image_unchanged": true,
             "link": "https://finsights.site",
-            "linkIcon": "/static/other/icons/github-white.png",
+            "linkIcon": "github-white.png",
             "linkDesc": "Github Repository ansehen",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"],
             "align": 0,
-            "is_casestudy": false
+            "is_casestudy": true
         },
         "personal-website": {
             "name": "Personal Website",
@@ -25,7 +25,7 @@
             "image": "",
             "image_unchanged": true,
             "link": "https://github.com/DavideWiest/personal_website2",
-            "linkIcon": "/static/other/icons/github-dark.png",
+            "linkIcon": "github-dark.png",
             "linkDesc": "View Github Repository",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"],
@@ -38,11 +38,24 @@
             "image": "",
             "image_unchanged": true,
             "link": "https://github.com/DavideWiest/simple_django_framework",
-            "linkIcon": "/static/other/icons/github-dark.png",
+            "linkIcon": "github-dark.png",
             "linkDesc": "View Github Repository",
             "t": ["Python", "Django"],
             "c": ["Framework", "Webapp"],
             "align": 1,
+            "is_casestudy": false
+        },
+        "thetraderscircle": {
+            "name": "TheTradersCircle",
+            "description": "My client wanted to build an online community to teach others trading. I built a compelling logo and made a brand framework, and also helped a little with the overall business strategy.",
+            "image": "",
+            "image_unchanged": true,
+            "link": "/resources/TheTradersCircle_Brand.pdf",
+            "linkIcon": "pdf.png",
+            "linkDesc": "View PDF",
+            "t": ["Adobe Illustrator", "Canva"],
+            "c": ["Naming", "Logo", "Branding", "Brand Strategy"],
+            "align": 0,
             "is_casestudy": false
         },
         "instadata": {
@@ -51,7 +64,7 @@
             "image": "",
             "image_unchanged": true,
             "link": "https://github.com/DavideWiest/idww",
-            "linkIcon": "/static/other/icons/github-dark.png",
+            "linkIcon": "github-dark.png",
             "linkDesc": "View Github Repository",
             "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
             "c": ["Datascience", "Webapp", "API", "Scraper"],
@@ -64,24 +77,11 @@
             "image": "",
             "image_unchanged": true,
             "link": "https://github.com/DavideWiest/mainservermodule",
-            "linkIcon": "/static/other/icons/github-dark.png",
+            "linkIcon": "github-dark.png",
             "linkDesc": "View Github Repository",
             "t": ["Python", "HTML", "Flask", "Jinja2"],
             "c": ["Encryption", "API", "PDF Maker"],
             "align": 1,
-            "is_casestudy": false
-        },
-        "thetraderscircle": {
-            "name": "TheTradersCircle",
-            "description": "My client wanted to build an online community to teach others trading. I built a compelling logo and made a brand framework, and also helped a little with the overall business strategy.",
-            "image": "",
-            "image_unchanged": true,
-            "link": "/resources/TheTradersCircle_Brand.pdf",
-            "linkIcon": "/static/other/icons/pdf.png",
-            "linkDesc": "View PDF",
-            "t": ["Adobe Illustrator", "Canva"],
-            "c": ["Naming", "Logo", "Branding", "Brand Strategy"],
-            "align": 0,
             "is_casestudy": false
         }
     }
