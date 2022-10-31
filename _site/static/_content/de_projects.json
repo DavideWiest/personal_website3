@@ -5,6 +5,7 @@
     "categoryDesc": "Kategorien:",
     "projects": {
         "Finsights": {
+            "name": "Finsights",
             "description": "",
             "image": "finsights.png",
             "image_unchanged": true,
@@ -17,6 +18,7 @@
             "inmain": true
         },
         "Neue persönliche Webseite": {
+            "name": "Persönliche Webseite",
             "description": "Eine komplette Überarbeitung meiner persönlichen Website. Ich bin von Flask auf Django umgestiegen und verwende jetzt TailwindCSS. Zusätzlich ist die Website in deutsch und englisch verfügbar.",
             "image": "",
             "image_unchanged": true,
@@ -29,6 +31,7 @@
             "inmain": true
         },
         "Individuelles Django Framework": {
+            "name": "Individuelles Django Framework",
             "description": "Mein persönliches kleines Django-Framework, das ich verwenden werde, um neue Websites schneller und effektiver zu erstellen. Enthalten sind die Grundlagen zum Erstellen einer API und eine optimierte Ordnerstruktur.",
             "image": "",
             "image_unchanged": true,
@@ -40,7 +43,8 @@
             "align": 0,
             "inmain": true
         },
-        "IDWW (Webapp & Scraper)": {
+        "Instadata Webapp + Scraper": {
+            "name": "Instadata Webapp + Scraper",
             "description": "Ein großer Instagram-Scraper, der mit Django erstellt wurde und eine API verwendet, um zwischen Benutzer und Programm zu kommunizieren. Der Scraper lässt sich nahtlos skalieren und kann Proxies benutzen. Ich habe ihn gebaut, um Daten für weitere Data-Science-Projekte zu sammeln, also habe ich den Nominatim Geolocator und Regex verwendet, um so viele Daten wie möglich zu extrahieren und zu ordnen. Ich empfehle Ihnen, sich das README anzusehen.",
             "image": "",
             "image_unchanged": true,
@@ -53,6 +57,7 @@
             "inmain": true
         },
         "MainServerModule": {
+            "name": "MainServerModule",
             "description": "Eine Sammlung von Modulen, die A) eine sichere Verbindung zu mehreren meiner Flask-Projekt-APIs herstellen und Daten austauschen sowie den API-Schlüssel mithilfe der Fernet-Verschlüsselung regelmäßig aktualisieren können B) Mein Flask-Webapp-Framework füllen C) Eine einfache PDF-Rechnung generieren Module, die A) eine sichere Verbindung zu mehreren meiner Flask-Projekt-APIs herstellen und Daten austauschen sowie den API-Schlüssel mithilfe der Fernet-Verschlüsselung regelmäßig aktualisieren können B) Mein Flask-Webapp-Framework mit Werten auffüllen C) Eine einfache PDF-Rechnung generieren. Derzeit außer Betrieb.",
             "image": "",
             "image_unchanged": true,
@@ -64,7 +69,8 @@
             "align": 0,
             "inmain": true
         },
-        "TheTradersCircle (Branding & Strategie)": {
+        "TheTradersCircle": {
+            "name": "TheTradersCircle",
             "description": "Mein Kunde wollte eine Online-Community aufbauen, um anderen das Trading beizubringen. Ich kreierte ein modernes, authentisches Logo und die Grundlagen der Marke.",
             "image": "",
             "image_unchanged": true,

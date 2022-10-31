@@ -4,7 +4,21 @@
     "tagDesc": "Technologies:",
     "categoryDesc": "Categories:",
     "projects": {
-        "New personal Website": {
+        "Finsights": {
+            "name": "Finsights",
+            "description": "",
+            "image": "finsights.png",
+            "image_unchanged": true,
+            "link": "https://finsights.site",
+            "linkIcon": "/static/other/icons/github-white.png",
+            "linkDesc": "Github Repository ansehen",
+            "t": ["Python", "HTML", "TailwindCSS", "Django"],
+            "c": ["Website", "Design"],
+            "align": 0,
+            "inmain": true
+        },
+        "Personal Website": {
+            "name": "Personal Website",
             "description": "A complete revision of my personal website. I switched from Flask to Django and now use TailwindCSS. Additionally, the website is available in German and English.",
             "image": "",
             "image_unchanged": true,
@@ -16,7 +30,8 @@
             "align": 0,
             "inmain": true
         },
-        "Custom Web Framework (Django)": {
+        "Custom Framework for Django": {
+            "name": "Custom Framework for Django",
             "description": "My personal Django Framework I will use to build new websites faster and more effectively. I include the fundamentals to build an Api and optimized the folder structure.",
             "image": "",
             "image_unchanged": true,
@@ -28,7 +43,8 @@
             "align": 1,
             "inmain": true
         },
-        "IDWW (Webapp & Scraper)": {
+        "Instadata Webapp + Scraper": {
+            "name": "Instadata Webapp + Scraper",
             "description": "A large instagram scraper built with Django that uses an API to communicate between user and program. The Scraper can be scaled seaminglessly and uses proxies. I built it to gather data for further Data-Science projects, so I used the Nominatim Geolocator and Regex to extract and order as much data as possible. I recommend you check out the README.",
             "image": "",
             "image_unchanged": true,
@@ -41,6 +57,7 @@
             "inmain": true
         },
         "MainServerModule": {
+            "name": "MainServerModule",
             "description": "A collection of modules that can A) securely connect to multiple of my Flask project APIs and exchange data aswell as periodically update the API-Key using Fernet-encryption B) Populate my Flask Webapp Framework C) Generate a basic PDF invoice.",
             "image": "",
             "image_unchanged": true,
@@ -52,7 +69,8 @@
             "align": 1,
             "inmain": true
         },
-        "TheTradersCircle (Branding & Strategy)": {
+        "TheTradersCircle": {
+            "name": "TheTradersCircle",
             "description": "My client wanted to build an online community to teach others trading. I built a compelling logo and made a brand framework, and also helped a little with the overall business strategy.",
             "image": "",
             "image_unchanged": true,
@@ -62,18 +80,6 @@
             "t": ["Adobe Illustrator", "Canva"],
             "c": ["Naming", "Logo", "Branding", "Brand Strategy"],
             "align": 0,
-            "inmain": true
-        },
-        "Personal Brand": {
-            "description": "In this project I redefined how I position myself to find clients that fit to me and how to build the right kind of recognition around me. ",
-            "image": "",
-            "image_unchanged": true,
-            "link": "",
-            "linkIcon": "",
-            "linkDesc": "",
-            "t": ["Adobe Illustrator", "Canva"],
-            "c": ["Logo", "Brand Values", "Brand Strategy"],
-            "align": 1,
             "inmain": true
         }
     }
