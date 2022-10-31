@@ -7,8 +7,8 @@
                 <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl mb-4" style="font-weight: 700;">
                     {{ c.base.contactHeading |safe }}
                 </h3>
-                <p class="max-w-md text-lg my-4">
-                    {{ c.base.contactCtaText }} {{ c.credentials.email }}
+                <p class="max-w-md text-lg my-5">
+                    {{ c.base.contactCtaText }} <span class="code text-b400 inline-block px-2">{{ c.credentials.email }}</span>
                 </p>
                 <a id="contact-social" href="mailto:{{ c.credentials.email }}" class="inline-block p-3 px-7 border border-accent rounded-3xl border-2 border-transparent bg-accent hover:border-black transition duration-300 ease-in-out">
                     <p class="contact-social-text text-b700 text-lg align-middle text-center">
@@ -35,7 +35,7 @@
                         </p>
                     </a>
         
-                    <a id="contact-social" href="{{ c.base.cvLink }}" target="_blank" class="block w-full p-3 px-5 m-3 bg-white border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
+                    <a id="contact-social" href="{{ c.credentials.cvlink }}" target="_blank" class="block w-full p-3 px-5 m-3 bg-white border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
                         <p class="contact-social-text inline-block text-b500 align-middle text-gray-800">
                             <img src="{% static 'icons/user.png' %}" alt="User" id="contact-social-icon" class="inline-block w-6 h-6 mr-3">
                             {{ c.base.contactCvText }}
