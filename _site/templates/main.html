@@ -106,14 +106,14 @@
             {% endif %}
             {% endif %}
             <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-sm {% else %} max-w-md {% endif %}">
-                <a id="project" href="projects/{{ key }}" target="_blank" class="group block bg-white max-w-lg rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
+                <a id="project" href="projects/{{ key }}" target="_blank" class="group block bg-white max-w-xl rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
                         
                     <div class="p-6">
                         <h3 id="project-title" class="text-2xl text-b600 mb-2">
                             {{ value.name }}
                         </h3>
                         <div id="project-categories" class="ml-1">
-                            <p id="project-category-desc" class="roboto text-xs inline-block text-neutral-500">
+                            <p id="project-category-desc" class="roboto text-xs text-neutral-500">
                                 {{ c.projects.categoryDesc }}
                             </p>
                             {% for category in value.c %}
@@ -123,7 +123,7 @@
                             {% endfor %}
                         </div>
                         <div id="project-tags" class="ml-1">
-                            <p id="project-tag-desc" class="roboto text-xs inline-block text-neutral-500">
+                            <p id="project-tag-desc" class="roboto text-xs text-neutral-500">
                                 {{ c.projects.tagDesc }}
                             </p>
                             {% for tag in value.t %}

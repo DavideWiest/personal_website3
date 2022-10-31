@@ -19,6 +19,19 @@
             "align": 0,
             "is_casestudy": true
         },
+        "decadruck": {
+            "name": "DecaDruck",
+            "description": "",
+            "image": "",
+            "image_unchanged": true,
+            "link": "https://davidewiest.com/decadruck",
+            "linkIcon": "",
+            "linkDesc": "Seite besuchen",
+            "t": ["Python", "HTML", "CSS", "Flask", "Branding"],
+            "c": ["Website", "Design", "Ecommerce", "Price-Calculation"],
+            "align": 1,
+            "is_casestudy": true
+        },
         "personal-website": {
             "name": "Personal Website",
             "description": "A complete revision of my personal website. I switched from Flask to Django and now use TailwindCSS. Additionally, the website is available in German and English.",
@@ -56,7 +69,7 @@
             "t": ["Adobe Illustrator", "Canva"],
             "c": ["Naming", "Logo", "Branding", "Brand Strategy"],
             "align": 0,
-            "is_casestudy": false
+            "is_casestudy": true
         },
         "instadata": {
             "name": "Instadata Webapp + Scraper",
