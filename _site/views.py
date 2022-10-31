@@ -36,4 +36,3 @@ def projects(request, project=None):
     else:
         return HttpResponseNotFound("This project does not exist")
 
-
