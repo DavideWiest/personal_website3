@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}{{ title }}{% endblock %}
-{% block header %}{{ title }}{% endblock %}
-
 {% block outsidecontents %}
 {% endblock %}
 
@@ -136,7 +133,7 @@
                                 {% endfor %}
                             </div>
                             <p id="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
-                                {{ value.description }}
+                                {{ value.description|safe }}
                             </p>
                             <button id="project-link" class="mt-4 bg-neutral-800 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 hover:shadow-lg hover:bg-black transition duration-300 ease-in-out">
                                 <div class="inline-block mr-1">
@@ -168,6 +165,15 @@
         </div>
     </div>
 </div>
+
+<div class="flex justify-center">
+    <button id="project-link" class="mt-4 bg-neutral-800 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 hover:shadow-lg hover:bg-black transition duration-300 ease-in-out">
+        <span id="project-link-text" class="align-middle text-b400 text-white md:text-lg">
+            {{ c.projects.seeallprojects }}
+        </span>
+    </button>
+</div>
+
 
 <div id="contact" class="mt-8 md:mt-10 pt-14 pb-7">
     <div id="contact-inner" class="flex flex-col items-center p-2 md:p-5">
@@ -260,17 +266,6 @@
         var elem = document.querySelector(queryselec);
         elem.scrollIntoView({behavior: "smooth"});
     }
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) { 
-        var scrollpos = localStorage.getItem('scrollpos');
-        if (scrollpos) window.scrollTo(0, scrollpos);
-    });
-
-    window.onbeforeunload = function(e) {
-        localStorage.setItem('scrollpos', window.scrollY);
-    };
 </script>
 
 {% endblock %}

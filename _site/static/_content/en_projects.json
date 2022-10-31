@@ -3,8 +3,9 @@
     "projectsDescription": "A few parts are highly technical. Contact me if you want more info about a project.",
     "tagDesc": "Technologies:",
     "categoryDesc": "Categories:",
+    "seeallprojects": "See all projects",
     "projects": {
-        "Finsights": {
+        "finsights": {
             "name": "Finsights",
             "description": "",
             "image": "finsights.png",
@@ -17,7 +18,7 @@
             "align": 0,
             "inmain": true
         },
-        "Personal Website": {
+        "personal-website": {
             "name": "Personal Website",
             "description": "A complete revision of my personal website. I switched from Flask to Django and now use TailwindCSS. Additionally, the website is available in German and English.",
             "image": "",
@@ -30,7 +31,7 @@
             "align": 0,
             "inmain": true
         },
-        "Custom Framework for Django": {
+        "django-framework": {
             "name": "Custom Framework for Django",
             "description": "My personal Django Framework I will use to build new websites faster and more effectively. I include the fundamentals to build an Api and optimized the folder structure.",
             "image": "",
@@ -43,7 +44,7 @@
             "align": 1,
             "inmain": true
         },
-        "Instadata Webapp + Scraper": {
+        "instadata": {
             "name": "Instadata Webapp + Scraper",
             "description": "A large instagram scraper built with Django that uses an API to communicate between user and program. The Scraper can be scaled seaminglessly and uses proxies. I built it to gather data for further Data-Science projects, so I used the Nominatim Geolocator and Regex to extract and order as much data as possible. I recommend you check out the README.",
             "image": "",
@@ -56,7 +57,7 @@
             "align": 0,
             "inmain": true
         },
-        "MainServerModule": {
+        "mainservermodule": {
             "name": "MainServerModule",
             "description": "A collection of modules that can A) securely connect to multiple of my Flask project APIs and exchange data aswell as periodically update the API-Key using Fernet-encryption B) Populate my Flask Webapp Framework C) Generate a basic PDF invoice.",
             "image": "",
@@ -69,7 +70,7 @@
             "align": 1,
             "inmain": true
         },
-        "TheTradersCircle": {
+        "thetraderscircle": {
             "name": "TheTradersCircle",
             "description": "My client wanted to build an online community to teach others trading. I built a compelling logo and made a brand framework, and also helped a little with the overall business strategy.",
             "image": "",

@@ -1,6 +1,10 @@
 {
     "footerStartName": "Zur Startseite",
-    "cta": "Kontaktieren Sie mich",
+    "cta": {
+        "title": "",
+        "description": "",
+        "button": "Kontaktieren Sie mich"
+    },
     "primaryLangIcon": "/static/other/icons/german-flag.png",
     "secondaryLangIcon": "/static/other/icons/uk-flag.png",
     "secondaryLang": "en",

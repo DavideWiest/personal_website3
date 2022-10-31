@@ -1,6 +1,10 @@
 {
     "footerStartName": "Main Page",
-    "cta": "Contact me",
+    "cta": {
+        "title": "",
+        "description": "",
+        "button": "Contact me"
+    },
     "primaryLangIcon": "/static/other/icons/uk-flag.png",
     "secondaryLangIcon": "/static/other/icons/german-flag.png",
     "secondaryLang": "de",

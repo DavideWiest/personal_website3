@@ -24,7 +24,7 @@
     })(window,document,'script','dataLayer','GTM-PFBPDVQ');</script>
     <!-- End Google Tag Manager -->
 
-    <title>{% block title %}{% endblock %}</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="{% static 'css/typography.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="icon" type="image/png" href="{% static 'assets/Branding_Assets 14 Logo White PNG.png' %}"/>
@@ -57,13 +57,7 @@
     {% block outsidecontents %}
     {% endblock %}
 
-    <div id="stickycta-text" class="z-10 shadow-md fixed bottom-0 right-0 w-screen p-6 py-1.5 text-center text-b800 inline-block flex justify-between items-center md:grid mb-0 md:grid-cols-3 bg-white/75 backdrop-filter backdrop-blur">
-        <div></div>
-        <div class="flex justify-center">
-            <a id="stickycta-text-button" class="shadow-md rounded-3xl bg-accent hover:border-black py-2 px-5 h-min text-sm md:text-base border border-2 border-accent transition duration-300 ease-in-out" href="mailto:{{ c.credentials.email }}">
-                {{ c.base.cta }}
-            </a>
-        </div>
+    <div id="stickycta-text" class="z-10 shadow-md fixed bottom-0 right-0 w-fit p-6 py-1.5 text-center text-b800 inline-block flex justify-between items-center bg-white/75 backdrop-filter backdrop-blur">
         <div id="language-setter" class="flex justify-end">
             <div id="language-option">
                 <img src="{{ c.base.primaryLangIcon }}" alt="Current Language" class="w-7 h-7 md:w-10 md:h-10 m-2 inline-block p-1 border border-gray-500 rounded-lg">
@@ -80,6 +74,20 @@
     <div class="content min-h-screen" style="max-width: 100vw;">
         {% block htmlcontents %}
         {% endblock %}
+    </div>
+
+    <div class="flex justify-center">
+        <div class="max-w-lg">
+            <h3 class="text-3xl text-b700 text-center">
+                {{ c.base.cta.title }}
+            </h3>
+            <p class="text-gray-800 text-lg">
+                {{ c.base.cta.description }}
+            </p>
+            <a id="cta-button" class="shadow-md rounded-3xl bg-accent hover:border-black py-2 px-5 h-min text-sm md:text-base border border-2 border-accent transition duration-300 ease-in-out" href="mailto:{{ c.credentials.email }}">
+                {{ c.base.cta.button }}
+            </a>
+        </div>
     </div>
 
     <div id="footer" class="p-2.5 px-5 mt-8 bg-black pb-28">
@@ -112,6 +120,20 @@
                 img.onerror = function(){this.style.visibility='hidden';};
             })
         });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            if (localStorage.getItem('fromPage') == window.location.href) {
+                var scrollpos = localStorage.getItem('scrollpos');
+                if (scrollpos) window.scrollTo(0, scrollpos);
+            }
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+            localStorage.setItem('fromPage', window.location.href);
+        };
     </script>
     {% block scripts %}
     {% endblock %}
