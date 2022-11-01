@@ -16,12 +16,26 @@ import os
 import socket
 from pathlib import Path
 import json
+import cssmin
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 data_path = BASE_DIR / "settings.json"
 hostname = socket.gethostname()
+
+def compress_file(self, filepath, filename):
+        fn_name, fn_type = filename.split(".")
+        with open(f"{filepath}{fn_name}_uncompressed.{fn_type}", "r") as f:
+            file = cssmin.cssmin(f.read())
+
+        with open(f"{filepath}{filename}", "w") as f:
+            f.write(file)
+
+def handle_both():
+    css_path = "_site/static/css/"
+    compress_file(css_path, "base.css")
+    compress_file(css_path, "typography.css")
 
 def handle_production():
     "Handle execution to make application production ready"
@@ -35,10 +49,12 @@ with open(data_path, "r", encoding="utf") as f:
 if hostname in data["production_hostnames"] or hostname not in data["development_hostnames"]:
     print("application starting with PRODUCTION settings")
     dsettings = data["production_settings"]
+    handle_both()
     handle_production()
 else:
     print("application starting with DEVELOPMENT settings")
     dsettings = data["development_settings"]
+    handle_both()
 
 
 
