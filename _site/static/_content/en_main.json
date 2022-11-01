@@ -21,6 +21,71 @@
         "James": "My new logo looks flawless and contributes to my server's branding. Davide understood all relevant design aspects and I would recommend him to anyone interested.",
         "Jasna": ""
     },
-    "quote": "It always seems impossible until its done.",
-    "quote_author": "Nelson Mandela"
+    "quotes": {
+        "design": [
+            "Design",
+            [
+                {
+                    "t": "48% of people cited that a website's design is the No. 1 factor in determining a business's credibility.", 
+                    "a": "Blue Corona, 2022", 
+                    "s": "https://www.bluecorona.com/blog/20-web-design-facts-small-business-owners/"
+                },
+                {
+                    "t": "60% of consumers rate usability as an important design characteristic for an online shop.", 
+                    "a": "Statista, 2020", 
+                    "s": ""
+                },
+                {
+                    "t": "38.5% of web designers believe that outdated design is a top reason why visitors leave a website.", 
+                    "a": "GoodFirms, 2021", 
+                    "s": ""
+                }
+            ]
+        ],
+        "speed": [
+            "Speed",
+            [
+                {
+                    "t": "Nearly 70% of consumers admit that page speed impacts their willingness to buy from an online retailer.", 
+                    "a": "Unbounce, 2022", 
+                    "s": "https://unbounce.com/page-speed-report/"
+                },
+                {
+                    "t": "In a study commissioned by Google and conducted by 55 and Deloitte, decreasing mobile site load times by just one tenth of a second resulted in major increases in conversion rates — specifically, 8.4% for retail sites and 10.1% for travel sites.", 
+                    "a": "Deloitte, 2019", 
+                    "s": ""
+                }
+            ]
+        ],
+        "internet_presence": [
+            "Internet-Presence",
+            [
+                {
+                    "t": "50% of smartphone users are more likely to use a company or brand's mobile site when browsing or shopping on a smartphone because they don't want to download an app.", 
+                    "a": "Google/Ipsos, 2019", 
+                    "s": ""
+                },
+                {
+                    "t": "50% of consumers believe that website design is crucial to a business's overall brand.", 
+                    "a": "Top Design Firms, 2021", 
+                    "s": ""
+                }
+            ]
+        ],
+        "functionality": [
+            "Functionality",
+            [
+                {
+                    "t": "42% of people will leave a website because of poor functionality.", 
+                    "a": "Top Design Firms, 2021", 
+                    "s": ""
+                },
+                {
+                    "t": "38% of visitors will stop engaging with a website if the content or layout is unattractive.", 
+                    "a": "Blue Corona, 2022", 
+                    "s": "https://www.bluecorona.com/blog/20-web-design-facts-small-business-owners/"
+                }
+            ]
+        ]
+    }
 }

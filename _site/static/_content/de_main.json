@@ -21,6 +21,71 @@
         "James": "Mein neues Logo sieht einwandfrei aus und trägt zur Marke meines Servers bei. Davide verstand alle relevanten Designaspekte und ich w\u00fcrde ihn jedem Interessierten weiterempfehlen.",
         "Jasna": ""
     },
-    "quote": "It always seems impossible until its done.",
-    "quote_author": "Nelson Mandela"
+    "quotes": {
+        "design": [
+            "Design",
+            [
+                {
+                    "t": "48% der Befragten gaben an, dass das Design einer Website der wichtigste Faktor bei der Bestimmung der Glaubwürdigkeit eines Unternehmens ist.", 
+                    "a": "Blue Corona, 2022", 
+                    "s": "https://www.bluecorona.com/blog/20-web-design-facts-small-business-owners/"
+                },
+                {
+                    "t": "60% der Verbraucher bewerten Benutzerfreundlichkeit als wichtiges Gestaltungsmerkmal eines Online-Shops.", 
+                    "a": "Statista, 2020", 
+                    "s": ""
+                },
+                {
+                    "t": "38,5% der Webdesigner glauben, dass veraltetes Design einer der Hauptgründe dafür ist, dass Besucher eine Website verlassen.", 
+                    "a": "GoodFirms, 2021", 
+                    "s": ""
+                }
+            ]
+        ],
+        "speed": [
+            "Geschwindigkeit",
+            [
+                {
+                    "t": "Fast 70% der Verbraucher geben an, dass die Geschwindigkeit einer Seite ihre Bereitschaft beeinflusst, bei einem Online-Händler einzukaufen.", 
+                    "a": "Unbounce, 2022", 
+                    "s": "https://unbounce.com/page-speed-report/"
+                },
+                {
+                    "t": "In einer von Google in Auftrag gegebenen und von 55 und Deloitte durchgeführten Studie führte die Verkürzung der Ladezeiten mobiler Websiten um nur ein zehntel einer Sekunde zu erheblichen Steigerungen der Konversionsraten – um genau zu sein: 8,4% für Einzelhandels-Websiten und 10,1% für Reise-Websiten.", 
+                    "a": "Deloitte, 2019", 
+                    "s": ""
+                }
+            ]
+        ],
+        "web_first": [
+            "Internet-Präsenz",
+            [
+                {
+                    "t": "50% der Smartphone-Nutzer verwenden eher die Website eines Unternehmens, wenn sie auf einem Smartphone surfen oder einkaufen, weil sie keine App herunterladen wollen.", 
+                    "a": "Google/Ipsos, 2019", 
+                    "s": ""
+                },
+                {
+                    "t": "50% der Verbraucher glauben, dass das Website-Design für die Gesamtmarke eines Unternehmens von entscheidender Bedeutung ist.", 
+                    "a": "Top Design Firms, 2021", 
+                    "s": ""
+                }
+            ]
+        ],
+        "functionality": [
+            "Funktionalität",
+            [
+                {
+                    "t": "42% der Nutzer verlassen eine Website aufgrund schlechter Funktionalität.", 
+                    "a": "Top Design Firms, 2021", 
+                    "s": ""
+                },
+                {
+                    "t": "38% der Besucher hören auf, sich mit einer Website zu beschäftigen, wenn der Inhalt oder das Layout unattraktiv sind.", 
+                    "a": "Blue Corona, 2022", 
+                    "s": "https://www.bluecorona.com/blog/20-web-design-facts-small-business-owners/"
+                }
+            ]
+        ]
+    }
 }
