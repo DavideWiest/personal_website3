@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 data_path = BASE_DIR / "settings.json"
 hostname = socket.gethostname()
 
-def compress_file(self, filepath, filename):
+def compress_file(filepath, filename):
         fn_name, fn_type = filename.split(".")
         with open(f"{filepath}{fn_name}_uncompressed.{fn_type}", "r") as f:
             file = cssmin.cssmin(f.read())

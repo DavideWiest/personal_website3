@@ -1,12 +1,15 @@
 * {
     font-family: 'Inter', 'Roboto', 'Helvetica', sans-serif;
 }
+
 .code {
     font-family: 'Fira Code', monospace;
 }
+
 .intertight {
     font-family: 'Inter Tight', 'Inter', 'Roboto', 'Helvetica', sans-serif;
 }
+
 .roboto {
     font-family: 'Roboto', 'Inter', 'Helvetica', sans-serif;
 }
@@ -18,15 +21,19 @@ a:hover {
 .text-b500 {
     font-weight: 500;
 }
+
 .text-b600 {
     font-weight: 600;
 }
+
 .text-b700 {
     font-weight: 700;
 }
+
 .text-b800 {
     font-weight: 800;
 }
+
 .text-b900 {
     font-weight: 900;
 }
@@ -38,6 +45,7 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
+
     /* #hero-right-inner2 {
         min-height: 90vh;
     } */
@@ -45,6 +53,7 @@ a:hover {
         /* height: 100vh; */
         height: fit-content;
     }
+
     /* .md-h-90p {
         height: 90%;
     }
@@ -62,18 +71,19 @@ a:hover {
     #contact-email {
         font-size: 0.95rem;
     }
+
     #stickycta-text {
         min-width: 40vw;
     }
 }
 
 span#focal {
-    color: #FFD747; 
+    color: #FFD747;
     /* color: #fff; */
 }
 
 #hero-left {
-    -webkit-box-shadow: 0px 10px 0px 0px #000000; 
+    -webkit-box-shadow: 0px 10px 0px 0px #000000;
     box-shadow: 0px 10px 0px 0px #000000;
 }
 
@@ -90,21 +100,21 @@ span#focal {
 
 ::-webkit-scrollbar {
     width: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: rgba(180, 180, 180, 0.3);
     border-left: 1px solid rgb(182, 182, 182);
     backdrop-filter: blur(20px);
-  }
-   
-  ::-webkit-scrollbar-thumb {
-    background: rgb(182, 182, 182); 
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(117, 117, 117); 
-  }
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(182, 182, 182);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(117, 117, 117);
+}
 
 ::selection {
     color: black;
@@ -116,16 +126,17 @@ span#focal {
     background: #FFD747 !important;
 }
 
-/* @media screen and (min-width: 768px) {
-    #heropic-c {
-        width: 50vw;
-        height: 100vw;
-        background-size:cover; 
-        background-position:center center; 
-        background-repeat:no-repeat; 
+@media screen and (max-width: 767px) {
+    #navbar-links {
+        top: 62px;
+        min-height: 62px;
     }
-} */
 
-#hero-left {
-    background: -webkit-linear-gradient(#517ff5, #06309c 80%)
+    #navbar-links div {
+        min-height: 62px;
+    }
+
+    ul#footer-info {
+        margin-left: 4vw;
+    }
 }
