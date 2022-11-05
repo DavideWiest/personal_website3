@@ -78,7 +78,7 @@
         });
 
         document.addEventListener("DOMContentLoaded", function(event) {
-            if (localStorage.getItem('fromPage') == window.location.href) {
+            if (localStorage.getItem('fromPage').split("?")[0] == String(window.location.href).split("?")[0]) {
                 var scrollpos = localStorage.getItem('scrollpos');
                 if (scrollpos) window.scrollTo(0, scrollpos);
             }

@@ -5,14 +5,14 @@
             
             <div id="contact-main" class="row-span-2 md:mt-4">
                 <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl mb-4" style="font-weight: 700;">
-                    {{ c.base.contactHeading |safe }}
+                    {{ c.base.cta.title |safe }}
                 </h3>
                 <p class="max-w-md text-lg my-5">
-                    {{ c.base.contactCtaText }} <span class="code text-b400 inline-block px-2">{{ c.credentials.email }}</span>
+                    {{ c.base.cta.description }} <span class="code text-b400 inline-block px-2">{{ c.credentials.email }}</span>
                 </p>
                 <a id="contact-social" href="mailto:{{ c.credentials.email }}" class="inline-block p-3 px-7 border border-accent rounded-3xl border-2 border-transparent bg-accent hover:border-black transition duration-300 ease-in-out">
                     <p class="contact-social-text text-b700 text-lg align-middle text-center">
-                        {{ c.base.contactCta }}
+                        {{ c.base.cta.button }}
                     </p>
                 </a>
             </div>

@@ -1,8 +1,8 @@
 {
     "footerStartName": "Main Page",
     "cta": {
-        "title": "",
-        "description": "",
+        "title": "Let's get in touch",
+        "description": "Please tell me about what you want to achieve and I will help you happily. You can reach me via my email-adress: ",
         "button": "Contact me"
     },
     "secondaryLang": "de",
@@ -11,12 +11,10 @@
     "footerPS": "Data Privacy Statement",
     "specialannouncement": "TEST: Check out this deal!",
     "nav": {
-        "projects": "Projects"
+        "projects": "Projects",
+        "cv": "See my CV"
     },
-    "contactHeading": "Let's get in touch",
-    "contactCta": "Drop me an Email",
-    "contactCtaText": "Please tell me about what you want to achieve and I will help you happily. You can reach me via my email-adress: ",
-    "contactLocation": "near Alzey, RLP, Germany",
+    "contactLocation": "Alzey Worms, RLP, Germany",
     "contactCvText": "See my CV",
     "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
 }

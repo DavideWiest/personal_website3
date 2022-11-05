@@ -68,7 +68,8 @@ def choose_lang(request):
     if language != "de":
         language = "en"
 
-    # language = "en"
+    # testing !!!
+    language = "en"
 
     return language
 
