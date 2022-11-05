@@ -22,13 +22,13 @@
         "decadruck": {
             "name": "DecaDruck",
             "description": "",
-            "image": "",
+            "image": "visual.png",
             "image_layout_type": "phone",
             "link": "https://davidewiest.com/decadruck",
             "linkIcon": "",
             "linkDesc": "Seite besuchen",
             "t": ["Python", "HTML", "CSS", "Flask", "Branding"],
-            "c": ["Website", "Design", "Ecommerce", "Price-Calculation"],
+            "c": ["Website", "Design", "Ecommerce", "Realtime Calc"],
             "align": 1,
             "is_casestudy": true
         },
@@ -61,7 +61,7 @@
         "thetraderscircle": {
             "name": "TheTradersCircle",
             "description": "My client wanted to build an online community to teach others trading. I built a compelling logo and made a brand framework, and also helped a little with the overall business strategy.",
-            "image": "",
+            "image": "visual.png",
             "image_layout_type": "phone",
             "link": "/resources/TheTradersCircle_Brand.pdf",
             "linkIcon": "pdf.png",

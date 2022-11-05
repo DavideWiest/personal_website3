@@ -5,6 +5,34 @@
 {% endblock %}
 
 {% block htmlcontents %}
+
+<div id="hero" class="flex flex-col md:flex-row md:flex-col-2 min-h-screen">
+
+    <div class="flex justify-center items-center">
+        <div>
+            <img src="{% static 'assets/davidewiest1.png' %}" alt="" class="w-96 border-2 border-black rounded-3xl">
+        </div>
+    </div>
+    <div class="flex justify-center items-center">
+        <div>
+            <div id="person">
+                <h3 id="name" class="intertight text-neutral-900 text-2xl md:text-3xl text-b600">
+                    Davide Wiest
+                </h3>
+                <p id="profession" class="text-lg text-neutral-700 text-b500">
+                    Fullstack Web Developer, Hobby Graphics Designer
+                </p>
+            </div>
+            <div id="hero-maincontent">
+                <h3 id="hero-heading" class="inline-block intertight text-neutral-900 text-3xl md:text-4xl text-b700">
+                    Hello World!
+                </h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 <div id="hero" class="flex flex-col md:flex-row md:flex-col-2 min-h-screen">
     <div id="hero-left" class="md:w-1/2 w-screen flex justify-center items-center bg-primary h-1/2 md:h-screen md:items-end md:pb-0 md:sticky md:top-0 pb-0">
         <div id="heropic-c" class="">
@@ -89,9 +117,9 @@
 </div>
 
 
-<div id="projects" class="mt-8 md:mt-12">
+<div id="projects" class="mt-8 md:mt-20">
     <div id="projects-inner" class="m-2 p-2 md:m-5 md:p-5 mt-3 md:mt-3 flex items-center flex-col">
-        <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl" style="font-weight: 700;">
+        <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl mb-16" style="font-weight: 700;">
             {{ c.projects.projectsHeading|safe }}
         </h3>
         <div id="projects-wrapper">
@@ -100,13 +128,15 @@
             <div class="grid gap-8 my-8 {% if value.image == '' %} {% if value.align == 1 %} justify-end {% else %} justify-start {% endif %} {% else %} md:grid-cols-2 {% endif %}">
             {% if value.image != "" %}
             {% if value.align == 1 %}
-            <div>
-                <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ value.name }} Image">
+            <div class="flex justify-center">
+                <a href="projects/{{ key }}">
+                    <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ value.name }} Image" class="select-none ase_fade_in {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
+                </a>
             </div>
             {% endif %}
             {% endif %}
             <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-sm {% else %} max-w-md {% endif %}">
-                <a id="project" href="projects/{{ key }}" target="_blank" class="group block bg-white max-w-xl rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
+                <a id="project" href="projects/{{ key }}" class="group block bg-white max-w-xl rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
                         
                     <div class="p-6">
                         <h3 id="project-title" class="text-2xl text-b600 mb-2">
@@ -162,8 +192,10 @@
             </div>
             {% if value.image != "" %}
             {% if value.align == 0 %}
-            <div>
-                <img src="/static/resources/projects/{{ value.image }}" alt="{{ key }} Image">
+            <div class="flex justify-center">
+                <a href="projects/{{ key }}">
+                    <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ key }} Image" class="select-none base_fade_in {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
+                </a>
             </div>
             {% endif %}
             {% endif %}
@@ -213,7 +245,7 @@
 
 {% block scripts %}
 
-<script src="{% static 'js/scrollanim.js' %}"></script>
+<script src="{% static 'js/scrollanim.js' %}" type="module"></script>
 
 <script>
     function siv(queryselec) {

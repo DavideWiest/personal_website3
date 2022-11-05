@@ -7,8 +7,10 @@
     {% endif %}
     <div id="navbar-contents" class="border-b-2 border-black flex z-10 z-50" style="height: 62px;">
         <div id="navbar-logo" class="w-full md:w-1/4 lg:w-1/5 bg-gray-100/75 backdrop-filter backdrop-blur-md md:border-r-2 border-black flex justify-between md:justify-center items-bottom">
-            <a href="/" class="inter text-b800 text-2xl flex justify-center items-center">
-                <img src="{% static 'assets/davidewiest1.png' %}" alt="Davide Wiest" class="w-14 ml-4 md:ml-0 inline-block rounded-full border border-black bg-gray-100">
+            <a href="/" class="group inter text-b800 text-2xl flex justify-center items-center">
+                <div class="transition duration-300 ease-in-out w-12 ml-4 md:ml-0 inline-block border border-black rounded-full group-hover:rounded-xl group-hover:bg-accent">
+                    <img src="{% static 'assets/davidewiest1.png' %}" alt="Davide Wiest" class="inline-block rounded-full group-hover:rounded-xl transition duration-300 ease-in-out group-hover:grayscale">
+                </div>
                 <span class="ml-3">Davide Wiest</span> 
             </a>
             <div id="toggle-mobile-nav" class="md:hidden flex items-center">

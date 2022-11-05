@@ -22,7 +22,7 @@
         "decadruck": {
             "name": "DecaDruck",
             "description": "",
-            "image": "",
+            "image": "visual.png",
             "image_layout_type": "phone",
             "link": "https://davidewiest.com/decadruck",
             "linkIcon": "",
@@ -61,7 +61,7 @@
         "thetraderscircle": {
             "name": "TheTradersCircle",
             "description": "Mein Kunde wollte eine Online-Community aufbauen, um anderen das Trading beizubringen. Ich kreierte ein modernes, authentisches Logo und die Grundlagen der Marke.",
-            "image": "",
+            "image": "visual.png",
             "image_layout_type": "phone",
             "link": "/resources/TheTradersCircle_Brand_De.pdf",
             "linkIcon": "pdf.png",
