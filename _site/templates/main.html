@@ -6,38 +6,76 @@
 
 {% block htmlcontents %}
 
-<div id="hero" class="flex flex-col md:flex-row md:flex-col-2 min-h-screen">
-
-    <div class="flex justify-center items-center">
-        <div>
-            <img src="{% static 'assets/davidewiest1.png' %}" alt="" class="w-96 border-2 border-black rounded-3xl">
-        </div>
-    </div>
-    <div class="flex justify-center items-center">
-        <div>
-            <div id="person">
-                <h3 id="name" class="intertight text-neutral-900 text-2xl md:text-3xl text-b600">
-                    Davide Wiest
-                </h3>
-                <p id="profession" class="text-lg text-neutral-700 text-b500">
-                    Fullstack Web Developer, Hobby Graphics Designer
-                </p>
-            </div>
-            <div id="hero-maincontent">
-                <h3 id="hero-heading" class="inline-block intertight text-neutral-900 text-3xl md:text-4xl text-b700">
-                    Hello World!
-                </h3>
+<div class="">
+    <div class="md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen">
+        <div class="flex justify-center flex-col">
+            <div class="rounded-3xl inline-block border-2 border-accent">
+                <img src="{% static 'assets/davidewiest1.png' %}" alt="" class="w-72 rounded-3xl">
             </div>
         </div>
+        <div class="p-8 md:p-16 flex justify-center items-center flex-col">
+            <h3 id="name" class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
+                👋 Nice to meet you! I'm Davide Wiest.
+            </h3>
+            <p class="text-lg">
+                
+            </p>
+        </div>
     </div>
+</div>
 
+<div class="">
+    <div class="md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen">
+        <div class="p-8 md:p-16 flex justify-center flex-col">
+            <h3 id="name" class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
+                I'm a <span class="italic text-accent">passionate</span> Developer and Designer.
+            </h3>
+            <h3 id="name" class="intertight text-neutral-100 text-3xl md:text-4xl text-b600 mt-8">
+                I help businesses with: 
+            </h3>
+            <ul class="my-4">
+                <li class="text-gray-300 text-lg p-1.5 px-3 m-1 border border-gray-300 rounded-full inline-block">
+                    Websites
+                </li>
+                <li class="text-gray-300 text-lg p-1.5 px-3 m-1 border border-gray-300 rounded-full inline-block">
+                    Logos
+                </li>
+                <li class="text-gray-300 text-lg p-1.5 px-3 m-1 border border-gray-300 rounded-full inline-block">
+                    Graphics Design
+                </li>
+            </ul>
+        </div>
+        <div class="flex justify-center items-center flex-col">
+            <div>
+                <div class="flex flex-col items-center rounded-3xl w-full p-3 pt-0 pb-1 m-6" style="background-color: #1b1b1b;">
+                    <img src="{% static 'other/scores/score.png' %}" alt="Score of finsights, roughly 90%" class="h-32">
+                    <p class="text-sm text-gray-200 my-2">
+                        Finsights.info
+                    </p>
+                </div>
+                <div class="flex flex-col items-center rounded-3xl w-full p-3 pt-0 pb-1 m-6" style="background-color: #1b1b1b;">
+                    <img src="{% static 'other/scores/score2.png' %}" alt="Score of my personal website, roughly 92%" class="h-32">
+                    <p class="text-sm text-gray-200 my-2">
+                        DavideWiest.com
+                    </p>
+                </div>
+                <div class="flex flex-col items-center rounded-3xl w-full p-3 pt-0 pb-1 m-6" style="background-color: #1b1b1b;">
+                    <img src="{% static 'other/scores/score3.png' %}" alt="Score of instadata, roughly 97%" class="h-32">
+                    <p class="text-sm text-gray-200 my-2">
+                        Instadata
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div id="hero" class="flex flex-col md:flex-row md:flex-col-2 min-h-screen">
     <div id="hero-left" class="md:w-1/2 w-screen flex justify-center items-center bg-primary h-1/2 md:h-screen md:items-end md:pb-0 md:sticky md:top-0 pb-0">
         <div id="heropic-c" class="">
             <!-- <img src="{% static 'other/main/picture.jpg' %}" alt="Main Picture: Man above the mountain of fogs" class="h-auto w-full" style="background-size: cover;"> -->
-            <img src="{% static 'other/main/thethinker.png' %}" alt="Main Picture: The Thinker" class="w-full max-w-xl select-none">
+            <img src="" alt="Main Picture: The Thinker" class="w-full max-w-xl select-none">
         </div>
     </div>
     <div id="hero-right" class="w-auto md:w-1/2" style="min-height: 10rem;">
@@ -129,14 +167,14 @@
             {% if value.image != "" %}
             {% if value.align == 1 %}
             <div class="flex justify-center">
-                <a href="projects/{{ key }}">
-                    <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ value.name }} Image" class="select-none ase_fade_in {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
+                <a href="{{ value.link }}">
+                    <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ value.name }} Image" class="select-none base_fade_in fade-in-base {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
                 </a>
             </div>
             {% endif %}
             {% endif %}
-            <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-sm {% else %} max-w-md {% endif %}">
-                <a id="project" href="projects/{{ key }}" class="group block bg-white max-w-xl rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
+            <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-md {% else %} max-w-xl {% endif %}">
+                <a id="project" href="{{ value.link }}" class="group block bg-white max-w-2xl rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
                         
                     <div class="p-6">
                         <h3 id="project-title" class="text-2xl text-b600 mb-2">
@@ -185,16 +223,14 @@
                                 {% endif %}
                             </span>
                         </button>
-                        
                     </div>
-                     
                 </a>
             </div>
             {% if value.image != "" %}
             {% if value.align == 0 %}
             <div class="flex justify-center">
-                <a href="projects/{{ key }}">
-                    <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ key }} Image" class="select-none base_fade_in {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
+                <a href="{{ value.link }}">
+                    <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ key }} Image" class="select-none base_fade_in fade-in-base {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
                 </a>
             </div>
             {% endif %}
@@ -216,7 +252,7 @@
 
 
 <div id="testimonials" class="testimonials-section-3 mt-8 md:mt-12">
-    <div id="testimonials-wrapper" class="m-2 my-3 p-2 md:m-5 md:mb-3 md:p-5 mt-7 md:mt-16 flex items-center flex-col">
+    <div id="testimonials-wrapper" class="m-2 my-3 p-2 md:m-5 md:mb-3 md:p-5 mt-12 md:mt-20 flex items-center flex-col">
         <div id="testimonials-inner" class="md:flex w-full justify-evenly">
             
             {% for key, value in c.main.testimonials.items %}
@@ -235,7 +271,13 @@
             </div>
             {% endif %}
             {% endfor %}
+            <div class="flex justify-center items-center">
+                <a href="/resources/google-certificate">
+                    <img src="{% static 'icons/certificate1.jpg' %}" alt="Google Certificate" class="w-64 rounded-lg">
+                </a>
+            </div>
         </div>
+        
     </div>
 </div>
 
@@ -252,6 +294,60 @@
         var elem = document.querySelector(queryselec);
         elem.scrollIntoView({behavior: "smooth"});
     }
+</script>
+
+<script>
+    $(document).on("scroll", function() {
+            var pageTop = $(document).scrollTop();
+            var pageBottom = pageTop + $(window).height();
+            var anim_offset = $(window).height() * 0.1; // 20 vh
+
+            var tags = $(".fade-in-base");
+        
+            for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+        
+            if ($(tag).position().top < pageBottom - anim_offset) {
+                $(tag).addClass("fade-in-base-visible");
+            } else {
+                $(tag).removeClass("fade-in-base-visible");
+            }
+            }
+
+            var tags = $(".fade-in-order1");
+        
+            for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+        
+            if ($(tag).position().top < pageBottom - anim_offset) {
+                $(tag).addClass("visible-order1");
+            } else {
+                $(tag).removeClass("visible-order1");
+            }
+            }
+            var tags = $(".fade-in-order2");
+        
+            for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+        
+            if ($(tag).position().top < pageBottom - anim_offset) {
+                $(tag).addClass("visible-order2");
+            } else {
+                $(tag).removeClass("visible-order2");
+            }
+            }
+            var tags = $(".fade-in-order3");
+        
+            for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+        
+            if ($(tag).position().top < pageBottom - anim_offset) {
+                $(tag).addClass("visible-order3");
+            } else {
+                $(tag).removeClass("visible-order3");
+            }
+            }
+        });
 </script>
 
 {% endblock %}

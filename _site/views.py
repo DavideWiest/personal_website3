@@ -21,8 +21,6 @@ def projects(request, project=None):
     params = {}
 
     projects = openfile(l + "_projects.json")["projects"]
-    print(project)
-    print(projects)
 
     if project == None:
         return render(request, "projects.html", build_params("Projekte", ["credentials", "projects"], params, l))

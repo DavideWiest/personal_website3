@@ -1,10 +1,10 @@
 {
-    "projectsHeading": "Selected Work & Projects",
+    "projectsHeading": "Convince yourself and read the Case Studies.",
     "projectsDescription": "A few parts are highly technical. Contact me if you want more info about a project.",
     "tagDesc": "Technologies:",
     "categoryDesc": "Categories:",
-    "seeallprojects": "See all projects",
-    "casestudy_cta": "See case study",
+    "seeallprojects": "See more projects",
+    "casestudy_cta": "Read case study",
     "projects": {
         "finsights": {
             "name": "Finsights",
@@ -12,7 +12,7 @@
             "image": "visual.png",
             "image_layout_type": "phone",
             "link": "https://finsights.site",
-            "linkIcon": "github-white.png",
+            "linkIcon": "medium.svg",
             "linkDesc": "Github Repository ansehen",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"],
@@ -25,7 +25,7 @@
             "image": "visual.png",
             "image_layout_type": "phone",
             "link": "https://davidewiest.com/decadruck",
-            "linkIcon": "",
+            "linkIcon": "medium.svg",
             "linkDesc": "Seite besuchen",
             "t": ["Python", "HTML", "CSS", "Flask", "Branding"],
             "c": ["Website", "Design", "Ecommerce", "Realtime Calc"],
@@ -73,7 +73,7 @@
         },
         "instadata": {
             "name": "Instadata Webapp + Scraper",
-            "description": "A large instagram scraper built with Django that uses an API to communicate between user and program. The Scraper can be scaled seaminglessly and uses proxies. I built it to gather data for further Data-Science projects, so I used the Nominatim Geolocator and Regex to extract and order as much data as possible. I recommend you check out the README.",
+            "description": "A large instagram scraper built with Django that uses an API to communicate between user and program. The Scraper can be scaled seaminglessly and uses proxies. I built it to gather data for further Data-Science projects, so I used the Nominatim Geolocator and Regex to extract and order as much data as possible.",
             "image": "",
             "image_layout_type": "phone",
             "link": "https://github.com/DavideWiest/idww",

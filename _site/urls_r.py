@@ -4,18 +4,12 @@ from django.http import HttpResponseNotFound
 
 from .base import choose_lang
 
-def de_cv(request):
-    return FileResponse(open('_site/static/resources/Lebenslauf.pdf', 'rb'), content_type='application/pdf')
-
 def cv(request):
     l = choose_lang(request)
     if l == "de":
         return FileResponse(open('_site/static/resources/Lebenslauf.pdf', 'rb'), content_type='application/pdf')
     else:
         return FileResponse(open('_site/static/resources/CV.pdf', 'rb'), content_type='application/pdf')
-
-def de_certificate(request):
-    return FileResponse(open('_site/static/resources/Zertifikat_Google.pdf', 'rb'), content_type='application/pdf')
 
 def certificate(request):
     l = choose_lang(request)

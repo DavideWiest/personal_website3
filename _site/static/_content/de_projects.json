@@ -1,10 +1,10 @@
 {
-    "projectsHeading": "Ausgewähle Leistungen und Projekte",
+    "projectsHeading": "Überzeugen Sie sich selbst mit Fallstudien.",
     "projectsDescription": "Kontaktieren Sie mich falls Sie mehr Informationen zu einem Projekt haben möchten.",
     "tagDesc": "Technologien:",
     "categoryDesc": "Kategorien:",
-    "seeallprojects": "Alle Projekte ansehen",
-    "casestudy_cta": "Case Study ansehen",
+    "seeallprojects": "Mehr Projekte ansehen",
+    "casestudy_cta": "Case Study lesen",
     "projects": {
         "finsights": {
             "name": "Finsights",
@@ -15,7 +15,7 @@
             "linkIcon": "",
             "linkDesc": "Github Repository ansehen",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
-            "c": ["NaaS", "UI/UX", "Webapp", "Design"],
+            "c": ["NaaS", "UI/UX", "Webapp", "Web Design"],
             "align": 1,
             "is_casestudy": true
         },
@@ -73,7 +73,7 @@
         },
         "instadata": {
             "name": "Instadata Webapp + Scraper",
-            "description": "Ein großer Instagram-Scraper, der mit Django erstellt wurde und eine API verwendet, um zwischen Benutzer und Programm zu kommunizieren. Der Scraper lässt sich nahtlos skalieren und kann Proxies benutzen. Ich habe ihn gebaut, um Daten für weitere Data-Science-Projekte zu sammeln, also habe ich den Nominatim Geolocator und Regex verwendet, um so viele Daten wie möglich zu extrahieren und zu ordnen. Ich empfehle Ihnen, sich das README anzusehen.",
+            "description": "Ein großer Instagram-Scraper, der mit Django erstellt wurde und eine API verwendet, um zwischen Benutzer und Programm zu kommunizieren. Der Scraper lässt sich nahtlos skalieren und kann Proxies benutzen. Ich habe ihn gebaut, um Daten für weitere Data-Science-Projekte zu sammeln, also habe ich den Nominatim Geolocator und Regex verwendet, um so viele Daten wie möglich zu extrahieren und zu ordnen.",
             "image": "",
             "image_layout_type": "phone",
             "link": "https://github.com/DavideWiest/idww",
