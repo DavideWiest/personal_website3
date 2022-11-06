@@ -6,9 +6,9 @@
 
 {% block htmlcontents %}
 
-<div class="">
-    <div class="md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen">
-        <div class="flex justify-center flex-col">
+<div class="bg-black flex justify-center">
+    <div class="md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen" style="max-width: 1300px;">
+        <div class="flex justify-center flex-col items-center">
             <div class="rounded-3xl inline-block border-2 border-accent">
                 <img src="{% static 'assets/davidewiest1.png' %}" alt="" class="w-72 rounded-3xl">
             </div>
@@ -24,46 +24,43 @@
     </div>
 </div>
 
-<div class="">
-    <div class="md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen">
-        <div class="p-8 md:p-16 flex justify-center flex-col">
-            <h3 id="name" class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
+<div class="bg-black flex justify-center">
+    <div class="md:grid md:grid-cols-2 bg-black py-16" style="max-width: 1300px;">
+        <div class="p-8 md:p-16 flex justify-start flex-col">
+            <h3 class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
                 I'm a <span class="italic text-accent">passionate</span> Developer and Designer.
             </h3>
-            <h3 id="name" class="intertight text-neutral-100 text-3xl md:text-4xl text-b600 mt-8">
-                I help businesses with: 
-            </h3>
-            <ul class="my-4">
-                <li class="text-gray-300 text-lg p-1.5 px-3 m-1 border border-gray-300 rounded-full inline-block">
-                    Websites
-                </li>
-                <li class="text-gray-300 text-lg p-1.5 px-3 m-1 border border-gray-300 rounded-full inline-block">
-                    Logos
-                </li>
-                <li class="text-gray-300 text-lg p-1.5 px-3 m-1 border border-gray-300 rounded-full inline-block">
-                    Graphics Design
-                </li>
-            </ul>
         </div>
         <div class="flex justify-center items-center flex-col">
             <div>
-                <div class="flex flex-col items-center rounded-3xl w-full p-3 pt-0 pb-1 m-6" style="background-color: #1b1b1b;">
-                    <img src="{% static 'other/scores/score.png' %}" alt="Score of finsights, roughly 90%" class="h-32">
-                    <p class="text-sm text-gray-200 my-2">
-                        Finsights.info
-                    </p>
-                </div>
-                <div class="flex flex-col items-center rounded-3xl w-full p-3 pt-0 pb-1 m-6" style="background-color: #1b1b1b;">
-                    <img src="{% static 'other/scores/score2.png' %}" alt="Score of my personal website, roughly 92%" class="h-32">
-                    <p class="text-sm text-gray-200 my-2">
-                        DavideWiest.com
-                    </p>
-                </div>
-                <div class="flex flex-col items-center rounded-3xl w-full p-3 pt-0 pb-1 m-6" style="background-color: #1b1b1b;">
-                    <img src="{% static 'other/scores/score3.png' %}" alt="Score of instadata, roughly 97%" class="h-32">
-                    <p class="text-sm text-gray-200 my-2">
-                        Instadata
-                    </p>
+                <h3 class="intertight text-accent text-3xl md:text-4xl text-b600 mt-8">
+                    This is what I do:
+                </h3>
+                <div class="my-4 max-w-md">
+                    <div class="text-gray-300 text-lg p-1.5 px-0 m-1 rounded-lg fade-in-order1">
+                        <h3 class="intertight text-neutral-100 text-3xl md:text-4xl text-b600 mt-8">
+                            Websites
+                        </h3>
+                        <p class="text-xl text-neutral-300">
+                            Making a website that looks good, is seo-friendly, user-friendly, tells the right story, and can have practical functionality. Text included. Hosting and maintenance can be convered for a monthly fee.
+                        </p>
+                    </div>
+                    <div class="text-gray-300 text-lg p-1.5 px-0 m-1 rounded-lg fade-in-order2">
+                        <h3 class="intertight text-neutral-100 text-2xl md:text-3-lg text-b600 mt-8">
+                            Logos
+                        </h3>
+                        <p class="text-lg text-neutral-300">
+                            Putting a company's brand in a simple yet memorable figure that unites all aspects of a company's positioning.
+                        </p>
+                    </div>
+                    <div class="text-gray-300 text-lg p-1.5 px-0 m-1 rounded-lg fade-in-order3">
+                        <h3 class="intertight text-neutral-100 text-2xl md:text-3-lg text-b600 mt-8">
+                            Graphic Design
+                        </h3>
+                        <p class="text-lg text-neutral-300">
+                            Utilizing color, accent, size, shape and other items from my design toolbox to tell a visual story.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -71,85 +68,37 @@
     </div>
 </div>
 
-<div id="hero" class="flex flex-col md:flex-row md:flex-col-2 min-h-screen">
-    <div id="hero-left" class="md:w-1/2 w-screen flex justify-center items-center bg-primary h-1/2 md:h-screen md:items-end md:pb-0 md:sticky md:top-0 pb-0">
-        <div id="heropic-c" class="">
-            <!-- <img src="{% static 'other/main/picture.jpg' %}" alt="Main Picture: Man above the mountain of fogs" class="h-auto w-full" style="background-size: cover;"> -->
-            <img src="" alt="Main Picture: The Thinker" class="w-full max-w-xl select-none">
+
+
+<div class="bg-black flex justify-center">
+    <div class="md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen" style="max-width: 1300px;">
+        <div class="p-8 md:p-16 flex justify-center flex-col">
+            <h3 id="name" class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
+                I deliver <span class="text-accent">great</span> results. Here is some proof of that:
+            </h3>
         </div>
-    </div>
-    <div id="hero-right" class="w-auto md:w-1/2" style="min-height: 10rem;">
-        <div id="hero-right-inner" class="md:h-1/2 md:min-h-screen bg-blackbg">
-            <div id="hero-right-inner2" class="flex justify-center items-center flex-col md:items-flex-end md-h-90p">
-                <div id="hero-right-inner-inner" class="inline-block max-w-xl mx-6 my-6 md:mx-8 md:mt-56" style="max-width: 34rem;">
-                    <div id="hero-heading-c" class="inline-block mt-4">
-                        <h3 id="hero-heading" class="intertight text-neutral-100 text-3xl md:text-4xl" style="font-weight: 600;">
-                            {{ c.main.heroHeadingPrim |safe }}
-                            <span class="hero-heading-accent" style="color: rgb(146, 146, 146);">
-                                {{ c.main.heroHeadingSec |safe }}
-                            </span>
-                        </h3>
-                    </div>
-                    <div id="hero-text-c" class="mt-4 md-h-10p md:flex md:item-end">
-                        <p id="hero-text" class="textfont text-neutral-200 inline-block">
-                            {{ c.main.heroText }}
-                        </p>
-                    </div>
+        <div class="flex justify-center items-center flex-col">
+            <div>
+                <div class="flex flex-col items-center rounded-3xl w-full p-3 pb-1 m-6 fade-in-order1" style="background-color: #1b1b1b;">
+                    <img src="{% static 'other/scores/score.png' %}" alt="Score of finsights, roughly 90%" class="h-32">
+                    <p class="text-sm text-gray-200 my-2">
+                        Finsights.info
+                    </p>
+                </div>
+                <div class="flex flex-col items-center rounded-3xl w-full p-3 pb-1 m-6 fade-in-order2" style="background-color: #1b1b1b;">
+                    <img src="{% static 'other/scores/score2.png' %}" alt="Score of my personal website, roughly 92%" class="h-32">
+                    <p class="text-sm text-gray-200 my-2">
+                        DavideWiest.com
+                    </p>
+                </div>
+                <div class="flex flex-col items-center rounded-3xl w-full p-3 pb-1 m-6 fade-in-order3" style="background-color: #1b1b1b;">
+                    <img src="{% static 'other/scores/score3.png' %}" alt="Score of instadata, roughly 97%" class="h-32">
+                    <p class="text-sm text-gray-200 my-2">
+                        Instadata
+                    </p>
                 </div>
             </div>
-        </div>
-        <div id="hero-right-inner" class="hero-about-section-1 md:h-1/2 md:min-h-screen bg-white">
-            <div id="hero-right-inner2" class="flex justify-center items-center flex-col md:items-flex-end md-h-90p">
-                <div id="hero-right-inner-inner" class="inline-block max-w-xl m-6 my-8 md:mx-8" style="max-width: 34rem;">
-                    <div id="hero-heading-c" class="inline-block mt-6 mb-5">
-                        <h3 id="hero-heading" class="intertight text-neutral-900 text-4xl md:text-5xl" style="font-weight: 700;">
-                            {{ c.main.aboutHeading |safe }}
-                        </h3>
-                    </div>
-                    <div id="hero-text-c" class="mt-4 md-h-10p">
-                        {% for key, value in c.main.aboutContent.items %}
-                            <div id="about-section" class="mb-9">
-                                <h3 id="about-section-header" class="intertight text-neutral-900 text-2xl text-b800">
-                                    {{ key }}
-                                </h3>
-                                <p id="about-section-text" class="text-neutral-800">
-                                    {{ value }}
-                                </p>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="hero-right-inner" class="hero-process-section-2 md:h-auto md:min-h-screen bg-white">
-            <div id="hero-right-inner2" class="flex justify-center items-center flex-col md:items-flex-end md-h-90p">
-                <div id="hero-right-inner-inner" class="inline-block max-w-xl m-6 my-8 md:mx-8" style="max-width: 34rem;">
-                    <div id="hero-heading-c" class="inline-block mt-2 mb-6">
-                        <h3 id="hero-heading" class="intertight text-neutral-900 text-4xl md:text-5xl" style="font-weight: 700;">
-                            {{ c.main.processHeading |safe }}
-                        </h3>
-                    </div>
-                    <div id="hero-text-c" class="mt-4 md-h-10p">
-                        {% for key, value in c.main.processContent.items %}
-                            <div id="process-section" class="mb-9 flex">
-                                <h3 id="process-section-number" class="text-b900 text-neutral-300 text-4xl mr-2 select-none" style="color: rgb(200, 200, 200);">
-                                    {{ key }}
-                                </h3>
-                                <div>
-                                    <h3 id="process-section-header" class="intertight text-neutral-900 text-2xl text-b600 inline-block">
-                                        <span class="align-top">
-                                            {{ value.0 }}
-                                        </span>
-                                    </h3>
-                                    <p id="process-section-text" class="text-neutral-800 pl-0.5">
-                                        {{ value.1 }}
-                                    </p>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
@@ -211,7 +160,7 @@
                                     <img src="/static/icons/{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5">
                                     {% endif %}
                                     {% else %}
-                                    <img src="/static/icons/document.png" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5 invert translate-y-1">
+                                    <img src="/static/icons/medium.png" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5 invert translate-y-1">
                                     {% endif %}
                                 </div>
                             </div>
@@ -251,6 +200,29 @@
 </div>
 
 
+
+<div class="bg-gray-100 flex justify-center my-16">
+    <div class="px-4 md:px-8" style="max-width: 1300px;">
+        <div id="hero-heading-c" class="inline-block mt-6 mb-5">
+            <h3 id="hero-heading" class="intertight text-neutral-900 text-4xl md:text-5xl" style="font-weight: 700;">
+                {{ c.main.aboutHeading |safe }}
+            </h3>
+        </div>
+        <div id="hero-text-c" class="mt-4 md:grid md:grid-cols-3 md:gap-8">
+            {% for key, value in c.main.aboutContent.items %}
+                <div id="about-item" class="p-4 md:p-6 max-w-md border border-neutral-200 border-b-neutral-300 hover:border-neutral-300 transition duration-300 ease-in-out">
+                    <h3 id="about-item-header" class="intertight text-neutral-900 text-2xl text-b800">
+                        {{ key }}
+                    </h3>
+                    <p id="about-item-text" class="text-neutral-800">
+                        {{ value }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 <div id="testimonials" class="testimonials-section-3 mt-8 md:mt-12">
     <div id="testimonials-wrapper" class="m-2 my-3 p-2 md:m-5 md:mb-3 md:p-5 mt-12 md:mt-20 flex items-center flex-col">
         <div id="testimonials-inner" class="md:flex w-full justify-evenly">
@@ -273,7 +245,7 @@
             {% endfor %}
             <div class="flex justify-center items-center">
                 <a href="/resources/google-certificate">
-                    <img src="{% static 'icons/certificate1.jpg' %}" alt="Google Certificate" class="w-64 rounded-lg">
+                    <img src="{% static 'icons/certificate1.png' %}" alt="Google Certificate" class="w-64 rounded-lg">
                 </a>
             </div>
         </div>
@@ -297,7 +269,7 @@
 </script>
 
 <script>
-    $(document).on("scroll", function() {
+    function handleFadeIn() {
             var pageTop = $(document).scrollTop();
             var pageBottom = pageTop + $(window).height();
             var anim_offset = $(window).height() * 0.1; // 20 vh
@@ -347,7 +319,10 @@
                 $(tag).removeClass("visible-order3");
             }
             }
-        });
+        }
+
+    $(document).on("scroll", handleFadeIn);
+    $(document).ready(handleFadeIn);
 </script>
 
 {% endblock %}

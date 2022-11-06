@@ -1,0 +1,30 @@
+<div id="hero-right-inner" class="hero-process-section-2 md:h-auto md:min-h-screen bg-white">
+    <div id="hero-right-inner2" class="flex justify-center items-center flex-col md:items-flex-end md-h-90p">
+        <div id="hero-right-inner-inner" class="inline-block max-w-xl m-6 my-8 md:mx-8" style="max-width: 34rem;">
+            <div id="hero-heading-c" class="inline-block mt-2 mb-6">
+                <h3 id="hero-heading" class="intertight text-neutral-900 text-4xl md:text-5xl" style="font-weight: 700;">
+                    {{ c.main.processHeading |safe }}
+                </h3>
+            </div>
+            <div id="hero-text-c" class="mt-4">
+                {% for key, value in c.main.processContent.items %}
+                    <div id="process-section" class="mb-9 flex">
+                        <h3 id="process-section-number" class="text-b900 text-neutral-300 text-4xl mr-2 select-none" style="color: rgb(200, 200, 200);">
+                            {{ key }}
+                        </h3>
+                        <div>
+                            <h3 id="process-section-header" class="intertight text-neutral-900 text-2xl text-b600 inline-block">
+                                <span class="align-top">
+                                    {{ value.0 }}
+                                </span>
+                            </h3>
+                            <p id="process-section-text" class="text-neutral-800 pl-0.5">
+                                {{ value.1 }}
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
