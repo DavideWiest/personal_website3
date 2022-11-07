@@ -183,10 +183,10 @@
     </a>
 </div>
 
-<div class="bg-gray-100 flex justify-center my-16">
+<div class="bg-gray-100 flex justify-center my-16 mt-32">
     <div class="px-4 md:px-8 w-full" style="max-width: 1300px;">
         <div>
-            <h3 class="intertight text-neutral-900 text-4xl md:text-5xl" style="font-weight: 700;">
+            <h3 class="intertight text-neutral-900 text-4xl md:text-5xl mb-2" style="font-weight: 700;">
                 {{ c.main.studies_header }}
             </h3>
             <p class="text-neutral-800 text-xl max-w-md mb-8">
@@ -210,7 +210,7 @@
                         {% for study in content.1 %}
                         <div class="lg:flex">
                             <div id="" class="lg:mr-4">
-                                <canvas id="study_{{ category }}{{ forloop.counter0 }}_graph" class="study_graphic" width="100" height="100" graph_percentage="{{ study.n }}"></canvas>
+                                <canvas id="study_{{ category }}{{ forloop.counter0 }}_graph" class="study_graphic study_graphic_{{ category }}" width="100" height="100" graph_percentage="{{ study.n }}"></canvas>
                             </div>
                             <div>
                                 <p class="text-2xl text-b500 py-4">
@@ -364,16 +364,53 @@
         }
 
 
+    var ctx = {};
+    var piegraphics = {};
+
     function showStudyCategory(category) {
         for (let i in study_categories) {
             var category2 = study_categories[i];
             if (category == category2) {
+
                 document.getElementById("study_" + category2 + "_wrapper").classList.remove("hidden");
-                
+                var graphics = document.querySelectorAll(".study_graphic_" + category2)
+                graphics.forEach((canvas) => {
+                    
+                    piegraphics[canvas.id] = new Chart(canvas, ctx[canvas.id]);
+                });
+
             } else {
                 document.getElementById("study_" + category2 + "_wrapper").classList.add("hidden");
+                var graphics = document.querySelectorAll(".study_graphic_" + category2)
+                graphics.forEach((canvas) => {
+                    try {
+                        piegraphics[canvas.id].destroy()
+                    } catch {
+                        
+                    }
+                });
             }
         }
+    }
+
+    function generateGraphsCtx() {
+        var graphics = document.querySelectorAll(".study_graphic");
+        graphics.forEach((canvas) => {
+            var value = Number(canvas.getAttribute("graph_percentage"));
+
+            ctx[canvas.id] = {
+                type: 'pie',
+                data: {
+                datasets: [{
+                    // label: "label",
+                    backgroundColor: ["#2487e3", "rgba(0,0,0,0)"],
+                    data: [value, 100 - value]
+                }]
+                },
+                options: {
+                }
+            }
+        })
     }
 
     function generateGraphicsFirst() {
@@ -382,18 +419,7 @@
             if (canvas.id.startsWith("study_design")) {
                 var value = Number(canvas.getAttribute("graph_percentage"));
     
-                new Chart(canvas, {
-                    type: 'pie',
-                    data: {
-                    datasets: [{
-                        // label: "label",
-                        backgroundColor: ["#2487e3", "rgba(0,0,0,0)"],
-                        data: [value, 100 - value]
-                    }]
-                    },
-                    options: {
-                    }
-                });
+                piegraphics[canvas.id] = new Chart(canvas, ctx[canvas.id]);
             }
         })
     }
@@ -401,18 +427,7 @@
     function generateStudyGraph(canvas) {
         var value = Number(canvas.getAttribute("graph_percentage"));
 
-        new Chart(canvas, {
-            type: 'pie',
-            data: {
-            datasets: [{
-                // label: "label",
-                backgroundColor: ["#2487e3", "rgba(0,0,0,0)"],
-                data: [value, 100 - value]
-            }]
-            },
-            options: {
-            }
-        });
+        piegraphics[canvas.id] = new Chart(canvas, ctx[canvas.id]);
     }
 
 
@@ -421,13 +436,12 @@
         
         document.getElementById("study_design_wrapper").classList.remove("hidden");
 
+        generateGraphsCtx();
         generateGraphicsFirst();
     }
 
     function docScroll() {
         handleFadeIn();
-
-        checkGraphDraw();
     }
 
     $(document).on("scroll", docScroll);
