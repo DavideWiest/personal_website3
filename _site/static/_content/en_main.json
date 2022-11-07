@@ -20,7 +20,22 @@
         "James": "My new logo looks flawless and contributes to my server's branding. Davide understood all relevant design aspects and I would recommend him to anyone interested.",
         "Jasna": ""
     },
-    "quotes": {
+    "score_header": "I deliver <span class='text-accent'>great</span> results. Here is some proof of that:",
+    "scores": {
+        "score.png": "Finsights.info",
+        "score2.png": "DavideWiest.com",
+        "score3.png": "Instadata"
+    },
+    "services_header": "I'm a <span class='italic text-accent'>passionate</span> Developer and Designer.",
+    "services_subheader": "This is what I do:",
+    "pservice": {"Websites": "Making a website that looks good, is seo-friendly, user-friendly, tells the right story, and can have practical functionality. Text included. Hosting and maintenance can be convered for a monthly fee."},
+    "sservices": {
+        "Logos": "Putting a company's brand in a simple yet memorable figure that unites all aspects of a company's positioning.",
+        "Graphic Design": "Utilizing color, accent, size, shape and other items from my design toolbox to tell a visual story."
+    },
+    "studies_header": "Focusing on facts",
+    "studies_description": "Reading numerous studies' conclusions helps me have a better unterstand of what really matters on the internet.",
+    "studies": {
         "design": [
             "Design",
             [

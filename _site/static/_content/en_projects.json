@@ -82,7 +82,7 @@
             "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
             "c": ["Datascience", "Webapp", "API", "Scraper"],
             "align": 0,
-            "is_casestudy": false
+            "is_casestudy": true
         },
         "mainservermodule": {
             "name": "MainServerModule",
