@@ -7,14 +7,14 @@
 {% block htmlcontents %}
 
 <div class="bg-black flex justify-center">
-    <div class="md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen" style="max-width: 1300px;">
-        <div class="flex justify-center flex-col items-center">
-            <div class="rounded-3xl inline-block border-2 border-accent">
-                <img src="{% static 'assets/davidewiest1.png' %}" alt="" class="w-72 rounded-3xl">
+    <div class="flex flex-col justify-center md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen" style="max-width: 1300px;">
+        <div class="flex justify-center flex-col md:items-center">
+            <div class="rounded-3xl inline-block border-2 border-accent mx-8 md:px-0 w-fit">
+                <img src="{% static 'assets/davidewiest1.png' %}" alt="" class="w-48 md:w-72 xl:w-96 rounded-3xl">
             </div>
         </div>
         <div class="p-8 md:p-16 flex justify-center items-center flex-col">
-            <h3 id="name" class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
+            <h3 id="intro" class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
                 👋 Nice to meet you! I'm Davide Wiest.
             </h3>
             <p class="text-lg">
@@ -33,7 +33,7 @@
         </div>
         <div class="flex justify-center items-center flex-col">
             <div>
-                <h3 class="intertight text-accent text-3xl md:text-4xl text-b600 mt-8">
+                <h3 class="intertight text-accent text-3xl md:text-4xl text-b600 mt-8 px-3 md:p-0">
                     {{ c.main.services_subheader }}
                 </h3>
                 <div class="my-4 max-w-md">
@@ -75,8 +75,8 @@
         <div class="flex justify-center items-center flex-col">
             <div>
                 {% for score, websitename in c.main.scores.items %}
-                <div class="flex flex-col items-center rounded-3xl w-full p-3 pb-1 m-6 fade-in-order1" style="background-color: #1b1b1b;">
-                    <img src="/static/other/scores/{{ score }}" alt="Google lighthouse Score of {{ websitename }}" class="h-32">
+                <div class="flex flex-col items-center rounded-3xl md:w-full p-3 pb-1 m-6 fade-in-order1" style="background-color: #1b1b1b;">
+                    <img src="/static/other/scores/{{ score }}" alt="Google lighthouse Score of {{ websitename }}" class="w-auto md:h-32">
                     <p class="text-sm text-gray-200 my-2">
                         {{ websitename }}
                     </p>
@@ -194,7 +194,7 @@
             </p>
         </div>
         <div class="md:grid md:grid-cols-3 w-full">
-            <div class="m-6 p-4 rounded-3xl border border-gray-300 max-w-sm backdrop-filter backdrop-blur-md">
+            <div class="p-4 rounded-3xl border border-gray-300 md:p-8 m-0 md:m-6 mb-6 border border-gray-300 max-w-sm backdrop-filter backdrop-blur-md">
                 <div class="flex flex-col items-stretch">
                     {% for category, content in c.main.studies.items %}
                     <button onclick="showStudyCategory('{{ category }}')" class="code tracking-tighter text-b600 p-3 px-5 m-3 bg-white text-xl border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
@@ -204,7 +204,7 @@
                 </div>
             </div>
             <div class="flex justify-start flex col-span-2">
-                <div class="p-5 rounded-3xl border border-gray-300 md:p-8 m-6">
+                <div class="p-4 rounded-3xl border border-gray-300 md:p-8 m-0 md:m-6">
                     {% for category, content in c.main.studies.items %}
                     <div id="study_{{ category }}_wrapper" class="hidden">
                         {% for study in content.1 %}
@@ -407,7 +407,9 @@
                     data: [value, 100 - value]
                 }]
                 },
-                options: {
+                options: {  
+                    responsive: true,
+                    maintainAspectRatio: false
                 }
             }
         })
@@ -437,9 +439,17 @@
     function docScroll() {
         handleFadeIn();
     }
+    function docResize() {
+        var graphics = document.querySelectorAll(".study_graphic");
+        graphics.forEach((canvas) => {
+            canvas.setAttribute("width", "100");
+            canvas.setAttribute("height", "100");
+        });
+    }
 
     $(document).on("scroll", docScroll);
     $(document).ready(docReady);
+    $(document).resize(docResize);
 
 </script>
 
