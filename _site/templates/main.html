@@ -363,52 +363,75 @@
             }
         }
 
-    function docReady() {
-        handleFadeIn();
-        
-        document.getElementById("study_design_wrapper").classList.remove("hidden");
-    }
-
-    $(document).on("scroll", handleFadeIn);
-    $(document).ready(docReady);
-
 
     function showStudyCategory(category) {
         for (let i in study_categories) {
             var category2 = study_categories[i];
             if (category == category2) {
                 document.getElementById("study_" + category2 + "_wrapper").classList.remove("hidden");
+                
             } else {
                 document.getElementById("study_" + category2 + "_wrapper").classList.add("hidden");
             }
         }
     }
 
-    function generateGraphics() {
+    function generateGraphicsFirst() {
         var graphics = document.querySelectorAll(".study_graphic");
         graphics.forEach((canvas) => {
-            console.log(canvas.getAttribute("graph_percentage"))
-            console.log(canvas)
-            var value = Number(canvas.getAttribute("graph_percentage"));
-
-            new Chart(canvas, {
-                type: 'pie',
-                data: {
-                // labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-                datasets: [{
-                    // label: "Population (millions)",
-                    backgroundColor: ["#3e95cd", "rgba(0,0,0,0)"],
-                    data: [value, 100 - value]
-                }]
-                },
-                options: {
-                }
-            });
+            if (canvas.id.startsWith("study_design")) {
+                var value = Number(canvas.getAttribute("graph_percentage"));
+    
+                new Chart(canvas, {
+                    type: 'pie',
+                    data: {
+                    datasets: [{
+                        // label: "label",
+                        backgroundColor: ["#2487e3", "rgba(0,0,0,0)"],
+                        data: [value, 100 - value]
+                    }]
+                    },
+                    options: {
+                    }
+                });
+            }
         })
     }
 
-    generateGraphics();
+    function generateStudyGraph(canvas) {
+        var value = Number(canvas.getAttribute("graph_percentage"));
 
+        new Chart(canvas, {
+            type: 'pie',
+            data: {
+            datasets: [{
+                // label: "label",
+                backgroundColor: ["#2487e3", "rgba(0,0,0,0)"],
+                data: [value, 100 - value]
+            }]
+            },
+            options: {
+            }
+        });
+    }
+
+
+    function docReady() {
+        handleFadeIn();
+        
+        document.getElementById("study_design_wrapper").classList.remove("hidden");
+
+        generateGraphicsFirst();
+    }
+
+    function docScroll() {
+        handleFadeIn();
+
+        checkGraphDraw();
+    }
+
+    $(document).on("scroll", docScroll);
+    $(document).ready(docReady);
 
 </script>
 
