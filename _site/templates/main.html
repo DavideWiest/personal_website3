@@ -424,12 +424,6 @@
         })
     }
 
-    function generateStudyGraph(canvas) {
-        var value = Number(canvas.getAttribute("graph_percentage"));
-
-        piegraphics[canvas.id] = new Chart(canvas, ctx[canvas.id]);
-    }
-
 
     function docReady() {
         handleFadeIn();
