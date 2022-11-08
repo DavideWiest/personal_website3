@@ -14,23 +14,10 @@ def main(request):
     
     return render(request, "main.html", build_params("", ["main", "credentials", "projects"], params, l))
 
-def projects(request, project=None):
+def projects(request):
     l = choose_lang(request)
     request.session = handle_requestdata(request, l)
     
     params = {}
 
-    projects = openfile(l + "_projects.json")["projects"]
-
-    if project == None:
-        return render(request, "projects.html", build_params("Projekte", ["credentials", "projects"], params, l))
-    elif project in list(projects):
-        params["key"] = project
-        params["data"] = projects[project]
-        if not projects[project]["is_casestudy"]:
-            return render(request, "casestudy.html", build_params("Projekte", ["credentials", "projects"], params, l))
-        else:
-            return HttpResponseNotFound("This project does not exist")
-    else:
-        return HttpResponseNotFound("This project does not exist")
-
+    return render(request, "projects.html", build_params("Projekte", ["credentials", "projects"], params, l))

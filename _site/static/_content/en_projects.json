@@ -72,7 +72,7 @@
             "is_casestudy": true
         },
         "instadata": {
-            "name": "Instadata Webapp + Scraper",
+            "name": "Instadata",
             "description": "A large instagram scraper built with Django that uses an API to communicate between user and program. The Scraper can be scaled seaminglessly and uses proxies. I built it to gather data for further Data-Science projects, so I used the Nominatim Geolocator and Regex to extract and order as much data as possible.",
             "image": "",
             "image_layout_type": "phone",
