@@ -8,7 +8,7 @@
     "projects": {
         "finsights": {
             "name": "Finsights",
-            "description": "",
+            "description": "Ein Newsletter als Servicelösung für alle Arten von Anlegern, um über ihre Investitionen auf dem Laufenden zu bleiben. Benutzer können wählen, wann und worüber sie benachrichtigt werden. Sie erhalten dann automatisierte Performance Updates für alle ausgewählten Aktien innerhalb eines gewählten Zeitintervalls.",
             "image": "visual.webp",
             "image_layout_type": "phone",
             "link": "https://finsights.site",
@@ -21,7 +21,7 @@
         },
         "decadruck": {
             "name": "DecaDruck",
-            "description": "",
+            "description": "DecaDruck hat sich zum Ziel gesetzt, den 3D-Druck für Menschen ohne technische Kenntnisse und Branchenexpertise zugänglich zu machen, indem Beratung, Design und Realisierung in einem Service vereint werden. Wenn Besucher bereits eine 3D-Datei haben, können sie die Druckkosten und den Mengenrabatt berechnen.",
             "image": "visual.webp",
             "image_layout_type": "phone",
             "link": "https://davidewiest.com/decadruck",
