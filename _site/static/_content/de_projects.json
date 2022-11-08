@@ -15,7 +15,7 @@
             "linkIcon": "",
             "linkDesc": "Github Repository ansehen",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
-            "c": ["NaaS", "UI/UX", "Webapp", "Web Design"],
+            "c": ["NaaS", "Automation", "Webapp", "Branding", "Logo"],
             "align": 1,
             "is_casestudy": true
         },
@@ -28,7 +28,7 @@
             "linkIcon": "",
             "linkDesc": "Seite besuchen",
             "t": ["Python", "HTML", "CSS", "Flask", "Branding"],
-            "c": ["Website", "Design", "Ecommerce", "Preisberechnung"],
+            "c": ["Website", "Design", "E Commerce", "Preisberechnung"],
             "align": 0,
             "is_casestudy": true
         },
