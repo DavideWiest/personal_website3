@@ -9,7 +9,7 @@
         "finsights": {
             "name": "Finsights",
             "description": "",
-            "image": "visual.png",
+            "image": "visual.webp",
             "image_layout_type": "phone",
             "link": "https://finsights.site",
             "linkIcon": "medium.png",
@@ -22,7 +22,7 @@
         "decadruck": {
             "name": "DecaDruck",
             "description": "",
-            "image": "visual.png",
+            "image": "visual.webp",
             "image_layout_type": "phone",
             "link": "https://davidewiest.com/decadruck",
             "linkIcon": "medium.png",
@@ -61,7 +61,7 @@
         "thetraderscircle": {
             "name": "TheTradersCircle",
             "description": "My client wanted to build an online community to teach others trading. I built a compelling logo and made a brand framework, and also helped a little with the overall business strategy.",
-            "image": "visual.png",
+            "image": "visual.webp",
             "image_layout_type": "phone",
             "link": "/resources/TheTradersCircle_Brand.pdf",
             "linkIcon": "pdf.png",

@@ -1,6 +1,5 @@
 {
-    "heroHeadingPrim": "Fragen Sie sich, wie Sie (online) mehr Kunden erreichen können?",
-    "heroHeadingSec": "Steigern Sie die Qualität Ihrer digitalen Marke mit <span id='focal'>hochwertiger Webentwicklung und authentischem Design.</span>",
+    "hero_header": "👋 Hallo! Ich bin Davide Wiest.",
     "heroText": "Heute sind die Optionen für engagierte Unternehmer, wie sie Ihre Kunden erreichen so vielfältig wie noch nie. Allerdings hat kaum jemand genug Zeit, sich neben seiner eigentlichen Arbeit noch Design-, Marktetings- und Entwicklungsfähigkeiten anzueignen, mit sie erst den wahren Wert Ihrer Produkte übermitteln können. Hier möchte ich, Davide Wiest, helfen.",
     "aboutHeading": "Über mich",
     "aboutContent": {
@@ -20,7 +19,7 @@
         "James": "Mein neues Logo sieht einwandfrei aus und trägt zur Marke meines Servers bei. Davide verstand alle relevanten Designaspekte und ich w\u00fcrde ihn jedem Interessierten weiterempfehlen.",
         "John Doe": ""
     },
-    "score_header": "I deliver <span class='text-accent'>great</span> results. Here is some proof of that:",
+    "score_header": "I liefere <span class='text-accent'>qualitative</span> Ergebnisse. Hier sind ein paar Beweise dafür:",
     "scores": {
         "score1.png": "Finsights.info",
         "score2.png": "DavideWiest.com",

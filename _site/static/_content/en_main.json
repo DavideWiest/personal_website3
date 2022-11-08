@@ -1,6 +1,5 @@
 {
-    "heroHeadingPrim": "Still trying to figure out how to build your place online?",
-    "heroHeadingSec": "I will help you with the most fundamental piece: <span id='focal'>A personalized website.</span>",
+    "hero_header": "👋 Nice to meet you! I'm Davide Wiest.",
     "heroText": "Today, the opportunities for the dedicated entrepreneur to create a website are more diverse than ever. However, hardly any entrepreneur has enough time to learn design and development alongside their actual work, which is required to create a compelling website. This is where I, Davide Wiest want to help.",
     "aboutHeading": "About me",
     "aboutContent": {
@@ -22,7 +21,7 @@
     },
     "score_header": "I deliver <span class='text-accent'>great</span> results. Here is some proof of that:",
     "scores": {
-        "score.png": "Finsights.info",
+        "score1.png": "Finsights.info",
         "score2.png": "DavideWiest.com",
         "score3.png": "Instadata"
     },

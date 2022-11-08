@@ -15,19 +15,14 @@
     <meta name="theme-color" content="#FFD747">
 
     <meta name="twitter:card" content= "summary_large_image">
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PFBPDVQ');</script>
-    <!-- End Google Tag Manager -->
+
+    <meta name="description" content="{{ c.base.meta_desc }}">
 
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{% static 'css/typography.css' %}">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <link rel="icon" type="image/png" href="{% static 'assets/davidewiest1.png' %}"/>
+
+    <link rel="icon" type="image/png" href="{% static 'assets/davidewiest1.webp' %}"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -48,11 +43,6 @@
 </head>
 <body class="bg-gray-100">
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFBPDVQ"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <div class="scroll-tracker"></div>
 
     {% include 'blocks/navbar.html' %}
@@ -70,6 +60,9 @@
     {% include 'blocks/bottomcta.html' %}
 
     {% include 'blocks/footer.html' %}
+
+    <link itemprop="url" rel="stylesheet" href="{% static 'css/typography.css' %}">
+    <link itemprop="url" rel="stylesheet" href="{% static 'css/base.css' %}">
 
     <script>
         document.addEventListener("DOMContentLoaded", function(event) {

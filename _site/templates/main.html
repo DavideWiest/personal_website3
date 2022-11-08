@@ -10,12 +10,12 @@
     <div class="flex flex-col justify-center md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen" style="max-width: 1300px;">
         <div class="flex justify-center flex-col md:items-center">
             <div class="rounded-3xl inline-block border-2 border-accent mx-8 md:px-0 w-fit">
-                <img src="{% static 'assets/davidewiest1.png' %}" alt="" class="w-48 md:w-72 xl:w-96 rounded-3xl">
+                <img src="{% static 'assets/davidewiest1.webp' %}" alt="" class="w-48 md:w-72 xl:w-96 rounded-3xl">
             </div>
         </div>
         <div class="p-8 md:p-16 flex justify-center items-center flex-col">
             <h3 id="intro" class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
-                👋 Nice to meet you! I'm Davide Wiest.
+                {{ c.main.hero_header }}
             </h3>
             <p class="text-lg">
                 
@@ -107,38 +107,38 @@
             {% endif %}
             {% endif %}
             <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-md {% else %} max-w-xl {% endif %}">
-                <a id="project" href="{{ value.link }}" target="_blank" class="group block bg-white max-w-2xl rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
+                <a name="project" href="{{ value.link }}" target="_blank" class="group block bg-white max-w-2xl rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
                         
                     <div class="p-6">
-                        <h3 id="project-title" class="text-2xl text-b600 mb-2">
+                        <h3 name="project-title" class="text-2xl text-b600 mb-2">
                             {{ value.name }}
                         </h3>
-                        <div id="project-categories" class="ml-1">
-                            <p id="project-category-desc" class="roboto text-xs text-neutral-500">
+                        <div name="project-categories" class="ml-1">
+                            <p name="project-category-desc" class="roboto text-xs text-neutral-500">
                                 {{ c.projects.categoryDesc }}
                             </p>
                             {% for category in value.c %}
-                                <p id="project-categories" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
+                                <p name="project-categories" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
                                     {{ category }}
                                 </p>
                             {% endfor %}
                         </div>
-                        <div id="project-tags" class="ml-1">
-                            <p id="project-tag-desc" class="roboto text-xs text-neutral-500">
+                        <div name="project-tags" class="ml-1">
+                            <p name="project-tag-desc" class="roboto text-xs text-neutral-500">
                                 {{ c.projects.tagDesc }}
                             </p>
                             {% for tag in value.t %}
-                                <p id="project-tag" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
+                                <p name="project-tag" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
                                     {{ tag }}
                                 </p>
                             {% endfor %}
                         </div>
-                        <p id="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
+                        <p name="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
                             {{ value.description|safe }}
                         </p>
-                        <button id="project-link" class="mt-4 bg-neutral-800 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 group-hover:shadow-lg group-hover:bg-black transition duration-300 ease-in-out">
+                        <button name="project-link" class="mt-4 bg-neutral-800 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 group-hover:shadow-lg group-hover:bg-black transition duration-300 ease-in-out">
                             <div class="inline-block mr-1">
-                                <div id="project-link-icon" class="m-r-4 flex w-full items-center">
+                                <div name="project-link-icon" class="m-r-4 flex w-full items-center">
                                     {% if value.is_casestudy == False %}
                                     {% if value.linkIcon != "" %}
                                     <img src="/static/icons/{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5">
@@ -148,7 +148,7 @@
                                     {% endif %}
                                 </div>
                             </div>
-                            <span id="project-link-text" class="align-middle text-b400 text-white md:text-lg">
+                            <span name="project-link-text" class="align-middle text-b400 text-white md:text-lg">
                                 {% if value.is_casestudy == False %}
                                     {{ value.linkDesc }}
                                 {% else %}
@@ -194,7 +194,7 @@
             </p>
         </div>
         <div class="md:grid md:grid-cols-3 w-full">
-            <div class="p-4 rounded-3xl border border-gray-300 md:p-8 m-0 md:m-6 mb-6 border border-gray-300 max-w-sm backdrop-filter backdrop-blur-md">
+            <div class="p-4 rounded-3xl border border-gray-300 md:p-8 m-0 md:m-6 mb-6 border border-gray-300 max-w-sm backdrop-filter backdrop-blur-md shadow-lg">
                 <div class="flex flex-col items-stretch">
                     {% for category, content in c.main.studies.items %}
                     <button onclick="showStudyCategory('{{ category }}')" class="code tracking-tighter text-b600 p-3 px-5 m-3 bg-white text-xl border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
@@ -204,7 +204,7 @@
                 </div>
             </div>
             <div class="flex justify-start flex col-span-2">
-                <div class="p-4 rounded-3xl border border-gray-300 md:p-8 m-0 md:m-6">
+                <div class="p-4 rounded-3xl border border-gray-300 md:p-8 m-0 md:m-6 shadow-lg">
                     {% for category, content in c.main.studies.items %}
                     <div id="study_{{ category }}_wrapper" class="hidden">
                         {% for study in content.1 %}
@@ -213,15 +213,15 @@
                                 <canvas id="study_{{ category }}{{ forloop.counter0 }}_graph" class="study_graphic study_graphic_{{ category }}" width="100" height="100" graph_percentage="{{ study.n }}"></canvas>
                             </div>
                             <div>
-                                <p class="text-2xl text-b500 py-4">
+                                <p class="text-2xl text-b500 py-4 pb-1">
                                     {{ study.t }}
                                 </p>
                                 {% if study.s != "" %}
-                                <a class="block text-sm text-gray-400" href="{{ study.s }}">
+                                <a class="block text-sm text-blue-600 py-3" href="{{ study.s }}">
                                     {{ study.a }}
                                 </a>
                                 {% else %}
-                                <p class="text-sm text-gray-400">
+                                <p class="text-sm text-blue-600 py-3">
                                     {{ study.a }}
                                 </p>
                                 {% endif %}
@@ -281,7 +281,7 @@
             {% endfor %}
             <div class="flex justify-center items-center">
                 <a href="/resources/google-certificate">
-                    <img src="{% static 'icons/certificate1.png' %}" alt="Google Certificate" class="w-64 rounded-lg">
+                    <img src="{% static 'icons/certificate1.webp' %}" alt="Google Certificate" class="w-64 rounded-lg">
                 </a>
             </div>
         </div>
@@ -438,7 +438,9 @@
 
     function docScroll() {
         handleFadeIn();
+        docResize();
     }
+    
     function docResize() {
         var graphics = document.querySelectorAll(".study_graphic");
         graphics.forEach((canvas) => {

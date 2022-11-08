@@ -20,24 +20,24 @@
             <div class="flex flex-col items-center md:items-end">
                 <div class="inline-block">
                     {% for key, value in c.credentials.links.items %}
-                        <a id="contact-social" href="{{ value.0 }}" target="_blank" class="block w-full p-3 px-5 m-3 bg-white border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
-                            <img src="{{ value.1 }}" alt="{{ key }} icon" id="contact-social-icon" class="inline-block w-6 h-6 mr-3">
+                        <a name="contact-social" href="{{ value.0 }}" target="_blank" class="block w-full p-3 px-5 m-3 bg-white border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
+                            <img src="{{ value.1 }}" alt="{{ key }} icon" name="contact-social-icon" class="inline-block w-6 h-6 mr-3">
                             <p class="contact-social-text inline-block text-b500 align-middle text-gray-800">
                                 {{ key }} @ {{ value.2 }}
                             </p>
                         </a>
                     {% endfor %}
                     
-                    <a id="contact-social" href="{{ c.credentials.locationLink }}" target="_blank" class="block w-full p-3 px-5 m-3 bg-white border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
+                    <a name="contact-social" href="{{ c.credentials.locationLink }}" target="_blank" class="block w-full p-3 px-5 m-3 bg-white border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
                         <p class="contact-social-text inline-block text-b500 align-middle text-gray-800">
-                            <img src="{% static 'icons/pin.png' %}" alt="Location" id="contact-social-icon" class="inline-block w-6 h-6 mr-3">
+                            <img src="{% static 'icons/pin.png' %}" alt="Location" name="contact-social-icon" class="inline-block w-6 h-6 mr-3">
                             {{ c.base.contactLocation }}
                         </p>
                     </a>
         
-                    <a id="contact-social" href="{{ c.credentials.cvlink }}" target="_blank" class="block w-full p-3 px-5 m-3 bg-white border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
+                    <a name="contact-social" href="{{ c.credentials.cvlink }}" target="_blank" class="block w-full p-3 px-5 m-3 bg-white border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
                         <p class="contact-social-text inline-block text-b500 align-middle text-gray-800">
-                            <img src="{% static 'icons/user.png' %}" alt="User" id="contact-social-icon" class="inline-block w-6 h-6 mr-3">
+                            <img src="{% static 'icons/user.png' %}" alt="User" name="contact-social-icon" class="inline-block w-6 h-6 mr-3">
                             {{ c.base.contactCvText }}
                         </p>
                     </a>
