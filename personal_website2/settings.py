@@ -42,6 +42,8 @@ def handle_production():
     os.chdir('/var/www/html/personal_website2/personal_website2-master')
     WSGI_APPLICATION = 'personal_website2.wsgi.application'
 
+def handle_development():
+    pass
 
 with open(data_path, "r", encoding="utf") as f:
     data = json.load(f)
@@ -49,11 +51,12 @@ with open(data_path, "r", encoding="utf") as f:
 if hostname in data["production_hostnames"] or hostname not in data["development_hostnames"]:
     print("application starting with PRODUCTION settings")
     dsettings = data["production_settings"]
-    handle_both()
     handle_production()
+    handle_both()
 else:
     print("application starting with DEVELOPMENT settings")
     dsettings = data["development_settings"]
+    handle_development()
     handle_both()
 
 
