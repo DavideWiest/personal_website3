@@ -10,7 +10,7 @@
 <div id="projects" class="mt-8 md:mt-20">
     <div id="projects-inner" class="m-2 p-2 md:m-5 md:p-5 mt-3 md:mt-3 flex items-center flex-col">
         <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl mb-16" style="font-weight: 700;">
-            {{ c.projects.projectsHeading|safe }}
+            {{ c.projects.projectsPageHeading|safe }}
         </h3>
         <div id="projects-wrapper">
             {% for key, value in c.projects.projects.items %}
