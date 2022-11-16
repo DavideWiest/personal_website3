@@ -16,7 +16,7 @@
             {% for key, value in c.projects.projects.items %}
             <div class="grid gap-8 my-8 {% if value.image == '' %} {% if value.align == 1 %} justify-end {% else %} justify-start {% endif %} {% else %} md:grid-cols-2 {% endif %}">
             
-                {% if value.image != "" %}
+            {% if value.image != "" %}
             {% if value.align == 1 %}
             <div class="flex justify-center">
                 <a href="{{ value.link }}" target="_blank">
@@ -58,21 +58,13 @@
                         <button id="project-link" class="mt-4 bg-neutral-800 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 group-hover:shadow-lg group-hover:bg-black transition duration-300 ease-in-out">
                             <div class="inline-block mr-1">
                                 <div id="project-link-icon" class="m-r-4 flex w-full items-center">
-                                    {% if value.is_casestudy == False %}
                                     {% if value.linkIcon != "" %}
                                     <img src="/static/icons/{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5">
-                                    {% endif %}
-                                    {% else %}
-                                    <img src="/static/icons/medium.png" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5 invert translate-y-1">
                                     {% endif %}
                                 </div>
                             </div>
                             <span id="project-link-text" class="align-middle text-b400 text-white md:text-lg">
-                                {% if value.is_casestudy == False %}
-                                    {{ value.linkDesc }}
-                                {% else %}
-                                    {{ c.projects.casestudy_cta }}
-                                {% endif %}
+                                {{ value.linkDesc }}
                             </span>
                         </button>
                     </div>
