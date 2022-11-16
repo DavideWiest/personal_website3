@@ -16,7 +16,7 @@
             {% for key, value in c.projects.projects.items %}
             <div class="grid gap-8 my-8 {% if value.image == '' %} {% if value.align == 1 %} justify-end {% else %} justify-start {% endif %} {% else %} md:grid-cols-2 {% endif %}">
             
-            {% if value.image != "" %}
+                {% if value.image != "" %}
             {% if value.align == 1 %}
             <div class="flex justify-center">
                 <a href="{{ value.link }}" target="_blank">
@@ -59,7 +59,7 @@
                             <div class="inline-block mr-1">
                                 <div id="project-link-icon" class="m-r-4 flex w-full items-center">
                                     {% if value.linkIcon != "" %}
-                                    <img src="/static/icons/{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5">
+                                    <img src="/static/icons/{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5 invert">
                                     {% endif %}
                                 </div>
                             </div>
