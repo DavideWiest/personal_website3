@@ -3,7 +3,8 @@
         "DESKTOP-9DUQODF"
     ],
     "production_hostnames": [
-        "raspi"
+        "raspi",
+        "davidewiest"
     ],
     "development_settings": {
         "debug": true,
