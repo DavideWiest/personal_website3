@@ -1,11 +1,11 @@
 {
     "development_hostnames": [
         "DESKTOP-9DUQODF",
-        "davidewiest"
+        "davidewiest.com"
     ],
     "production_hostnames": [
         "raspi",
-        "davidewiest2"
+        "davidewiest.com2"
     ],
     "development_settings": {
         "debug": true,
