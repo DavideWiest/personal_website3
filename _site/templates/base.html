@@ -169,7 +169,11 @@
     <script id="CookieDeclaration" src="https://consent.cookiebot.com/96e3c2b1-18d4-4cf2-87f9-c417833a97d5/cd.js" type="text/javascript" async></script>
 
     <script>
-        document.querySelector("div.CookieDeclaration").classList.add("text-sm", "px-4");
+        try {
+            document.querySelector("div.CookieDeclaration").classList.add("text-sm", "px-4");
+        } catch (error) {
+            
+        }
     </script>
 
     {% block scripts %}
