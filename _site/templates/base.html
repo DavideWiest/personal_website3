@@ -20,6 +20,16 @@
 
     <title>{{ title }}</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHTGB851XQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EHTGB851XQ');
+    </script>
+
     <link rel="icon" type="image/png" href="{% static 'assets/davidewiest1.webp' %}"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -155,6 +165,8 @@
         sizeNav();
 
     </script>
+
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/96e3c2b1-18d4-4cf2-87f9-c417833a97d5/cd.js" type="text/javascript" async></script>
 
     {% block scripts %}
     {% endblock %}
