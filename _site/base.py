@@ -1,5 +1,6 @@
 from django.utils import translation
 import json
+import datetime
 
 std_title_clause = " - Davide Wiest"
 lang_independant_files = ("credentials", "data")
@@ -33,9 +34,12 @@ def build_params(title, storage_ptrs, params, language, base_path=None):
     alternative_langs = list(allowed_languages)
     alternative_langs.remove(language)
     
+    dt = datetime.date.today()
+
     bparams = {
         "title": title + std_title_clause,
         "base_url": "https://davidewiest.com",
+        "year": dt.strftime("%Y"),
         "c": c_files,
         "l": language,
         "other_langs": alternative_langs

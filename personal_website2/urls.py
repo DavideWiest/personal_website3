@@ -19,7 +19,6 @@ from django.views.decorators.http import require_GET
 from django.http import HttpResponse
 from django.contrib.sitemaps import Sitemap
 from django.shortcuts import reverse
-from django.contrib.sitemaps.views import sitemap
 
 
 class StaticViewSitemap(Sitemap):
@@ -51,7 +50,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('_site.urls')),
     path('', include('_site.urls_legal')),
-    path('ml/', include('ml.urls')),
+    path('aah/', include('ml.urls')),
     path('ressourcen/', include('_site.urls_r')),
     path('resources/', include('_site.urls_r')),
     path('link/', include('_site.urls_l')),
