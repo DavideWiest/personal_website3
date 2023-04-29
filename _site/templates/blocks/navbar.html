@@ -9,7 +9,7 @@
         <div id="navbar-logo" class="w-full md:w-1/4 xl:w-1/5 bg-gray-100/75 backdrop-filter backdrop-blur-md md:border-r-2 border-black flex justify-between md:justify-center items-bottom">
             <a href="/" class="group inter text-b800 text-2xl flex justify-center items-center">
                 <div class="w-12 ml-4 md:ml-0 inline-block border border-black rounded-full group-hover:rounded-xl transition duration-300 ease-in-out">
-                    <img src="{% static 'assets/davidewiest1.webp' %}" alt="Davide Wiest" class="inline-block rounded-full group-hover:rounded-xl transition duration-300 ease-in-out">
+                    <img src="{% static 'assets/navbarPic.webp' %}" alt="Davide Wiest" class="inline-block rounded-full group-hover:rounded-xl transition duration-300 ease-in-out">
                 </div>
                 <span class="ml-3">Davide Wiest</span> 
             </a>
@@ -47,11 +47,8 @@
                 </div>
 
                 <div id="language-setter" class="flex justify-end">
-                    <div id="language-option">
-                        <img src="/static/icons/lang_{{ l }}.png" alt="Current Language" class="w-10 h-10 m-2 inline-block p-1 rounded-lg transition duration-100 ease-in-out border-gray-400 hover:border-gray-900">
-                    </div>
                     
-                    {% for lang in other_langs %}
+                    {% for lang in langs %}
                     <a id="language-option" href="?language={{ lang }}" class="block">
                         <img src="/static/icons/lang_{{ lang }}.png" alt="Other Language: {{ lang }}" class="w-10 h-10 m-2 inline-block p-1 border rounded-lg transition duration-100 ease-in-out border-gray-400 hover:border-gray-900">
                     </a>

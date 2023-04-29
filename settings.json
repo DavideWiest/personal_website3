@@ -22,5 +22,13 @@
             "aah.davidewiest.com"
         ]
     },
-    "secret_key": "2jtxsg!y@og72h1_%pa+4!1*=1yc3f*9+t2gi%vn3)gt)wpfd_"
+    "device_specific_settings": {
+        "DESKTOP-9DUQODF": {
+            "secrets_file_path": "C:/Users/DavWi/OneDrive/Desktop/storage/secrets/personal_website3/secrets.json"
+        },
+        "respi": {
+            "secrets_file_path": "TODO"
+        }
+    },
+    "secret_key": "gs#@)_)pnucp+t9tot$q*nh-hd#0_i754i%)-mix$c-qxgr3v5"
 }

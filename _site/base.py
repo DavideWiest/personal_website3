@@ -30,9 +30,6 @@ def build_params(title, storage_ptrs, params, language, base_path=None):
             c_files[filename + "_" + subfield.capitalize() if subfield != "" else filename] = openfile(language + "_" + filename + ".json" if filename not in lang_independant_files else filename + ".json", subfield=subfield if subfield != "" else None, base_path=base_path)
         else:
             c_files[filename] = {}
-
-    alternative_langs = list(allowed_languages)
-    alternative_langs.remove(language)
     
     dt = datetime.date.today()
 
@@ -42,7 +39,7 @@ def build_params(title, storage_ptrs, params, language, base_path=None):
         "year": dt.strftime("%Y"),
         "c": c_files,
         "l": language,
-        "other_langs": alternative_langs
+        "langs": list(allowed_languages)
     }
 
     return {**bparams, **params}

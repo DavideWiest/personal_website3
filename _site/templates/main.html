@@ -61,7 +61,6 @@
     </div>
 </div>
 
-
 <div class="bg-black flex justify-center">
     <div class="md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen" style="max-width: 1300px;">
         <div class="p-8 md:p-16 flex justify-center flex-col">
@@ -82,94 +81,6 @@
             </div>
         </div>
     </div>
-</div>
-
-
-<div id="projects" class="mt-8 md:mt-20">
-    <div id="projects-inner" class="m-2 p-2 md:m-5 md:p-5 mt-3 md:mt-3 flex items-center flex-col">
-        <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl mb-16" style="font-weight: 700;">
-            {{ c.projects.projectsHeading|safe }}
-        </h3>
-        <div id="projects-wrapper">
-            {% for key, value in c.projects.projects.items %}
-            {% if value.is_casestudy %}
-            <div class="grid gap-8 my-8 {% if value.image == '' %} {% if value.align == 1 %} justify-end {% else %} justify-start {% endif %} {% else %} md:grid-cols-2 {% endif %}">
-            {% if value.image != "" %}
-            {% if value.align == 1 %}
-            <div class="flex justify-center">
-                <a href="{{ value.link }}" target="_blank">
-                    <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ value.name }} Image" class="select-none base_fade_in fade-in-base {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
-                </a>
-            </div>
-            {% endif %}
-            {% endif %}
-            <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-md {% else %} max-w-xl {% endif %}">
-                <a name="project" href="{{ value.link }}" target="_blank" class="group block bg-white max-w-2xl rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
-                        
-                    <div class="p-6">
-                        <h3 name="project-title" class="text-2xl text-b600 mb-2">
-                            {{ value.name }}
-                        </h3>
-                        <div name="project-categories" class="ml-1">
-                            <p name="project-category-desc" class="roboto text-xs text-neutral-500">
-                                {{ c.projects.categoryDesc }}
-                            </p>
-                            {% for category in value.c %}
-                                <p name="project-categories" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
-                                    {{ category }}
-                                </p>
-                            {% endfor %}
-                        </div>
-                        <div name="project-tags" class="ml-1">
-                            <p name="project-tag-desc" class="roboto text-xs text-neutral-500">
-                                {{ c.projects.tagDesc }}
-                            </p>
-                            {% for tag in value.t %}
-                                <p name="project-tag" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
-                                    {{ tag }}
-                                </p>
-                            {% endfor %}
-                        </div>
-                        <p name="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
-                            {{ value.description|safe }}
-                        </p>
-                        <button name="project-link" class="mt-4 bg-neutral-800 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 group-hover:shadow-lg group-hover:bg-black transition duration-300 ease-in-out">
-                            <div class="inline-block mr-1">
-                                <div name="project-link-icon" class="m-r-4 flex w-full items-center">
-                                    {% if value.linkIcon != "" %}
-                                    <img src="/static/icons/{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5">
-                                    {% endif %}
-                                </div>
-                            </div>
-                            <span name="project-link-text" class="align-middle text-b400 text-white md:text-lg">
-                                {{ value.linkDesc }}
-                            </span>
-                        </button>
-                    </div>
-                </a>
-            </div>
-            {% if value.image != "" %}
-            {% if value.align == 0 %}
-            <div class="flex justify-center">
-                <a href="{{ value.link }}" target="_blank">
-                    <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ key }} Image" class="select-none base_fade_in fade-in-base {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
-                </a>
-            </div>
-            {% endif %}
-            {% endif %}
-        </div>
-            {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<div class="flex justify-center">
-    <a id="project-link" class="mt-4 bg-neutral-800 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 hover:shadow-lg hover:bg-black transition duration-300 ease-in-out" href="/projects">
-        <span id="project-link-text" class="align-middle text-b400 text-white md:text-lg">
-            {{ c.projects.seeallprojects }}
-        </span>
-    </a>
 </div>
 
 <div class="bg-gray-100 flex justify-center my-16 mt-32">
