@@ -92,7 +92,7 @@ INSTALLED_APPS = [
 
     # 'django_hosts',
 
-    'ml',
+    'aah',
     '_site'
 ]
 

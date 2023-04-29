@@ -3,10 +3,10 @@ from _site.base import build_params, choose_lang, handle_requestdata, allowed_la
 
 
 
-def ml_main(request):
+def aah_main(request):
     l = choose_lang(request)
     request.session = handle_requestdata(request, l)
 
-    params = {"title": "Hello World"}
+    params = {"title": "AAAAaahhhhh"}
     
-    return render(request, "ml_main.html", build_params("", ["main"], params, l))
+    return render(request, "aah_main.html", build_params("", ["main"], params, l))

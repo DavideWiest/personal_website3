@@ -1,10 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block outsidecontents %}
-{% endblock %}
-
-{% block htmlcontents %}
+{% block innerContent %}
 
 
 <div id="projects" class="mt-8 md:mt-20">
@@ -88,6 +85,12 @@
 
 
 
+
+{% endblock %}
+
+{% block outsideContentBelow %}
+
+{% include 'blocks/bottomcta.html' %}
 
 {% endblock %}
 

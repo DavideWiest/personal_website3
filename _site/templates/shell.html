@@ -1,5 +1,3 @@
-{% extends "shell.html" %}
-
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -58,21 +56,6 @@
     <div class="scroll-tracker"></div>
 
     {% block shellBody %}
-    {% include 'blocks/navbar.html' %}
-
-    {% block outsideContentsAbove %}
-    {% endblock %}
-
-
-    <div class="content min-h-screen" style="max-width: 100vw;">
-        {% block innerContent %}
-        {% endblock %}
-    </div>
-
-    {% block outsideContentsBelow %}
-    {% endblock %}
-
-    {% include 'blocks/footer.html' %}
     {% endblock %}
 
     <link itemprop="url" rel="stylesheet" href="{% static 'css/typography.css' %}">

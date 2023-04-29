@@ -1,10 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block outsidecontents %}
-{% endblock %}
-
-{% block htmlcontents %}
+{% block innerContent %}
 
 <div class="bg-black flex justify-center">
     <div class="flex flex-col justify-center md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen" style="max-width: 1300px;">
@@ -282,6 +279,12 @@
 </div>
 
 
+
+{% endblock %}
+
+{% block outsideContentBelow %}
+
+{% include 'blocks/bottomcta.html' %}
 
 {% endblock %}
 
