@@ -1,0 +1,73 @@
+    /* Tab content - closed */
+    .tab-content {
+        max-height: 0;
+        -webkit-transition: max-height .35s;
+        -o-transition: max-height .35s;
+        transition: max-height .35s;
+    }
+
+    /* :checked - resize to full height */
+    .tab input:checked~.tab-content {
+        max-height: 100vh;
+    }
+
+    /* Label formatting when open */
+
+    .tab input+label {
+        padding: 1.25rem;
+        border-left-width: 0.45rem;
+        border-color: transparent;
+    }
+
+    .tab input:checked+label {
+        border-color: #eeeeee;
+    }
+
+    /* Icon */
+    .tab label::after {
+        float: right;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5;
+        text-align: center;
+        -webkit-transition: all .35s;
+        -o-transition: all .35s;
+        transition: all .35s;
+    }
+
+    /* Icon formatting - closed */
+    .tab input[type=checkbox]+label::after {
+        content: "+";
+        background-color: rgb(64 64 64);
+        border-radius: 9999px;
+    }
+    .tab input[type=checkbox]+label:hover::after {
+        background-color: rgb(82 82 82);
+    }
+
+    .tab input[type=radio]+label::after {
+        content: "\25BE";
+        font-weight: bold;
+        /*.font-bold*/
+        border-width: 1px;
+        /*.border*/
+        border-radius: 9999px;
+        /*.rounded-full */
+        /*.border-grey*/
+    }
+
+    /* Icon formatting - open */
+    .tab input[type=checkbox]:checked+label::after {
+        transform: rotate(315deg);
+        /*.bg-indigo*/
+        /*.text-grey-lightest*/
+    }
+
+    .tab input[type=radio]:checked+label::after {
+        transform: rotateX(180deg);
+        /*.bg-indigo*/
+        /*.text-grey-lightest*/
+    }

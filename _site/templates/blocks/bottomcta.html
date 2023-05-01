@@ -17,10 +17,10 @@
                 </a>
             </div>
 
-            <div class="flex flex-col items-center md:items-end">
-                <div class="inline-block">
+            <div class="md:flex md:flex-col md:items-center md:items-end">
+                <div class="block md:inline-block">
                     {% for key, value in c.credentials.links.items %}
-                        <a name="contact-social" href="{{ value.0 }}" target="_blank" class="block w-full p-3 px-5 m-3 rounded-full transition duration-300 ease-in-out bg-neutral-800 hover:bg-neutral-700">
+                        <a name="contact-social" href="{{ value.0 }}" target="_blank" class="block w-full p-3 px-5 my-3 rounded-full transition duration-300 ease-in-out bg-neutral-800 hover:bg-neutral-700">
                             <img src="{{ value.1 }}" alt="{{ key }} icon" name="contact-social-icon" class="inline-block w-6 h-6 mr-3">
                             <p class="contact-social-text inline-block text-b500 align-middle text-neutral-200">
                                 {{ key }} @ {{ value.2 }}
@@ -28,7 +28,7 @@
                         </a>
                     {% endfor %}
         
-                    <a name="contact-social" href="{{ c.credentials.cvlink }}" target="_blank" class="block w-full p-3 px-5 m-3 rounded-full transition duration-300 ease-in-out bg-neutral-800 hover:bg-neutral-700">
+                    <a name="contact-social" href="{{ c.credentials.cvlink }}" target="_blank" class="block w-full p-3 px-5 my-3 rounded-full transition duration-300 ease-in-out bg-neutral-800 hover:bg-neutral-700">
                         <p class="contact-social-text inline-block text-b500 align-middle text-neutral-200">
                             <img src="{% static 'icons/user.png' %}" alt="User" name="contact-social-icon" class="inline-block w-6 h-6 mr-3">
                             {{ c.base.contactCvText }}

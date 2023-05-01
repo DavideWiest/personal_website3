@@ -69,9 +69,6 @@ def choose_lang(request):
     if language != "de":
         language = "en"
 
-    # testing !!!
-    language = "en"
-
     return language
 
 def handle_requestdata(request, l):

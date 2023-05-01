@@ -34,8 +34,8 @@ def compress_file(filepath, filename):
 
 def handle_both():
     css_path = "_site/static/css/"
-    compress_file(css_path, "base.css")
-    compress_file(css_path, "typography.css")
+    for f in ["base", "typography", "main"]:
+        compress_file(css_path, f + ".css")
 
 def handle_production():
     "Handle execution to make application production ready"
@@ -53,12 +53,12 @@ if hostname in data["production_hostnames"] or hostname not in data["development
     print("application starting with PRODUCTION settings")
     dsettings = data["production_settings"]
     handle_production()
-    handle_both()
 else:
     print("application starting with DEVELOPMENT settings")
     dsettings = data["development_settings"]
     handle_development()
-    handle_both()
+
+handle_both()
 
 
 

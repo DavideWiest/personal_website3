@@ -3,13 +3,55 @@
 
 {% block innerContent %}
 
+<div class="w-full p-8">
+    <div class="shadow-md">
+        <div class="tab w-full overflow-hidden">
+            <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
+            <label class="block p-5 leading-normal cursor-pointer text-3xl text-b500 select-none transition duration-300 ease-in-out" for="tab-multi-one">
+                {{ c.main.skills.t }}
+            </label>
+            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                
+            </div>
+        </div>
+        <div class="tab w-full overflow-hidden border-t border-neutral-700">
+            <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
+            <label class="block p-5 leading-normal cursor-pointer text-3xl text-b500 select-none transition duration-300 ease-in-out" for="tab-multi-two">
+                {{ c.main.projects.t }}
+            </label>
+            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+
+            </div>
+        </div>
+        <div class="tab w-full overflow-hidden border-t border-neutral-700">
+            <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
+            <label class="block p-5 leading-normal cursor-pointer text-3xl text-b500 select-none transition duration-300 ease-in-out" for="tab-multi-three">
+                {{ c.main.testimonials.t }}
+            </label>
+            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+
+            </div>
+        </div>
+        <div class="tab w-full overflow-hidden border-t border-neutral-700">
+            <input class="absolute opacity-0" id="tab-multi-four" type="checkbox" name="tabs">
+            <label class="block p-5 leading-normal cursor-pointer text-3xl text-b500 select-none transition duration-300 ease-in-out" for="tab-multi-four">
+                {{ c.main.certificates.t }}
+            </label>
+            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 {% include 'blocks/bottomcta.html' %}
 
+{% endblock %}
 
-
-
-
+{% block outsideContentsBelow %}
+<link itemprop="url" rel="stylesheet" href="{% static 'css/main.css' %}">
 {% endblock %}
 
 {% block scripts %}

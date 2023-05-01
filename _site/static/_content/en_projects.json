@@ -83,19 +83,6 @@
             "c": ["Data Science", "Webapp", "API", "Scraper"],
             "align": 0,
             "is_casestudy": true
-        },
-        "mainservermodule": {
-            "name": "MainServerModule",
-            "description": "A collection of modules that can A) securely connect to multiple of my Flask project APIs and exchange data aswell as periodically update the API-Key using Fernet-encryption B) Populate my Flask Webapp Framework C) Generate a basic PDF invoice.",
-            "image": "",
-            "image_layout_type": "phone",
-            "link": "https://github.com/DavideWiest/mainservermodule",
-            "linkIcon": "github-white.png",
-            "linkDesc": "View Github Repository",
-            "t": ["Python", "HTML", "Flask", "Jinja2"],
-            "c": ["Encryption", "API", "PDF Maker"],
-            "align": 1,
-            "is_casestudy": false
         }
     }
 }

@@ -83,19 +83,6 @@
             "c": ["Data Science", "Webapp", "API", "Scraper"],
             "align": 1,
             "is_casestudy": true
-        },
-        "mainservermodule": {
-            "name": "MainServerModule",
-            "description": "Eine Sammlung von Modulen, die A) eine sichere Verbindung zu mehreren meiner Flask-Projekt-APIs herstellen und Daten austauschen sowie den API-Schlüssel mithilfe der Fernet-Verschlüsselung regelmäßig aktualisieren können B) Mein Flask-Webapp-Framework füllen C) Eine einfache PDF-Rechnung generieren Module, die A) eine sichere Verbindung zu mehreren meiner Flask-Projekt-APIs herstellen und Daten austauschen sowie den API-Schlüssel mithilfe der Fernet-Verschlüsselung regelmäßig aktualisieren können B) Mein Flask-Webapp-Framework mit Werten auffüllen C) Eine einfache PDF-Rechnung generieren. Derzeit außer Betrieb.",
-            "image": "",
-            "image_layout_type": "phone",
-            "link": "https://github.com/DavideWiest/mainservermodule",
-            "linkIcon": "github-white.png",
-            "linkDesc": "Github Repository ansehen",
-            "t": ["Python", "HTML", "Flask", "Jinja2"],
-            "c": ["Verschlüsselung", "API", "PDF-Erstellung"],
-            "align": 0,
-            "is_casestudy": false
         }
     }
 }
