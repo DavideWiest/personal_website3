@@ -13,10 +13,11 @@
     "nav": {
         "projects": "Projects",
         "cv": "See my CV",
-        "email": "Send Email"
+        "email": "Send Email",
+        "cvFile": "CV"
     },
     "contactCvText": "See my CV",
     "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
-    "meta_desc": "Does your business need a website and graphic design? I offer exactly that. Web development: ✔️Responsive ✔️SEO friendly ✔️Optimized funnel structure - Graphic Design: ✔️Unique ✔️Eye-friendly ✔️Thorough"
+    "meta_desc": "Personal website of Davide Wiest."
 
 }
