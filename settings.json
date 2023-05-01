@@ -27,8 +27,8 @@
             "secrets_file_path": "C:/Users/DavWi/OneDrive/Desktop/storage/secrets/personal_website3/secrets.json"
         },
         "respi": {
-            "secrets_file_path": "TODO"
+            "secrets_file_path": "/etc/wa_config/personal_website3/secrets.json"
         }
     },
-    "secret_key": "gs#@)_)pnucp+t9tot$q*nh-hd#0_i754i%)-mix$c-qxgr3v5"
+    "secret_key": "ryfd8bqjvgqr8-tm8*kuwwhh^($i*+u2ae*-6slo^)^c=yo%rk"
 }

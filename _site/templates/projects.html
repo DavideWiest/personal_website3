@@ -6,7 +6,7 @@
 
 <div id="projects" class="mt-8 md:mt-20">
     <div id="projects-inner" class="m-2 p-2 md:m-5 md:p-5 mt-3 md:mt-3 flex items-center flex-col">
-        <h3 id="projects-heading" class="intertight text-neutral-900 text-4xl md:text-5xl mb-16" style="font-weight: 700;">
+        <h3 id="projects-heading" class="intertight text-neutral-200 text-4xl md:text-5xl mb-16" style="font-weight: 700;">
             {{ c.projects.projectsPageHeading|safe }}
         </h3>
         <div id="projects-wrapper">
@@ -22,37 +22,37 @@
             </div>
             {% endif %}
             {% endif %}
-            <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-md {% else %} max-w-xl {% endif %}">
-                <a id="project" href="{{ value.link }}" target="_blank" class="group block bg-white max-w-2xl rounded-3xl my-10 grid shadow-xl border border-2 border-transparent hover:border-neutral-700 transition duration-300 ease-in-out max-w-md">
+            <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-md {% else %} max-w-2xl {% endif %}">
+                <a id="project" href="{{ value.link }}" target="_blank" class="group block max-w-2xl rounded-3xl my-10 grid border-transparent transition duration-300 ease-in-out max-w-md">
                         
                     <div class="p-6">
-                        <h3 id="project-title" class="text-2xl text-b600 mb-2">
+                        <h3 id="project-title" class="text-2xl text-b600 mb-2 text-neutral-200">
                             {{ value.name }}
                         </h3>
-                        <div id="project-categories" class="ml-1">
+                        <div id="project-categories" class="ml-1 my-3">
                             <p id="project-category-desc" class="roboto text-xs text-neutral-500">
                                 {{ c.projects.categoryDesc }}
                             </p>
                             {% for category in value.c %}
-                                <p id="project-categories" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
+                                <p id="project-categories" class="select-none inline-block code p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm bg-neutral-800 style="letter-spacing: -1px;">
                                     {{ category }}
                                 </p>
                             {% endfor %}
                         </div>
-                        <div id="project-tags" class="ml-1">
+                        <div id="project-tags" class="ml-1 my-3">
                             <p id="project-tag-desc" class="roboto text-xs text-neutral-500">
                                 {{ c.projects.tagDesc }}
                             </p>
                             {% for tag in value.t %}
-                                <p id="project-tag" class="select-none inline-block code border p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm border-gray-400" style="letter-spacing: -1px;">
+                                <p id="project-tag" class="select-none inline-block code p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm bg-neutral-800" style="letter-spacing: -1px;">
                                     {{ tag }}
                                 </p>
                             {% endfor %}
                         </div>
-                        <p id="project-description" class="text-gray-700 mt-2 mb-3 text-gray-600 text-sm ml-1">
+                        <p id="project-description" class="mt-2 mb-3 text-neutral-400 text-sm ml-1">
                             {{ value.description|safe }}
                         </p>
-                        <button id="project-link" class="mt-4 bg-neutral-800 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 group-hover:shadow-lg group-hover:bg-black transition duration-300 ease-in-out">
+                        <button id="project-link" class="mt-4 bg-neutral-200 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 group-hover:bg-accent transition duration-300 ease-in-out">
                             <div class="inline-block mr-1">
                                 <div id="project-link-icon" class="m-r-4 flex w-full items-center">
                                     {% if value.linkIcon != "" %}
@@ -60,7 +60,7 @@
                                     {% endif %}
                                 </div>
                             </div>
-                            <span id="project-link-text" class="align-middle text-b400 text-white md:text-lg">
+                            <span id="project-link-text" class="align-middle text-b400 text-black md:text-lg">
                                 {{ value.linkDesc }}
                             </span>
                         </button>

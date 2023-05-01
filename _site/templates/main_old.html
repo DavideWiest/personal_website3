@@ -1,0 +1,379 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block innerContent %}
+
+<div class="bg-black flex justify-center">
+    <div class="flex flex-col justify-center md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen" style="max-width: 1300px;">
+        <div class="flex justify-center flex-col md:items-center">
+            <div class="rounded-3xl inline-block border-2 border-accent mx-8 md:px-0 w-fit">
+                <img src="{% static 'assets/davidewiest1.webp' %}" alt="" class="w-32 md:w-48 xl:w-48 rounded-3xl">
+            </div>
+        </div>
+        <div class="p-8 md:p-16 flex justify-center items-center flex-col">
+            <h3 id="intro" class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
+                {{ c.main.hero_header }}
+            </h3>
+            <p class="text-lg">
+                
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="bg-black flex justify-center">
+    <div class="md:grid md:grid-cols-2 bg-black py-16" style="max-width: 1300px;">
+        <div class="p-8 md:p-16 flex justify-start flex-col">
+            <h3 class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
+                {{ c.main.services_header|safe }}
+            </h3>
+        </div>
+        <div class="flex justify-center items-center flex-col">
+            <div>
+                <h3 class="intertight text-accent text-3xl md:text-4xl text-b600 mt-8 px-3 md:p-0">
+                    {{ c.main.services_subheader }}
+                </h3>
+                <div class="my-4 max-w-md">
+                    {% for service, description in c.main.pservice.items %}
+                    <div class="text-gray-300 text-lg p-1.5 px-0 m-1 rounded-lg fade-in-order1">
+                        <h3 class="intertight text-neutral-100 text-3xl md:text-4xl text-b600 mt-8">
+                            {{ service }}
+                        </h3>
+                        <p class="text-xl text-neutral-300">
+                            {{ description }}
+                        </p>
+                    </div>
+                    {% endfor %}
+                    {% for service, description in c.main.sservices.items %}
+                    <div class="text-gray-300 text-lg p-1.5 px-0 m-1 rounded-lg fade-in-order2">
+                        <h3 class="intertight text-neutral-100 text-2xl md:text-3-lg text-b600 mt-8">
+                            {{ service }}
+                        </h3>
+                        <p class="text-lg text-neutral-300">
+                            {{ description }}
+                        </p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="bg-black flex justify-center">
+    <div class="md:grid md:grid-cols-2 bg-black py-8 pt-12 min-h-screen" style="max-width: 1300px;">
+        <div class="p-8 md:p-16 flex justify-center flex-col">
+            <h3 id="name" class="intertight text-neutral-100 text-5xl md:text-6xl text-b600">
+                {{ c.main.score_header|safe }}
+            </h3>
+        </div>
+        <div class="flex justify-center items-center flex-col">
+            <div>
+                {% for score, websitename in c.main.scores.items %}
+                <div class="flex flex-col items-center rounded-3xl md:w-full p-3 pb-1 m-6 fade-in-order1" style="background-color: #1b1b1b;">
+                    <img src="/static/other/scores/{{ score }}" alt="Google lighthouse Score of {{ websitename }}" class="w-auto md:h-32">
+                    <p class="text-sm text-gray-200 my-2">
+                        {{ websitename }}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-gray-100 flex justify-center my-16 mt-32">
+    <div class="px-4 md:px-8 w-full" style="max-width: 1300px;">
+        <div>
+            <h3 class="intertight text-neutral-900 text-4xl md:text-5xl mb-2" style="font-weight: 700;">
+                {{ c.main.studies_header }}
+            </h3>
+            <p class="text-neutral-800 text-xl max-w-md mb-8">
+                {{ c.main.studies_description }}
+            </p>
+        </div>
+        <div class="md:grid md:grid-cols-3 w-full">
+            <div class="p-4 rounded-3xl border border-gray-300 md:p-8 m-0 md:m-6 mb-6 border border-gray-300 max-w-sm backdrop-filter backdrop-blur-md shadow-lg">
+                <div class="flex flex-col items-stretch">
+                    {% for category, content in c.main.studies.items %}
+                    <button onclick="showStudyCategory('{{ category }}')" class="code tracking-tighter text-b600 p-3 px-5 m-3 bg-white text-xl border-2 border-transparent rounded-full hover:border-black transition duration-300 ease-in-out">
+                        {{ content.0 }}
+                    </button>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="flex justify-start flex col-span-2">
+                <div class="p-4 rounded-3xl border border-gray-300 md:p-8 m-0 md:m-6 shadow-lg">
+                    {% for category, content in c.main.studies.items %}
+                    <div id="study_{{ category }}_wrapper" class="hidden">
+                        {% for study in content.1 %}
+                        <div class="lg:flex">
+                            <div id="" class="lg:mr-4">
+                                <canvas id="study_{{ category }}{{ forloop.counter0 }}_graph" class="study_graphic study_graphic_{{ category }}" width="100" height="100" graph_percentage="{{ study.n }}"></canvas>
+                            </div>
+                            <div>
+                                <p class="text-2xl text-b500 py-4 pb-1">
+                                    {{ study.t }}
+                                </p>
+                                {% if study.s != "" %}
+                                <a class="block text-sm text-blue-600 py-3" href="{{ study.s }}">
+                                    {{ study.a }}
+                                </a>
+                                {% else %}
+                                <p class="text-sm text-blue-600 py-3">
+                                    {{ study.a }}
+                                </p>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-gray-100 flex justify-center my-16">
+    <div class="px-4 md:px-8" style="max-width: 1300px;">
+        <div id="hero-heading-c" class="inline-block mt-6 mb-5">
+            <h3 class="intertight text-neutral-900 text-4xl md:text-5xl" style="font-weight: 700;">
+                {{ c.main.aboutHeading |safe }}
+            </h3>
+        </div>
+        <div id="hero-text-c" class="mt-4 md:grid md:grid-cols-3 md:gap-8">
+            {% for key, value in c.main.aboutContent.items %}
+                <div id="about-item" class="p-4 md:p-6 max-w-md border border-neutral-200 border-b-neutral-300 hover:border-neutral-300 transition duration-300 ease-in-out">
+                    <h3 id="about-item-header" class="intertight text-neutral-900 text-2xl text-b800">
+                        {{ key }}
+                    </h3>
+                    <p id="about-item-text" class="text-neutral-800">
+                        {{ value }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div id="testimonials" class="testimonials-section-3 mt-8 md:mt-12">
+    <div id="testimonials-wrapper" class="m-2 my-3 p-2 md:m-5 md:mb-3 md:p-5 mt-12 md:mt-20 flex items-center flex-col">
+        <div id="testimonials-inner" class="md:flex w-full justify-evenly">
+            
+            {% for key, value in c.main.testimonials.items %}
+            {% if value != "" %}
+            <div id="testimonial" class="m-2 flex flex-col items-center p-2">
+                <img src="{% static 'icons/quote-primary.png' %}" alt="Quoting testimonial" class="w-6 h-6">
+                
+                <div id="testimonial-inner" class="max-w-md md:max-w-lg border-2 border-transparent border-r-primary border-l-primary rounded-xl p-5 px-8 mt-3">
+                    <p id="testimonial-text" class="text-2xl md:text-3xl text-black text-b500 inline-block w-fit" style="font-style: italic;">
+                        {{ value }}
+                    </p>
+                    <p id="testimonial-author" class="text-primary text-b600">
+                        — {{ key }}
+                    </p>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+            <div class="flex justify-center items-center">
+                <a href="/resources/Google_Onlinemarketing_Zertifikat">
+                    <img src="{% static 'icons/certificate1.webp' %}" alt="Google Certificate" class="w-64 rounded-lg">
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block outsideContentBelow %}
+
+{% include 'blocks/bottomcta.html' %}
+
+{% endblock %}
+
+{% block scripts %}
+
+{{ c.main.studies|json_script:"studies_contentJS" }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<script src="{% static 'js/scrollanim.js' %}" type="module"></script>
+
+<script>
+    var studies = JSON.parse(document.getElementById('studies_contentJS').textContent);
+
+    var study_categories = Object.keys(studies);
+    
+    function siv(queryselec) {
+        var elem = document.querySelector(queryselec);
+        elem.scrollIntoView({behavior: "smooth"});
+    }
+
+    function handleFadeIn() {
+            var pageTop = $(document).scrollTop();
+            var pageBottom = pageTop + $(window).height();
+            var anim_offset = $(window).height() * 0.1; // 20 vh
+
+            var tags = $(".fade-in-base");
+        
+            for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+        
+            if ($(tag).position().top < pageBottom - anim_offset) {
+                $(tag).addClass("fade-in-base-visible");
+            } else {
+                $(tag).removeClass("fade-in-base-visible");
+            }
+            }
+
+            var tags = $(".fade-in-order1");
+        
+            for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+        
+            if ($(tag).position().top < pageBottom - anim_offset) {
+                $(tag).addClass("visible-order1");
+            } else {
+                $(tag).removeClass("visible-order1");
+            }
+            }
+            var tags = $(".fade-in-order2");
+        
+            for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+        
+            if ($(tag).position().top < pageBottom - anim_offset) {
+                $(tag).addClass("visible-order2");
+            } else {
+                $(tag).removeClass("visible-order2");
+            }
+            }
+            var tags = $(".fade-in-order3");
+        
+            for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+        
+            if ($(tag).position().top < pageBottom - anim_offset) {
+                $(tag).addClass("visible-order3");
+            } else {
+                $(tag).removeClass("visible-order3");
+            }
+            }
+        }
+
+
+    var ctx = {};
+    var piegraphics = {};
+
+    function showStudyCategory(category) {
+        for (let i in study_categories) {
+            var category2 = study_categories[i];
+            if (category == category2) {
+
+                document.getElementById("study_" + category2 + "_wrapper").classList.remove("hidden");
+                var graphics = document.querySelectorAll(".study_graphic_" + category2)
+                graphics.forEach((canvas) => {
+                    
+                    piegraphics[canvas.id] = new Chart(canvas, ctx[canvas.id]);
+                });
+
+            } else {
+                document.getElementById("study_" + category2 + "_wrapper").classList.add("hidden");
+                var graphics = document.querySelectorAll(".study_graphic_" + category2)
+                graphics.forEach((canvas) => {
+                    try {
+                        piegraphics[canvas.id].destroy()
+                    } catch {
+                        
+                    }
+                });
+            }
+        }
+    }
+
+    function generateGraphsCtx() {
+        var graphics = document.querySelectorAll(".study_graphic");
+        graphics.forEach((canvas) => {
+            var value = Number(canvas.getAttribute("graph_percentage"));
+
+            ctx[canvas.id] = {
+                type: 'pie',
+                data: {
+                datasets: [{
+                    // label: "label",
+                    backgroundColor: ["#2487e3", "rgba(0,0,0,0)"],
+                    data: [value, 100 - value]
+                }]
+                },
+                options: {  
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                    tooltip: {
+                        enabled: false
+                    },
+                    legend: {
+                        display: false
+                    },
+                    elements: {
+                        arc: {
+                            borderWidth: 0
+                        }
+                    }
+                    }
+                }
+            }
+        })
+    }
+
+    function generateGraphicsFirst() {
+        var graphics = document.querySelectorAll(".study_graphic");
+        graphics.forEach((canvas) => {
+            if (canvas.id.startsWith("study_design")) {
+                var value = Number(canvas.getAttribute("graph_percentage"));
+    
+                piegraphics[canvas.id] = new Chart(canvas, ctx[canvas.id]);
+            }
+        })
+    }
+
+
+    function docReady() {
+        handleFadeIn();
+        
+        document.getElementById("study_design_wrapper").classList.remove("hidden");
+
+        generateGraphsCtx();
+        generateGraphicsFirst();
+    }
+
+    function docScroll() {
+        handleFadeIn();
+        docResize();
+    }
+    
+    function docResize() {
+        var graphics = document.querySelectorAll(".study_graphic");
+        graphics.forEach((canvas) => {
+            canvas.setAttribute("width", "100");
+            canvas.setAttribute("height", "100");
+            canvas.style.width = "100px";
+            canvas.style.height = "100px";
+        });
+    }
+
+    $(document).on("scroll", docScroll);
+    $(document).ready(docReady);
+    $(document).resize(docResize);
+
+</script>
+
+{% endblock %}
