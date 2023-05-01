@@ -25,7 +25,7 @@ var dt = new Date("2006-10-02T02:41:39+01:00");
 function updateAge() {
     let result = timeDifference(dt);
     let ageElement = document.getElementById('age');
-    ageElement.textContent = `Age: ${result.years} years, ${result.months} months, ${result.days} days, ${result.hours} hours, ${result.minutes} minutes, ${result.seconds} seconds`;
+    ageElement.textContent = ageElement.textContent.split(":")[0] + ": " + `${result.years} years, ${result.months} months, ${result.days} days, ${result.hours} hours, ${result.minutes} minutes, ${result.seconds} seconds`;
 }
 
 setInterval(updateAge, 1000);

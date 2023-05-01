@@ -1,6 +1,7 @@
 {
     "hero_header": "Davide Wiest",
     "hero_text": "I am a Student, passionate programmer and I appreciate new experiences.",
+    "age": "Age",
     "projects": {
         "t": "Projects & Work",
         "seeProjects": "See project overview",
