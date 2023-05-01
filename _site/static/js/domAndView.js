@@ -92,3 +92,58 @@ try {
 } catch (error) {
     
 }
+
+function siv(queryselec) {
+    var elem = document.querySelector(queryselec);
+    elem.scrollIntoView({behavior: "smooth"});
+}
+
+function handleFadeIn() {
+    var pageTop = $(document).scrollTop();
+    var pageBottom = pageTop + $(window).height();
+    var anim_offset = $(window).height() * 0.1; // 20 vh
+
+    var tags = $(".fade-in-base");
+
+    for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
+
+    if ($(tag).position().top < pageBottom - anim_offset) {
+        $(tag).addClass("fade-in-base-visible");
+    } else {
+        $(tag).removeClass("fade-in-base-visible");
+    }
+    }
+
+    for (var i2 = 1; i2<=3; i2++) {
+        var tags = $(".fade-in-order" + i2.toString());
+    
+        for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i];
+    
+            if ($(tag).position().top < pageBottom - anim_offset) {
+                $(tag).addClass("visible-order" + i2.toString());
+            } else {
+                $(tag).removeClass("visible-order" + i2.toString());
+            }
+        }
+    }
+}
+
+function docReady() {
+    handleFadeIn();
+}
+
+function docScroll() {
+    handleFadeIn();
+    docResize();
+}
+
+function docResize() {
+
+}
+
+
+$(document).on("scroll", docScroll);
+$(document).ready(docReady);
+$(document).resize(docResize);

@@ -3,46 +3,183 @@
 
 {% block innerContent %}
 
-<div class="w-full p-8">
-    <div class="shadow-md">
-        <div class="tab w-full overflow-hidden">
-            <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
-            <label class="block p-5 leading-normal cursor-pointer text-3xl text-b500 select-none transition duration-300 ease-in-out" for="tab-multi-one">
-                {{ c.main.skills.t }}
-            </label>
-            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                
+<div class="flex justify-center">
+    <div class="flex flex-col justify-center md:grid md:grid-cols-2 py-8 pt-12 min-h-screen" style="max-width: 1300px;">
+        <div class="flex justify-center flex-col md:items-center">
+            <div class="flex flex-col items-center">
+                <div class="rounded-full inline-block border-2 border-accent mx-8 md:px-0 w-fit">
+                    <img src="{% static 'assets/personalPicture.webp' %}" alt="" class="w-32 md:w-48 xl:w-48 rounded-full">
+                </div>
+                <p class="text-sm text-gray-500 mt-2">{{ c.credentials.pictureTakenYear }}</p>
             </div>
         </div>
-        <div class="tab w-full overflow-hidden border-t border-neutral-700">
-            <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
-            <label class="block p-5 leading-normal cursor-pointer text-3xl text-b500 select-none transition duration-300 ease-in-out" for="tab-multi-two">
-                {{ c.main.projects.t }}
-            </label>
-            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+        <div class="p-8 md:p-16 flex justify-center items-center flex-col md:items-start">
+            <h3 id="intro" class="intertight text-neutral-100 text-5xl md:text-6xl text-b600 mb-4">
+                {{ c.main.hero_header }}
+            </h3>
+            <p class="text-lg">
+                {{ c.main.hero_text }}
+            </p>
+            <p id="age" class="text-lg">
 
-            </div>
-        </div>
-        <div class="tab w-full overflow-hidden border-t border-neutral-700">
-            <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
-            <label class="block p-5 leading-normal cursor-pointer text-3xl text-b500 select-none transition duration-300 ease-in-out" for="tab-multi-three">
-                {{ c.main.testimonials.t }}
-            </label>
-            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-
-            </div>
-        </div>
-        <div class="tab w-full overflow-hidden border-t border-neutral-700">
-            <input class="absolute opacity-0" id="tab-multi-four" type="checkbox" name="tabs">
-            <label class="block p-5 leading-normal cursor-pointer text-3xl text-b500 select-none transition duration-300 ease-in-out" for="tab-multi-four">
-                {{ c.main.certificates.t }}
-            </label>
-            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-
-            </div>
+            </p>
         </div>
     </div>
 </div>
+
+<div class="px-3 md:px-8">
+    <h2 class="block p-5 leading-normal text-xl md:text-2xl text-b500 transition duration-300 ease-in-out text-gray-500 uppercase" for="tab-multi-one">
+        {{ c.main.projects.t }}
+    </h2>
+    <div class="">
+        <div class="py-6 px-2">
+            <div>
+                <div class="m-4 md:m-10">
+                    <h3 class="intertight text-neutral-100 text-3xl md:text-4xl text-b600">
+                        {{ c.main.projects.workExperience.t }}
+                    </h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    {% for exp in c.main.projects.workExperience.content %}
+                        <div class="m-3 md:m-6 rounded-3xl border border-black" style="background: linear-gradient({{ exp.4.0 }}, {{ exp.4.1 }}, {{ exp.4.2 }});">
+                            <h3 class="intertight text-neutral-200 text-2xl text-b600 mx-5 mt-5">
+                                <span>{{ exp.0 }}</span> @ <a href="{{ exp.2 }}" target="_blank" class="hover:text-accent">{{ exp.1 }}</a>
+                            </h3>
+                            <p class="text-neutral-500 mx-5">
+                                {{ exp.3 }}
+                            </p>
+                            <hr class="border-black border-t-2 my-3">
+                            <p class="text-lg mx-5 mb-5 text-neutral-400">
+                                {{ exp.5 }}
+                            </p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="p-8 md:p-16 mt-6 md:mt-12">
+                <a href="/projects" class="intertight text-neutral-100 text-3xl md:text-4xl text-b600 hover:text-accent">
+                    {{ c.main.projects.seeProjects }} →
+                </a>
+            </div>
+            <div class="flex justify-center">
+                <div class="md:grid md:grid-cols-2 py-8 pt-12" style="max-width: 1300px;">
+                    <div class="p-8 md:p-16 flex justify-center flex-col">
+                        <h3 id="name" class="intertight text-neutral-100 text-3xl md:text-4xl text-b600">
+                            {{ c.main.projects.websiteScores.t }}
+                        </h3>
+                        <p class="text-neutral-400 text-base mt-3">
+                            {{ c.main.projects.websiteScores.d }}
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center flex-col">
+                        <div>
+                            {% for score, websitename in c.main.projects.websiteScores.content.items %}
+                            <div class="flex flex-col items-center rounded-3xl md:w-full p-3 pb-1 m-6 fade-in-order1">
+                                <img src="/static/other/scores/{{ score }}" alt="Google lighthouse Score of {{ websitename }}" class="w-auto md:h-32 rounded-3xl">
+                                <p class="text-sm text-neutral-400 my-2">
+                                    {{ websitename }}
+                                </p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <h2 class="block p-5 leading-normal text-xl md:text-2xl text-b500 transition duration-300 ease-in-out text-gray-500 uppercase" for="tab-multi-two">
+        {{ c.main.skills.t }}
+    </h2>
+    <div class="">
+        <div class="py-6 px-2">
+            <div class="my-4 md:my-8">
+                <h3 class="m-4 md:m-10 my-3 md:my-5 intertight text-neutral-100 text-3xl md:text-4xl text-b600">
+                    {{ c.main.skills.content.technical.t }}
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6">
+                    {% for category, skills in c.main.skills.content.technical.content.items %}
+                        <div class="">
+                            <h3 class="text-lg text-neutral-400" style="width:100%; text-align:center; border-bottom: 1px solid #a7a7a7; line-height:0.1em; margin:1.25rem 0 1.25rem;">
+                                <span style="background: #121212; padding:0 10px;">{{ category }}</span>
+                            </h3>
+                            <div class="">
+                                {% for skill in skills.1 %}
+                                    <p class="inline-block px-4 py-2 m-1.5 mx-1 rounded-full code text-sm md:text-base" style="background-color: {{ skills.0 }};">
+                                        {{ skill }}
+                                    </p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="my-4 md:my-8">
+                <h3 class="m-4 md:m-10 my-3 md:my-5 intertight text-neutral-100 text-2xl md:text-3xl text-b600">
+                    {{ c.main.skills.content.soft.t }}
+                </h3>
+                <div class="px-6">
+                    {% for skill in c.main.skills.content.soft.content %}
+                        <p class="inline-block px-4 py-2 m-1.5 mx-1 rounded-full code" style="background-color: rgb(3, 58, 55);">
+                            {{ skill }}
+                        </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="my-4 md:my-8">
+                <h3 class="m-4 md:m-10 my-3 md:my-5 intertight text-neutral-100 text-2xl md:text-3xl text-b600">
+                    {{ c.main.skills.content.workOther.t }}
+                </h3>
+                <div class="px-6">
+                    {% for skill in c.main.skills.content.workOther.content %}
+                        <p class="inline-block px-4 py-2 m-1.5 mx-1 rounded-full code" style="background-color: rgb(41, 3, 58);">
+                            {{ skill }}
+                        </p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <h2 class="block p-5 pb-1 leading-normal text-2xl md:text-3xl text-b500 transition duration-300 ease-in-out text-b600 for="tab-multi-three">
+        {{ c.main.testimonials.t }}
+    </h2>
+    <div class="">
+        <div class="py-6 px-2 pt-2">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                {% for author, testimonial in c.main.testimonials.content.items %}
+                    <div class="m-4">
+                        <p class="text-xl">
+                            {{ testimonial }}
+                            <span class="text-accent">
+                                {{ author }}
+                            </span>
+                        </p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <h2 class="block p-5 pb-1 leading-normal text-2xl md:text-3xl text-b500 transition duration-300 ease-in-out text-b600" for="tab-multi-four">
+        {{ c.main.certificates.t }}
+    </h2>
+    <div class="">
+        <div class="py-6 px-2 pt-2">
+            {% for certificate in c.main.certificates.content %}
+                <div class="m-4">
+                    <a href="{{ certificate.2 }}" class="text-xl hover:text-accent" rel="_blank">
+                        {{ certificate.0 }} ({{ certificate.1 }}) →
+                    </a>
+                    <p class="text-neutral-400">
+                        {{ certificate.3 }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -57,5 +194,6 @@
 {% block scripts %}
 
 <script src="{% static 'js/scrollanim.js' %}" type="module"></script>
+<script src="{% static 'js/main.js' %}" type="module"></script>
 
 {% endblock %}

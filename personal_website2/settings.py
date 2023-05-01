@@ -34,7 +34,7 @@ def compress_file(filepath, filename):
 
 def handle_both():
     css_path = "_site/static/css/"
-    for f in ["base", "typography", "main"]:
+    for f in ["base", "typography"]:
         compress_file(css_path, f + ".css")
 
 def handle_production():

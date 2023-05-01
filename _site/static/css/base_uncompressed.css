@@ -96,13 +96,13 @@ span#focal {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(189, 189, 189);
+    background: rgb(158, 158, 158);
     border-radius: 100px;
     margin-right: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(151, 151, 151);
+    background: rgb(112, 112, 112);
 }
 
 ::selection {
