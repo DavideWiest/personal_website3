@@ -1,6 +1,6 @@
 {
     "hero_header": "Davide Wiest",
-    "hero_text": "I am a Student, passionate programmer and I appreciate new experiences.",
+    "hero_text": "I am a student, passionate programmer and I appreciate new experiences.",
     "age": "Age",
     "projects": {
         "t": "Projects & Work",
@@ -28,10 +28,10 @@
             "technical": {
                 "t": "Technical Skills",
                 "content": {
-                    "Good with": ["#101a75", [
+                    "Experienced in": ["#101a75", [
                         "Python", "HTML"
                     ]],
-                    "Worked with": ["#084573", [
+                    "Familiar with": ["#084573", [
                         "Java", "C#", "MongoDB", "Django", "Flask", "PyTorch"
                     ]],
                     "Learning/Will learn": ["#106975", [

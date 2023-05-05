@@ -2,7 +2,7 @@
     "footerStartName": "Main Page",
     "cta": {
         "title": "Let's get in touch",
-        "description": "Think I can help with anything? Drop me an email and I'll see how! You can reach me through via email: ",
+        "description": "Think I can help with anything? Drop me an email and I'll see how! You can reach me via email.",
         "button": "Contact me"
     },
     "secondaryLang": "de",
@@ -14,7 +14,7 @@
         "projects": "Projects",
         "cv": "See my CV",
         "email": "Send Email",
-        "cvFile": "CV"
+        "cvFile": "CV.pdf"
     },
     "contactCvText": "See my CV",
     "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",

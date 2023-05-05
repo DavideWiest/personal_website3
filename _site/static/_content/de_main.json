@@ -1,6 +1,6 @@
 {
     "hero_header": "Davide Wiest",
-    "hero_text": "Ich bin ein Schüler, passionierter Programmierer und schätze neue Erfahrungen.",
+    "hero_text": "Ich bin ein Schüler, leidenschaftlicher Programmierer und schätze neue Erfahrungen.",
     "age": "Alter",
     "projects": {
         "t": "Projekte & Arbeit",
@@ -28,13 +28,13 @@
             "technical": {
                 "t": "Technische Fähigkeiten",
                 "content": {
-                    "Gut mit": ["#101a75", [
+                    "Erfahren in": ["#101a75", [
                         "Python", "HTML"
                     ]],
-                    "Gearbeitet mit": ["#084573", [
+                    "Vertraut mit": ["#084573", [
                         "Java", "C#", "MongoDB", "Django", "Flask", "PyTorch"
                     ]],
-                    "Lernen/Wird lernen": ["#106975", [
+                    "Lerne/Werde lernen": ["#106975", [
                         "PostGreSQL", "Rust oder C++"
                     ]]
                 }

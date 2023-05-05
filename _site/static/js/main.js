@@ -25,7 +25,11 @@ var dt = new Date("2006-10-02T02:41:39+01:00");
 function updateAge() {
     let result = timeDifference(dt);
     let ageElement = document.getElementById('age');
-    ageElement.textContent = ageElement.textContent.split(":")[0] + ": " + `${result.years} years, ${result.months} months, ${result.days} days, ${result.hours} hours, ${result.minutes} minutes, ${result.seconds} seconds`;
+    if (document.getElementById('language').textContent != "de") {
+        ageElement.textContent = ageElement.textContent.split(":")[0] + ": " + `${result.years} years, ${result.months} months, ${result.days} days, ${result.hours} hours, ${result.minutes} minutes, ${result.seconds} seconds`;
+    } else {
+        ageElement.textContent = ageElement.textContent.split(":")[0] + ": " + `${result.years} Jahre, ${result.months} Monate, ${result.days} Tage, ${result.hours} Stunden, ${result.minutes} Minuten, ${result.seconds} Sekunden`;
+    }
 }
 
 setInterval(updateAge, 1000);
