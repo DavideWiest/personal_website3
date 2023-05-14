@@ -32,10 +32,10 @@
                         "Python", "HTML"
                     ]],
                     "Familiar with": ["#084573", [
-                        "Java", "C#", "MongoDB", "Django", "Flask", "PyTorch"
+                        "Java", "MongoDB", "Django", "Flask", "PyTorch"
                     ]],
                     "Learning/Will learn": ["#106975", [
-                        "PostGreSQL", "Rust or C++"
+                        "C#", "PostGreSQL", "Rust or C++"
                     ]]
                 }
             },
@@ -48,7 +48,7 @@
             "workOther": {
                 "t": "Work-related and Other",
                 "content": [
-                    "MS-Office"
+                    "MS-Office Basics"
                 ]
             }
         }
