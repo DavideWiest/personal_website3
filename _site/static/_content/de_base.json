@@ -2,7 +2,7 @@
     "footerStartName": "Zur Startseite",
     "cta": {
         "title": "Kontaktieren Sie mich",
-        "description": "Gibt's etwas, wobei ich helfen kann? Schicken Sie mir eine Email und ich finde heraus wie. Sie können mich unter folgender Email-Adresse anschreiben: ",
+        "description": "Gibt's etwas, wobei ich helfen kann? Schicken Sie mir eine Email und ich finde heraus wie. Sie können mich jederzeit per Email erreichen.",
         "button": "Eine Mail schicken"
     },
     "secondaryLang": "en",
@@ -13,7 +13,8 @@
     "nav": {
         "projects": "Projekte",
         "cv": "Lebenslauf",
-        "email": "Email senden"
+        "email": "Email senden",
+        "cvFile": "Lebenslauf.pdf"
     },
     "contactCvText": "Lebenslauf ansehen",
     "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",

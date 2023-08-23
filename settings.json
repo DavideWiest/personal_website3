@@ -1,11 +1,11 @@
 {
     "development_hostnames": [
         "DESKTOP-9DUQODF",
-        "davidewiest.com"
+        "davidewiest.com2"
     ],
     "production_hostnames": [
         "raspi",
-        "davidewiest.com2"
+        "davidewiest.com"
     ],
     "development_settings": {
         "debug": true,
@@ -30,5 +30,5 @@
             "secrets_file_path": "/etc/wa_config/personal_website3/secrets.json"
         }
     },
-    "secret_key": ")@0v2b@#pikq@43$d)n)!$tb(vbwxz)8@9s&6bi)hnji@_xumc"
+    "secret_key": "9ho@e*2nt@1m*fnj6z!s+_l_aveee8tnyqvxu1s9ds$hri##5y"
 }

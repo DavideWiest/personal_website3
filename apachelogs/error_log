@@ -1,0 +1,305 @@
+[Mon May 01 21:16:04.552318 2023] [wsgi:error] [pid 11729] application starting with DEVELOPMENT settings
+[Mon May 01 21:16:04.552428 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377] mod_wsgi (pid=11729): Failed to exec Python script file '/var/www/html/personal_website2/personal_website2/wsgi.py'.
+[Mon May 01 21:16:04.552458 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377] mod_wsgi (pid=11729): Exception occurred processing WSGI script '/var/www/html/personal_website2/personal_website2/wsgi.py'.
+[Mon May 01 21:16:04.554121 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377] Traceback (most recent call last):
+[Mon May 01 21:16:04.554238 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "/var/www/html/personal_website2/personal_website2/wsgi.py", line 20, in <module>
+[Mon May 01 21:16:04.554320 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]     application = get_wsgi_application()
+[Mon May 01 21:16:04.554329 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "/usr/local/lib/python3.9/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Mon May 01 21:16:04.554334 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]     django.setup(set_prefix=False)
+[Mon May 01 21:16:04.554343 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "/usr/local/lib/python3.9/dist-packages/django/__init__.py", line 19, in setup
+[Mon May 01 21:16:04.554348 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Mon May 01 21:16:04.554353 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "/usr/local/lib/python3.9/dist-packages/django/conf/__init__.py", line 92, in __getattr__
+[Mon May 01 21:16:04.554356 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]     self._setup(name)
+[Mon May 01 21:16:04.554361 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "/usr/local/lib/python3.9/dist-packages/django/conf/__init__.py", line 79, in _setup
+[Mon May 01 21:16:04.554365 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]     self._wrapped = Settings(settings_module)
+[Mon May 01 21:16:04.554370 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "/usr/local/lib/python3.9/dist-packages/django/conf/__init__.py", line 190, in __init__
+[Mon May 01 21:16:04.554373 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Mon May 01 21:16:04.554380 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Mon May 01 21:16:04.554383 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]     return _bootstrap._gcd_import(name[level:], package, level)
+[Mon May 01 21:16:04.554388 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Mon May 01 21:16:04.554393 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Mon May 01 21:16:04.554398 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+[Mon May 01 21:16:04.554403 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+[Mon May 01 21:16:04.554407 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+[Mon May 01 21:16:04.554412 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Mon May 01 21:16:04.554417 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "/var/www/html/personal_website2/personal_website2/settings.py", line 61, in <module>
+[Mon May 01 21:16:04.554420 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]     handle_both()
+[Mon May 01 21:16:04.554425 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "/var/www/html/personal_website2/personal_website2/settings.py", line 38, in handle_both
+[Mon May 01 21:16:04.554435 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]     compress_file(css_path, f + ".css")
+[Mon May 01 21:16:04.554440 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]   File "/var/www/html/personal_website2/personal_website2/settings.py", line 29, in compress_file
+[Mon May 01 21:16:04.554444 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377]     with open(f"{filepath}{fn_name}_uncompressed.{fn_type}", "r") as f:
+[Mon May 01 21:16:04.554465 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3377] FileNotFoundError: [Errno 2] No such file or directory: '_site/static/css/base_uncompressed.css'
+[Mon May 01 21:16:04.646037 2023] [wsgi:error] [pid 11729] application starting with DEVELOPMENT settings
+[Mon May 01 21:16:04.646154 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383] mod_wsgi (pid=11729): Failed to exec Python script file '/var/www/html/personal_website2/personal_website2/wsgi.py'.
+[Mon May 01 21:16:04.646341 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383] mod_wsgi (pid=11729): Exception occurred processing WSGI script '/var/www/html/personal_website2/personal_website2/wsgi.py'.
+[Mon May 01 21:16:04.646623 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383] Traceback (most recent call last):
+[Mon May 01 21:16:04.646713 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "/var/www/html/personal_website2/personal_website2/wsgi.py", line 20, in <module>
+[Mon May 01 21:16:04.646721 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]     application = get_wsgi_application()
+[Mon May 01 21:16:04.646729 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "/usr/local/lib/python3.9/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Mon May 01 21:16:04.646734 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]     django.setup(set_prefix=False)
+[Mon May 01 21:16:04.646742 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "/usr/local/lib/python3.9/dist-packages/django/__init__.py", line 19, in setup
+[Mon May 01 21:16:04.646746 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Mon May 01 21:16:04.646754 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "/usr/local/lib/python3.9/dist-packages/django/conf/__init__.py", line 92, in __getattr__
+[Mon May 01 21:16:04.646759 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]     self._setup(name)
+[Mon May 01 21:16:04.646767 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "/usr/local/lib/python3.9/dist-packages/django/conf/__init__.py", line 79, in _setup
+[Mon May 01 21:16:04.646771 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]     self._wrapped = Settings(settings_module)
+[Mon May 01 21:16:04.646778 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "/usr/local/lib/python3.9/dist-packages/django/conf/__init__.py", line 190, in __init__
+[Mon May 01 21:16:04.646784 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Mon May 01 21:16:04.646790 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Mon May 01 21:16:04.646795 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]     return _bootstrap._gcd_import(name[level:], package, level)
+[Mon May 01 21:16:04.646803 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Mon May 01 21:16:04.646810 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Mon May 01 21:16:04.646819 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+[Mon May 01 21:16:04.646826 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+[Mon May 01 21:16:04.646843 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+[Mon May 01 21:16:04.646851 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Mon May 01 21:16:04.646858 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "/var/www/html/personal_website2/personal_website2/settings.py", line 61, in <module>
+[Mon May 01 21:16:04.646863 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]     handle_both()
+[Mon May 01 21:16:04.646871 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "/var/www/html/personal_website2/personal_website2/settings.py", line 38, in handle_both
+[Mon May 01 21:16:04.646875 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]     compress_file(css_path, f + ".css")
+[Mon May 01 21:16:04.646883 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]   File "/var/www/html/personal_website2/personal_website2/settings.py", line 29, in compress_file
+[Mon May 01 21:16:04.646888 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383]     with open(f"{filepath}{fn_name}_uncompressed.{fn_type}", "r") as f:
+[Mon May 01 21:16:04.646911 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3383] FileNotFoundError: [Errno 2] No such file or directory: '_site/static/css/base_uncompressed.css'
+[Mon May 01 21:16:04.743105 2023] [wsgi:error] [pid 11729] application starting with DEVELOPMENT settings
+[Mon May 01 21:16:04.743181 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418] mod_wsgi (pid=11729): Failed to exec Python script file '/var/www/html/personal_website2/personal_website2/wsgi.py'.
+[Mon May 01 21:16:04.743209 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418] mod_wsgi (pid=11729): Exception occurred processing WSGI script '/var/www/html/personal_website2/personal_website2/wsgi.py'.
+[Mon May 01 21:16:04.743457 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418] Traceback (most recent call last):
+[Mon May 01 21:16:04.743535 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "/var/www/html/personal_website2/personal_website2/wsgi.py", line 20, in <module>
+[Mon May 01 21:16:04.743542 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]     application = get_wsgi_application()
+[Mon May 01 21:16:04.743549 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "/usr/local/lib/python3.9/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Mon May 01 21:16:04.743555 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]     django.setup(set_prefix=False)
+[Mon May 01 21:16:04.743562 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "/usr/local/lib/python3.9/dist-packages/django/__init__.py", line 19, in setup
+[Mon May 01 21:16:04.743567 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Mon May 01 21:16:04.743574 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "/usr/local/lib/python3.9/dist-packages/django/conf/__init__.py", line 92, in __getattr__
+[Mon May 01 21:16:04.743579 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]     self._setup(name)
+[Mon May 01 21:16:04.743586 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "/usr/local/lib/python3.9/dist-packages/django/conf/__init__.py", line 79, in _setup
+[Mon May 01 21:16:04.743591 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]     self._wrapped = Settings(settings_module)
+[Mon May 01 21:16:04.743597 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "/usr/local/lib/python3.9/dist-packages/django/conf/__init__.py", line 190, in __init__
+[Mon May 01 21:16:04.743602 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Mon May 01 21:16:04.743609 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+[Mon May 01 21:16:04.743622 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]     return _bootstrap._gcd_import(name[level:], package, level)
+[Mon May 01 21:16:04.743630 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+[Mon May 01 21:16:04.743638 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+[Mon May 01 21:16:04.743646 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+[Mon May 01 21:16:04.743653 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+[Mon May 01 21:16:04.743660 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+[Mon May 01 21:16:04.743668 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+[Mon May 01 21:16:04.743675 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "/var/www/html/personal_website2/personal_website2/settings.py", line 61, in <module>
+[Mon May 01 21:16:04.743679 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]     handle_both()
+[Mon May 01 21:16:04.743686 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "/var/www/html/personal_website2/personal_website2/settings.py", line 38, in handle_both
+[Mon May 01 21:16:04.743691 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]     compress_file(css_path, f + ".css")
+[Mon May 01 21:16:04.743699 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]   File "/var/www/html/personal_website2/personal_website2/settings.py", line 29, in compress_file
+[Mon May 01 21:16:04.743705 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418]     with open(f"{filepath}{fn_name}_uncompressed.{fn_type}", "r") as f:
+[Mon May 01 21:16:04.743724 2023] [wsgi:error] [pid 11729] [remote 77.25.5.175:3418] FileNotFoundError: [Errno 2] No such file or directory: '_site/static/css/base_uncompressed.css'
+[Mon May 01 21:22:30.961406 2023] [wsgi:error] [pid 11894] application starting with PRODUCTION settings
+[Tue May 02 05:40:11.625696 2023] [wsgi:error] [pid 15352] application starting with PRODUCTION settings
+[Tue May 02 07:04:23.866138 2023] [ssl:error] [pid 15455] [client 54.159.99.108:59478] AH02042: rejecting client initiated renegotiation
+[Tue May 02 07:22:03.443830 2023] [ssl:error] [pid 15355] [client 107.21.31.247:57124] AH02042: rejecting client initiated renegotiation
+[Wed May 03 07:13:03.446281 2023] [wsgi:error] [pid 19495] application starting with PRODUCTION settings
+[Thu May 04 05:31:45.925813 2023] [wsgi:error] [pid 22386] application starting with PRODUCTION settings
+[Fri May 05 05:30:07.367097 2023] [wsgi:error] [pid 27071] application starting with PRODUCTION settings
+[Fri May 05 12:28:13.434811 2023] [wsgi:error] [pid 27133] [client 120.86.252.74:17151] mod_wsgi (pid=27133): Request data read error when proxying data to daemon process: Partial results are valid but processing is incomplete.
+[Fri May 05 18:38:18.531521 2023] [wsgi:error] [pid 28330] application starting with PRODUCTION settings
+[Sat May 06 05:17:37.563394 2023] [wsgi:error] [pid 29879] application starting with PRODUCTION settings
+[Sat May 06 22:49:19.693290 2023] [wsgi:error] [pid 32421] application starting with PRODUCTION settings
+[Sat May 06 23:17:21.823529 2023] [wsgi:error] [pid 32492] application starting with PRODUCTION settings
+[Sun May 07 05:16:36.937401 2023] [wsgi:error] [pid 991] application starting with PRODUCTION settings
+[Sun May 07 20:52:40.080220 2023] [wsgi:error] [pid 3193] application starting with PRODUCTION settings
+[Mon May 08 05:17:37.082338 2023] [wsgi:error] [pid 4944] application starting with PRODUCTION settings
+[Tue May 09 08:00:18.005836 2023] [wsgi:error] [pid 8415] application starting with PRODUCTION settings
+[Tue May 09 11:57:51.971409 2023] [wsgi:error] [pid 8636] [client 1.246.223.32:3280] mod_wsgi (pid=8636): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Wed May 10 02:14:52.750350 2023] [ssl:error] [pid 10006] AH02032: Hostname finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Wed May 10 06:23:50.528999 2023] [wsgi:error] [pid 12362] application starting with PRODUCTION settings
+[Thu May 11 05:23:43.946343 2023] [wsgi:error] [pid 3066] application starting with PRODUCTION settings
+[Thu May 11 09:42:51.374777 2023] [wsgi:error] [pid 3066] [remote 207.46.13.210:4544] mod_wsgi (pid=3066): Exception occurred processing WSGI script '/var/www/html/personal_website2/personal_website2/wsgi.py'.
+[Thu May 11 09:42:51.374910 2023] [wsgi:error] [pid 3066] [remote 207.46.13.210:4544] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Fri May 12 01:54:58.021645 2023] [wsgi:error] [pid 3066] [remote 207.46.13.207:21888] mod_wsgi (pid=3066): Exception occurred processing WSGI script '/var/www/html/personal_website2/personal_website2/wsgi.py'.
+[Fri May 12 01:54:58.021771 2023] [wsgi:error] [pid 3066] [remote 207.46.13.207:21888] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Fri May 12 06:27:23.513285 2023] [wsgi:error] [pid 5449] application starting with PRODUCTION settings
+[Sat May 13 01:25:58.497856 2023] [wsgi:error] [pid 5449] [remote 207.46.13.207:26880] mod_wsgi (pid=5449): Exception occurred processing WSGI script '/var/www/html/personal_website2/personal_website2/wsgi.py'.
+[Sat May 13 01:25:58.498036 2023] [wsgi:error] [pid 5449] [remote 207.46.13.207:26880] OSError: Apache/mod_wsgi failed to write response data: Broken pipe.
+[Sat May 13 06:33:19.603580 2023] [wsgi:error] [pid 16857] application starting with PRODUCTION settings
+[Sat May 13 06:54:46.040766 2023] [ssl:error] [pid 16860] AH02032: Hostname finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Sat May 13 12:31:33.303125 2023] [core:error] [pid 17492] [client 45.156.128.7:34506] AH00126: Invalid URI in request HEAD /icons/.%2e/%2e%2e/apache2/icons/sphere1.png HTTP/1.1
+[Sun May 14 06:17:49.213560 2023] [wsgi:error] [pid 30891] application starting with PRODUCTION settings
+[Sun May 14 17:14:45.129167 2023] [wsgi:error] [pid 658] application starting with PRODUCTION settings
+[Mon May 15 05:42:53.750350 2023] [wsgi:error] [pid 2978] application starting with PRODUCTION settings
+[Mon May 15 18:37:59.199435 2023] [wsgi:error] [pid 5165] application starting with PRODUCTION settings
+[Tue May 16 05:50:52.747075 2023] [wsgi:error] [pid 7283] application starting with PRODUCTION settings
+[Tue May 16 19:42:16.298009 2023] [ssl:error] [pid 7286] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Wed May 17 06:16:32.634925 2023] [wsgi:error] [pid 11453] application starting with PRODUCTION settings
+[Wed May 17 08:55:10.287270 2023] [ssl:error] [pid 11504] AH02032: Hostname finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Thu May 18 05:35:26.588772 2023] [wsgi:error] [pid 14080] application starting with PRODUCTION settings
+[Thu May 18 21:28:58.988311 2023] [wsgi:error] [pid 14135] [client 124.118.76.9:39846] mod_wsgi (pid=14135): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Fri May 19 05:17:08.028352 2023] [wsgi:error] [pid 18714] application starting with PRODUCTION settings
+[Fri May 19 13:10:53.814421 2023] [ssl:error] [pid 18812] [client 3.88.231.143:47148] AH02042: rejecting client initiated renegotiation
+[Fri May 19 20:07:29.999720 2023] [wsgi:error] [pid 20734] application starting with PRODUCTION settings
+[Sat May 20 02:45:36.937402 2023] [ssl:error] [pid 20834] AH02032: Hostname www.finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Sat May 20 05:25:44.154774 2023] [wsgi:error] [pid 21710] application starting with PRODUCTION settings
+[Sun May 21 05:50:34.999001 2023] [wsgi:error] [pid 25167] application starting with PRODUCTION settings
+[Sun May 21 15:01:30.197280 2023] [wsgi:error] [pid 25463] [client 61.1.224.72:56085] mod_wsgi (pid=25463): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Sun May 21 21:24:45.908389 2023] [ssl:error] [pid 25170] AH02032: Hostname www.finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Mon May 22 05:36:29.973671 2023] [wsgi:error] [pid 28551] application starting with PRODUCTION settings
+[Tue May 23 05:38:29.655851 2023] [wsgi:error] [pid 32282] application starting with PRODUCTION settings
+[Wed May 24 01:45:57.987300 2023] [core:error] [pid 627] [client 193.32.162.190:41364] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account1 HTTP/1.1
+[Wed May 24 02:59:02.919222 2023] [core:error] [pid 1829] [client 193.32.162.190:47210] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account2 HTTP/1.1
+[Wed May 24 06:45:08.501757 2023] [wsgi:error] [pid 2959] application starting with PRODUCTION settings
+[Thu May 25 05:50:21.950081 2023] [wsgi:error] [pid 7846] application starting with PRODUCTION settings
+[Thu May 25 07:52:39.223010 2023] [ssl:error] [pid 7849] AH02032: Hostname www.finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Fri May 26 05:28:10.559428 2023] [wsgi:error] [pid 12278] application starting with PRODUCTION settings
+[Sat May 27 05:15:59.356060 2023] [wsgi:error] [pid 15206] application starting with PRODUCTION settings
+[Sun May 28 07:36:40.634268 2023] [wsgi:error] [pid 17998] application starting with PRODUCTION settings
+[Sun May 28 11:00:31.392097 2023] [wsgi:error] [pid 18713] [client 27.43.207.31:6134] mod_wsgi (pid=18713): Request data read error when proxying data to daemon process: Partial results are valid but processing is incomplete.
+[Mon May 29 06:02:37.743817 2023] [wsgi:error] [pid 23797] application starting with PRODUCTION settings
+[Mon May 29 18:38:41.662180 2023] [wsgi:error] [pid 25906] [client 120.86.239.118:12462] mod_wsgi (pid=25906): Request data read error when proxying data to daemon process: Partial results are valid but processing is incomplete.
+[Tue May 30 05:20:49.378656 2023] [wsgi:error] [pid 27267] application starting with PRODUCTION settings
+[Wed May 31 05:44:26.419680 2023] [wsgi:error] [pid 30741] application starting with PRODUCTION settings
+[Thu Jun 01 05:36:53.251894 2023] [wsgi:error] [pid 890] application starting with PRODUCTION settings
+[Fri Jun 02 07:42:30.524055 2023] [wsgi:error] [pid 2765] application starting with PRODUCTION settings
+[Sat Jun 03 05:40:04.234706 2023] [wsgi:error] [pid 4692] application starting with PRODUCTION settings
+[Sun Jun 04 06:01:55.710723 2023] [wsgi:error] [pid 6693] application starting with PRODUCTION settings
+[Sun Jun 04 13:31:10.891292 2023] [wsgi:error] [pid 7456] [client 116.68.105.23:26475] mod_wsgi (pid=7456): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Mon Jun 05 05:34:42.894571 2023] [wsgi:error] [pid 9134] application starting with PRODUCTION settings
+[Tue Jun 06 05:38:45.555563 2023] [wsgi:error] [pid 10506] application starting with PRODUCTION settings
+[Wed Jun 07 05:40:56.605568 2023] [wsgi:error] [pid 12234] application starting with PRODUCTION settings
+[Thu Jun 08 07:04:00.782069 2023] [wsgi:error] [pid 25753] application starting with PRODUCTION settings
+[Fri Jun 09 06:01:18.297663 2023] [wsgi:error] [pid 28053] application starting with PRODUCTION settings
+[Sat Jun 10 05:39:49.728598 2023] [wsgi:error] [pid 29474] application starting with PRODUCTION settings
+[Sun Jun 11 06:51:58.266978 2023] [wsgi:error] [pid 31525] application starting with PRODUCTION settings
+[Sun Jun 11 23:00:18.133296 2023] [wsgi:error] [pid 884] [client 111.175.72.182:35605] mod_wsgi (pid=884): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Mon Jun 12 05:31:34.523052 2023] [wsgi:error] [pid 1716] application starting with PRODUCTION settings
+[Tue Jun 13 05:24:45.575794 2023] [wsgi:error] [pid 7005] application starting with PRODUCTION settings
+[Tue Jun 13 07:03:00.744305 2023] [core:error] [pid 7037] [client 193.32.162.190:43230] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account1 HTTP/1.1
+[Tue Jun 13 07:52:45.661402 2023] [core:error] [pid 7034] [client 193.32.162.190:37244] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account2 HTTP/1.1
+[Wed Jun 14 05:51:30.150686 2023] [wsgi:error] [pid 20260] application starting with PRODUCTION settings
+[Thu Jun 15 05:18:00.003812 2023] [wsgi:error] [pid 24163] application starting with PRODUCTION settings
+[Thu Jun 15 21:36:47.658966 2023] [core:error] [pid 24249] [client 193.32.162.190:59312] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account1 HTTP/1.1
+[Thu Jun 15 22:32:27.694737 2023] [core:error] [pid 26444] [client 193.32.162.190:54146] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account2 HTTP/1.1
+[Fri Jun 16 05:43:59.473267 2023] [wsgi:error] [pid 29079] application starting with PRODUCTION settings
+[Sat Jun 17 05:46:20.121314 2023] [wsgi:error] [pid 1748] application starting with PRODUCTION settings
+[Sat Jun 17 11:22:31.085442 2023] [core:error] [pid 3492] [client 193.32.162.190:50072] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account1 HTTP/1.1
+[Sat Jun 17 12:41:24.630801 2023] [core:error] [pid 2831] [client 193.32.162.190:50408] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account2 HTTP/1.1
+[Sun Jun 18 05:41:28.528517 2023] [wsgi:error] [pid 7277] application starting with PRODUCTION settings
+[Sun Jun 18 19:28:57.840959 2023] [wsgi:error] [pid 11090] application starting with PRODUCTION settings
+[Mon Jun 19 05:47:58.458685 2023] [wsgi:error] [pid 11976] application starting with PRODUCTION settings
+[Mon Jun 19 12:48:30.669200 2023] [authz_core:error] [pid 12930] [client 185.130.224.43:57776] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Mon Jun 19 12:48:31.453603 2023] [authz_core:error] [pid 12932] [client 185.130.224.43:49930] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Mon Jun 19 12:48:32.130699 2023] [wsgi:error] [pid 13123] [client 185.130.224.43:52266] Invalid Content-Length header value of '18446744073709551615' was supplied.: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Tue Jun 20 03:54:37.803276 2023] [wsgi:error] [pid 13241] [client 103.41.27.89:54645] mod_wsgi (pid=13241): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Tue Jun 20 05:33:58.395557 2023] [wsgi:error] [pid 15266] application starting with PRODUCTION settings
+[Wed Jun 21 06:11:03.956188 2023] [wsgi:error] [pid 19661] application starting with PRODUCTION settings
+[Thu Jun 22 05:23:58.278525 2023] [wsgi:error] [pid 25016] application starting with PRODUCTION settings
+[Fri Jun 23 05:26:49.419469 2023] [wsgi:error] [pid 27828] application starting with PRODUCTION settings
+[Fri Jun 23 13:53:23.368307 2023] [ssl:error] [pid 27872] AH02032: Hostname finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Sat Jun 24 05:32:02.017026 2023] [wsgi:error] [pid 32076] application starting with PRODUCTION settings
+[Sun Jun 25 05:30:17.333518 2023] [wsgi:error] [pid 3983] application starting with PRODUCTION settings
+[Sun Jun 25 08:28:38.097201 2023] [wsgi:error] [pid 4419] application starting with PRODUCTION settings
+[Mon Jun 26 05:23:51.253922 2023] [wsgi:error] [pid 7128] application starting with PRODUCTION settings
+[Mon Jun 26 06:39:22.531283 2023] [wsgi:error] [pid 7131] [client 59.178.133.255:40227] mod_wsgi (pid=7131): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Mon Jun 26 14:21:13.277547 2023] [ssl:error] [pid 7395] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Tue Jun 27 04:14:43.313615 2023] [core:error] [pid 10015] [client 193.32.162.190:40576] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account1 HTTP/1.1
+[Tue Jun 27 05:38:20.048134 2023] [core:error] [pid 11064] [client 193.32.162.190:51444] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account2 HTTP/1.1
+[Tue Jun 27 05:42:02.908364 2023] [wsgi:error] [pid 11036] application starting with PRODUCTION settings
+[Tue Jun 27 13:14:36.349445 2023] [wsgi:error] [pid 11103] [client 185.130.224.43:50600] Invalid Content-Length header value of '18446744073709551615' was supplied.: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Tue Jun 27 13:14:36.865800 2023] [authz_core:error] [pid 11100] [client 185.130.224.43:57766] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Tue Jun 27 13:14:36.867354 2023] [authz_core:error] [pid 11104] [client 185.130.224.43:52958] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Wed Jun 28 05:14:57.957342 2023] [wsgi:error] [pid 15085] application starting with PRODUCTION settings
+[Thu Jun 29 05:23:24.377875 2023] [wsgi:error] [pid 22558] application starting with PRODUCTION settings
+[Thu Jun 29 08:43:34.057215 2023] [ssl:error] [pid 22561] AH02032: Hostname www.finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Thu Jun 29 22:56:15.902326 2023] [wsgi:error] [pid 23547] [client 111.175.72.40:47399] mod_wsgi (pid=23547): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Fri Jun 30 00:10:55.558471 2023] [ssl:error] [pid 22561] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Fri Jun 30 03:02:33.781066 2023] [authz_core:error] [pid 25598] [client 35.216.199.51:52682] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Fri Jun 30 05:33:01.368784 2023] [wsgi:error] [pid 28493] application starting with PRODUCTION settings
+[Fri Jun 30 06:30:02.263667 2023] [authz_core:error] [pid 28545] [client 185.130.224.43:50510] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Fri Jun 30 06:30:04.009215 2023] [authz_core:error] [pid 28496] [client 185.130.224.43:59410] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Fri Jun 30 06:30:08.208948 2023] [wsgi:error] [pid 28593] [client 185.130.224.43:58842] Invalid Content-Length header value of '18446744073709551615' was supplied.: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Fri Jun 30 06:57:14.929172 2023] [core:error] [pid 28764] [client 193.32.162.190:37626] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account1 HTTP/1.1
+[Fri Jun 30 07:57:27.383662 2023] [core:error] [pid 28765] [client 193.32.162.190:58666] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account2 HTTP/1.1
+[Sat Jul 01 05:35:47.235910 2023] [wsgi:error] [pid 734] application starting with PRODUCTION settings
+[Sun Jul 02 05:39:06.912549 2023] [wsgi:error] [pid 9382] application starting with PRODUCTION settings
+[Mon Jul 03 05:14:44.960340 2023] [wsgi:error] [pid 14158] application starting with PRODUCTION settings
+[Mon Jul 03 12:00:34.013897 2023] [core:error] [pid 14692] [client 185.180.140.5:54154] AH00126: Invalid URI in request GET /dana-na/../dana/html5acc/guacamole/../../../../../../../etc/services?/dana/html5acc/guacamole/ HTTP/1.1
+[Mon Jul 03 15:05:54.309066 2023] [ssl:error] [pid 14955] [client 54.164.18.140:52694] AH02042: rejecting client initiated renegotiation
+[Tue Jul 04 03:33:34.853150 2023] [core:error] [pid 14954] [client 193.32.162.190:53102] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account1 HTTP/1.1
+[Tue Jul 04 04:39:20.264627 2023] [core:error] [pid 16386] [client 193.32.162.190:40772] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account2 HTTP/1.1
+[Tue Jul 04 05:42:43.694781 2023] [wsgi:error] [pid 18282] application starting with PRODUCTION settings
+[Wed Jul 05 05:25:30.991413 2023] [wsgi:error] [pid 22893] application starting with PRODUCTION settings
+[Thu Jul 06 07:02:53.854841 2023] [wsgi:error] [pid 27213] application starting with PRODUCTION settings
+[Thu Jul 06 16:32:08.861217 2023] [ssl:error] [pid 27279] AH02032: Hostname finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Fri Jul 07 05:59:29.266808 2023] [wsgi:error] [pid 31448] application starting with PRODUCTION settings
+[Sat Jul 08 00:23:37.249962 2023] [wsgi:error] [pid 1440] [client 195.96.137.8:36048] Invalid Content-Length header value of '18446744073709551615' was supplied.: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Sat Jul 08 00:23:37.544177 2023] [authz_core:error] [pid 32623] [client 195.96.137.8:36182] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Sat Jul 08 00:23:37.723364 2023] [authz_core:error] [pid 1440] [client 195.96.137.8:36430] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Sat Jul 08 06:13:08.313487 2023] [wsgi:error] [pid 3067] application starting with PRODUCTION settings
+[Sun Jul 09 05:13:14.499858 2023] [wsgi:error] [pid 8033] application starting with PRODUCTION settings
+[Mon Jul 10 05:28:58.529306 2023] [wsgi:error] [pid 15033] application starting with PRODUCTION settings
+[Tue Jul 11 01:04:08.040957 2023] [core:error] [pid 16384] [client 193.32.162.190:54414] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account1 HTTP/1.1
+[Tue Jul 11 02:21:54.248647 2023] [core:error] [pid 15191] [client 193.32.162.190:44880] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account2 HTTP/1.1
+[Tue Jul 11 05:15:21.874112 2023] [wsgi:error] [pid 19587] application starting with PRODUCTION settings
+[Tue Jul 11 16:29:29.736136 2023] [ssl:error] [pid 19671] AH02032: Hostname www.finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Wed Jul 12 03:10:37.358979 2023] [ssl:error] [pid 19616] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Wed Jul 12 05:31:05.777655 2023] [wsgi:error] [pid 24628] application starting with PRODUCTION settings
+[Wed Jul 12 15:04:29.968278 2023] [wsgi:error] [pid 24683] [client 91.138.215.5:40278] mod_wsgi (pid=24683): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Thu Jul 13 05:31:43.231726 2023] [wsgi:error] [pid 540] application starting with PRODUCTION settings
+[Fri Jul 14 05:48:59.682395 2023] [wsgi:error] [pid 9743] application starting with PRODUCTION settings
+[Sat Jul 15 05:18:31.837290 2023] [wsgi:error] [pid 14299] application starting with PRODUCTION settings
+[Sun Jul 16 06:12:37.112022 2023] [wsgi:error] [pid 17499] application starting with PRODUCTION settings
+[Mon Jul 17 05:34:48.338162 2023] [wsgi:error] [pid 23233] application starting with PRODUCTION settings
+[Tue Jul 18 05:42:19.095083 2023] [wsgi:error] [pid 27480] application starting with PRODUCTION settings
+[Tue Jul 18 07:33:35.252051 2023] [core:error] [pid 28154] [client 193.32.162.190:35042] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account1 HTTP/1.1
+[Tue Jul 18 08:59:17.330577 2023] [core:error] [pid 28153] [client 193.32.162.190:34244] AH00126: Invalid URI in request GET /../../mnt/mtd/Config/Account2 HTTP/1.1
+[Wed Jul 19 05:16:45.324016 2023] [wsgi:error] [pid 32263] application starting with PRODUCTION settings
+[Wed Jul 19 16:51:57.885344 2023] [wsgi:error] [pid 920] [client 117.196.63.9:34667] mod_wsgi (pid=920): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Thu Jul 20 05:45:55.856166 2023] [wsgi:error] [pid 6308] application starting with PRODUCTION settings
+[Fri Jul 21 05:38:15.528038 2023] [wsgi:error] [pid 11705] application starting with PRODUCTION settings
+[Sat Jul 22 05:39:19.649746 2023] [wsgi:error] [pid 17374] application starting with PRODUCTION settings
+[Sun Jul 23 05:20:54.196655 2023] [wsgi:error] [pid 22461] application starting with PRODUCTION settings
+[Mon Jul 24 05:27:59.477826 2023] [wsgi:error] [pid 27687] application starting with PRODUCTION settings
+[Mon Jul 24 08:24:03.266286 2023] [wsgi:error] [pid 28731] [client 59.88.228.2:51363] mod_wsgi (pid=28731): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Tue Jul 25 05:52:17.676069 2023] [wsgi:error] [pid 32648] application starting with PRODUCTION settings
+[Wed Jul 26 05:21:14.747816 2023] [wsgi:error] [pid 29757] application starting with PRODUCTION settings
+[Thu Jul 27 05:25:22.459617 2023] [wsgi:error] [pid 5812] application starting with PRODUCTION settings
+[Fri Jul 28 05:37:06.170100 2023] [wsgi:error] [pid 9644] application starting with PRODUCTION settings
+[Sat Jul 29 05:23:22.772692 2023] [wsgi:error] [pid 12608] application starting with PRODUCTION settings
+[Sat Jul 29 14:03:14.980398 2023] [ssl:error] [pid 13175] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Sun Jul 30 06:04:29.389328 2023] [wsgi:error] [pid 15127] application starting with PRODUCTION settings
+[Mon Jul 31 05:03:37.712313 2023] [ssl:error] [pid 16221] [client 44.202.144.126:60308] AH02042: rejecting client initiated renegotiation
+[Mon Jul 31 05:16:16.637287 2023] [wsgi:error] [pid 17104] application starting with PRODUCTION settings
+[Tue Aug 01 05:55:03.865256 2023] [wsgi:error] [pid 18684] application starting with PRODUCTION settings
+[Tue Aug 01 09:33:17.216185 2023] [authz_core:error] [pid 18759] [client 35.216.241.78:60020] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Wed Aug 02 05:17:40.746017 2023] [wsgi:error] [pid 21837] application starting with PRODUCTION settings
+[Thu Aug 03 06:01:40.757925 2023] [wsgi:error] [pid 24473] application starting with PRODUCTION settings
+[Fri Aug 04 05:25:12.018648 2023] [wsgi:error] [pid 28767] application starting with PRODUCTION settings
+[Sat Aug 05 05:22:21.218911 2023] [wsgi:error] [pid 1313] application starting with PRODUCTION settings
+[Sat Aug 05 22:58:20.217452 2023] [wsgi:error] [pid 6246] [client 61.3.107.179:45041] mod_wsgi (pid=6246): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Sun Aug 06 05:14:42.432758 2023] [wsgi:error] [pid 9428] application starting with PRODUCTION settings
+[Mon Aug 07 05:37:25.301140 2023] [wsgi:error] [pid 14001] application starting with PRODUCTION settings
+[Tue Aug 08 04:50:16.907515 2023] [ssl:error] [pid 14149] AH02032: Hostname finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Tue Aug 08 05:36:30.131972 2023] [wsgi:error] [pid 21265] application starting with PRODUCTION settings
+[Tue Aug 08 12:55:29.413529 2023] [ssl:error] [pid 21291] AH02032: Hostname www.finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Wed Aug 09 05:37:30.106231 2023] [wsgi:error] [pid 26103] application starting with PRODUCTION settings
+[Thu Aug 10 05:13:44.746465 2023] [wsgi:error] [pid 3299] application starting with PRODUCTION settings
+[Fri Aug 11 06:05:26.744789 2023] [wsgi:error] [pid 8627] application starting with PRODUCTION settings
+[Sat Aug 12 06:26:33.187021 2023] [wsgi:error] [pid 15722] application starting with PRODUCTION settings
+[Sat Aug 12 20:17:00.773872 2023] [wsgi:error] [pid 20397] [client 200.58.94.165:43361] mod_wsgi (pid=20397): Request data read error when proxying data to daemon process: Partial results are valid but processing is incomplete.
+[Sun Aug 13 05:49:34.128520 2023] [wsgi:error] [pid 23346] application starting with PRODUCTION settings
+[Mon Aug 14 05:30:57.012997 2023] [wsgi:error] [pid 31533] application starting with PRODUCTION settings
+[Tue Aug 15 05:24:11.921365 2023] [wsgi:error] [pid 7917] application starting with PRODUCTION settings
+[Tue Aug 15 12:49:20.754427 2023] [authz_core:error] [pid 7948] [client 195.96.137.8:36049] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Tue Aug 15 12:49:21.596126 2023] [authz_core:error] [pid 10317] [client 195.96.137.8:38572] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Tue Aug 15 12:49:21.760399 2023] [wsgi:error] [pid 10333] [client 195.96.137.8:35718] Invalid Content-Length header value of '18446744073709551615' was supplied.: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Wed Aug 16 05:26:14.811666 2023] [wsgi:error] [pid 14433] application starting with PRODUCTION settings
+[Wed Aug 16 11:20:06.364766 2023] [authz_core:error] [pid 14482] [client 35.216.241.78:50674] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Thu Aug 17 05:38:38.675353 2023] [wsgi:error] [pid 19935] application starting with PRODUCTION settings
+[Fri Aug 18 05:31:04.713928 2023] [wsgi:error] [pid 29076] application starting with PRODUCTION settings
+[Fri Aug 18 09:25:37.512068 2023] [wsgi:error] [pid 31292] application starting with PRODUCTION settings
+[Sat Aug 19 00:19:53.569324 2023] [ssl:error] [pid 31485] AH02032: Hostname finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Sat Aug 19 02:29:01.634015 2023] [core:error] [pid 31485] [client 113.200.114.42:57364] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Sat Aug 19 05:14:33.285126 2023] [wsgi:error] [pid 4271] application starting with PRODUCTION settings
+[Sun Aug 20 05:16:04.200121 2023] [wsgi:error] [pid 12222] application starting with PRODUCTION settings
+[Sun Aug 20 16:11:14.039688 2023] [ssl:error] [pid 12390] AH02032: Hostname www.finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Mon Aug 21 05:16:11.507633 2023] [wsgi:error] [pid 21232] application starting with PRODUCTION settings
+[Mon Aug 21 17:40:51.060291 2023] [wsgi:error] [pid 21276] [client 179.43.191.194:32972] mod_wsgi (pid=21276): Request data read error when proxying data to daemon process: Partial results are valid but processing is incomplete., referer: http://181.215.68.212:80/admin/login.asp
+[Tue Aug 22 05:20:46.996179 2023] [wsgi:error] [pid 29531] application starting with PRODUCTION settings
+[Wed Aug 23 05:25:13.785633 2023] [wsgi:error] [pid 6850] application starting with PRODUCTION settings
+[Wed Aug 23 11:57:33.404002 2023] [ssl:error] [pid 7082] AH02032: Hostname www.finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup

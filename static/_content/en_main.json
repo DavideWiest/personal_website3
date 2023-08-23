@@ -1,0 +1,68 @@
+{
+    "hero_header": "Davide Wiest",
+    "hero_text": "I am a Student, passionate programmer and I appreciate new experiences.",
+    "age": "Age",
+    "projects": {
+        "t": "Projects & Work",
+        "seeProjects": "See project overview",
+        "workExperience": {
+            "t": "Work Experience",
+            "content": [
+                ["Instructor", "Learnist", "https://learnist.de", "Since February 2023", ["135deg", "rgba(50, 6, 71, 1)", "rgba(35, 2, 51, 0.75)"], "Leading a group of students, introducing them to programming. Teaching them fundamental concepts. Encouraging logical and systematic thinking."],
+                ["2-week Internship", "HDP GMBH", "https://hdpgmbh.de", "March 2023", ["135deg", "rgba(71, 61, 5)", "rgba(43, 37, 3, 0.75)"], "Developing small games and algorithms in Java. Working with the firms custom UI-Productivity-Framework."]
+            ]
+        },
+        "websiteScores": {
+            "t": "Website Scores",
+            "d": "The Lighthouse scores of some of the websites I built. It is important to mention that these scores aren't fully representative: Other aspects, like content and link-strategy have to be considered.",
+            "content": {
+                "score1.png": "Finsights.info",
+                "score2.png": "DavideWiest.com",
+                "score3.png": "Instadata Dashboard"
+            }
+        }
+    },
+    "skills": {
+        "t": "Skills",
+        "content": {
+            "technical": {
+                "t": "Technical Skills",
+                "content": {
+                    "Experienced in": ["#101a75", [
+                        "Python", "HTML"
+                    ]],
+                    "Familiar with": ["#084573", [
+                        "Java", "C#", "MongoDB", "Django", "Flask", "PyTorch"
+                    ]],
+                    "Learning/Will learn": ["#106975", [
+                        "PostGreSQL", "Rust or C++"
+                    ]]
+                }
+            },
+            "soft": {
+                "t": "Soft Skills",
+                "content": [
+                    "Determination", "Rational Optimism", "Analytical Thinking", "Strategic Thinking"
+                ]
+            },
+            "workOther": {
+                "t": "Work-related and Other",
+                "content": [
+                    "MS-Office"
+                ]
+            }
+        }
+    },
+    "testimonials": {
+        "t": "Testimonials",
+        "content": {
+            "James": "My new logo looks flawless and contributes to my social group's branding. Davide understood all relevant design aspects and I would recommend him to anyone interested."
+        }
+    },
+    "certificates": {
+        "t": "Certificates",
+        "content": [
+            ["Fundamentals of Online-Marketing", "Google", "resources/Google_Onlinemarketing_Zertifikat.pdf", "I learned about topics such as SEO, Content-Marketing, Search-Engine-Advertising and online strategies of local businesses."]
+        ]
+    }
+}
