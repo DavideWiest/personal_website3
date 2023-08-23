@@ -21,8 +21,8 @@
         },
         "timewise": {
             "name": "TimeWise",
-            "description": "Eine benutzerfreundliche Open-Source-App, die mithilfe von einer ILP (integer linear programming) API einen optimalen Zeitplan erstellt. Entwickelt mit einem Freund.",
-            "image": "visual.webp",
+            "description": "Eine benutzerfreundliche Open-Source-App, die mithilfe von einer ILP (integer linear programming) API einen optimalen Zeitplan erstellt. Diese können dann exportiert werden. Entwickelt mit einem Freund.",
+            "image": "",
             "image_layout_type": "phone",
             "link": "https://timewise.dev",
             "linkIcon": "",

@@ -21,8 +21,8 @@
         },
         "timewise": {
             "name": "TimeWise",
-            "description": "An easy to use and open source app that, with the help of an ILP (integer linear programming) API, generates an optimal schedule. Developed with a friend.",
-            "image": "visual.webp",
+            "description": "An easy to use and open source app that, with the help of an ILP (integer linear programming) API, generates an optimal schedule. Those can then be exported. Developed with a friend.",
+            "image": "",
             "image_layout_type": "phone",
             "link": "https://timewise.dev",
             "linkIcon": "",
