@@ -40,6 +40,7 @@ def handle_both():
 def handle_production():
     "Handle execution to make application production ready"
     os.chdir('/var/www/html/personal_website2/')
+
 WSGI_APPLICATION = 'personal_website2.wsgi.application'
 STATIC_ROOT = "/var/www/html/personal_website2/static"
 
