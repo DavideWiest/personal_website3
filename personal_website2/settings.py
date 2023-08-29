@@ -32,8 +32,9 @@ def compress_file(filepath, filename):
         with open(f"{filepath}{filename}", "w") as f:
             f.write(file)
 
-def handle_both():
-    css_path = "_site/static/css/"
+def handle_both(isProduction=False):
+    base_path = "" if not isProduction else "/var/www/html/personal_website2/"
+    css_path = base_path + "_site/static/css/"
     for f in ["base", "typography"]:
         compress_file(css_path, f + ".css")
 
@@ -50,16 +51,16 @@ def handle_development():
 with open(data_path, "r", encoding="utf") as f:
     data = json.load(f)
 
-if hostname in data["production_hostnames"] or hostname not in data["development_hostnames"]:
+if hostname in data["production_hostnames"]: # or hostname not in data["development_hostnames"]
     print("application starting with PRODUCTION settings")
     dsettings = data["production_settings"]
     handle_production()
+    handle_both(True)
 else:
     print("application starting with DEVELOPMENT settings")
     dsettings = data["development_settings"]
     handle_development()
-
-handle_both()
+    handle_both(False)
 
 
 
