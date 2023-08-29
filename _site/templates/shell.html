@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -73,80 +72,4 @@
     {% endblock %}
 
 </body>
-=======
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-
-    <meta property="og:title" content="Davide Wiest" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://davidewiest.com"/>
-    <meta property="og:image" content="../static/images/logo/logosvg.svg" />
-    <meta property="og:description" content="Ich bin Davide Wiest, passionierter Entwickler und Designer. Falls Sie finden, dass Sie von einem Kennenlernen profitieren könnten, kontaktieren Sie mich unter {{ c.credentails.email }}" />
-    <meta name="theme-color" content="#FFD747">
-
-    <meta name="twitter:card" content= "summary_large_image">
-
-    <meta name="description" content="{{ c.base.meta_desc }}">
-
-    <title>{{ title }}</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHTGB851XQ"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-EHTGB851XQ');
-    </script>
-
-    <link rel="icon" type="image/png" href="{% static 'assets/davidewiest1.webp' %}"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1947bd', //'#285feb', //'#0011ff',
-                        accent: '#FFD747',
-                        seclight: '#f5e9ae',
-                        blackbg: '#000000'
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body class="" style="background-color: #121212;">
-
-    <div class="scroll-tracker"></div>
-
-    <div class="hidden" id="language">{{ l }}</div>
-
-    {% block shellBody %}
-    {% endblock %}
-
-    <link itemprop="url" rel="stylesheet" href="{% static 'css/typography.css' %}">
-    <link itemprop="url" rel="stylesheet" href="{% static 'css/base.css' %}">
-
-    <script src="{% static 'js/domAndView.js' %}" type="module"></script>
-
-    <script id="CookieDeclaration" src="https://consent.cookiebot.com/96e3c2b1-18d4-4cf2-87f9-c417833a97d5/cd.js" type="text/javascript" async></script>
-
-
-    {% block scripts %}
-    {% endblock %}
-
-</body>
->>>>>>> 8f772811bbf909d83ef59f27f656476037510343
 </html>

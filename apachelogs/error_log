@@ -1,0 +1,2 @@
+[Tue Aug 29 19:27:51.935510 2023] [wsgi:error] [pid 2895] application starting with PRODUCTION settings
+[Tue Aug 29 19:27:51.985715 2023] [wsgi:error] [pid 2895] SECRET_KEY = &we#l&5a_0bm9_1vzs7d&!3(do1j%$_x&qgv#w$fxq&x$%_6lu
