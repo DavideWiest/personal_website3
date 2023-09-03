@@ -39,12 +39,6 @@
                     ]]
                 }
             },
-            "soft": {
-                "t": "Soft Skills",
-                "content": [
-                    "Determination", "Rational Optimism", "Analytical Thinking", "Strategic Thinking"
-                ]
-            },
             "workOther": {
                 "t": "Work-related and Other",
                 "content": [

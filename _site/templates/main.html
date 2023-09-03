@@ -9,7 +9,7 @@
         <div class="flex justify-center flex-col md:items-center">
             <div class="flex flex-col items-center">
                 <div class="rounded-full inline-block border-2 border-black mx-8 md:px-0 w-fit">
-                    <img src="{% static 'assets/personalPicture.webp' %}" alt="" class="w-32 md:w-48 xl:w-48 rounded-full">
+                    <img src="{% static 'assets/personalPicture.webp' %}" alt="" class="w-20 md:w-48 xl:w-30 rounded-full">
                 </div>
                 <p class="text-sm text-black mt-2">{{ c.credentials.pictureTakenYear }}</p>
             </div>
@@ -117,18 +117,6 @@
                                 {% endfor %}
                             </div>
                         </div>
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="my-4 md:my-8">
-                <h3 class="m-4 md:m-10 my-3 md:my-5 intertight text-neutral-100 text-2xl md:text-3xl text-b600">
-                    {{ c.main.skills.content.soft.t }}
-                </h3>
-                <div class="px-6">
-                    {% for skill in c.main.skills.content.soft.content %}
-                        <p class="inline-block px-4 py-2 m-1.5 mx-1 rounded-full code" style="background-color: rgb(3, 58, 55);">
-                            {{ skill }}
-                        </p>
                     {% endfor %}
                 </div>
             </div>

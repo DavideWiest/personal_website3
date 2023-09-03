@@ -39,12 +39,6 @@
                     ]]
                 }
             },
-            "soft": {
-                "t": "Soft Skills",
-                "content": [
-                    "Zielstrebigkeit", "Rationaler Optimismus", "Analytisches Denken", "Strategisches Denken"
-                ]
-            },
             "workOther": {
                 "t": "Arbeitsbezogen und Andere",
                 "content": [
