@@ -15,7 +15,7 @@
             "linkIcon": "medium.png",
             "linkDesc": "Visit Website",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
-            "c": ["NaaS", "Automation", "Webapp", "Branding", "Logo"],
+            "c": ["Automation", "Webapp", "Branding", "Logo"],
             "align": 0,
             "is_casestudy": false
         },
