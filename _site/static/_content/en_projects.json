@@ -8,7 +8,7 @@
     "projects": {
         "contextflow": {
             "name": "ContextFlow",
-            "description": "A .NET library for interacting with LLMs (Large Language Models). It provides abstractions for individual modules to work together through dependency injection. With it, you can create more complex prompt chains/pipelines as it simplifies prompt templating and prompt chaining, among other things, through a project-wide fluent interface. The entire project also includes asynchronous counterparts and is tested with 55 NUnit tests. Furthermore, attention was given to developing with a cyclomatic complexity (<6 for methods), class coupling (<10 for methods), and a Maintainability Index of 85. You can find the documentation <a href=\"https://github.com/DavideWiest/ContextFlow/wiki\" target=\"blank\">here</a>.",
+            "description": "A .NET library for interacting with LLMs (Large Language Models). It provides abstractions for individual modules to work together through dependency injection. With it, you can create more complex prompt chains/pipelines as it simplifies prompt templating and prompt chaining, among other things, through a project-wide fluent interface. The entire project also includes asynchronous counterparts and is tested with 55 NUnit tests. Furthermore, attention was given to developing with a cyclomatic complexity (<6 for methods), class coupling (<10 for methods), and a Maintainability Index of 82. You can find the documentation <a href=\"https://github.com/DavideWiest/ContextFlow/wiki\" target=\"blank\">here</a>.",
             "image": "contextflowDemo.png",
             "image_layout_type": "",
             "link": "https://github.com/DavideWiest/ContextFlow",

@@ -8,7 +8,7 @@
     "projects": {
         "contextflow": {
             "name": "ContextFlow",
-            "description": "Eine .NET Library für die Interaktion mit LLMs. Sie stellt Abstraktionen für einzelne Module bereit, damit sie über Dependency-Injection zusammenarbeiten können. Mit ihr kann man komplexere Prompt-Chains/-Pipelines erstellen, da sie Prompt-Templating und Prompt-Chaining u.a. durch ein projektweites Fluent-Interface vereinfacht. Das gesamte Projekt beinhaltet auch asynchrone Gegenstücke und wird durch 55 NUnit Tests getestet. Des weiteren wurde beim Entwickeln auf die zyklomatische Komplexität (<6 für Methoden), die Klassenkopplung (<10 für Methoden), und den Maintainability-Index (85) geachtet. Die Dokumentation finden sie <a href=\"https://github.com/DavideWiest/ContextFlow/wiki\" target=\"blank\">hier</a>",
+            "description": "Eine .NET Library für die Interaktion mit LLMs. Sie stellt Abstraktionen für einzelne Module bereit, damit sie über Dependency-Injection zusammenarbeiten können. Mit ihr kann man komplexere Prompt-Chains/-Pipelines erstellen, da sie Prompt-Templating und Prompt-Chaining u.a. durch ein projektweites Fluent-Interface vereinfacht. Das gesamte Projekt beinhaltet auch asynchrone Gegenstücke und wird durch 55 NUnit Tests getestet. Des weiteren wurde beim Entwickeln auf die zyklomatische Komplexität (<6 für Methoden), die Klassenkopplung (<10 für Methoden), und den Maintainability-Index (82) geachtet. Die Dokumentation finden sie <a href=\"https://github.com/DavideWiest/ContextFlow/wiki\" target=\"blank\">hier</a>",
             "image": "contextflowDemo.png",
             "image_layout_type": "",
             "link": "https://github.com/DavideWiest/ContextFlow",
@@ -29,7 +29,7 @@
             "linkDesc": "Webseite besuchen",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Automation", "Webapp", "Branding", "Logo"],
-            "align": 1,
+            "align": 0,
             "is_casestudy": false
         },
         "embyte": {
