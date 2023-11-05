@@ -1,0 +1,14 @@
+[Tue Aug 29 19:27:51.935510 2023] [wsgi:error] [pid 2895] application starting with PRODUCTION settings
+[Tue Aug 29 19:27:51.985715 2023] [wsgi:error] [pid 2895] SECRET_KEY = &we#l&5a_0bm9_1vzs7d&!3(do1j%$_x&qgv#w$fxq&x$%_6lu
+[Wed Aug 30 05:30:53.606854 2023] [wsgi:error] [pid 4749] application starting with PRODUCTION settings
+[Wed Aug 30 05:30:53.655298 2023] [wsgi:error] [pid 4749] SECRET_KEY = t%9qeeq2t-#111xql)+c##v1kks0!4xy$eq+sxb&cdpm-fuja#
+[Wed Aug 30 07:33:50.115122 2023] [authz_core:error] [pid 4794] [client 35.216.239.19:53494] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Thu Aug 31 05:16:26.418430 2023] [wsgi:error] [pid 7810] application starting with PRODUCTION settings
+[Thu Aug 31 05:16:26.471576 2023] [wsgi:error] [pid 7810] SECRET_KEY = 2=b^!l2lb^e!z5rg4mu490sq&=d+h_cq$(te39mmka(e5gi6!6
+[Fri Sep 01 05:27:21.434510 2023] [wsgi:error] [pid 23408] application starting with PRODUCTION settings
+[Fri Sep 01 05:27:21.469328 2023] [wsgi:error] [pid 23408] SECRET_KEY = cr9&tlks02%@i@y@z=a#=bc0%v39o=@_f4kwy=ud8l=t!732#b
+[Fri Sep 01 19:05:51.088446 2023] [ssl:error] [pid 25497] AH02032: Hostname www.finsights.info provided via SNI and hostname 181.215.68.212 provided via HTTP have no compatible SSL setup
+[Sat Sep 02 05:15:58.940230 2023] [wsgi:error] [pid 4439] application starting with PRODUCTION settings
+[Sat Sep 02 05:15:58.997491 2023] [wsgi:error] [pid 4439] SECRET_KEY = -xrmd2)5zdx+^vhq-(&f##c)()e$ot^lnbc)i7p)i16lee$%#n
+[Sun Sep 03 05:27:01.848093 2023] [wsgi:error] [pid 10277] application starting with PRODUCTION settings
+[Sun Sep 03 05:27:01.883352 2023] [wsgi:error] [pid 10277] SECRET_KEY = xq_661)0_zby(3(p5!-xk-0)haqm2e_pfkv80w_s2wxtrth767

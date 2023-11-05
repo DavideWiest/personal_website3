@@ -39,12 +39,6 @@
                     ]]
                 }
             },
-            "soft": {
-                "t": "Soft Skills",
-                "content": [
-                    "Determination", "Rational Optimism", "Strategic Thinking"
-                ]
-            },
             "workOther": {
                 "t": "Work-related and Other",
                 "content": [
@@ -56,7 +50,6 @@
     "testimonials": {
         "t": "Testimonials",
         "content": {
-            "James": "My new logo looks flawless and contributes to my social group's branding. Davide understood all relevant design aspects and I would recommend him to anyone interested."
         }
     },
     "certificates": {

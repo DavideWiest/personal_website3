@@ -1,6 +1,6 @@
 {
     "development_hostnames": [
-        "DESKTOP-9DUQODF",
+        "PC-Davide",
         "davidewiest.com2"
     ],
     "production_hostnames": [
@@ -27,5 +27,5 @@
             "secrets_file_path": "C:/Users/DavWi/OneDrive/Desktop/Speicher/secrets/personal_website3/secrets.json"
         }
     },
-    "secret_key": "5j5ckdze)7y43de&_8fk4%4t37u(q$+po2u%t#$t1vpg=za0xn"
+    "secret_key": "9ho@e*2nt@1m*fnj6z!s+_l_aveee8tnyqvxu1s9ds$hri##5y"
 }

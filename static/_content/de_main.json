@@ -1,0 +1,67 @@
+{
+    "hero_header": "Davide Wiest",
+    "hero_text": "Ich bin ein Schüler, leidenschaftlicher Programmierer und schätze neue Erfahrungen.",
+    "age": "Alter",
+    "projects": {
+        "t": "Projekte & Arbeit",
+        "seeProjects": "Projektübersicht anzeigen",
+        "workExperience": {
+            "t": "Projekte & Erfahrung",
+            "content": [
+                ["Kursleiter", "Learnist", "https://learnist.de", "Seit Februar 2023", ["135deg", "rgba(50, 6, 71, 1)", "rgba(35, 2, 51, 0.75)"], "Führen einer Gruppe von Schülern, Einführung in die Programmierung. Vermittlung grundlegender Konzepte. Förderung logischen und systematischen Denkens."],
+                ["Betriebspraktikum", "HDP GMBH", "https://hdpgmbh.de", "März 2023", ["135deg", "rgba(71, 61, 5)", "rgba(43, 37, 3, 0.75)"], "Entwicklung kleiner Spiele und Algorithmen in Java. Arbeit mit dem firmeneigenen UI-Produktivitäts-Framework."]
+            ]
+        },
+        "websiteScores": {
+            "t": "Website-Bewertungen",
+            "d": "Die Lighthouse-Bewertungen einiger von mir erstellter Websites. Es ist wichtig zu erwähnen, dass diese Bewertungen nicht vollständig repräsentativ sind: Andere Aspekte wie Inhalt und Link-Strategie müssen berücksichtigt werden.",
+            "content": {
+                "score1.png": "Finsights.info",
+                "score2.png": "DavideWiest.com",
+                "score3.png": "Instadata Dashboard"
+            }
+        }
+    },
+    "skills": {
+        "t": "Fähigkeiten",
+        "content": {
+            "technical": {
+                "t": "Technische Fähigkeiten",
+                "content": {
+                    "Erfahren in": ["#101a75", [
+                        "Python", "HTML"
+                    ]],
+                    "Vertraut mit": ["#084573", [
+                        "Java", "C#", "MongoDB", "Django", "Flask", "PyTorch"
+                    ]],
+                    "Lernt/Wird lernen": ["#106975", [
+                        "PostGreSQL", "Rust oder C++"
+                    ]]
+                }
+            },
+            "soft": {
+                "t": "Soft Skills",
+                "content": [
+                    "Zielstrebigkeit", "Rationaler Optimismus", "Analytisches Denken", "Strategisches Denken"
+                ]
+            },
+            "workOther": {
+                "t": "Arbeitsbezogen und Andere",
+                "content": [
+                    "MS-Office"
+                ]
+            }
+        }
+    },
+    "testimonials": {
+        "t": "Bewertungen",
+        "content": {
+        }
+    },
+    "certificates": {
+        "t": "Zertifikate",
+        "content": [
+            ["Grundlagen des Online-Marketings", "Google", "resources/Google_Onlinemarketing_Zertifikat.pdf", "Ich lernte Themen wie SEO, Content-Marketing, Suchmaschinenwerbung und Online-Strategien lokaler Unternehmen kennen."]
+        ]
+    }
+}
