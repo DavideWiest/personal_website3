@@ -6,6 +6,19 @@
     "categoryDesc": "Categories:",
     "seeallprojects": "See more projects",
     "projects": {
+        "contextflow": {
+            "name": "ContextFlow",
+            "description": "A .NET library for interacting with LLMs (Large Language Models). It provides abstractions for individual modules to work together through dependency injection. With it, you can create more complex prompt chains/pipelines as it simplifies prompt templating and prompt chaining, among other things, through a project-wide fluent interface. The entire project also includes asynchronous counterparts and is tested with 55 NUnit tests. Furthermore, attention was given to developing with a cyclomatic complexity (<6 for methods), class coupling (<10 for methods), and a Maintainability Index of 85. You can find the documentation <a href=\"https://github.com/DavideWiest/ContextFlow/wiki\" target=\"blank\">here</a>.",
+            "image": "contextflowDemo.png",
+            "image_layout_type": "",
+            "link": "https://github.com/DavideWiest/ContextFlow",
+            "linkIcon": "github-white.png",
+            "linkDesc": "View GitHub Repository",
+            "t": ["C#", "NUnit", "Async"],
+            "c": ["Library", "Package", "Infrastructure", "Tests", "Documentation"],
+            "align": 1,
+            "is_casestudy": false
+        },
         "finsights": {
             "name": "Finsights",
             "description": "A Newsletter as a Service solution for all kinds of investors to keep in touch with their investments. Users can choose when, and about what they are notified about. They will then receive automatic performance updates for all selected stocks within the chosen time period.",
@@ -17,6 +30,19 @@
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Automation", "Webapp", "Branding", "Logo"],
             "align": 0,
+            "is_casestudy": false
+        },
+        "embyte": {
+            "name": "Embyte",
+            "description": "The open-source project that allows you to create customizable embeds displaying website information and embed them using iFrames. It was inspired by Discord's embeds. This project caches requests in a PostgreSQL database and utilizes a self-developed caching algorithm.",
+            "image": "embyteEmbed.png",
+            "image_layout_type": "",
+            "link": "https://embyte.davidewiest.com",
+            "linkIcon": "",
+            "linkDesc": "Visit Website",
+            "t": ["C#", "HTML", "MudBlazor", "PostgreSQL"],
+            "c": ["Webapp", "Frontend", "Backend", "Caching"],
+            "align": 1,
             "is_casestudy": false
         },
         "timewise": {
