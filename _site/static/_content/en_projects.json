@@ -14,8 +14,8 @@
             "link": "https://github.com/DavideWiest/ContextFlow",
             "linkIcon": "github-white.png",
             "linkDesc": "View GitHub Repository",
-            "t": ["C#", "NUnit", "Async"],
-            "c": ["Library", "Package", "Infrastructure", "Tests", "Documentation"],
+            "t": ["C#", "NUnit", "Async", "OpenAI", "Serilog"],
+            "c": ["Library", "Package", "Infrastructure", "Tests", "Documentation", "LLM"],
             "align": 1,
             "is_casestudy": false
         },
