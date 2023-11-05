@@ -32,17 +32,17 @@
                         "Python", "HTML"
                     ]],
                     "Familiar with": ["#084573", [
-                        "Java", "MongoDB", "Django", "Flask", "PyTorch"
+                        "C#", "Java", "MongoDB", "Django", "Flask", "PyTorch"
                     ]],
                     "Learning/Will learn": ["#106975", [
-                        "C#", "PostGreSQL", "Rust or C++"
+                        "PostGreSQL", "Rust"
                     ]]
                 }
             },
             "soft": {
                 "t": "Soft Skills",
                 "content": [
-                    "Determination", "Rational Optimism", "Analytical Thinking", "Strategic Thinking"
+                    "Determination", "Rational Optimism", "Strategic Thinking"
                 ]
             },
             "workOther": {

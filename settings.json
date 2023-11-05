@@ -24,10 +24,7 @@
     },
     "device_specific_settings": {
         "DESKTOP-9DUQODF": {
-            "secrets_file_path": "C:/Users/DavWi/OneDrive/Desktop/storage/secrets/personal_website3/secrets.json"
-        },
-        "respi": {
-            "secrets_file_path": "/etc/wa_config/personal_website3/secrets.json"
+            "secrets_file_path": "C:/Users/DavWi/OneDrive/Desktop/Speicher/secrets/personal_website3/secrets.json"
         }
     },
     "secret_key": "5j5ckdze)7y43de&_8fk4%4t37u(q$+po2u%t#$t1vpg=za0xn"

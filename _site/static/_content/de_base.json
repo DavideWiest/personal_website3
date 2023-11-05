@@ -2,7 +2,7 @@
     "footerStartName": "Zur Startseite",
     "cta": {
         "title": "Kontaktieren Sie mich",
-        "description": "Gibt's etwas, wobei ich helfen kann? Schicken Sie mir eine Email und ich finde heraus wie. Sie können mich jederzeit per Email erreichen.",
+        "description": "Gibt's etwas, was Sie mir sagen möchten? Schicken Sie mir gerne eine Email und ich finde heraus wie. Sie können mich jederzeit per Email erreichen.",
         "button": "Eine Mail schicken"
     },
     "secondaryLang": "en",
@@ -11,6 +11,7 @@
     "footerPS": "Impressum & Datenschutzerklärung",
     "specialannouncement": "",
     "nav": {
+        "blog": "Blog",
         "projects": "Projekte",
         "cv": "Lebenslauf",
         "email": "Email senden",

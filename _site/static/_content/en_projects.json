@@ -20,7 +20,7 @@
             "is_casestudy": false
         },
         "decadruck": {
-            "name": "DecaDruck",
+            "name": "DecaDruck (Practice)",
             "description": "DecaDruck aims to open 3d printing to people without technical knowledge and industry expertise by combining consultation, design and realization into one service. If vistors already have a 3D-file, they can calculate the printing cost, with volume discount included.",
             "image": "visual.webp",
             "image_layout_type": "phone",
@@ -44,32 +44,6 @@
             "c": ["Website", "Design"],
             "align": 0,
             "is_casestudy": false
-        },
-        "django-framework": {
-            "name": "Custom Framework for Django",
-            "description": "My personal Django Framework I will use to build new websites faster and more effectively. I include the fundamentals to build an Api and optimized the folder structure.",
-            "image": "",
-            "image_layout_type": "phone",
-            "link": "https://github.com/DavideWiest/simple_django_framework",
-            "linkIcon": "github-white.png",
-            "linkDesc": "View Github Repository",
-            "t": ["Python", "Django"],
-            "c": ["Framework", "Webapp"],
-            "align": 1,
-            "is_casestudy": false
-        },
-        "thetraderscircle": {
-            "name": "TheTradersCircle",
-            "description": "My client wanted to build an online community to teach others trading. I built a compelling logo and made a brand framework, and also helped a little with the overall business strategy.",
-            "image": "visual.webp",
-            "image_layout_type": "phone",
-            "link": "/resources/TheTradersCircle_Brand.pdf",
-            "linkIcon": "document.png",
-            "linkDesc": "View brand summary",
-            "t": ["Adobe Illustrator", "Canva"],
-            "c": ["Naming", "Logo", "Branding"],
-            "align": 0,
-            "is_casestudy": true
         },
         "instadata": {
             "name": "Instadata",

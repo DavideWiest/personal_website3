@@ -32,10 +32,10 @@
                         "Python", "HTML"
                     ]],
                     "Vertraut mit": ["#084573", [
-                        "Java", "MongoDB", "Django", "Flask", "PyTorch"
+                        "C#", "Java", "MongoDB", "Django", "Flask", "PyTorch"
                     ]],
                     "Lerne/Werde lernen": ["#106975", [
-                        "C#", "PostGreSQL", "Rust oder C++"
+                        "PostGreSQL", "Rust oder C++"
                     ]]
                 }
             },

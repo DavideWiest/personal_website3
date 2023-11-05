@@ -13,7 +13,7 @@
             {% for key, value in c.projects.projects.items %}
             <div class="grid gap-8 my-8 {% if value.image == '' %} {% if value.align == 1 %} justify-end {% else %} justify-start {% endif %} {% else %} md:grid-cols-2 {% endif %}">
             
-                {% if value.image != "" %}
+            {% if value.image != "" %}
             {% if value.align == 1 %}
             <div class="flex justify-center">
                 <a href="{{ value.link }}" target="_blank">
@@ -22,11 +22,11 @@
             </div>
             {% endif %}
             {% endif %}
-            <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-md {% else %} max-w-2xl {% endif %}">
-                <a id="project" href="{{ value.link }}" target="_blank" class="group block max-w-2xl rounded-3xl my-10 grid border-transparent transition duration-300 ease-in-out max-w-md">
+            <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-md {% else %} max-w-4xl {% endif %}">
+                <div id="project" class="group block max-w-2xl rounded-3xl my-10 grid border-transparent transition duration-300 ease-in-out {% if value.image != '' %} max-w-md {% else %} max-w-4xl {% endif %}">
                         
                     <div class="p-6">
-                        <h3 id="project-title" class="text-2xl text-b600 mb-2 text-neutral-200">
+                        <h3 id="project-title" class="text-2xl md:text-3xl text-b600 mb-2 text-neutral-200">
                             {{ value.name }}
                         </h3>
                         <div id="project-categories" class="ml-1 my-3">
@@ -49,10 +49,10 @@
                                 </p>
                             {% endfor %}
                         </div>
-                        <p id="project-description" class="mt-2 mb-3 text-neutral-400 text-sm ml-1">
+                        <p id="project-description" class="mt-2 mb-3 text-neutral-400 text ml-1">
                             {{ value.description|safe }}
                         </p>
-                        <button id="project-link" class="mt-4 bg-neutral-200 inline-block w-fit rounded-full p-2 px-4 md:p-3.5 md:px-6 group-hover:bg-accent transition duration-300 ease-in-out">
+                        <a id="project-link" href="{{ value.link }}" target="_blank" class="mt-4 bg-neutral-200 inline-block w-fit rounded-full p-2 px-4 md:p-2 md:px-5 group-hover:bg-accent transition duration-300 ease-in-out">
                             <div class="inline-block mr-1">
                                 <div id="project-link-icon" class="m-r-4 flex w-full items-center">
                                     {% if value.linkIcon != "" %}
@@ -63,9 +63,9 @@
                             <span id="project-link-text" class="align-middle text-b400 text-black md:text-lg">
                                 {{ value.linkDesc }}
                             </span>
-                        </button>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
             {% if value.image != "" %}
             {% if value.align == 0 %}

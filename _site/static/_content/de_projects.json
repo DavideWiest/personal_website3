@@ -45,32 +45,6 @@
             "align": 1,
             "is_casestudy": false
         },
-        "django-framework": {
-            "name": "Individuelles Django Framework",
-            "description": "Mein persönliches kleines Django-Framework, das ich verwenden werde, um neue Websites schneller und effektiver zu erstellen. Enthalten sind die Grundlagen zum Erstellen einer API und eine optimierte Ordnerstruktur.",
-            "image": "",
-            "image_layout_type": "phone",
-            "link": "https://github.com/DavideWiest/simple_django_framework",
-            "linkIcon": "github-white.png",
-            "linkDesc": "Github Repository ansehen",
-            "t": ["Python", "Django"],
-            "c": ["Framework", "Webapp"],
-            "align": 0,
-            "is_casestudy": false
-        },
-        "thetraderscircle": {
-            "name": "TheTradersCircle",
-            "description": "Mein Kunde wollte eine Online-Community aufbauen, um anderen das Trading beizubringen. Ich kreierte ein modernes, authentisches Logo und die Grundlagen der Marke.",
-            "image": "visual.webp",
-            "image_layout_type": "phone",
-            "link": "/resources/TheTradersCircle_Brand.pdf",
-            "linkIcon": "pdf.png",
-            "linkDesc": "Zusammenfassung ansehen",
-            "t": ["Adobe Illustrator", "Canva"],
-            "c": ["Namensgebung", "Logo", "Branding"],
-            "align": 1,
-            "is_casestudy": true
-        },
         "instadata": {
             "name": "Instadata",
             "description": "Ein großer Instagram-Scraper, der mit Django erstellt wurde und eine API verwendet, um zwischen Benutzer und Programm zu kommunizieren. Der Scraper lässt sich nahtlos skalieren und kann Proxies benutzen. Ich habe ihn gebaut, um Daten für weitere Data-Science-Projekte zu sammeln, also habe ich den Nominatim Geolocator und Regex verwendet, um so viele Daten wie möglich zu extrahieren und zu ordnen.",
