@@ -55,7 +55,8 @@
     "certificates": {
         "t": "Certificates",
         "content": [
-            ["Fundamentals of Online-Marketing", "Google", "resources/Google_Onlinemarketing_Zertifikat.pdf", "I learned about topics such as SEO, Content-Marketing, Search-Engine-Advertising and online strategies of local businesses."]
+            ["Fundamentals of Online-Marketing", "Google", "resources/Google_Onlinemarketing_Zertifikat.pdf", "I learned about topics such as SEO, Content-Marketing, Search-Engine-Advertising and online strategies of local businesses."],
+            ["Introduction to Logic", "Stanford University Online", "resources/Introduction_To_Logic.pdf", "I got to learn the fundamentals of propositional, relational, and functional logic and had the change to improve my deduction skills."]
         ]
     }
 }
