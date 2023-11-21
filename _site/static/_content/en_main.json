@@ -52,6 +52,12 @@
         "content": {
         }
     },
+    "academicwork": {
+        "t": "Academic Work",
+        "content": [
+            
+        ]
+    },
     "certificates": {
         "t": "Certificates",
         "content": [

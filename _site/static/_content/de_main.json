@@ -53,6 +53,12 @@
             
         }
     },
+    "academicwork": {
+        "t": "Wissenschaftliche Arbeiten",
+        "content": [
+            
+        ]
+    },
     "certificates": {
         "t": "Zertifikate",
         "content": [
