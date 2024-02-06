@@ -45,16 +45,16 @@
             "align": 1,
             "is_casestudy": false
         },
-        "timewise": {
-            "name": "TimeWise",
-            "description": "Eine benutzerfreundliche Open-Source-App, die mithilfe von einer ILP (integer linear programming) API einen optimalen Zeitplan erstellt. Diese können dann exportiert werden. Entwickelt mit einem Freund.",
-            "image": "",
+        "pvtimeseries": {
+            "name": "Zeitreihenprognose des PV-Ausbaus",
+            "description": "Verwendung einer Reihe multivariater Zeitreihenmodelle aus dem Paket Darts, um die Energieproduktion von PV-Systemen in Deutschland mithilfe von 8 historischen und 1 prognostizierten Metriken vorherzusagen. Optimierung der Modellarchitektur (für N-Beats), Bewertung und Verwendung der Prognose in einer Facharbeit über die Folgen des nationalen Ausbaus von PV-Systemen.",
+            "image": "timeSeriesPrediction.jpg",
             "image_layout_type": "",
-            "link": "https://timewise.dev",
-            "linkIcon": "",
-            "linkDesc": "Webseite besuchen",
-            "t": ["C#", "HTML", "MudBlazor"],
-            "c": ["Webapp", "ILP", "optimierung", "Open-source"],
+            "link": "https://github.com/DavideWiest/PV-Ausbau-Zeitreihenanalyse",
+            "linkIcon": "github-white.png",
+            "linkDesc": "Repository besuchen",
+            "t": ["Python", "Darts", "Pandas", "Matplotlib"],
+            "c": ["Data Science", "Zeitreihenprognose"],
             "align": 0,
             "is_casestudy": false
         },
@@ -71,32 +71,6 @@
             "align": 1,
             "is_casestudy": false
         },
-        "pvtimeseries": {
-            "name": "Zeitreihenprognose des PV-Ausbaus",
-            "description": "Verwendung einer Reihe multivariater Zeitreihenmodelle aus dem Paket Darts, um die Energieproduktion von PV-Systemen in Deutschland mithilfe von 8 historischen und 1 prognostizierten Metriken vorherzusagen. Optimierung der Modellarchitektur (für N-Beats), Bewertung und Verwendung der Prognose in einer Facharbeit über die Folgen des nationalen Ausbaus von PV-Systemen.",
-            "image": "timeSeriesPrediction.jpg",
-            "image_layout_type": "",
-            "link": "https://github.com/DavideWiest/PV-Ausbau-Zeitreihenanalyse",
-            "linkIcon": "github-white.png",
-            "linkDesc": "Repository besuchen",
-            "t": ["Python", "Darts", "Pandas", "Matplotlib"],
-            "c": ["Data Science", "Zeitreihenprognose"],
-            "align": 0,
-            "is_casestudy": false
-        },
-        "personal-website": {
-            "name": "Eigene Webseite",
-            "description": "Eine komplette Überarbeitung meiner persönlichen Website. Ich bin von Flask auf Django umgestiegen und verwende jetzt TailwindCSS. Zusätzlich ist die Website in deutsch und englisch verfügbar.",
-            "image": "",
-            "image_layout_type": "phone",
-            "link": "https://github.com/DavideWiest/personal_website2",
-            "linkIcon": "github-white.png",
-            "linkDesc": "Github Repository ansehen",
-            "t": ["Python", "HTML", "TailwindCSS", "Django"],
-            "c": ["Website", "Design"],
-            "align": 1,
-            "is_casestudy": false
-        },
         "instadata": {
             "name": "Instadata",
             "description": "Ein großer Instagram-Scraper, der mit Django erstellt wurde und eine API verwendet, um zwischen Benutzer und Programm zu kommunizieren. Der Scraper lässt sich nahtlos skalieren und kann Proxies benutzen. Ich habe ihn gebaut, um Daten für weitere Data-Science-Projekte zu sammeln, also habe ich den Nominatim Geolocator und Regex verwendet, um so viele Daten wie möglich zu extrahieren und zu ordnen.",
@@ -110,6 +84,19 @@
             "align": 1,
             "is_casestudy": true
         },
+        "timewise": {
+            "name": "TimeWise",
+            "description": "Eine benutzerfreundliche Open-Source-App, die mithilfe von einer ILP (integer linear programming) API einen optimalen Zeitplan erstellt. Diese können dann exportiert werden. Dabei habe ich v.a. Geschäftslogik und die Exporter geschrieben.",
+            "image": "",
+            "image_layout_type": "",
+            "link": "https://timewise.dev",
+            "linkIcon": "",
+            "linkDesc": "Webseite besuchen",
+            "t": ["C#", "HTML", "MudBlazor"],
+            "c": ["Webapp", "ILP", "optimierung", "Open-source"],
+            "align": 0,
+            "is_casestudy": false
+        },
         "decadruck": {
             "name": "DecaDruck",
             "description": "DecaDruck hat sich zum Ziel gesetzt, den 3D-Druck für Menschen ohne technische Kenntnisse und Branchenexpertise zugänglich zu machen, indem Beratung, Design und Realisierung in einem Service vereint werden. Wenn Besucher bereits eine 3D-Datei haben, können sie die Druckkosten und den Mengenrabatt berechnen.",
@@ -122,6 +109,19 @@
             "c": ["Website", "Design", "E Commerce", "Preisberechnung"],
             "align": 0,
             "is_casestudy": true
+        },
+        "personal-website": {
+            "name": "Eigene Webseite",
+            "description": "Eine komplette Überarbeitung meiner persönlichen Website. Ich bin von Flask auf Django umgestiegen und verwende jetzt TailwindCSS. Zusätzlich ist die Website in deutsch und englisch verfügbar.",
+            "image": "",
+            "image_layout_type": "phone",
+            "link": "https://github.com/DavideWiest/personal_website2",
+            "linkIcon": "github-white.png",
+            "linkDesc": "Github Repository ansehen",
+            "t": ["Python", "HTML", "TailwindCSS", "Django"],
+            "c": ["Website", "Design"],
+            "align": 1,
+            "is_casestudy": false
         }
     }
 }
