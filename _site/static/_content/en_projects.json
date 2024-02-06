@@ -83,7 +83,7 @@
             "c": ["Data Science", "Webapp", "API", "Scraper"],
             "align": 0,
             "is_casestudy": true
-        }
+        },
         "timewise": {
             "name": "TimeWise",
             "description": "An easy to use and open source app that, with the help of an ILP (integer linear programming) API, generates an optimal schedule. Those can then be exported. Developed with a friend.",
@@ -122,6 +122,6 @@
             "c": ["Website", "Design"],
             "align": 0,
             "is_casestudy": false
-        },
+        }
     }
 }
