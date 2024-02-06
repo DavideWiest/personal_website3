@@ -77,7 +77,7 @@
             "image": "timeSeriesPrediction.jpg",
             "image_layout_type": "",
             "link": "https://github.com/DavideWiest/PV-Ausbau-Zeitreihenanalyse",
-            "linkIcon": "github-white,png",
+            "linkIcon": "github-white.png",
             "linkDesc": "Visit repository",
             "t": ["Python", "Darts", "Pandas", "Matplotlib"],
             "c": ["Data Science", "Time-Series Forecasting"],
