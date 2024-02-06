@@ -71,6 +71,19 @@
             "align": 1,
             "is_casestudy": false
         },
+        "instadata": {
+            "name": "Instadata",
+            "description": "A large instagram scraper built with Django that uses an API to communicate between user and program. The Scraper can be scaled seaminglessly and uses proxies. I built it to gather data for further Data-Science projects, so I used the Nominatim Geolocator and Regex to extract and order as much data as possible.",
+            "image": "",
+            "image_layout_type": "phone",
+            "link": "https://github.com/DavideWiest/idww",
+            "linkIcon": "medium.png",
+            "linkDesc": "Read article",
+            "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
+            "c": ["Data Science", "Webapp", "API", "Scraper"],
+            "align": 0,
+            "is_casestudy": true
+        }
         "timewise": {
             "name": "TimeWise",
             "description": "An easy to use and open source app that, with the help of an ILP (integer linear programming) API, generates an optimal schedule. Those can then be exported. Developed with a friend.",
@@ -110,18 +123,5 @@
             "align": 0,
             "is_casestudy": false
         },
-        "instadata": {
-            "name": "Instadata",
-            "description": "A large instagram scraper built with Django that uses an API to communicate between user and program. The Scraper can be scaled seaminglessly and uses proxies. I built it to gather data for further Data-Science projects, so I used the Nominatim Geolocator and Regex to extract and order as much data as possible.",
-            "image": "",
-            "image_layout_type": "phone",
-            "link": "https://github.com/DavideWiest/idww",
-            "linkIcon": "medium.png",
-            "linkDesc": "Read article",
-            "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
-            "c": ["Data Science", "Webapp", "API", "Scraper"],
-            "align": 0,
-            "is_casestudy": true
-        }
     }
 }
