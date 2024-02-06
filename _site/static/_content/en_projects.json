@@ -61,8 +61,8 @@
         "reader": {
             "name": "Reader",
             "description": "A highly customizable reader built as a direct alternative to paid speed-readers. Concepts such as chunking, pacing and highlighting are built into this reader. Texts can be imported from files or the clipboard. All data is stored in the website's local storage.",
-            "image": "readerShowcase.jpg",
-            "image_layout_type": "",
+            "image": "readerShowcase.jpep",
+            "image_layout_type": "phone",
             "link": "https://reader.davidewiest.com",
             "linkIcon": "",
             "linkDesc": "Visit Website",
