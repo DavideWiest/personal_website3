@@ -58,6 +58,32 @@
             "align": 0,
             "is_casestudy": false
         },
+        "reader": {
+            "name": "Leser",
+            "description": "Ein hochgradig anpassbarer Leser, der als direkte Alternative zu kostenpflichtigen Schnell-Lese-Apps entwickelt wurde. Konzepte wie Chunking, Timing und Hervorhebung sind in diesem Leser integriert. Texte können aus Dateien oder der Zwischenablage importiert werden. Alle Daten werden im lokalen Speicher der Website gespeichert.",
+            "image": "readerShowcase.jpeg",
+            "image_layout_type": "phone",
+            "link": "https://reader.davidewiest.com",
+            "linkIcon": "",
+            "linkDesc": "Website besuchen",
+            "t": ["C#", "HTML", "MudBlazor", "Javascript"],
+            "c": ["Webanwendung", "Frontend", "Backend", "Caching"],
+            "align": 1,
+            "is_casestudy": false
+        },
+        "pvtimeseries": {
+            "name": "Zeitreihenprognose des PV-Ausbaus",
+            "description": "Verwendung einer Reihe multivariater Zeitreihenmodelle aus dem Paket Darts, um die Energieproduktion von PV-Systemen in Deutschland mithilfe von 8 historischen und 1 prognostizierten Metriken vorherzusagen. Optimierung der Modellarchitektur (für N-Beats), Bewertung und Verwendung der Prognose in einer Facharbeit über die Folgen des nationalen Ausbaus von PV-Systemen.",
+            "image": "timeSeriesPrediction.jpg",
+            "image_layout_type": "",
+            "link": "https://github.com/DavideWiest/PV-Ausbau-Zeitreihenanalyse",
+            "linkIcon": "github-white,png",
+            "linkDesc": "Repository besuchen",
+            "t": ["Python", "Darts", "Pandas", "Matplotlib"],
+            "c": ["Data Science", "Zeitreihenprognose"],
+            "align": 0,
+            "is_casestudy": false
+        },
         "personal-website": {
             "name": "Eigene Webseite",
             "description": "Eine komplette Überarbeitung meiner persönlichen Website. Ich bin von Flask auf Django umgestiegen und verwende jetzt TailwindCSS. Zusätzlich ist die Website in deutsch und englisch verfügbar.",
