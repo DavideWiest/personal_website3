@@ -41,7 +41,7 @@
             "linkIcon": "",
             "linkDesc": "Visit Website",
             "t": ["C#", "HTML", "MudBlazor", "PostgreSQL"],
-            "c": ["Webapp", "Frontend", "Backend", "Caching"],
+            "c": ["Webapp", "Caching", "Algorithm", "Frontend", "Backend"],
             "align": 1,
             "is_casestudy": false
         },
@@ -58,8 +58,34 @@
             "align": 0,
             "is_casestudy": false
         },
+        "reader": {
+            "name": "Reader",
+            "description": "A highly customizable reader built as a direct alternative to paid speed-readers. Concepts such as chunking, pacing and highlighting are built into this reader. Texts can be imported from files or the clipboard. All data is stored in the website's local storage.",
+            "image": "readerShowcase.jpg",
+            "image_layout_type": "",
+            "link": "https://reader.davidewiest.com",
+            "linkIcon": "",
+            "linkDesc": "Visit Website",
+            "t": ["C#", "HTML", "MudBlazor", "Javascript"],
+            "c": ["Webapp", "Frontend", "Backend", "Caching"],
+            "align": 1,
+            "is_casestudy": false
+        },
+        "pvtimeseries": {
+            "name": "Time-Series Forecasting of PV-Growth",
+            "description": "Used a series of mutlivariate time series models from the package Darts to forecast the energy production from PV-systems in Germany using 8 historic and 1 predicted metrics. Optimizing mode architecture (N-Beats), evaluating and using the forecast in a research-paper about the consequences of the national growth in pv-systems.",
+            "image": "timeSeriesPrediction.jpg",
+            "image_layout_type": "",
+            "link": "https://github.com/DavideWiest/PV-Ausbau-Zeitreihenanalyse",
+            "linkIcon": "github-white,png",
+            "linkDesc": "Visit repository",
+            "t": ["Python", "Darts", "Pandas", "Matplotlib"],
+            "c": ["Data Science", "Time-Series Forecasting"],
+            "align": 0,
+            "is_casestudy": false
+        },
         "decadruck": {
-            "name": "DecaDruck (Practice)",
+            "name": "DecaDruck (Practice project)",
             "description": "DecaDruck aims to open 3d printing to people without technical knowledge and industry expertise by combining consultation, design and realization into one service. If vistors already have a 3D-file, they can calculate the printing cost, with volume discount included.",
             "image": "visual.webp",
             "image_layout_type": "phone",
@@ -67,7 +93,7 @@
             "linkIcon": "medium.png",
             "linkDesc": "Read article",
             "t": ["Python", "HTML", "CSS", "Flask", "Branding"],
-            "c": ["Website", "Design", "Ecommerce", "Realtime Calc"],
+            "c": ["Website", "Design", "Ecommerce", "Realtime Cost Estimation"],
             "align": 1,
             "is_casestudy": true
         },
