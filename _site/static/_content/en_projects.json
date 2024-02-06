@@ -27,7 +27,7 @@
             "link": "https://finsights.info",
             "linkIcon": "medium.png",
             "linkDesc": "Visit Website",
-            "t": ["Python", "HTML", "TailwindCSS", "Django"],
+            "t": ["Python", "HTML", "TailwindCSS", "Django", "MongoDB"],
             "c": ["Automation", "Webapp", "Branding", "Logo"],
             "align": 0,
             "is_casestudy": false
@@ -45,16 +45,16 @@
             "align": 1,
             "is_casestudy": false
         },
-        "timewise": {
-            "name": "TimeWise",
-            "description": "An easy to use and open source app that, with the help of an ILP (integer linear programming) API, generates an optimal schedule. Those can then be exported. Developed with a friend.",
-            "image": "",
-            "image_layout_type": "phone",
-            "link": "https://timewise.dev",
-            "linkIcon": "",
-            "linkDesc": "Webseite besuchen",
-            "t": ["C#", "HTML", "MudBlazor"],
-            "c": ["Webapp", "ILP", "optimierung"],
+        "pvtimeseries": {
+            "name": "Time-Series Forecasting of PV-Growth",
+            "description": "Used a series of mutlivariate time series models from the package Darts to forecast the energy production from PV-systems in Germany using 8 historic and 1 predicted metrics. Optimizing mode architecture (N-Beats), evaluating and using the forecast in a research-paper about the consequences of the national growth in pv-systems.",
+            "image": "timeSeriesPrediction.jpg",
+            "image_layout_type": "",
+            "link": "https://github.com/DavideWiest/PV-Ausbau-Zeitreihenanalyse",
+            "linkIcon": "github-white.png",
+            "linkDesc": "Visit repository",
+            "t": ["Python", "Darts", "Pandas", "Matplotlib"],
+            "c": ["Data Science", "Time-Series Forecasting"],
             "align": 0,
             "is_casestudy": false
         },
@@ -71,16 +71,16 @@
             "align": 1,
             "is_casestudy": false
         },
-        "pvtimeseries": {
-            "name": "Time-Series Forecasting of PV-Growth",
-            "description": "Used a series of mutlivariate time series models from the package Darts to forecast the energy production from PV-systems in Germany using 8 historic and 1 predicted metrics. Optimizing mode architecture (N-Beats), evaluating and using the forecast in a research-paper about the consequences of the national growth in pv-systems.",
-            "image": "timeSeriesPrediction.jpg",
-            "image_layout_type": "",
-            "link": "https://github.com/DavideWiest/PV-Ausbau-Zeitreihenanalyse",
-            "linkIcon": "github-white.png",
-            "linkDesc": "Visit repository",
-            "t": ["Python", "Darts", "Pandas", "Matplotlib"],
-            "c": ["Data Science", "Time-Series Forecasting"],
+        "timewise": {
+            "name": "TimeWise",
+            "description": "An easy to use and open source app that, with the help of an ILP (integer linear programming) API, generates an optimal schedule. Those can then be exported. Developed with a friend.",
+            "image": "",
+            "image_layout_type": "phone",
+            "link": "https://timewise.dev",
+            "linkIcon": "",
+            "linkDesc": "Webseite besuchen",
+            "t": ["C#", "HTML", "MudBlazor"],
+            "c": ["Webapp", "ILP", "optimierung"],
             "align": 0,
             "is_casestudy": false
         },
@@ -93,7 +93,7 @@
             "linkIcon": "medium.png",
             "linkDesc": "Read article",
             "t": ["Python", "HTML", "CSS", "Flask", "Branding"],
-            "c": ["Website", "Design", "Ecommerce", "Realtime Cost Estimation"],
+            "c": ["Website", "Frontend", "Ecommerce", "Realtime Cost Estimation"],
             "align": 1,
             "is_casestudy": true
         },
