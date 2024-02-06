@@ -15,7 +15,7 @@
             "linkIcon": "github-white.png",
             "linkDesc": "Github Repository ansehen",
             "t": ["C#", "NUnit", "Async", "OpenAI", "Serilog"],
-            "c": ["Library", "Package", "Infrastruktur", "Tests", "Dokumentation", "LLM"],
+            "c": ["OOP", "Package", "Infrastruktur", "Tests", "Dokumentation", "LLM"],
             "align": 1,
             "is_casestudy": false
         },
