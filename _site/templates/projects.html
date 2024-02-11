@@ -69,10 +69,12 @@
             </div>
             {% if value.image != "" %}
             {% if value.align == 0 %}
-            <div class="flex justify-center">
-                <a href="{{ value.link }}" target="_blank">
-                    <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ key }} Image" class="select-none base_fade_in fade-in-base {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
-                </a>
+            <div class="flex justify-center" style="algin-items: center;">
+                <div>
+                    <a href="{{ value.link }}" target="_blank">
+                        <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ key }} Image" class="select-none base_fade_in fade-in-base {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
+                    </a>
+                </div>
             </div>
             {% endif %}
             {% endif %}

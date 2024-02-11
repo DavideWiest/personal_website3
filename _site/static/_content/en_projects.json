@@ -16,8 +16,7 @@
             "linkDesc": "View GitHub Repository",
             "t": ["C#", "NUnit", "Async", "OpenAI", "Serilog"],
             "c": ["Object oriented", "Package", "Infrastructure", "Tests", "Documentation", "LLM"],
-            "align": 1,
-            "is_casestudy": false
+            "align": 1
         },
         "finsights": {
             "name": "Finsights",
@@ -29,8 +28,7 @@
             "linkDesc": "Visit Website",
             "t": ["Python", "HTML", "TailwindCSS", "Django", "MongoDB"],
             "c": ["Automation", "Webapp", "Branding", "Logo"],
-            "align": 0,
-            "is_casestudy": false
+            "align": 0
         },
         "embyte": {
             "name": "Embyte",
@@ -42,8 +40,7 @@
             "linkDesc": "Visit Website",
             "t": ["C#", "HTML", "MudBlazor", "PostgreSQL"],
             "c": ["Webapp", "Caching", "Algorithm", "Frontend", "Backend"],
-            "align": 1,
-            "is_casestudy": false
+            "align": 1
         },
         "pvtimeseries": {
             "name": "Time-Series Forecasting of PV-Growth",
@@ -55,8 +52,7 @@
             "linkDesc": "Visit repository",
             "t": ["Python", "Darts", "Pandas", "Matplotlib"],
             "c": ["Data Science", "Time-Series Forecasting"],
-            "align": 0,
-            "is_casestudy": false
+            "align": 0
         },
         "reader": {
             "name": "Reader",
@@ -68,8 +64,7 @@
             "linkDesc": "Visit Website",
             "t": ["C#", "HTML", "MudBlazor", "Javascript"],
             "c": ["Webapp", "Frontend", "Backend", "Caching"],
-            "align": 1,
-            "is_casestudy": false
+            "align": 1
         },
         "instadata": {
             "name": "Instadata",
@@ -81,8 +76,7 @@
             "linkDesc": "Read article",
             "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
             "c": ["Data Science", "Webapp", "API", "Scraper"],
-            "align": 0,
-            "is_casestudy": true
+            "align": 0
         },
         "timewise": {
             "name": "TimeWise",
@@ -94,8 +88,7 @@
             "linkDesc": "Visit repository",
             "t": ["C#", "HTML", "MudBlazor"],
             "c": ["Webapp", "ILP", "optimierung"],
-            "align": 0,
-            "is_casestudy": false
+            "align": 0
         },
         "decadruck": {
             "name": "DecaDruck (Practice project)",
@@ -107,8 +100,7 @@
             "linkDesc": "Read article",
             "t": ["Python", "HTML", "CSS", "Flask", "Branding"],
             "c": ["Website", "Frontend", "Ecommerce", "Realtime Cost Estimation"],
-            "align": 1,
-            "is_casestudy": true
+            "align": 1
         },
         "personal-website": {
             "name": "Personal Website",
@@ -120,8 +112,7 @@
             "linkDesc": "View Github Repository",
             "t": ["Python", "HTML", "TailwindCSS", "Django"],
             "c": ["Website", "Design"],
-            "align": 0,
-            "is_casestudy": false
+            "align": 0
         }
     }
 }
