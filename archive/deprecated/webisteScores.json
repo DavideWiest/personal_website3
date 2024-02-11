@@ -1,0 +1,24 @@
+[
+    {
+        "websiteScores": {
+            "t": "Website-Bewertungen",
+            "d": "Die Lighthouse-Bewertungen einiger von mir erstellter Websites. Es ist wichtig zu erwähnen, dass diese Bewertungen nicht vollständig repräsentativ sind: Andere Aspekte wie Inhalt und Link-Strategie müssen berücksichtigt werden.",
+            "content": {
+                "score1.png": "Finsights.info",
+                "score2.png": "DavideWiest.com",
+                "score3.png": "Instadata Dashboard"
+            }
+        }
+    },
+    {
+        "websiteScores": {
+            "t": "Website Scores",
+            "d": "The Lighthouse scores of some of the websites I built. It is important to mention that these scores aren't fully representative: Other aspects, like content and link-strategy have to be considered.",
+            "content": {
+                "score1.png": "Finsights.info",
+                "score2.png": "DavideWiest.com",
+                "score3.png": "Instadata Dashboard"
+            }
+        }
+    }
+]

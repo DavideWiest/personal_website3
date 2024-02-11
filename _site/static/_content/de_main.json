@@ -6,20 +6,11 @@
         "t": "Projekte & Arbeit",
         "seeProjects": "Projektübersicht anzeigen",
         "workExperience": {
-            "t": "Projekte & Erfahrung",
+            "t": "Erfahrung",
             "content": [
-                ["Kursleiter", "Learnist", "https://learnist.de", "Seit Februar 2023", ["135deg", "rgba(50, 6, 71, 1)", "rgba(35, 2, 51, 0.75)"], "Führen einer Gruppe von Schülern, Einführung in die Programmierung. Vermittlung grundlegender Konzepte. Förderung logischen und systematischen Denkens."],
-                ["Betriebspraktikum", "HDP GMBH", "https://hdpgmbh.de", "März 2023", ["135deg", "rgba(71, 61, 5)", "rgba(43, 37, 3, 0.75)"], "Entwicklung kleiner Spiele und Algorithmen in Java. Arbeit mit dem firmeneigenen UI-Produktivitäts-Framework."]
+                ["Kursleiter", "Learnist", "https://learnist.de", "Februar bis August 2023", ["135deg", "rgba(50, 6, 71, 1)", "rgba(35, 2, 51, 0.75)"], "Führen einer Gruppe von Schülern, Einführung in die Programmierung. Vermittlung grundlegender Konzepte. Förderung logischen und systematischen Denkens."],
+                ["Betriebspraktikum", "HDP GMBH", "https://hdpgmbh.de", "März 2023", ["135deg", "rgba(71, 61, 5)", "rgba(43, 37, 3, 0.75)"], "Entwicklung von Algorithmen und kleinen Spielen in Java. Arbeit mit dem firmeneigenen UI-Produktivitäts-Framework."]
             ]
-        },
-        "websiteScores": {
-            "t": "Website-Bewertungen",
-            "d": "Die Lighthouse-Bewertungen einiger von mir erstellter Websites. Es ist wichtig zu erwähnen, dass diese Bewertungen nicht vollständig repräsentativ sind: Andere Aspekte wie Inhalt und Link-Strategie müssen berücksichtigt werden.",
-            "content": {
-                "score1.png": "Finsights.info",
-                "score2.png": "DavideWiest.com",
-                "score3.png": "Instadata Dashboard"
-            }
         }
     },
     "skills": {
@@ -34,8 +25,8 @@
                     "Vertraut mit": ["#084573", [
                         "C#", "Java", "MongoDB", "Django", "Flask", "PyTorch"
                     ]],
-                    "Lerne/Werde lernen": ["#106975", [
-                        "PostGreSQL", "Rust oder C++"
+                    "Fundamental Unterstanding": ["#106975", [
+                        "PostGreSQL", "MySQL"
                     ]]
                 }
             },
@@ -62,8 +53,8 @@
     "certificates": {
         "t": "Zertifikate",
         "content": [
-            ["Grundlagen des Online-Marketings", "Google", "resources/Google_Onlinemarketing_Zertifikat.pdf", "Ich lernte Themen wie SEO, Content-Marketing, Suchmaschinenwerbung und Online-Strategien lokaler Unternehmen kennen."],
-            ["Introduction to Logic", "Stanford University Online", "resources/Introduction_To_Logic.pdf", "Ich habe die Grundlagen der propositionalen, relationalen und funktionalen Logik gelernt und hatte die Möglichkeit, mein logisches Denkvermögen zu verbessern."]
+            ["Introduction to Logic", "Stanford University Online", "resources/Introduction_To_Logic.pdf", "Ich habe die Grundlagen der propositionalen, relationalen und funktionalen Logik gelernt und hatte die Möglichkeit, mein logisches Denkvermögen zu verbessern."],
+            ["Grundlagen des Online-Marketings", "Google", "resources/Google_Onlinemarketing_Zertifikat.pdf", "Ich habe Themen wie SEO, Content-Marketing, Suchmaschinenwerbung und Online-Strategien lokaler Unternehmen kennen gelernt."]
         ]
     }
 }

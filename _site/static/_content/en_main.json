@@ -8,18 +8,9 @@
         "workExperience": {
             "t": "Work Experience",
             "content": [
-                ["Instructor", "Learnist", "https://learnist.de", "Since February 2023", ["135deg", "rgba(50, 6, 71, 1)", "rgba(35, 2, 51, 0.75)"], "Leading a group of students, introducing them to programming. Teaching them fundamental concepts. Encouraging logical and systematic thinking."],
-                ["2-week Internship", "HDP GMBH", "https://hdpgmbh.de", "March 2023", ["135deg", "rgba(71, 61, 5)", "rgba(43, 37, 3, 0.75)"], "Developing small games and algorithms in Java. Working with the firms custom UI-Productivity-Framework."]
+                ["Instructor", "Learnist", "https://learnist.de", "February till August 2023", ["135deg", "rgba(50, 6, 71, 1)", "rgba(35, 2, 51, 0.75)"], "Leading a group of students, introducing them to programming. Teaching them fundamental concepts. Encouraging logical and systematic thinking."],
+                ["2-week Internship", "HDP GMBH", "https://hdpgmbh.de", "March 2023", ["135deg", "rgba(71, 61, 5)", "rgba(43, 37, 3, 0.75)"], "Developing algorithms and small games in Java. Working with the firms custom UI-Productivity-Framework."]
             ]
-        },
-        "websiteScores": {
-            "t": "Website Scores",
-            "d": "The Lighthouse scores of some of the websites I built. It is important to mention that these scores aren't fully representative: Other aspects, like content and link-strategy have to be considered.",
-            "content": {
-                "score1.png": "Finsights.info",
-                "score2.png": "DavideWiest.com",
-                "score3.png": "Instadata Dashboard"
-            }
         }
     },
     "skills": {
@@ -34,8 +25,8 @@
                     "Familiar with": ["#084573", [
                         "C#", "Java", "MongoDB", "Django", "Flask", "PyTorch"
                     ]],
-                    "Learning/Will learn": ["#106975", [
-                        "PostGreSQL", "Rust"
+                    "Fundamental Unterstanding": ["#106975", [
+                        "PostGreSQL", "MySQL"
                     ]]
                 }
             },
@@ -61,8 +52,8 @@
     "certificates": {
         "t": "Certificates",
         "content": [
-            ["Fundamentals of Online-Marketing", "Google", "resources/Google_Onlinemarketing_Zertifikat.pdf", "I learned about topics such as SEO, Content-Marketing, Search-Engine-Advertising and online strategies of local businesses."],
-            ["Introduction to Logic", "Stanford University Online", "resources/Introduction_To_Logic.pdf", "I got to learn the fundamentals of propositional, relational, and functional logic and had the change to improve my deduction skills."]
+            ["Introduction to Logic", "Stanford University Online", "resources/Introduction_To_Logic.pdf", "I got to learn the fundamentals of propositional, relational, and functional logic and had the change to improve my logical thinking skills."],
+            ["Fundamentals of Online-Marketing", "Google", "resources/Google_Onlinemarketing_Zertifikat.pdf", "I learned about topics such as SEO, Content-Marketing, Search-Engine-Advertising and online strategies of local businesses."]
         ]
     }
 }

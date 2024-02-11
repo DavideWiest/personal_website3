@@ -1,7 +1,7 @@
 {
     "footerStartName": "Zur Startseite",
     "cta": {
-        "title": "Kontaktieren Sie mich",
+        "title": "Kontakt",
         "description": "Schreiben Sie mir gerne eine E-Mail falls Sie mir Fragen, Anfragen, oder interessante Informationen weiterleiten möchten.",
         "button": "Eine Mail schicken"
     },
@@ -11,13 +11,13 @@
     "footerPS": "Impressum & Datenschutzerklärung",
     "specialannouncement": "",
     "nav": {
-        "blog": "Blog",
+        "blog": "Artikel",
         "projects": "Projekte",
         "cv": "Lebenslauf",
         "email": "Email senden",
         "cvFile": "Lebenslauf.pdf"
     },
-    "contactCvText": "Lebenslauf ansehen",
+    "contactCvText": "Lebenslauf herunterladen",
     "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
     "meta_desc": "Persönliche Webseite von Davide Wiest."
 }
