@@ -40,6 +40,8 @@ def robots_txt(request, lang_choice=None):
 def sitemap_txt(request):
     lines = [
         "https://davidewiest.com/",
+        "https://davidewiest.com/projects",
+        "https://blog.davidewiest.com/",
         "https://davidewiest.com/robots.txt",
         "https://davidewiest.com/sitemap.txt"
     ]
