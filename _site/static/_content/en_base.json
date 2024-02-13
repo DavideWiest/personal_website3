@@ -1,8 +1,8 @@
 {
     "footerStartName": "Main Page",
     "cta": {
-        "title": "Let's get in touch",
-        "description": "Feel free to send me an email if you have any questions, inquiries, or interesting information to share.",
+        "title": "Getting in touch",
+        "description": "Feel free to send me an email if you have any questions, requests, or interesting information to share.",
         "button": "Contact me"
     },
     "secondaryLang": "de",
@@ -11,13 +11,12 @@
     "footerPS": "Data Privacy Statement",
     "specialannouncement": "",
     "nav": {
-        "blog": "Articles",
-        "projects": "Projects",
-        "cv": "Resume",
-        "email": "Send Email",
-        "cvFile": "CV.pdf"
+        "blog": ["Articles", "https://davidewiest.medium.com/"],
+        "projects": ["Projects", "/projects"],
+        "cv": ["Resume", "resources/CV.pdf"],
+        "email": ["Send Email", "mailto:hi@davidewiest.com"]
     },
-    "contactCvText": "Download Resume",
+    "contactCvText": "Download Resume (2023)",
     "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
     "meta_desc": "Personal website of Davide Wiest."
 

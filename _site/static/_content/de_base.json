@@ -11,13 +11,12 @@
     "footerPS": "Impressum & Datenschutzerklärung",
     "specialannouncement": "",
     "nav": {
-        "blog": "Artikel",
-        "projects": "Projekte",
-        "cv": "Lebenslauf",
-        "email": "Email senden",
-        "cvFile": "Lebenslauf.pdf"
+        "blog": ["Artikel", "https://davidewiest.medium.com/"],
+        "projects": ["Projekte", "/projects"],
+        "cv": ["Lebenslauf", "resources/CV.pdf"],
+        "email": ["Email senden", "mailto:hi@davidewiest.com"]
     },
-    "contactCvText": "Lebenslauf herunterladen",
+    "contactCvText": "Lebenslauf ansehen (2023)",
     "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
     "meta_desc": "Persönliche Webseite von Davide Wiest."
 }

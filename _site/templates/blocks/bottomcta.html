@@ -4,10 +4,10 @@
         <div id="contact-wrapper" class="my-6 grid md:grid-cols-2 max-w-6xl mx-7 gap-4">
             
             <div id="contact-main" class="row-span-2 md:mt-4">
-                <h3 id="projects-heading" class="intertight text-neutral-100 text-4xl md:text-5xl mb-12" style="font-weight: 700;">
+                <h3 id="projects-heading" class="intertight text-neutral-100 text-4xl md:text-5xl mb-6" style="font-weight: 700; text-underline-offset: 1rem; text-decoration-thickness: 3px;">
                     {{ c.base.cta.title |safe }}
                 </h3>
-                <p class="max-w-md text-lg my-5 ">
+                <p class="max-w-md text-lg my-5 text-neutral-400">
                     {{ c.base.cta.description }}
                 </p>
                 <a id="contact-social" href="mailto:{{ c.credentials.email }}" class="inline-block p-3 px-7 rounded-3xl bg-accent transition duration-300 ease-in-out hover:shadow-lg hover:shadow-accent/50">
@@ -22,14 +22,14 @@
                     {% for key, value in c.credentials.links.items %}
                         <a name="contact-social" href="{{ value.0 }}" target="_blank" class="block w-full p-3 px-5 my-3 rounded-full transition duration-300 ease-in-out bg-neutral-800 hover:bg-neutral-700">
                             <img src="{{ value.1 }}" alt="{{ key }} icon" name="contact-social-icon" class="inline-block w-6 h-6 mr-3">
-                            <p class="contact-social-text inline-block text-b500 align-middle text-neutral-200">
+                            <p class="contact-social-text inline-block text-b500 align-middle text-neutral-300">
                                 {{ key }} @ {{ value.2 }}
                             </p>
                         </a>
                     {% endfor %}
         
                     <a name="contact-social" href="{{ c.credentials.cvlink }}" target="_blank" class="block w-full p-3 px-5 my-3 rounded-full transition duration-300 ease-in-out bg-neutral-800 hover:bg-neutral-700">
-                        <p class="contact-social-text inline-block text-b500 align-middle text-neutral-200">
+                        <p class="contact-social-text inline-block text-b500 align-middle text-neutral-300">
                             <img src="{% static 'icons/user.png' %}" alt="User" name="contact-social-icon" class="inline-block w-6 h-6 mr-3">
                             {{ c.base.contactCvText }}
                         </p>

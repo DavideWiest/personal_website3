@@ -1,40 +1,38 @@
 {
     "hero_header": "Davide Wiest",
-    "hero_text": "Programmer, Student, Data Enthusiast, Occasional Web Developer and Writer",
+    "hero_text": "Programmer, Student, Second-Brain-Enthusiast, Data Enthusiast, Occasional Web Developer and Writer",
     "age": "Age",
-    "projects": {
+    "work": {
         "t": "Projects & Work",
-        "seeProjects": "See project overview",
+        "downloadCV": "Lebenslauf ansehen (2023)",
         "workExperience": {
             "t": "Work Experience",
             "content": [
                 ["Instructor", "Learnist", "https://learnist.de", "February till August 2023", ["135deg", "rgba(50, 6, 71, 1)", "rgba(35, 2, 51, 0.75)"], "Leading a group of students, introducing them to programming. Teaching them fundamental concepts. Encouraging logical and systematic thinking."],
-                ["2-week Internship", "HDP GMBH", "https://hdpgmbh.de", "March 2023", ["135deg", "rgba(71, 61, 5)", "rgba(43, 37, 3, 0.75)"], "Developing algorithms and small games in Java. Working with the firms custom UI-Productivity-Framework."]
+                ["2-Week Internship", "HDP GMBH", "https://hdpgmbh.de", "March 2023", ["135deg", "rgba(71, 61, 5)", "rgba(43, 37, 3, 0.75)"], "Developing algorithms and small games in Java. Working with the firms custom UI-Productivity-Framework."]
             ]
+        }
+    },
+    "about": {
+        "t": "Hi, I'm Davide Wiest",
+        "description": "My personality consists of two, seemingly contradictory sides: On the one hand, I like to get sh*t done. I care about logical arguments, facts, data. I don't believe in perfection, holding on to one opinion, ideology, or \"objective truth\", and especially not in \"doing what feels right\". I believe in moving swiftly with a narrow focus and the right strategy. <br/>On the other hand, I have a deep desire to know, explore, and create. I take my time to widen my understanding, follow my curiosity and pursue experiences with no clear outcome. Working has to be complemented with thinking, evaluating, and exploring. <br/>This bimodal mentality helped me become a generalist, open-source-developer, data and knowledge-mangement enthusiast. Over the years, I ventured into fields such as programming, investing, graphics design, web-development, data science, machine learning, formal logic, productivity, personal knowledge management and writing articles. <br/>While the majority of my last years has been spent on <a class=\"hover:text-accent underline\" href=\"/projects\">useful programming projects</a>, I'll now divide my focus between my studies, <a class=\"hover:text-accent underline\" href=\"https://davidewiest.medium.com/\">writing</a>, digesting <a class=\"hover:text-accent underline\" href=\"https://davidewiest.medium.com/list/good-reads-f78618021760\">high quality information</a>, and a small number of software projects with the most impact.",
+        "data": {
+            "Occupation": "Student",
+            "Languages (fluent)": "German, Englisch",
+            "PKM-Software": "Obsidian",
+            "Based in": "Rhineland Palatine",
+            "12 favourite problems": "Article coming soon"
         }
     },
     "skills": {
         "t": "Knowledge & Skills",
         "content": {
+            "titleExperienced": "Experienced in",
+            "titleFamiliar": "Familiar with",
+            "titleBasicKnowledge": "Fundamental understanding",
             "technical": {
-                "t": "Technical Skills",
-                "content": {
-                    "Experienced in": ["#101a75", [
-                        "Python", "HTML"
-                    ]],
-                    "Familiar with": ["#084573", [
-                        "C#", "Java", "MongoDB", "Django", "Flask", "PyTorch"
-                    ]],
-                    "Fundamental Unterstanding": ["#106975", [
-                        "PostGreSQL", "MySQL"
-                    ]]
-                }
-            },
-            "workOther": {
-                "t": "Work-related and Other",
-                "content": [
-                    "MS-Office Basics"
-                ]
+                "titleCategories": "Explore Project Categories",
+                "titleTechnologies": "Explore Project Technologies"
             }
         }
     },
@@ -44,9 +42,9 @@
         }
     },
     "academicwork": {
-        "t": "Academic Work",
+        "t": "Research",
         "content": [
-            
+
         ]
     },
     "certificates": {

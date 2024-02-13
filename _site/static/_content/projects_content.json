@@ -1,0 +1,195 @@
+{
+    "ctaImg": {
+        "website": "www.png",
+        "repository": "github-dark.png",
+        "documentation": "document.png",
+        "article": "medium.png"
+    },
+    "invertCtaImgs": {
+        "repository": true,
+        "website": true
+    },
+    "articleExistingTags": [
+        "Machine Learning",
+        "Data Science",
+        "AI"
+    ],
+    "projects": {
+        "contextflow": {
+            "name": "ContextFlow",
+            "descriptionEn": "A .NET library for interacting with LLMs (Large Language Models). It provides abstractions for individual modules to work together through dependency injection. With it, you can create more complex prompt chains/pipelines as it simplifies prompt templating and prompt chaining, among other things, through a project-wide fluent interface. The entire project also includes asynchronous counterparts and is tested with 55 NUnit tests. Furthermore, attention was given to developing with a cyclomatic complexity (<6 for methods), class coupling (<10 for methods), and a Maintainability Index of 82. You can find the documentation <a href=\"https://github.com/DavideWiest/ContextFlow/wiki\" target=\"blank\">here</a>.",
+            "descriptionDe": "Eine .NET Library für die Interaktion mit LLMs. Sie stellt Abstraktionen für einzelne Module bereit, damit sie über Dependency-Injection zusammenarbeiten können. Mit ihr kann man komplexere Prompt-Chains/-Pipelines erstellen, da sie Prompt-Templating und Prompt-Chaining u.a. durch ein projektweites Fluent-Interface vereinfacht. Das gesamte Projekt beinhaltet auch asynchrone Gegenstücke und wird durch 55 NUnit Tests getestet. Des weiteren wurde beim Entwickeln auf die zyklomatische Komplexität (<6 für Methoden), die Klassenkopplung (<10 für Methoden), und den Maintainability-Index (82) geachtet. Die Dokumentation finden sie <a href=\"https://github.com/DavideWiest/ContextFlow/wiki\" target=\"blank\">hier</a>",
+            "image": "contextflowDemo.png",
+            "image_layout_type": "",
+            "link": "https://github.com/DavideWiest/ContextFlow",
+            "ctaType": "repository",
+            "t": ["C#", "NUnit", "Serilog"],
+            "c": ["OOP Architecture", "Package", "Infrastructure", "Tests", "Documentation", "LLM Integration", "Automation", "Asynchronous"],
+            "align": 0
+        },
+        "finsights": {
+            "name": "Finsights",
+            "descriptionEn": "A Newsletter as a Service solution for all kinds of investors to keep in touch with their investments. Users can choose when, and about what they are notified about. They will then receive automatic performance updates for all selected stocks within the chosen time period. Microsoft is currently blocking SMTP access, which is preventing emails from being sent.",
+            "descriptionDe": "Ein Newsletter als Servicelösung für alle Arten von Anlegern, um über ihre Investitionen auf dem Laufenden zu bleiben. Benutzer können wählen, wann und worüber sie benachrichtigt werden. Sie erhalten dann automatisierte Performance Updates für alle ausgewählten Aktien innerhalb eines gewählten Zeitintervalls. Sendet momentan keine E-Mails, weil Microsoft den SMTP-Zugang blockiert.",
+            "image": "visual.jpg",
+            "image_layout_type": "phone",
+            "link": "https://finsights.info",
+            "ctaType": "website",
+            "t": ["Python", "HTML", "TailwindCSS", "Django", "MongoDB", "Javascript"],
+            "c": ["Automation", "Webapp", "Branding", "Logo Design", "API"],
+            "align": 1
+        },
+        "gptvault": {
+            "name": "GPTVault",
+            "descriptionEn": "What you are seeing is a conceptual graph generated from GPTVault. GPTVault is a proof-of-concept tool that uses generative models to accumulate knowledge in a way that makes it usable. It works by querying a large language model (LLM) about a starting topic. The LLM will respond with a brief description of the concept, a list of related concepts, and a list of subconcepts. This information is then saved in a knowledge base, which can be explored and visualized in a variety of ways. GPTVault can be used for a variety of purposes, including concept exploration, personal knowledge management, and content creation. It is a tool that can help you to learn more about or organize a concept.",
+            "descriptionDe": "Im Bild ist ein Kontept-Graph generiert von GPTVault zu sehen. GPTVault ist ein proof-of-concept Tool, das generative Modelle verwendet, um Wissen auf eine nutzbare Weise anzuhäufen. Es funktioniert, indem ein großes Sprachmodell (LLM) zu einem Ausgangsthema befragt wird. Das LLM antwortet dann mit einer kurzen Beschreibung des Konzepts, einer Liste verwandter Konzepte und einer Liste von Unterkonzepten. Diese Informationen werden dann in einer Wissensbasis gespeichert, die auf verschiedene Arten erkundet und visualisiert werden kann. GPTVault kann für eine Vielzahl von Zwecken eingesetzt werden, darunter Konzeptforschung, persönliches Wissensmanagement und Inhaltserstellung",
+            "image": "knowledgeGraph.png",
+            "image_layout_type": "",
+            "link": "https://medium.com/the-modern-scientist/gptvault-building-a-knowledge-base-with-gpt-3-5-bd91fb806260",
+            "ctaType": "article",
+            "t": ["Python"],
+            "c": ["LLM Integration", "Proof of Concept", "Knowledge Management", "Automation"],
+            "align": 0
+        },
+        "embyte": {
+            "name": "Embyte",
+            "descriptionEn": "The open-source project that allows you to create customizable embeds displaying website information and embed them using iFrames. It was inspired by Discord's embeds. This project caches requests in a PostgreSQL database and utilizes a self-developed caching algorithm.",
+            "descriptionDe": "Das open-source Projekt, mit dem man anpassbare Embeds, die Webseiteninformationen anzeigen, erstellen kann und mit Hilfe von iFrames einbetten kann. Inspiration dazu waren die Embeds von Discord. Dieses Projekt cached die Anfragen in einer PostgreSQL-Datenbank und nutzt einen selbst entwickelten Caching-Algorithmus.",
+            "image": "embyteEmbed.png",
+            "image_layout_type": "",
+            "link": "https://embyte.davidewiest.com",
+            "ctaType": "website",
+            "t": ["C#", "Blazor", "MudBlazor", "PostgreSQL", "EF-Core", "TailwindCSS"],
+            "c": ["Webapp", "Caching", "Algorithm Development", "UI/UX-Design", "Minimalistic Design"],
+            "align": 1
+        },
+        "pvtimeseries": {
+            "name": "Time-Series Forecasting of PV-Growth",
+            "nameDe": "Zeitreihenprognose des PV-Ausbaus",
+            "descriptionEn": "Used a series of mutlivariate time series models from the package Darts to forecast the energy production from PV-systems in Germany using 8 historic and 1 predicted metrics. Optimizing mode architecture (N-Beats), evaluating and using the forecast in a research-paper about the consequences of the national growth in pv-systems.",
+            "descriptionDe": "Verwendung einer Reihe multivariater Zeitreihenmodelle aus dem Paket Darts, um die Energieproduktion von PV-Systemen in Deutschland mithilfe von 8 historischen und 1 prognostizierten Metriken vorherzusagen. Optimierung der Modellarchitektur (für N-Beats), Bewertung und Verwendung der Prognose in einer Facharbeit über die Folgen des nationalen Ausbaus von PV-Systemen.",
+            "image": "timeSeriesPrediction.jpg",
+            "image_layout_type": "",
+            "link": "https://github.com/DavideWiest/PV-Ausbau-Zeitreihenanalyse",
+            "ctaType": "repository",
+            "t": ["Python", "Darts", "Pandas", "Matplotlib"],
+            "c": ["Machine Learning", "ML-Model Validation", "Data Science", "Data Extraction & Processing", "Data Visualization", "Time Series Forecast"],
+            "align": 0
+        },
+        "reader": {
+            "name": "Reader",
+            "descriptionEn": "A highly customizable reader built as a direct alternative to paid speed-readers. Concepts such as chunking, pacing and highlighting are built into this reader. Texts can be imported from files or the clipboard. All data is stored in the website's local storage.",
+            "descriptionDe": "Ein hochgradig anpassbarer Leser, der als direkte Alternative zu kostenpflichtigen Schnell-Lese-Apps entwickelt wurde. Konzepte wie Chunking, Timing und Hervorhebung sind in diesem Leser integriert. Texte können aus Dateien oder der Zwischenablage importiert werden. Alle Daten werden im lokalen Speicher der Website gespeichert.",
+            "image": "readerShowcase.jpeg",
+            "image_layout_type": "phone",
+            "link": "https://reader.davidewiest.com",
+            "ctaType": "website",
+            "t": ["C#", "Blazor", "MudBlazor", "TailwindCSS"],
+            "c": ["Webapp", "UI/UX-Design", "Minimalistic Design", "Freeware"],
+            "align": 1
+        },
+        "instadata": {
+            "name": "Instadata",
+            "descriptionEn": "A large instagram scraper built with Django that uses an API to communicate between user and program. The Scraper can be scaled seaminglessly and uses proxies. I built it to gather data for further Data-Science projects, so I used the Nominatim Geolocator and Regex to extract and order as much data as possible.",
+            "descriptionDe": "Ein großer Instagram-Scraper, der mit Django erstellt wurde und eine API verwendet, um zwischen Benutzer und Programm zu kommunizieren. Der Scraper lässt sich nahtlos skalieren und kann Proxies benutzen. Ich habe ihn gebaut, um Daten für weitere Data-Science-Projekte zu sammeln, also habe ich den Nominatim Geolocator und Regex verwendet, um so viele Daten wie möglich zu extrahieren und zu ordnen.",
+            "image": "",
+            "image_layout_type": "",
+            "link": "https://github.com/DavideWiest/idww",
+            "ctaType": "article",
+            "t": ["Python", "Django", "MongoDB"],
+            "c": ["Data Extraction & Processing", "API", "Scraping", "Automation"],
+            "align": 0
+        },
+        "soccerpredmodel": {
+            "name": "Soccer Prediction Model & Evaluation",
+            "nameDe": "Fußballspiel-Vorhersagemodell & Evaluation",
+            "descriptionEn": "This project explored predicting football match goals using machine learning. The goal was to test a goal-count-based regression model against the default choice of a win/loss/draw classification model. Despite achieving some success in predicting match outcomes, limitations in goal margin prediction prevented real-world profitability. The model was tested by simulating betting as monte-carlo-simulations and visualizing it's accuracy compared to simpler betting paradigms.",
+            "descriptionDe": "In diesem Projekt wurde untersucht, ob der Einsatz von Machine Learning zur Vorhersage von Toren in Fußballspielen möglich ist. Dabei wurde ein Regressionsmodell für die Toranzahl mit dem standardmäßigen Klassifizierungsmodell für Sieg/Niederlage/Unentschieden verglichen. Obwohl das Modell bei der Vorhersage der Spielausgänge geringfügig erfolgreich war, verhinderte die hohe Varianz der Vorhersagen einen Gewinn in der realen Welt. Das Modell wurde anhand von simulierten Wetten in Form von Monte-Carlo-Simulationen getestet und seine Genauigkeit im Vergleich zu einfacheren Wettstrategien visualisiert.",
+            "image": "monteCarloSimulations.jpg",
+            "image_layout_type": "",
+            "link": "https://medium.com/the-modern-scientist/my-process-of-making-a-soccer-game-prediction-model-feb218a13aea",
+            "ctaType": "article",
+            "t": ["Python", "PyTorch", "Matplotlib"],
+            "c": ["Machine Learning", "Monte Carlo Simulation", "ML-Model Validation", "Data Science", "Data Visualization", "Data Extraction & Processing"],
+            "align": 1
+        },
+        "decadruck": {
+            "name": "DecaDruck (Practice project)",
+            "nameDe": "DecaDruck (übungsprojekt)",
+            "descriptionEn": "[Practice project] DecaDruck aims to open 3d printing to people without technical knowledge and industry expertise by combining consultation, design and realization into one service. If vistors already have a 3D-file, they can calculate the printing cost, with volume discount included.",
+            "descriptionDe": "[Übungsprojekt] DecaDruck hat sich zum Ziel gesetzt, den 3D-Druck für Menschen ohne technische Kenntnisse und Branchenexpertise zugänglich zu machen, indem Beratung, Design und Realisierung in einem Service vereint werden. Wenn Besucher bereits eine 3D-Datei haben, können sie die Druckkosten und den Mengenrabatt berechnen.",
+            "image": "visual.png",
+            "image_layout_type": "phone",
+            "link": "https://decadruck.davidewiest.com",
+            "ctaType": "article",
+            "t": ["Python", "HTML", "CSS", "Flask", "Javascript"],
+            "c": ["Frontend", "Backend", "Branding", "Online Shop", "Real time Calculation", "Logo Design"],
+            "align": 0
+        },
+        "personal-website": {
+            "name": "DavideWiest.com",
+            "descriptionEn": "A complete revision of my personal website. I switched from Flask to Django and now use TailwindCSS. Additionally, the website is available in German and English.",
+            "descriptionDe": "Eine komplette Überarbeitung meiner persönlichen Website. Ich bin von Flask auf Django umgestiegen und verwende jetzt TailwindCSS. Zusätzlich ist die Website in deutsch und englisch verfügbar.",
+            "image": "",
+            "image_layout_type": "phone",
+            "link": "https://github.com/DavideWiest/personal_website3",
+            "ctaType": "repository",
+            "t": ["Python", "HTML", "TailwindCSS", "Django"],
+            "c": ["Frontend", "Backend"],
+            "align": 1,
+            "hide": true
+        },
+        "timewise": {
+            "name": "TimeWise",
+            "descriptionEn": "An easy to use and open source app that, with the help of an ILP (integer linear programming) API, generates an optimal schedule. Those can then be exported. Developed with a friend.",
+            "descriptionDe": "Eine benutzerfreundliche Open-Source-App, die mithilfe von einer ILP (integer linear programming) API einen optimalen Zeitplan erstellt. Diese können dann exportiert werden. Dabei habe ich v.a. Geschäftslogik und die Exporter geschrieben.",
+            "image": "",
+            "image_layout_type": "",
+            "link": "https://github.com/TimeWise-dev/TimeWise",
+            "ctaType": "repository",
+            "t": ["C#", "Blazor", "MudBlazor"],
+            "c": ["Webapp", "Optimization", "Proof of Concept", "UI/UX-Design"],
+            "align": 1,
+            "hide": true
+        },
+        "dataprocessor": {
+            "name": "Scraping Data Processor",
+            "descriptionEn": " - ",
+            "descriptionDe": " - ",
+            "image": "",
+            "image_layout_type": "",
+            "link": "https://github.com/Jonathan-Schaefer-git/Data-Processor",
+            "ctaType": "repository",
+            "t": ["Java", "PostgreSQL"],
+            "c": ["Scraping", "Data Extraction & Processing"],
+            "align": 1,
+            "hide": true
+        },
+        "sag": {
+            "name": "Strange Attractor Generator",
+            "descriptionEn": " - ",
+            "descriptionDe": " - ",
+            "image": "",
+            "image_layout_type": "",
+            "link": "https://github.com/DavideWiest/strange_attractor_generator",
+            "ctaType": "repository",
+            "t": ["Python", "Matplotlib", "NumPy", "PyTorch"],
+            "c": ["Machine Learning", "Data Visualization", "OOP Architecture", "Training Data Generation"],
+            "align": 1,
+            "hide": true
+        },
+        "mlmodulesframework": {
+            "name": "ML-Model Training Project Framework",
+            "descriptionEn": " - ",
+            "descriptionDe": " - ",
+            "image": "",
+            "image_layout_type": "",
+            "link": "https://github.com/DavideWiest/ml_modules_base",
+            "ctaType": "repository",
+            "t": ["Python", "NumPy", "PyTorch"],
+            "c": ["Machine Learning", "Data Visualization", "Package"],
+            "align": 1,
+            "hide": true
+        }
+    }
+}

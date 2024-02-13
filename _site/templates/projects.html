@@ -10,77 +10,120 @@
             {{ c.projects.projectsPageHeading|safe }}
         </h3>
         <div id="projects-wrapper">
-            {% for key, value in c.projects.projects.items %}
-            <div class="grid gap-8 my-8 {% if value.image == '' %} {% if value.align == 1 %} justify-end {% else %} justify-start {% endif %} {% else %} md:grid-cols-2 {% endif %}">
-            
-            {% if value.image != "" %}
-            {% if value.align == 1 %}
-            <div class="flex justify-center">
-                <a href="{{ value.link }}" target="_blank">
-                    <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ value.name }} Image" class="select-none base_fade_in fade-in-base {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
-                </a>
-            </div>
-            {% endif %}
-            {% endif %}
-            <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-md {% else %} max-w-4xl {% endif %}">
-                <div id="project" class="group block max-w-2xl rounded-3xl my-10 grid border-transparent transition duration-300 ease-in-out {% if value.image != '' %} max-w-md {% else %} max-w-4xl {% endif %}">
-                        
-                    <div class="p-6">
-                        <h3 id="project-title" class="text-2xl md:text-3xl text-b600 mb-2 text-neutral-200">
-                            {{ value.name }}
-                        </h3>
-                        <div id="project-categories" class="ml-1 my-3">
-                            <p id="project-category-desc" class="roboto text-xs text-neutral-500">
-                                {{ c.projects.categoryDesc }}
-                            </p>
-                            {% for category in value.c %}
-                                <p id="project-categories" class="select-none inline-block code p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm bg-neutral-800 style="letter-spacing: -1px;">
-                                    {{ category }}
-                                </p>
-                            {% endfor %}
-                        </div>
-                        <div id="project-tags" class="ml-1 my-3">
-                            <p id="project-tag-desc" class="roboto text-xs text-neutral-500">
-                                {{ c.projects.tagDesc }}
-                            </p>
-                            {% for tag in value.t %}
-                                <p id="project-tag" class="select-none inline-block code p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm bg-neutral-800" style="letter-spacing: -1px;">
-                                    {{ tag }}
-                                </p>
-                            {% endfor %}
-                        </div>
-                        <p id="project-description" class="mt-2 mb-3 text-neutral-400 text ml-1">
-                            {{ value.description|safe }}
-                        </p>
-                        <a id="project-link" href="{{ value.link }}" target="_blank" class="mt-4 bg-neutral-200 inline-block w-fit rounded-full p-2 px-4 md:p-2 md:px-5 group-hover:bg-accent transition duration-300 ease-in-out">
-                            <div class="inline-block mr-1">
-                                <div id="project-link-icon" class="m-r-4 flex w-full items-center">
-                                    {% if value.linkIcon != "" %}
-                                    <img src="/static/icons/{{ value.linkIcon }}" alt="{{ value.linkDesc }}" class="w-4 h-4 inline-block translate-y-0.5 invert">
-                                    {% endif %}
-                                </div>
-                            </div>
-                            <span id="project-link-text" class="align-middle text-b400 text-black md:text-lg">
-                                {{ value.linkDesc }}
-                            </span>
+            {% for key, value in c.projects_content.projects.items %}
+            {% if value.hide == false %}
+            {% if filter_technology == None or value.t|contains:filter_technology %}
+            {% if filter_category == None or value.c|contains:filter_category %}
+                <div class="grid gap-8 my-8 {% if value.image == '' %} {% if value.align == 1 %} justify-end {% else %} justify-start {% endif %} {% else %} md:grid-cols-2 {% endif %}">
+                
+                {% if value.image != "" %}
+                {% if value.align == 1 %}
+                <div class="flex justify-center items-center">
+                    <div>
+                        <a href="{{ value.link }}" target="_blank" class="inline-block" style="height: min-content;">
+                            <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ value.name }} Image" class="projectImg fade-in-base base_fade_in fade-in-base rounded-lg {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
                         </a>
                     </div>
                 </div>
+                {% endif %}
+                {% endif %}
+                <div class="flex flex-col justify-center items-center {% if value.image != '' %} max-w-md {% else %} max-w-4xl {% endif %}">
+                    <div id="project" class="group block max-w-2xl rounded-3xl my-10 grid border-transparent transition duration-300 ease-in-out {% if value.image != '' %} max-w-md {% else %} max-w-4xl {% endif %}">
+                            
+                        <div class="p-6">
+                            <h3 id="project-title" class="text-2xl md:text-3xl text-b600 mb-2 text-neutral-200">
+                                {% if l == "de" and value.nameDe != Null %}
+                                    {{ value.nameDe }}
+                                {% else %}
+                                    {{ value.name }}
+                                {% endif %}
+                            </h3>
+                            <div id="project-categories" class="ml-1 my-3">
+                                <p id="project-category-desc" class="roboto text-xs text-neutral-500">
+                                    {{ c.projects.categoryDesc }}
+                                </p>
+                                {% for category in value.c %}
+                                    <p id="project-categories" class="select-none inline-block code p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm bg-neutral-800 style="letter-spacing: -1px;">
+                                        {{ category }}
+                                    </p>
+                                {% endfor %}
+                            </div>
+                            <div id="project-tags" class="ml-1 my-3">
+                                <p id="project-tag-desc" class="roboto text-xs text-neutral-500">
+                                    {{ c.projects.tagDesc }}
+                                </p>
+                                {% for tag in value.t %}
+                                    <p id="project-tag" class="select-none inline-block code p-0.5 px-2.5 m-1 mx-0.5 rounded-3xl text-sm bg-neutral-800" style="letter-spacing: -1px;">
+                                        {{ tag }}
+                                    </p>
+                                {% endfor %}
+                            </div>
+                            <p id="project-description" class="mt-2 mb-3 text-neutral-400 text ml-1">
+                                {% if l == "de" %}
+                                    {{ value.descriptionDe|safe }}
+                                {% else %}
+                                    {{ value.descriptionEn|safe }}
+                                {% endif %}
+                            </p>
+                            <a id="project-link" href="{{ value.link }}" target="_blank" class="mt-4 bg-neutral-200 inline-block w-fit rounded-full p-2 px-4 md:p-2 md:px-5 group-hover:bg-accent transition duration-300 ease-in-out">
+                                {% if value.ctaType != "" %}
+                                    <div class="inline-block mr-1">
+                                        <div id="project-link-icon" class="m-r-4 flex w-full items-center">
+                                            <img src="/static/icons/{{ c.projects_content.ctaImg|get_item:value.ctaType }}" alt="Go to {{ value.ctaType }}" class="w-4 h-4 inline-block translate-y-0.5 {% if c.projects_content.invertCtaImgs|get_item:value.ctaType == true %}invert{% endif %}">
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                <span id="project-link-text" class="align-middle text-b400 text-black md:text-lg">
+                                    {{ c.projects.ctaBtnText|get_item:value.ctaType }}
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% if value.image != "" %}
+                {% if value.align == 0 %}
+                <div class="flex justify-center items-center">
+                    <div>
+                        <a href="{{ value.link }}" target="_blank" class="inline-block" style="height: min-content;">
+                            <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ key }} Image" class="projectImg select-none base_fade_in fade-in-base rounded-lg {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
+                {% endif %}
+                
+                </div>
+            {% endif %}
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% if filter_category != None and c.projects_content.articleExistingTags|contains:filter_category %}
+        <div class="mt-16">
+            <div>
+                <a href="{{ c.base.nav.blog.1 }}/tag/{{ filter_category|toHashnodeTag }}" target="_blank" class="intertight text-neutral-100 text-xl md:text-2xl text-b600 hover:text-accent p-4 md:p-8 group">
+                    {{ c.projects.exploreArticlesWithTag }} <span class="group-hover:translate-x-5 group-hover:text-accent inline-block transition-transform duration-400 ease-in-out">→</span>
+                </a>
             </div>
-            {% if value.image != "" %}
-            {% if value.align == 0 %}
-            <div class="flex justify-center" style="algin-items: center;">
-                <div>
-                    <a href="{{ value.link }}" target="_blank">
-                        <img src="/static/project_images/{{ key }}/{{ value.image }}" alt="{{ key }} Image" class="select-none base_fade_in fade-in-base {% if value.image_layout_type == 'phone' %} phone_img rounded-3xl {% endif %}" {% if value.image_layout_type == 'phone' %} {% endif %}>
-                    </a>
+        </div>
+        {% endif %}
+        <div class="mt-16">
+            <div class="md:grid md:grid-cols-3 my-3">
+                <h3 class="text-lg text-b600">
+                    {{ c.projects.hiddenProjectsTitle }}
+                </h3>
+                <div class="col-span-2">
+                    {% for key, value in c.projects_content.projects.items %}
+                    {% if value.hide != false %}
+                    {% if filter_technology == None or value.t|contains:filter_technology %}
+                    {% if filter_category == None or value.c|contains:filter_category %}
+                        <span class="inline-block p-2 text-lg underline hover:text-accent"><a href="{{ value.link }}">{{ value.name }}</a></span>
+                    {% endif %}
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
                 </div>
             </div>
-            {% endif %}
-            {% endif %}
-            
-            </div>
-            {% endfor %}
         </div>
     </div>
 </div>
@@ -169,6 +212,33 @@
 
     $(document).on("scroll", docScroll);
     $(document).ready(docReady);
+
+</script>
+
+<script>
+    function get_average_rgb(img) {
+        var context = document.createElement('canvas').getContext('2d');
+        if (typeof img == 'string') {
+            var src = img;
+            img = new Image;
+            img.setAttribute('crossOrigin', ''); 
+            img.src = src;
+        }
+        context.imageSmoothingEnabled = true;
+        context.drawImage(img, 0, 0, 1, 1);
+        return context.getImageData(0, 0, 1, 1).data.slice(0,3);
+    }
+
+    var projImgs = document.getElementsByClassName("projectImg");
+
+    for (var i=0; i<projImgs.length;i++) {
+        var avgColor = get_average_rgb(projImgs[i]);
+        var rgb1 = "rgba(" + avgColor["0"].toString() + ", " + avgColor["1"].toString() + ", " + avgColor["2"].toString() + ", 0.5)";
+        console.log(rgb1);
+        console.log(projImgs[i]);
+        projImgs[i].style.boxShadow = "0 40px 50px -10px " + rgb1 + ", 0 16px 20px -20px " + rgb1;
+        console.log(projImgs[i].style.boxShadow);
+    }
 
 </script>
 

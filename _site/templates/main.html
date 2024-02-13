@@ -3,7 +3,7 @@
 
 {% block innerContent %}
 
-<div style="background: linear-gradient(225deg, #66c9ab, #5b58fc 75%)">
+<!-- <div style="background: linear-gradient(225deg, #66c9ab, #5b58fc 75%)">
 <div class="flex justify-end xl:justify-center" style="background-image: url('{% static 'assets/bg.jpg' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="flex flex-col justify-center md:grid md:grid-cols-2 py-8 pt-12" style="max-width: 150rem; min-height: 80vh;">
         <div class="flex justify-center flex-col md:items-center">
@@ -23,57 +23,57 @@
         </div>
     </div>
 </div>
-</div>
+</div> -->
 
-<div class="px-3 md:px-8">
-    <h2 class="block p-5 leading-normal text-xl md:text-2xl text-b500 transition duration-300 ease-in-out text-gray-500 uppercase" for="tab-multi-one">
-        {{ c.main.projects.t }}
-    </h2>
-    <div class="">
-        <div class="py-6 px-2">
-            <div>
-                <div class="m-4 md:m-10">
-                    <h3 class="intertight text-neutral-100 text-3xl md:text-4xl text-b600">
-                        {{ c.main.projects.workExperience.t }}
-                    </h3>
+<div class="px-3 md:px-8 mt-8 md:mt-12">
+
+    <div class="flex justify-center">
+        <div class="mb-12 mt-24 max-w-5xl">
+            <div class=" mb-6">
+                <h1 class="text-4xl md:text-5xl text-b600 intertight">
+                    <div class="w-12 inline-block border border-black rounded-full group-hover:rounded-xl transition duration-300 ease-in-out">
+                        <img src="{% static 'assets/personalPicture.webp' %}" alt="DW" class="inline-block rounded-full group-hover:rounded-xl transition duration-300 ease-in-out">
+                    </div>
+                    {{ c.main.about.t }}
+                </h1>
+            </div>
+            <div class="lg:grid grid-cols-3">
+                <div class="flex justify-center items-center col-span-2">
+                    <div>
+                        <p class="text-lg mx-5 mb-5 text-neutral-400">
+                            {{ c.main.about.description|safe }}
+                        </p>
+                    </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    {% for exp in c.main.projects.workExperience.content %}
-                        <div class="m-3 md:m-6 rounded-3xl border border-black" style="background: linear-gradient({{ exp.4.0 }}, {{ exp.4.1 }}, {{ exp.4.2 }});">
-                            <h3 class="intertight text-neutral-200 text-2xl text-b600 mx-5 mt-5">
-                                <span>{{ exp.0 }}</span> @ <a href="{{ exp.2 }}" target="_blank" class="hover:text-accent">{{ exp.1 }}</a>
-                            </h3>
-                            <p class="text-neutral-500 mx-5">
-                                {{ exp.3 }}
+                <div class="flex justify-center items-end">
+                    <div class="grid grid-cols-2 gap-x-4 md:gap-x-6">
+                        {% for dataName, dataContent in c.main.about.data.items %}
+                            <p class="p-1.5 md:p-2 text-neutral-400">
+                                {{ dataName|safe }}
                             </p>
-                            <hr class="border-black border-t-2 my-3">
-                            <p class="text-lg mx-5 mb-5 text-neutral-400">
-                                {{ exp.5 }}
+                            <p class="p-1.5 md:p-2 text-white">
+                                {{ dataContent|safe }}
                             </p>
-                        </div>
-                    {% endfor %}
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
-            <div class="my-6 md:my-16"></div>
-            <div class="p-8 md:p-16 mt-6 md:mt-12">
-                <a href="/projects" class="intertight text-neutral-100 text-3xl md:text-4xl text-b600 hover:text-accent">
-                    {{ c.main.projects.seeProjects }} →
-                </a>
-            </div>
-            <div class="my-6 md:my-16"></div>
         </div>
     </div>
+
+
+
     {% if c.main.academicwork.content|length > 0 %}
         <div class="my-6 md:my-16"></div>
-        <h2 class="block p-5 pb-1 leading-normal text-2xl md:text-3xl text-b500 transition duration-300 ease-in-out text-b600" for="tab-multi-four">
+        <h2 class="block p-5 leading-normal text-xl md:text-2xl text-b500 transition duration-300 ease-in-out text-gray-500 uppercase" for="tab-multi-two">
             {{ c.main.academicwork.t }}
         </h2>
         <div class="">
             <div class="py-6 px-2 pt-2">
                 {% for project in c.main.academicwork.content %}
                     <div class="m-4">
-                        <a href="{{ project.2 }}" class="text-xl hover:text-accent" rel="_blank">
-                            {{ project.0 }} ({{ project.1 }}) →
+                        <a href="{{ project.2 }}" class="text-xl md:text-2xl text-b600 hover:text-accent group" rel="_blank">
+                            {{ project.0 }} ({{ project.1 }}) <span class="group-hover:translate-x-5 group-hover:text-accent inline-block transition-transform duration-400 ease-in-out">→</span>
                         </a>
                         <p class="text-neutral-400">
                             {{ project.3 }}
@@ -82,51 +82,142 @@
                 {% endfor %}
             </div>
         </div>
+        <div class="my-6 md:my-16"></div>
     {% endif %}
-    <div class="my-6 md:my-16"></div>
-    <h2 class="block p-5 leading-normal text-xl md:text-2xl text-b500 transition duration-300 ease-in-out text-gray-500 uppercase" for="tab-multi-two">
-        {{ c.main.skills.t }}
+
+    <h2 class="block p-5 leading-normal text-xl md:text-2xl text-b500 transition duration-300 ease-in-out text-gray-500 uppercase" for="tab-multi-one">
+        {{ c.main.work.t }}
     </h2>
     <div class="">
         <div class="py-6 px-2">
-            <div class="my-4 md:my-8">
-                <h3 class="m-4 md:m-10 my-3 md:my-5 intertight text-neutral-100 text-3xl md:text-4xl text-b600">
-                    {{ c.main.skills.content.technical.t }}
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6">
-                    {% for category, skills in c.main.skills.content.technical.content.items %}
-                        <div class="">
-                            <h3 class="text-lg text-neutral-400" style="width:100%; text-align:center; border-bottom: 1px solid #666666; line-height:0.1em; margin:1.25rem 0 1.25rem;">
-                                <span style="background: #121212; padding:0 10px;">{{ category }}</span>
-                            </h3>
-                            <div class="">
-                                {% for skill in skills.1 %}
-                                    <p class="inline-block px-4 py-2 m-1.5 mx-1 rounded-full code text-sm md:text-base" style="background-color: {{ skills.0 }};">
-                                        {{ skill }}
-                                    </p>
-                                {% endfor %}
+            <div>
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    {% for exp in c.main.work.workExperience.content %}
+                        <div class="p-1 rounded-3xl m-4 md:m-6 shadow-lg" style="background: linear-gradient({{ exp.4.0 }}, {{ exp.4.1 }}, {{ exp.4.2 }}); box-shadow: 0 20px 25px -5px {{ exp.4.1 }}, 0 8px 10px -6px {{ exp.4.2 }};">
+                            <div class="rounded-3xl bg-black p-2 h-full">
+                                <h3 class="intertight text-neutral-200 text-2xl text-b600 mx-5 mt-5">
+                                    <span>{{ exp.0 }}</span> @ <a href="{{ exp.2 }}" target="_blank" class="hover:text-accent">{{ exp.1 }}</a>
+                                </h3>
+                                <p class="text-neutral-500 mx-5">
+                                    {{ exp.3 }}
+                                </p>
+                                <hr class="border-black border-t-2 my-3">
+                                <p class="text-lg mx-5 mb-5 text-neutral-400">
+                                    {{ exp.5 }}
+                                </p>
                             </div>
                         </div>
                     {% endfor %}
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div>
+        <div class="my-16 mb-32">
+            <a href="/projects" class="intertight text-neutral-100 text-xl md:text-2xl text-b600 hover:text-accent p-4 md:p-8 group">
+                {{ c.main.work.downloadCV }} <span class="group-hover:translate-x-5 group-hover:text-accent inline-block transition-transform duration-400 ease-in-out">→</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="my-6 md:my-16"></div>
+    <h2 class="block p-5 leading-normal text-xl md:text-2xl text-b500 transition duration-300 ease-in-out text-gray-500 uppercase" for="tab-multi-two">
+        {{ c.main.skills.t }}
+    </h2>
+
+    <!--  -->
+
+    <div class="">
+        <div class="py-6 px-2">
             <div class="my-4 md:my-8">
-                <h3 class="m-4 md:m-10 my-3 md:my-5 intertight text-neutral-100 text-2xl md:text-3xl text-b600">
-                    {{ c.main.skills.content.workOther.t }}
+                <h3 class="my-8 mx-2 md:my-16 mt-8 mx-4 intertight text-neutral-100 text-3xl md:text-4xl text-b600">
+                    {{ c.main.skills.content.technical.t }}
                 </h3>
                 <div class="px-6">
-                    {% for skill in c.main.skills.content.workOther.content %}
-                        <p class="inline-block px-4 py-2 m-1.5 mx-1 rounded-full code" style="background-color: rgb(41, 3, 58);">
-                            {{ skill }}
-                        </p>
+                    <div class="md:grid md:grid-cols-3 my-3">
+                        <h3 class="text-lg text-b600">
+                            {{ c.main.skills.content.titleExperienced }}
+                        </h3>
+                        <div class="col-span-2">
+                            {% for skill in c.skills_knowledge_content.general.experienced %}
+                                <span class="inline-block p-2 text-lg">{{ skill }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-3 my-3">
+                        <h3 class="text-lg text-b600">
+                            {{ c.main.skills.content.titleFamiliar }}
+                        </h3>
+                        <div class="col-span-2">
+                            {% for skill in c.skills_knowledge_content.general.familiar %}
+                                <span class="inline-block p-2 text-lg">{{ skill }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-3 my-3">
+                        <h3 class="text-lg text-b600">
+                            {{ c.main.skills.content.titleBasicKnowledge }}
+                        </h3>
+                        <div class="col-span-2">
+                            {% for skill in c.skills_knowledge_content.general.basicKnowledge %}
+                                <span class="inline-block p-2 text-lg">{{ skill }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="py-6 px-2 pt-0">
+            <div class="my-4 md:my-8">
+                <h3 class="mt-12 mb-5 mx-4 intertight text-neutral-100 text-xl md:text-2xl text-b600">
+                    {{ c.main.skills.content.technical.titleCategories }}
+                </h3>
+                <div class="">
+                    {% for catKey, catVal in skillsInfo.categoriesData.items %}
+                    	<div class="rounded-full px-4 py-1 inline-block m-1.5" style="background-color: {{ catVal.1 }};">
+                            <a href="/projects?category={{ catKey }}" class="code">
+                                {{ catKey }}
+                                <span>
+                                    [{{ catVal.0 }}x]
+                                </span>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <h3 class="mt-12 mb-5 mx-4 intertight text-neutral-100 text-xl md:text-2xl text-b600">
+                    {{ c.main.skills.content.technical.titleTechnologies }}
+                </h3>
+                <div class="">
+                    {% for techKey, techVal in skillsInfo.technologiesData.items %}
+                    	<div class="rounded-full px-4 py-1 inline-block m-1.5" style="background-color: {{ techVal.1 }};">
+                            <a href="/projects?technology={{ techKey }}" class="code">
+                                {{ techKey }}
+                                <span>
+                                    [{{ techVal.0 }}x]
+                                </span>
+                            </a>
+                        </div>
                     {% endfor %}
                 </div>
             </div>
         </div>
     </div>
+
+    <div>
+        <div class="my-16 mb-32">
+            <a href="/projects" class="intertight text-neutral-100 text-xl md:text-2xl text-b600 hover:text-accent p-4 md:p-8 group">
+                {{ c.projects.seeProjects }} <span class="group-hover:translate-x-5 group-hover:text-accent inline-block transition-transform duration-400 ease-in-out">→</span>
+            </a>
+        </div>
+    </div>
+
     <div class="my-6 md:my-16"></div>
     {% if c.main.testimonials.content|length > 0 %}
-    <h2 class="block p-5 pb-1 leading-normal text-2xl md:text-3xl text-b500 transition duration-300 ease-in-out text-b600 for="tab-multi-three">
+    <h2 class="block p-5 leading-normal text-xl md:text-2xl text-b500 transition duration-300 ease-in-out text-gray-500 uppercase" for="tab-multi-two">
         {{ c.main.testimonials.t }}
     </h2>
     <div class="">
@@ -148,15 +239,15 @@
     {% endif %}
     {% if c.main.certificates.content|length > 0 %}
     <div class="my-6 md:my-16"></div>
-    <h2 class="block p-5 pb-1 leading-normal text-2xl md:text-3xl text-b500 transition duration-300 ease-in-out text-b600" for="tab-multi-four">
+    <h2 class="block p-5 leading-normal text-xl md:text-2xl text-b500 transition duration-300 ease-in-out text-gray-500 uppercase" for="tab-multi-two">
         {{ c.main.certificates.t }}
     </h2>
     <div class="">
         <div class="py-6 px-2 pt-2">
             {% for certificate in c.main.certificates.content %}
                 <div class="m-4">
-                    <a href="{{ certificate.2 }}" class="text-xl hover:text-accent" rel="_blank">
-                        {{ certificate.0 }} ({{ certificate.1 }}) →
+                    <a href="{{ certificate.2 }}" class="text-xl md:text-2xl text-b600 hover:text-accent group" rel="_blank">
+                        {{ certificate.0 }} ({{ certificate.1 }}) <span class="group-hover:translate-x-5 group-hover:text-accent inline-block transition-transform duration-400 ease-in-out">→</span>
                     </a>
                     <p class="text-neutral-400">
                         {{ certificate.3 }}

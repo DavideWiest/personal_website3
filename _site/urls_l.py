@@ -1,10 +1,10 @@
 from django.urls import path
 from django.shortcuts import redirect
 from django.http import HttpResponseNotFound
-from .base import openfile
+from .base import openContentFile
 
 def linkview(request, linkto):
-    file = openfile("credentials.json", "links")
+    file = openContentFile("credentials.json", "links")
     if linkto not in file:
         return HttpResponseNotFound("Could not find this link")
     else:

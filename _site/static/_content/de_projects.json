@@ -4,115 +4,13 @@
     "projectsDescription": "",
     "tagDesc": "Technologien:",
     "categoryDesc": "Kategorien:",
-    "seeallprojects": "Mehr Projekte ansehen",
-    "projects": {
-        "contextflow": {
-            "name": "ContextFlow",
-            "description": "Eine .NET Library für die Interaktion mit LLMs. Sie stellt Abstraktionen für einzelne Module bereit, damit sie über Dependency-Injection zusammenarbeiten können. Mit ihr kann man komplexere Prompt-Chains/-Pipelines erstellen, da sie Prompt-Templating und Prompt-Chaining u.a. durch ein projektweites Fluent-Interface vereinfacht. Das gesamte Projekt beinhaltet auch asynchrone Gegenstücke und wird durch 55 NUnit Tests getestet. Des weiteren wurde beim Entwickeln auf die zyklomatische Komplexität (<6 für Methoden), die Klassenkopplung (<10 für Methoden), und den Maintainability-Index (82) geachtet. Die Dokumentation finden sie <a href=\"https://github.com/DavideWiest/ContextFlow/wiki\" target=\"blank\">hier</a>",
-            "image": "contextflowDemo.png",
-            "image_layout_type": "",
-            "link": "https://github.com/DavideWiest/ContextFlow",
-            "linkIcon": "github-white.png",
-            "linkDesc": "Github Repository ansehen",
-            "t": ["C#", "NUnit", "Async", "OpenAI", "Serilog"],
-            "c": ["Objektorientiert", "Package", "Infrastruktur", "Tests", "Dokumentation", "LLM"],
-            "align": 1
-        },
-        "finsights": {
-            "name": "Finsights",
-            "description": "Ein Newsletter als Servicelösung für alle Arten von Anlegern, um über ihre Investitionen auf dem Laufenden zu bleiben. Benutzer können wählen, wann und worüber sie benachrichtigt werden. Sie erhalten dann automatisierte Performance Updates für alle ausgewählten Aktien innerhalb eines gewählten Zeitintervalls. Sendet momentan keine E-Mails, weil Microsoft den SMTP-Zugang blockiert.",
-            "image": "visual.webp",
-            "image_layout_type": "phone",
-            "link": "https://finsights.info",
-            "linkIcon": "",
-            "linkDesc": "Webseite besuchen",
-            "t": ["Python", "HTML", "TailwindCSS", "Django"],
-            "c": ["Automation", "Webapp", "Branding", "Logo"],
-            "align": 0
-        },
-        "embyte": {
-            "name": "Embyte",
-            "description": "Das open-source Projekt, mit dem man anpassbare Embeds, die Webseiteninformationen anzeigen, erstellen kann und mit Hilfe von iFrames einbetten kann. Inspiration dazu waren die Embeds von Discord. Dieses Projekt cached die Anfragen in einer PostgreSQL-Datenbank und nutzt einen selbst entwickelten Caching-Algorithmus.",
-            "image": "embyteEmbed.png",
-            "image_layout_type": "",
-            "link": "https://embyte.davidewiest.com",
-            "linkIcon": "",
-            "linkDesc": "Webseite besuchen",
-            "t": ["C#", "HTML", "MudBlazor", "PostgreSQL"],
-            "c": ["Webapp", "Frontend", "Backend", "Caching"],
-            "align": 1
-        },
-        "pvtimeseries": {
-            "name": "Zeitreihenprognose des PV-Ausbaus",
-            "description": "Verwendung einer Reihe multivariater Zeitreihenmodelle aus dem Paket Darts, um die Energieproduktion von PV-Systemen in Deutschland mithilfe von 8 historischen und 1 prognostizierten Metriken vorherzusagen. Optimierung der Modellarchitektur (für N-Beats), Bewertung und Verwendung der Prognose in einer Facharbeit über die Folgen des nationalen Ausbaus von PV-Systemen.",
-            "image": "timeSeriesPrediction.jpg",
-            "image_layout_type": "",
-            "link": "https://github.com/DavideWiest/PV-Ausbau-Zeitreihenanalyse",
-            "linkIcon": "github-white.png",
-            "linkDesc": "Repository besuchen",
-            "t": ["Python", "Darts", "Pandas", "Matplotlib"],
-            "c": ["Data Science", "Zeitreihenprognose"],
-            "align": 0
-        },
-        "reader": {
-            "name": "Leser",
-            "description": "Ein hochgradig anpassbarer Leser, der als direkte Alternative zu kostenpflichtigen Schnell-Lese-Apps entwickelt wurde. Konzepte wie Chunking, Timing und Hervorhebung sind in diesem Leser integriert. Texte können aus Dateien oder der Zwischenablage importiert werden. Alle Daten werden im lokalen Speicher der Website gespeichert.",
-            "image": "readerShowcase.jpeg",
-            "image_layout_type": "phone",
-            "link": "https://reader.davidewiest.com",
-            "linkIcon": "",
-            "linkDesc": "Website besuchen",
-            "t": ["C#", "HTML", "MudBlazor", "Javascript"],
-            "c": ["Webanwendung", "Frontend", "Backend", "Caching"],
-            "align": 1
-        },
-        "instadata": {
-            "name": "Instadata",
-            "description": "Ein großer Instagram-Scraper, der mit Django erstellt wurde und eine API verwendet, um zwischen Benutzer und Programm zu kommunizieren. Der Scraper lässt sich nahtlos skalieren und kann Proxies benutzen. Ich habe ihn gebaut, um Daten für weitere Data-Science-Projekte zu sammeln, also habe ich den Nominatim Geolocator und Regex verwendet, um so viele Daten wie möglich zu extrahieren und zu ordnen.",
-            "image": "",
-            "image_layout_type": "phone",
-            "link": "https://github.com/DavideWiest/idww",
-            "linkIcon": "medium.png",
-            "linkDesc": "Artikel lesen",
-            "t": ["Python", "HTML", "Javascript", "Django", "MongoDB"],
-            "c": ["Data Science", "Webapp", "API", "Scraper"],
-            "align": 1
-        },
-        "timewise": {
-            "name": "TimeWise",
-            "description": "Eine benutzerfreundliche Open-Source-App, die mithilfe von einer ILP (integer linear programming) API einen optimalen Zeitplan erstellt. Diese können dann exportiert werden. Dabei habe ich v.a. Geschäftslogik und die Exporter geschrieben.",
-            "image": "",
-            "image_layout_type": "",
-            "link": "https://github.com/TimeWise-dev/TimeWise",
-            "linkIcon": "github-white.png",
-            "linkDesc": "Repository besuchen",
-            "t": ["C#", "HTML", "MudBlazor"],
-            "c": ["Webapp", "ILP", "optimierung", "Open-source"],
-            "align": 0
-        },
-        "decadruck": {
-            "name": "DecaDruck",
-            "description": "DecaDruck hat sich zum Ziel gesetzt, den 3D-Druck für Menschen ohne technische Kenntnisse und Branchenexpertise zugänglich zu machen, indem Beratung, Design und Realisierung in einem Service vereint werden. Wenn Besucher bereits eine 3D-Datei haben, können sie die Druckkosten und den Mengenrabatt berechnen.",
-            "image": "visual.webp",
-            "image_layout_type": "phone",
-            "link": "https://decadruck.davidewiest.com",
-            "linkIcon": "medium.png",
-            "linkDesc": "Artikel lesen",
-            "t": ["Python", "HTML", "CSS", "Flask", "Branding"],
-            "c": ["Website", "Design", "E Commerce", "Preisberechnung"],
-            "align": 0
-        },
-        "personal-website": {
-            "name": "Eigene Webseite",
-            "description": "Eine komplette Überarbeitung meiner persönlichen Website. Ich bin von Flask auf Django umgestiegen und verwende jetzt TailwindCSS. Zusätzlich ist die Website in deutsch und englisch verfügbar.",
-            "image": "",
-            "image_layout_type": "phone",
-            "link": "https://github.com/DavideWiest/personal_website2",
-            "linkIcon": "github-white.png",
-            "linkDesc": "Repository ansehen",
-            "t": ["Python", "HTML", "TailwindCSS", "Django"],
-            "c": ["Website", "Design"],
-            "align": 1
-        }
+    "seeProjects": "Projektübersicht anzeigen",
+    "hiddenProjectsTitle": "Ausgeblendete Projekte",
+    "exploreArticlesWithTag": "Artikel mit diesem Tag erkunden",
+    "ctaBtnText": {
+        "website": "Webseite öffnen",
+        "repository": "Repository öffnen",
+        "documentation": "Dokumentation öffnen",
+        "article": "Artikel lesen"
     }
 }

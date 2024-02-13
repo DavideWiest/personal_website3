@@ -2,15 +2,15 @@
     <div class="md:grid md:grid-cols-2 py-8 pt-12" style="max-width: 1300px;">
         <div class="p-8 md:p-16 flex justify-center flex-col">
             <h3 id="name" class="intertight text-neutral-100 text-3xl md:text-4xl text-b600">
-                {{ c.main.projects.websiteScores.t }}
+                {{ c.main.work.websiteScores.t }}
             </h3>
             <p class="text-neutral-400 text-base mt-3">
-                {{ c.main.projects.websiteScores.d }}
+                {{ c.main.work.websiteScores.d }}
             </p>
         </div>
         <div class="flex justify-center items-center flex-col">
             <div>
-                {% for score, websitename in c.main.projects.websiteScores.content.items %}
+                {% for score, websitename in c.main.work.websiteScores.content.items %}
                 <div class="flex flex-col items-center rounded-3xl md:w-full p-3 pb-1 m-6 fade-in-order1">
                     <img src="/static/other/scores/{{ score }}" alt="Google lighthouse Score of {{ websitename }}" class="w-auto md:h-32 rounded-3xl">
                     <p class="text-sm text-neutral-400 my-2">
