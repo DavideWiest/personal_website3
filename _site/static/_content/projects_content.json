@@ -36,7 +36,7 @@
             "link": "https://finsights.info",
             "ctaType": "website",
             "t": ["Python", "HTML", "TailwindCSS", "Django", "MongoDB", "Javascript"],
-            "c": ["Automation", "Webapp", "Branding", "Logo Design", "API"],
+            "c": ["Product", "Automation", "Webapp", "Branding", "Logo Design", "API"],
             "align": 1
         },
         "gptvault": {
@@ -77,16 +77,16 @@
             "align": 0
         },
         "mosaic": {
-            "name": "Time-Series Forecasting of PV-Growth",
-            "nameDe": "Zeitreihenprognose des PV-Ausbaus",
-            "descriptionEn": "In einem Team aus 2 Personen die Entwicklung einer Webapp, die das 'Link as Bio' Konzept für Projekte ermöglicht. Dabei habe ich v.a. das Backend und die Datenbank entwickelt. Nutzer können sich anmelden, und ihrem Account Projekte hinzufügen, die dann in verlinkt werden können.",
-            "descriptionDe": "In a team of 2 people, I developed a web app that enables the 'Link as Bio' concept for projects. In this project, I primarily focused on developing the backend and the database. Users can sign up and add projects to their account, which can then be linked.",
+            "name": "Mosaic: Link as bio for projects",
+            "nameDe": "Mosaic: Link als Bio für Projekte",
+            "descriptionEn": "In a team of 2 people, I developed a web app that enables the 'Link as Bio' concept for projects. In this project, I primarily focused on developing the backend and the database. Users can sign up and add projects to their account, which can then be linked.",
+            "descriptionDe": "In einem Team aus 2 Personen die Entwicklung einer Webapp, die das 'Link as Bio' Konzept für Projekte ermöglicht. Dabei habe ich v.a. das Backend und die Datenbank entwickelt. Nutzer können sich anmelden, und ihrem Account Projekte hinzufügen, die dann in verlinkt werden können.",
             "image": "",
             "image_layout_type": "",
             "link": "https://github.com/DavideWiest/Mosaic",
             "ctaType": "repository",
             "t": ["PHP", "TailwindCSS", "Smarty", "MySQL"],
-            "c": ["Webapp", "Minimalistic Design", "Freeware", "Backend", "Frontend", "Database"],
+            "c": ["Product", "Minimalistic Design", "Freeware", "Backend", "Frontend", "Database"],
             "align": 0
         },
         "reader": {
@@ -136,7 +136,7 @@
             "link": "https://decadruck.davidewiest.com",
             "ctaType": "article",
             "t": ["Python", "HTML", "CSS", "Flask", "Javascript"],
-            "c": ["Frontend", "Backend", "Branding", "Online Shop", "Real time Calculation", "Logo Design"],
+            "c": ["Product", "Frontend", "Backend", "Branding", "Online Shop", "Real time Calculation", "Logo Design"],
             "align": 0
         },
         "personal-website": {
