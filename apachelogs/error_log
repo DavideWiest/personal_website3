@@ -1,0 +1,120 @@
+[Wed Feb 14 23:36:27.588206 2024] [wsgi:error] [pid 232108:tid 140624500082240] application starting with PRODUCTION settings
+[Thu Feb 15 00:15:47.000038 2024] [wsgi:error] [pid 232708:tid 140624508474944] application starting with PRODUCTION settings
+[Thu Feb 15 07:07:48.975948 2024] [authz_core:error] [pid 232740:tid 140624233735744] [client 109.74.204.123:48342] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Fri Feb 16 00:06:40.597927 2024] [wsgi:error] [pid 262416:tid 140624533653056] application starting with PRODUCTION settings
+[Fri Feb 16 12:37:56.687434 2024] [core:error] [pid 262419:tid 140624516867648] [client 185.180.143.81:57104] AH10244: invalid URI path (/icons/.%%32%65/.%%32%65/apache2/icons/non-existant-image.png)
+[Fri Feb 16 12:37:57.319047 2024] [core:error] [pid 262419:tid 140624542045760] [client 185.180.143.81:57112] AH10244: invalid URI path (/icons/.%2e/%2e%2e/apache2/icons/sphere1.png)
+[Fri Feb 16 12:37:57.937377 2024] [core:error] [pid 262468:tid 140624309204544] [client 185.180.143.81:57126] AH10244: invalid URI path (/icons/.%%32%65/.%%32%65/apache2/icons/sphere1.png)
+[Sat Feb 17 00:15:46.860911 2024] [wsgi:error] [pid 284442:tid 140624500082240] application starting with PRODUCTION settings
+[Sat Feb 17 14:02:25.557300 2024] [ssl:error] [pid 284446:tid 140624409916992] [client 54.160.236.244:45536] AH02042: rejecting client initiated renegotiation
+[Sat Feb 17 14:33:36.626089 2024] [authz_core:error] [pid 284445:tid 140624376346176] [client 138.197.88.136:40280] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Sun Feb 18 00:05:43.928948 2024] [wsgi:error] [pid 315485:tid 140624500082240] application starting with PRODUCTION settings
+[Mon Feb 19 00:15:45.602532 2024] [wsgi:error] [pid 347430:tid 140624516867648] application starting with PRODUCTION settings
+[Mon Feb 19 14:45:06.150270 2024] [ssl:error] [pid 347434:tid 140624409916992] [client 199.45.154.64:35474] AH02032: Hostname embyte.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Mon Feb 19 19:28:39.600310 2024] [ssl:error] [pid 347434:tid 140624309204544] [client 199.45.154.49:50370] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Tue Feb 20 00:08:02.811817 2024] [wsgi:error] [pid 382276:tid 140624500082240] application starting with PRODUCTION settings
+[Tue Feb 20 16:15:19.353882 2024] [ssl:error] [pid 382280:tid 140624401524288] [client 199.45.154.48:40464] AH02032: Hostname www.finsights.info provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Tue Feb 20 16:53:31.819648 2024] [ssl:error] [pid 382280:tid 140624300811840] [client 199.45.154.18:38858] AH02032: Hostname reader.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Wed Feb 21 00:08:52.582538 2024] [wsgi:error] [pid 431756:tid 140624533653056] application starting with PRODUCTION settings
+[Wed Feb 21 23:10:56.271646 2024] [ssl:error] [pid 431759:tid 140624317597248] [client 162.142.125.13:39730] AH02032: Hostname finsights.info provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Thu Feb 22 00:08:52.649110 2024] [wsgi:error] [pid 453060:tid 140624500082240] application starting with PRODUCTION settings
+[Fri Feb 23 00:08:52.612634 2024] [wsgi:error] [pid 479527:tid 140624525260352] application starting with PRODUCTION settings
+[Sat Feb 24 00:05:09.637612 2024] [wsgi:error] [pid 507106:tid 140624525260352] application starting with PRODUCTION settings
+[Sat Feb 24 02:19:56.974206 2024] [ssl:error] [pid 507109:tid 140624284026432] [client 199.45.154.17:57070] AH02032: Hostname embyte.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Sun Feb 25 00:05:09.596810 2024] [wsgi:error] [pid 545222:tid 140624533653056] application starting with PRODUCTION settings
+[Sun Feb 25 06:33:37.952816 2024] [ssl:error] [pid 545226:tid 140624376346176] [client 162.142.125.11:36348] AH02032: Hostname www.finsights.info provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Sun Feb 25 06:36:13.394559 2024] [wsgi:error] [pid 562694:tid 140624533653056] application starting with PRODUCTION settings
+[Sun Feb 25 06:36:13.675648 2024] [authz_core:error] [pid 562697:tid 140624409916992] [client 207.154.240.169:46516] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Sun Feb 25 06:36:16.466369 2024] [wsgi:error] [pid 562787:tid 140624500082240] application starting with PRODUCTION settings
+[Sun Feb 25 06:36:45.229435 2024] [wsgi:error] [pid 562881:tid 140624525260352] application starting with PRODUCTION settings
+[Sun Feb 25 14:00:01.351382 2024] [authz_core:error] [pid 563090:tid 140623705257536] [client 35.216.234.14:39726] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Sun Feb 25 18:41:41.924248 2024] [authz_core:error] [pid 562993:tid 140623462000192] [client 172.105.246.139:52610] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Mon Feb 26 00:05:09.684707 2024] [wsgi:error] [pid 593719:tid 140624516867648] application starting with PRODUCTION settings
+[Mon Feb 26 09:58:52.879108 2024] [wsgi:error] [pid 613611:tid 140624508474944] application starting with PRODUCTION settings
+[Mon Feb 26 09:58:59.359790 2024] [authz_core:error] [pid 613615:tid 140624516867648] [client 137.184.150.232:60988] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Tue Feb 27 00:04:55.278918 2024] [wsgi:error] [pid 644610:tid 140624533653056] application starting with PRODUCTION settings
+[Tue Feb 27 15:49:56.343047 2024] [ssl:error] [pid 644614:tid 140624508474944] [client 199.45.155.17:51560] AH02032: Hostname embyte.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Wed Feb 28 00:09:00.659012 2024] [wsgi:error] [pid 683060:tid 140624500082240] application starting with PRODUCTION settings
+[Wed Feb 28 10:23:47.853482 2024] [ssl:error] [pid 683063:tid 140624317597248] [client 199.45.155.34:35986] AH02032: Hostname finsights.info provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Thu Feb 29 00:09:00.739420 2024] [wsgi:error] [pid 717631:tid 140624533653056] application starting with PRODUCTION settings
+[Fri Mar 01 00:15:52.251791 2024] [wsgi:error] [pid 744690:tid 140624516867648] application starting with PRODUCTION settings
+[Fri Mar 01 03:52:08.060438 2024] [ssl:error] [pid 744694:tid 140624384738880] [client 199.45.155.16:44116] AH02032: Hostname reader.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Fri Mar 01 05:35:11.312745 2024] [ssl:error] [pid 744693:tid 140624300811840] [client 44.220.185.212:50320] AH02042: rejecting client initiated renegotiation
+[Sat Mar 02 00:02:34.654775 2024] [wsgi:error] [pid 777564:tid 140624516867648] application starting with PRODUCTION settings
+[Sat Mar 02 16:49:43.546885 2024] [authz_core:error] [pid 777568:tid 140624542045760] [client 172.105.246.139:48930] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Sun Mar 03 00:55:07.274670 2024] [wsgi:error] [pid 822833:tid 140624525260352] application starting with PRODUCTION settings
+[Sun Mar 03 08:42:39.830020 2024] [ssl:error] [pid 822837:tid 140624325989952] [client 199.45.154.67:55402] AH02032: Hostname finsights.info provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Sun Mar 03 14:39:07.912305 2024] [authz_core:error] [pid 822837:tid 140624309204544] [client 164.90.222.93:52000] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Mon Mar 04 00:13:31.213515 2024] [wsgi:error] [pid 846331:tid 140624533653056] application starting with PRODUCTION settings
+[Tue Mar 05 00:05:13.319265 2024] [wsgi:error] [pid 900849:tid 140624500082240] application starting with PRODUCTION settings
+[Wed Mar 06 00:06:56.758553 2024] [wsgi:error] [pid 930384:tid 140624533653056] application starting with PRODUCTION settings
+[Wed Mar 06 02:03:23.860979 2024] [ssl:error] [pid 930388:tid 140624491689536] [client 199.45.155.50:53088] AH02032: Hostname embyte.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Wed Mar 06 04:16:33.692961 2024] [authz_core:error] [pid 930388:tid 140624334382656] [client 172.233.57.157:40438] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Thu Mar 07 00:15:36.593553 2024] [wsgi:error] [pid 955723:tid 140624500082240] application starting with PRODUCTION settings
+[Thu Mar 07 05:00:08.028675 2024] [ssl:error] [pid 955727:tid 140624525260352] [client 199.45.155.49:55074] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Thu Mar 07 05:23:59.210843 2024] [ssl:error] [pid 955727:tid 140624300811840] [client 199.45.154.64:54058] AH02032: Hostname www.embyte.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Thu Mar 07 05:30:45.824332 2024] [ssl:error] [pid 955726:tid 140624284026432] [client 44.220.188.119:48808] AH02042: rejecting client initiated renegotiation
+[Fri Mar 08 00:15:35.618515 2024] [wsgi:error] [pid 988727:tid 140624500082240] application starting with PRODUCTION settings
+[Fri Mar 08 00:32:42.926307 2024] [ssl:error] [pid 988731:tid 140624284026432] [client 199.45.154.19:56754] AH02032: Hostname www.reader.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Fri Mar 08 17:02:13.155377 2024] [ssl:error] [pid 988731:tid 140624292419136] [client 199.45.155.16:57720] AH02032: Hostname www.finsights.info provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Fri Mar 08 17:25:17.532289 2024] [ssl:error] [pid 988730:tid 140624359560768] [client 199.45.155.16:33296] AH02032: Hostname finsights.info provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Sat Mar 09 00:03:34.685975 2024] [ssl:error] [pid 1015665:tid 140624516867648] [client 199.45.154.51:51080] AH02032: Hostname www.embyte.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Sat Mar 09 00:13:35.407903 2024] [wsgi:error] [pid 1015662:tid 140624500082240] application starting with PRODUCTION settings
+[Sun Mar 10 00:15:35.687327 2024] [wsgi:error] [pid 1055224:tid 140624516867648] application starting with PRODUCTION settings
+[Sun Mar 10 08:39:16.209749 2024] [ssl:error] [pid 1055227:tid 140624309204544] [client 199.45.154.19:36596] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Sun Mar 10 17:02:48.870757 2024] [wsgi:error] [pid 1072595:tid 140624533653056] application starting with PRODUCTION settings
+[Sun Mar 10 17:02:51.519586 2024] [wsgi:error] [pid 1072598:tid 140623998871104] (2)No such file or directory: [client 154.28.229.136:13999] mod_wsgi (pid=1072598): Unable to connect to WSGI daemon process 'davidewiest' on '/var/run/apache2/wsgi.40422.59.1.sock' as user with uid=33.
+[Sun Mar 10 17:02:51.520299 2024] [wsgi:error] [pid 1072598:tid 140623310997056] (2)No such file or directory: [client 154.28.229.136:35835] mod_wsgi (pid=1072598): Unable to connect to WSGI daemon process 'davidewiest' on '/var/run/apache2/wsgi.40422.59.1.sock' as user with uid=33.
+[Sun Mar 10 17:02:51.520722 2024] [wsgi:error] [pid 1072599:tid 140624300811840] (2)No such file or directory: [client 154.28.229.136:33433] mod_wsgi (pid=1072599): Unable to connect to WSGI daemon process 'davidewiest' on '/var/run/apache2/wsgi.40422.59.1.sock' as user with uid=33.
+[Sun Mar 10 17:02:51.523831 2024] [wsgi:error] [pid 1072598:tid 140623973692992] (2)No such file or directory: [client 154.28.229.136:42277] mod_wsgi (pid=1072598): Unable to connect to WSGI daemon process 'davidewiest' on '/var/run/apache2/wsgi.40422.59.1.sock' as user with uid=33.
+[Sun Mar 10 17:02:51.524055 2024] [wsgi:error] [pid 1072599:tid 140624508474944] (2)No such file or directory: [client 154.28.229.136:21635] mod_wsgi (pid=1072599): Unable to connect to WSGI daemon process 'davidewiest' on '/var/run/apache2/wsgi.40422.59.1.sock' as user with uid=33.
+[Sun Mar 10 17:02:52.931133 2024] [wsgi:error] [pid 1072693:tid 140624500082240] application starting with PRODUCTION settings
+[Sun Mar 10 17:02:53.215177 2024] [authz_core:error] [pid 1072717:tid 140624317597248] [client 164.90.208.56:47046] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Sun Mar 10 17:02:54.123499 2024] [wsgi:error] [pid 1072717:tid 140624533653056] (2)No such file or directory: [client 154.28.229.136:24133] mod_wsgi (pid=1072717): Unable to connect to WSGI daemon process 'davidewiest' on '/var/run/apache2/wsgi.40422.60.1.sock' as user with uid=33.
+[Sun Mar 10 17:02:54.123825 2024] [wsgi:error] [pid 1072718:tid 140624533653056] (2)No such file or directory: [client 154.28.229.136:21567] mod_wsgi (pid=1072718): Unable to connect to WSGI daemon process 'davidewiest' on '/var/run/apache2/wsgi.40422.60.1.sock' as user with uid=33.
+[Sun Mar 10 17:02:54.128497 2024] [wsgi:error] [pid 1072718:tid 140624491689536] (2)No such file or directory: [client 154.28.229.136:4323] mod_wsgi (pid=1072718): Unable to connect to WSGI daemon process 'davidewiest' on '/var/run/apache2/wsgi.40422.60.1.sock' as user with uid=33.
+[Sun Mar 10 17:02:54.134616 2024] [wsgi:error] [pid 1072718:tid 140624284026432] (2)No such file or directory: [client 154.28.229.136:33081] mod_wsgi (pid=1072718): Unable to connect to WSGI daemon process 'davidewiest' on '/var/run/apache2/wsgi.40422.60.1.sock' as user with uid=33.
+[Sun Mar 10 17:02:54.137604 2024] [wsgi:error] [pid 1072718:tid 140624309204544] (2)No such file or directory: [client 154.28.229.136:7375] mod_wsgi (pid=1072718): Unable to connect to WSGI daemon process 'davidewiest' on '/var/run/apache2/wsgi.40422.60.1.sock' as user with uid=33.
+[Sun Mar 10 17:02:56.903984 2024] [wsgi:error] [pid 1072802:tid 140624508474944] application starting with PRODUCTION settings
+[Sun Mar 10 17:03:00.711491 2024] [authz_core:error] [pid 1072920:tid 140624409916992] [client 209.97.180.8:54186] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Sun Mar 10 17:03:00.938210 2024] [wsgi:error] [pid 1072916:tid 140624533653056] application starting with PRODUCTION settings
+[Sun Mar 10 17:04:10.494422 2024] [wsgi:error] [pid 1073021:tid 140624508474944] application starting with PRODUCTION settings
+[Sun Mar 10 18:25:58.753065 2024] [wsgi:error] [pid 1075106:tid 140319633843776] application starting with PRODUCTION settings
+[Sun Mar 10 18:26:09.183865 2024] [authz_core:error] [pid 1075109:tid 140319232341568] [client 64.227.70.2:57760] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Sun Mar 10 18:31:27.040696 2024] [wsgi:error] [pid 1075271:tid 140319608665664] application starting with PRODUCTION settings
+[Sun Mar 10 18:37:56.581870 2024] [wsgi:error] [pid 1075586:tid 140702519281216] application starting with PRODUCTION settings
+[Sun Mar 10 19:57:02.312811 2024] [authz_core:error] [pid 1075590:tid 140702398776896] [client 109.74.204.123:50496] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Mon Mar 11 00:15:54.671832 2024] [wsgi:error] [pid 1082812:tid 140702485710400] application starting with PRODUCTION settings
+[Tue Mar 12 00:15:53.630999 2024] [wsgi:error] [pid 1103853:tid 140702485710400] application starting with PRODUCTION settings
+[Tue Mar 12 02:13:39.786600 2024] [ssl:error] [pid 1103857:tid 140702298064448] [client 199.45.154.64:45296] AH02032: Hostname www.reader.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Tue Mar 12 02:23:16.864276 2024] [ssl:error] [pid 1103856:tid 140702449133120] [client 167.248.133.33:45784] AH02032: Hostname www.reader.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Wed Mar 13 00:15:53.524123 2024] [wsgi:error] [pid 1146779:tid 140702502344256] application starting with PRODUCTION settings
+[Wed Mar 13 01:21:09.722286 2024] [core:error] [pid 1146783:tid 140702256100928] [client 185.180.143.140:50536] AH10244: invalid URI path (/icons/.%%32%65/.%%32%65/apache2/icons/non-existant-image.png)
+[Wed Mar 13 01:21:09.773971 2024] [core:error] [pid 1146783:tid 140702440740416] [client 185.180.143.140:50538] AH10244: invalid URI path (/icons/.%%32%65/.%%32%65/apache2/icons/sphere1.png)
+[Wed Mar 13 01:21:09.835496 2024] [core:error] [pid 1146783:tid 140702457525824] [client 185.180.143.140:50552] AH10244: invalid URI path (/icons/.%2e/%2e%2e/apache2/icons/sphere1.png)
+[Thu Mar 14 00:15:53.625457 2024] [wsgi:error] [pid 1164582:tid 140702502495808] application starting with PRODUCTION settings
+[Thu Mar 14 21:37:08.687633 2024] [ssl:error] [pid 1164585:tid 140702415562304] [client 199.45.154.49:35744] AH02032: Hostname www.reader.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Thu Mar 14 23:03:51.387175 2024] [ssl:error] [pid 1164585:tid 140702432347712] [client 199.45.154.65:40942] AH02032: Hostname embyte.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Fri Mar 15 00:16:07.583708 2024] [wsgi:error] [pid 1189089:tid 140702485710400] application starting with PRODUCTION settings
+[Fri Mar 15 01:28:20.555490 2024] [ssl:error] [pid 1189093:tid 140702423955008] [client 199.45.155.48:35086] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Sat Mar 16 00:02:01.260134 2024] [wsgi:error] [pid 1213712:tid 140702519281216] application starting with PRODUCTION settings
+[Sat Mar 16 22:06:00.154335 2024] [ssl:error] [pid 1213716:tid 140702306457152] [client 199.45.154.49:60556] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Sun Mar 17 00:10:52.632294 2024] [wsgi:error] [pid 1249847:tid 140702494103104] application starting with PRODUCTION settings
+[Sun Mar 17 02:48:03.682524 2024] [ssl:error] [pid 1249850:tid 140702046414400] [client 44.220.185.243:59618] AH02042: rejecting client initiated renegotiation
+[Mon Mar 18 00:05:23.523254 2024] [wsgi:error] [pid 1304821:tid 140702519281216] application starting with PRODUCTION settings
+[Mon Mar 18 05:27:26.398688 2024] [ssl:error] [pid 1304824:tid 140702390384192] [client 199.45.154.48:40976] AH02032: Hostname decadruck.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Tue Mar 19 00:08:45.631851 2024] [wsgi:error] [pid 1328894:tid 140702519281216] application starting with PRODUCTION settings
+[Tue Mar 19 06:18:43.671295 2024] [core:error] [pid 1328898:tid 140702381991488] [client 180.184.92.67:64418] AH10244: invalid URI path (/cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh)
+[Tue Mar 19 06:18:44.336001 2024] [core:error] [pid 1328897:tid 140702323308096] [client 180.184.92.67:64422] AH10244: invalid URI path (/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/bin/sh)
+[Tue Mar 19 12:29:21.732501 2024] [wsgi:error] [pid 1351147:tid 139789813020224] application starting with PRODUCTION settings
+[Tue Mar 19 12:38:37.682438 2024] [wsgi:error] [pid 1351359:tid 139727960069696] application starting with PRODUCTION settings
+[Tue Mar 19 12:49:28.642111 2024] [wsgi:error] [pid 1351942:tid 139723217434176] application starting with PRODUCTION settings
+[Tue Mar 19 23:50:53.248795 2024] [authz_core:error] [pid 1351946:tid 139723070731840] [client 172.233.57.157:34706] AH01630: client denied by server configuration: /var/www/html/personal_website2/personal_website2/wsgi.py
+[Wed Mar 20 00:01:31.831417 2024] [wsgi:error] [pid 1362865:tid 139723192256064] application starting with PRODUCTION settings
+[Wed Mar 20 00:42:41.110459 2024] [ssl:error] [pid 1362868:tid 139723062339136] [client 199.45.154.66:56686] AH02032: Hostname www.finsights.info provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Thu Mar 21 00:08:56.748462 2024] [wsgi:error] [pid 1394409:tid 139723200648768] application starting with PRODUCTION settings
+[Thu Mar 21 07:23:40.254010 2024] [ssl:error] [pid 1394434:tid 139723011982912] [client 199.45.155.50:57420] AH02032: Hostname embyte.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Fri Mar 22 00:08:48.685830 2024] [wsgi:error] [pid 1417564:tid 139723183711808] application starting with PRODUCTION settings
+[Fri Mar 22 08:50:17.235128 2024] [ssl:error] [pid 1417568:tid 139723045553728] [client 199.45.154.51:38736] AH02032: Hostname www.reader.davidewiest.com provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Fri Mar 22 09:47:00.195590 2024] [ssl:error] [pid 1417567:tid 139722961626688] [client 167.94.138.35:38008] AH02032: Hostname finsights.info provided via SNI and hostname 85.215.79.188 provided via HTTP have no compatible SSL setup
+[Sat Mar 23 00:07:22.580041 2024] [wsgi:error] [pid 1440925:tid 139723217434176] application starting with PRODUCTION settings

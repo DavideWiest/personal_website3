@@ -1,0 +1,16 @@
+{
+    "projectsHeading": "Überzeugen Sie sich selbst mit Artikeln/Dokumentationen.",
+    "projectsPageHeading": "Ausgewählte Projekte",
+    "projectsDescription": "",
+    "tagDesc": "Technologien:",
+    "categoryDesc": "Kategorien:",
+    "seeProjects": "Projektübersicht anzeigen",
+    "hiddenProjectsTitle": "Ausgeblendete Projekte",
+    "exploreArticlesWithTag": "Artikel mit diesem Tag erkunden",
+    "ctaBtnText": {
+        "website": "Webseite öffnen",
+        "repository": "Repository öffnen",
+        "documentation": "Dokumentation öffnen",
+        "article": "Artikel lesen"
+    }
+}

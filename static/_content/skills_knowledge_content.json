@@ -1,0 +1,29 @@
+{
+    "colors": {
+        "experienced": "#6609e0",
+        "familiar": "#104fcc",
+        "basicKnowledge": "#05417d"
+    },
+    "technical": {
+        "experienced": [
+            "Python", "HTML", "CSS"
+        ],
+        "familiar": [
+            "C#", "Java", "MongoDB", "Django", "Flask", "PyTorch"
+        ],
+        "basicKnowledge": [
+            "PostGreSQL", "MySQL"
+        ]
+    },
+    "general": {
+        "experienced": [
+            "Self-Management", "Programming"
+        ],
+        "familiar": [
+            "Project Mangement", "UI/UX-Design", "ML Models & Workflow", "Web Development"
+        ],
+        "basicKnowledge": [
+            "MS-Office", "Writing Documentation"
+        ]
+    }
+}
