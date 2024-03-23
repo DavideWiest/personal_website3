@@ -72,7 +72,7 @@
             <div class="py-6 px-2 pt-2">
                 {% for project in c.main.academicwork.content %}
                     <div class="m-4">
-                        <a href="{{ project.2 }}" class="text-xl md:text-2xl text-b600 hover:text-accent group" rel="_blank">
+                        <a href="{{ project.2 }}" class="text-xl md:text-2xl text-b600 hover:text-accent group" target="_blank">
                             {{ project.0 }} ({{ project.1 }}) <span class="group-hover:translate-x-5 group-hover:text-accent inline-block transition-transform duration-400 ease-in-out">→</span>
                         </a>
                         <p class="text-neutral-400">
@@ -246,7 +246,7 @@
         <div class="py-6 px-2 pt-2">
             {% for certificate in c.main.certificates.content %}
                 <div class="m-4">
-                    <a href="{{ certificate.2 }}" class="text-xl md:text-2xl text-b600 hover:text-accent group" rel="_blank">
+                    <a href="{{ certificate.2 }}" class="text-xl md:text-2xl text-b600 hover:text-accent group" target="_blank">
                         {{ certificate.0 }} ({{ certificate.1 }}) <span class="group-hover:translate-x-5 group-hover:text-accent inline-block transition-transform duration-400 ease-in-out">→</span>
                     </a>
                     <p class="text-neutral-400">

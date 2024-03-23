@@ -76,6 +76,19 @@
             "c": ["Machine Learning", "ML-Model Validation", "Data Science", "Data Extraction & Processing", "Data Visualization", "Time Series Forecast"],
             "align": 0
         },
+        "mosaic": {
+            "name": "Time-Series Forecasting of PV-Growth",
+            "nameDe": "Zeitreihenprognose des PV-Ausbaus",
+            "descriptionEn": "In einem Team aus 2 Personen die Entwicklung einer Webapp, die das 'Link as Bio' Konzept für Projekte ermöglicht. Dabei habe ich v.a. das Backend und die Datenbank entwickelt. Nutzer können sich anmelden, und ihrem Account Projekte hinzufügen, die dann in verlinkt werden können.",
+            "descriptionDe": "In a team of 2 people, I developed a web app that enables the 'Link as Bio' concept for projects. In this project, I primarily focused on developing the backend and the database. Users can sign up and add projects to their account, which can then be linked.",
+            "image": "",
+            "image_layout_type": "",
+            "link": "https://github.com/DavideWiest/Mosaic",
+            "ctaType": "repository",
+            "t": ["PHP", "TailwindCSS", "Smarty", "MySQL"],
+            "c": ["Webapp", "Minimalistic Design", "Freeware", "Backend", "Frontend", "Database"],
+            "align": 0
+        },
         "reader": {
             "name": "Reader",
             "descriptionEn": "A highly customizable reader built as a direct alternative to paid speed-readers. Concepts such as chunking, pacing and highlighting are built into this reader. Texts can be imported from files or the clipboard. All data is stored in the website's local storage.",
