@@ -18,9 +18,7 @@
         "description": "Meine Persönlichkeit besteht aus zwei, scheinbar entgegengesetzten Seiten: Einerseits will ich Kram fertigbekommen. Mir sind Logische Argumente, Fakten und Daten wichtig. Ich glaube nicht an Perfektion, das Festhalten an einer Meinung, Ideologie oder \"objektiven Wahrheit\" und schon gar nicht daran, auf sein \"Bauchgefühl zu vertrauen\". Ich glaube an rasches Handeln mit einem engen Fokus und der richtigen Strategie. <br/>Andererseits habe ich ein tiefes Bedürfnis zu wissen, zu erforschen und zu erschaffen. Ich nehme mir Zeit, mein Verständnis zu erweitern, meiner Neugierde zu folgen und Erfahrungen ohne klares Ergebnis zu machen. Arbeit muss durch Denken, Reflexion und der Erforschung von Ideen ergänzt werden. <br/>Ich bin Open-Source-Entwickler und Daten- und Wissensmanagement-Enthusiast, Oberstufenschüler und sehe mich selbst als Generalist: Im Laufe der Jahre habe ich Bereiche wie Programmierung, Investieren, Grafikdesign, Webentwicklung, Data Science, Machine Learning, formale Logik, Produktivität, persönliches Wissensmanagement und Schreiben erkundet. <br/>Während ich die letzten Jahre hauptsächlich für <a class=\"hover:text-accent underline\" href=\"/projects\">Programmierprojekte</a> genutzt habe, werde ich meinen Fokus jetzt auf meine akademische Bildung, das <a class=\"hover:text-accent underline\" href=\"https://davidewiest.medium.com/\">Schreiben von Artikeln</a>, das Aufnehmen von <a class=\"hover:text-accent underline\" href=\"https://davidewiest.medium.com/list/good-reads-f78618021760\">hochwertigen Informationen</a> und eine kleine Anzahl von Softwareprojekten mit dem bedeutsamsten Impact aufteilen.",
         "data": {
             "Okkupation": "Oberstufenschüler",
-            "Sprachen (fließend)": "Deutsch, Englisch",
-            "Lieblingssoftware": "Obsidian, Todoist, Arc",
-            "12 Lieblingsprobleme": "Artikel kommt bald"
+            "Sprachen": "Deutsch, Englisch"
         }
     },
     "skills": {
