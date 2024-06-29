@@ -18,10 +18,8 @@
         "description": "My personality consists of two, seemingly contradictory sides: On the one hand, I like to get sh*t done. I care about logical arguments, facts, data. I don't believe in perfection, holding on to one opinion, ideology, or \"objective truth\", and especially not in \"trusting your feelings\". I believe in moving swiftly with a narrow focus and the right strategy. <br/>On the other hand, I have a deep desire to know, explore, and create. I take my time to widen my understanding, follow my curiosity and pursue experiences with no clear outcome. Working has to be complemented with thinking, evaluating, and exploring. <br/>This bimodal mentality helped me navigate through life. I am an open-source-developer, data and knowledge-mangement enthusiast, student, and view myself as a generalist: Over the years, I ventured into fields such as programming, investing, graphics design, web-development, data science, machine learning, formal logic, productivity, personal knowledge management and writing articles. <br/>While the majority of my last years has been spent on <a class=\"hover:text-accent underline\" href=\"/projects\">programming projects</a>, I'll now divide my focus between my studies, <a class=\"hover:text-accent underline\" href=\"https://davidewiest.medium.com/\">writing</a>, digesting <a class=\"hover:text-accent underline\" href=\"https://davidewiest.medium.com/list/good-reads-f78618021760\">high quality information</a>, and a small number of software projects with the most impact.",
         "data": {
             "Occupation": "Student",
-            "Languages (fluent)": "German, Englisch",
-            "Favourite software": "Obsidian, Todoist, Arc",
-            "Based in": "Rhineland Palatine",
-            "12 favourite problems": "Article coming soon"
+            "Languages": "German, English",
+            "Based in": "Rhineland Palatine, Germany"
         }
     },
     "skills": {
