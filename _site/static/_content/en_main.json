@@ -4,7 +4,7 @@
     "age": "Age",
     "work": {
         "t": "Projects & Work",
-        "downloadCV": "Lebenslauf ansehen",
+        "downloadCV": "View CV",
         "workExperience": {
             "t": "Work Experience",
             "content": [
