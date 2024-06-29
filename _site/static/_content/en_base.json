@@ -13,7 +13,7 @@
     "nav": {
         "blog": ["Articles", "https://davidewiest.medium.com/"],
         "projects": ["Projects", "/projects"],
-        "cv": ["Resume", "resources/CV.pdf"],
+        "cv": ["Resume", "resources/Lebenslauf.pdf"],
         "email": ["Send Email", "mailto:hi@davidewiest.com"]
     },
     "contactCvText": "Download Resume (German)",
