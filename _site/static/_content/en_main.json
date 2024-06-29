@@ -4,7 +4,7 @@
     "age": "Age",
     "work": {
         "t": "Projects & Work",
-        "downloadCV": "Lebenslauf ansehen (2023)",
+        "downloadCV": "Lebenslauf ansehen",
         "workExperience": {
             "t": "Work Experience",
             "content": [
@@ -19,7 +19,8 @@
         "data": {
             "Occupation": "Student",
             "Languages": "German, English",
-            "Based in": "Rhineland Palatine, Germany"
+            "Based in": "Rhineland Palatine, Germany",
+            "Desired career": "Consultant, project manager"
         }
     },
     "skills": {
