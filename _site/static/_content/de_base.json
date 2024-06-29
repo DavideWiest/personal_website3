@@ -16,7 +16,7 @@
         "cv": ["Lebenslauf", "resources/CV.pdf"],
         "email": ["Email senden", "mailto:hi@davidewiest.com"]
     },
-    "contactCvText": "Lebenslauf ansehen (2023)",
+    "contactCvText": "Lebenslauf ansehen",
     "cvTemplateLink": "https://www.canva.com/design/DAFNb7YG648/nMgeFGILcr5IQekOInhEXg/view?utm_content=DAFNb7YG648&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
     "meta_desc": "Persönliche Webseite von Davide Wiest."
 }
