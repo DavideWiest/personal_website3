@@ -13,7 +13,7 @@
     "nav": {
         "blog": ["Artikel", "https://davidewiest.medium.com/"],
         "projects": ["Projekte", "/projects"],
-        "cv": ["Lebenslauf", "resources/CV.pdf"],
+        "cv": ["Lebenslauf", "resources/Lebenslauf.pdf"],
         "email": ["Email senden", "mailto:hi@davidewiest.com"]
     },
     "contactCvText": "Lebenslauf ansehen",
